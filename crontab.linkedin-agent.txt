@@ -1,0 +1,7 @@
+# Lark AI LinkedIn agent — cron schedule (times are this Mac's local time = WAT/Lagos).
+# Cron only fires while the Mac is awake and logged in. Each run logs to linkedin-agent/logs/.
+# In approve mode these STAGE drafts + notify; they do not post until you run `approve`.
+
+0 13 * * *  /Users/apple/Downloads/linkedin-agent/run_agent.sh run --lane post
+0 20 * * *  /Users/apple/Downloads/linkedin-agent/run_agent.sh run --lane carousel
+0 */4 * * * /Users/apple/Downloads/linkedin-agent/run_agent.sh comments

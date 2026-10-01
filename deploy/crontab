@@ -1,0 +1,5 @@
+# supercronic schedule (container TZ = Africa/Lagos). Edit times freely.
+# Columns: min hour dom mon dow  command
+0 8 * * *   cd /app && python -m agent.cli run --lane post
+0 18 * * *  cd /app && python -m agent.cli run --lane carousel
+0 */4 * * * cd /app && python -m agent.cli comments

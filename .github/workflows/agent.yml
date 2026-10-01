@@ -1,0 +1,105 @@
+name: LinkedIn agent
+
+# Schedules are in UTC. Africa/Lagos is UTC+1, so:
+#   07:00 UTC = 08:00 WAT  -> post
+#   17:00 UTC = 18:00 WAT  -> carousel
+#   every 4h UTC           -> comments
+on:
+  schedule:
+    - cron: "0 7 * * *"
+    - cron: "0 17 * * *"
+    - cron: "0 */4 * * *"
+  workflow_dispatch:
+    inputs:
+      command:
+        description: "Command"
+        type: choice
+        options: [run, comments, approve, skip]
+        default: run
+      lane:
+        description: "Lane (for run/approve/skip)"
+        type: choice
+        options: [post, carousel]
+        default: post
+
+# Serialize runs so the state commit-back never races.
+concurrency:
+  group: linkedin-agent
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  agent:
+    runs-on: ubuntu-latest
+    env:
+      # Secrets — set these in repo Settings -> Secrets and variables -> Actions.
+      ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+      APIFY_TOKEN: ${{ secrets.APIFY_TOKEN }}
+      LINKEDIN_ACCESS_TOKEN: ${{ secrets.LINKEDIN_ACCESS_TOKEN }}
+      LINKEDIN_AUTHOR_URN: ${{ secrets.LINKEDIN_AUTHOR_URN }}
+      NVIDIA_API_KEY: ${{ secrets.NVIDIA_API_KEY }}
+      OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+      NOTIFY_WEBHOOK_URL: ${{ secrets.NOTIFY_WEBHOOK_URL }}
+      # Variables (non-secret) — set in the Variables tab. Defaults applied if unset.
+      AGENT_MODE: ${{ vars.AGENT_MODE || 'approve' }}
+      IMAGE_PROVIDER: ${{ vars.IMAGE_PROVIDER || 'nvidia' }}
+      LINKEDIN_API_VERSION: ${{ vars.LINKEDIN_API_VERSION || '202601' }}
+      TZ: Africa/Lagos
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - run: pip install -r requirements.txt
+
+      - name: Resolve command
+        id: cmd
+        run: |
+          case "${{ github.event.schedule }}" in
+            "0 7 * * *")   ARGS="run --lane post" ;;
+            "0 17 * * *")  ARGS="run --lane carousel" ;;
+            "0 */4 * * *") ARGS="comments" ;;
+            *)
+              CMD="${{ github.event.inputs.command }}"
+              LANE="${{ github.event.inputs.lane }}"
+              if [ "$CMD" = "comments" ]; then ARGS="comments"; else ARGS="$CMD --lane $LANE"; fi
+              ;;
+          esac
+          echo "args=$ARGS" >> "$GITHUB_OUTPUT"
+          echo "Running: python -m agent.cli $ARGS  (mode=$AGENT_MODE)"
+
+      - name: Run agent
+        run: python -m agent.cli ${{ steps.cmd.outputs.args }}
+
+      - name: Upload staged output (drafts, images, carousels)
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: output-${{ github.run_id }}
+          path: |
+            drafts/
+            images/
+            carousels/
+          if-no-files-found: ignore
+          retention-days: 14
+
+      - name: Persist state back to the repo
+        if: always()
+        run: |
+          git config user.name "linkedin-agent-bot"
+          git config user.email "actions@users.noreply.github.com"
+          # Track state + drafts (and force referenced binaries so approve can attach them).
+          git add -A state drafts
+          git add -f images carousels 2>/dev/null || true
+          if git diff --cached --quiet; then
+            echo "no state changes"
+          else
+            git commit -m "agent: update state [skip ci]"
+            git pull --rebase --autostash origin "${GITHUB_REF_NAME}" || true
+            git push
+          fi

@@ -1,0 +1,11 @@
+.env
+__pycache__/
+*.pyc
+state/discovery-latest.json
+images/
+carousels/
+
+# local runtime
+.venv/
+logs/
+deploy/data/

@@ -1,0 +1,16 @@
+services:
+  linkedin-agent:
+    build: ..
+    image: lark-linkedin-agent
+    container_name: linkedin-agent
+    restart: unless-stopped
+    env_file: ../.env
+    environment:
+      TZ: Africa/Lagos
+    volumes:
+      # Persist state + outputs on the host so restarts/redeploys keep history.
+      - ./data/state:/app/state
+      - ./data/drafts:/app/drafts
+      - ./data/images:/app/images
+      - ./data/carousels:/app/carousels
+      - ./data/logs:/app/logs

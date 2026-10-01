@@ -1,0 +1,63 @@
+{
+  "date": "2026-10-01",
+  "lane": "carousel",
+  "status": "staged",
+  "topic": "Always-on AI agents move from demo to daily workflow",
+  "subtopic": "OpenAI Dots and the 'agent with its own computer' pattern",
+  "whyNow": "OpenAI's Dots launch at DevDay is dominating AI discussion across TikTok and YouTube in the last 48 hours, with multiple creators testing it live, including a public demo failure that's generating discussion about reliability",
+  "sources": [
+    {
+      "platform": "tiktok",
+      "url": "https://www.tiktok.com/@kodekloud/video/7691154961840852245",
+      "velocity": 2642.75
+    },
+    {
+      "platform": "tiktok",
+      "url": "https://www.tiktok.com/@rpn/video/7691006558662085919",
+      "velocity": 563.99
+    },
+    {
+      "platform": "youtube",
+      "url": "https://www.youtube.com/watch?v=V_1Vn2WfpEY",
+      "velocity": 122.13
+    },
+    {
+      "platform": "tiktok",
+      "url": "https://www.tiktok.com/@yahoofinance/video/7691032411517291790",
+      "velocity": 106.81
+    },
+    {
+      "platform": "tiktok",
+      "url": "https://www.tiktok.com/@rowancheung/video/7691014942849387807",
+      "velocity": 62.84
+    },
+    {
+      "platform": "tiktok",
+      "url": "https://www.tiktok.com/@weexplore.ai/video/7691392687835991309",
+      "velocity": 4.54
+    }
+  ],
+  "replies": [],
+  "notes": [],
+  "documentPath": "/Users/apple/Downloads/linkedin-agent/carousels/2026-10-01/carousel.pdf",
+  "title": "Always-On AI Agents: The Real Bottleneck Isn't the Model",
+  "slideReview": {
+    "pass": false,
+    "problems": [
+      "Excessive empty space: body text is confined to a small region near the top while roughly 85% of the slide height is blank, creating a severely unbalanced layout",
+      "Text sizes are very small relative to the canvas, hurting readability on mobile/feed view",
+      "Weak visual hierarchy: headline and supporting line are nearly the same size/weight, with no clear focal point or emphasis",
+      "Large unused decorative space (green circle) is disconnected from the content, adding clutter without purpose",
+      "No clear call-to-action or visual anchor to guide the viewer through the slide",
+      "Excessive empty space: content occupies only top ~45% of slide, remainder is large blank area, indicating poor layout balance/clutter in distribution",
+      "Small font sizes for body text and bullet items relative to slide size, likely hard to read on LinkedIn feed",
+      "Weak visual hierarchy: header 'HOW OPENAI HANDLED IT' and subtext are small and left-aligned with inconsistent spacing",
+      "No strong tie-back to stated topic of 'always-on AI agents moving from demo to daily workflow' in visible text"
+    ]
+  },
+  "caption": "OpenAI's new 'Dots' agents got a lot of attention this week for one reason: they keep working after you close your laptop.\n\nThat's the headline. It's not really the interesting part.\n\nTo act while you're offline, an agent needs somewhere to act from. Its own cloud computer. Its own browser. Its own logins and permissions. That's a very different thing than a chatbot answering questions in a window.\n\nOpenAI's own setup makes this clear. Reading things is automatic. Sending, editing, or touching a password requires a human to approve it first. Custom rules let you mark any action as allow, approve, or block.\n\nThat's not a limitation of the model. That's the actual engineering problem.\n\nA public demo this week didn't go as planned, and a lot of the discussion since has been about reliability. But reliability was never going to come from a smarter model alone.\n\nIt comes from the structure around it. What the agent can touch. What it has to ask permission for. What never gets handed over at all.\n\nFor any business looking at agents right now, the useful question isn't \"can it do the task.\" It's \"what happens the one time it gets the task wrong, and who's watching for that.\"\n\nDemo-ready and business-ready are answered by two different checklists.\n\nWhat's the one action you'd never let an agent take without a human checking it first?",
+  "hook": "OpenAI's new agents can work while you sleep. That's not actually the hard part they solved.",
+  "structure": "New development → Why it matters → What to do",
+  "imageConcept": "A single office desk shot from above at night, lit only by a desk lamp. One laptop is closed and dark. Next to it, a second screen is lit, showing a plain permission dialog box with three buttons: Allow, Require Approval, Block. No person in frame. The contrast between the closed laptop and the glowing approval screen is the whole image.",
+  "gate": "passed"
+}

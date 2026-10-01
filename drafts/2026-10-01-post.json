@@ -1,0 +1,60 @@
+{
+  "date": "2026-10-01",
+  "lane": "post",
+  "status": "staged",
+  "topic": "Always-on AI agents move from demo to daily-use infrastructure",
+  "subtopic": "OpenAI Dots and the shift from chat sessions to persistent agents",
+  "whyNow": "Multiple high-velocity posts across TikTok and YouTube in the last 24-48 hours covering OpenAI's Dots launch at DevDay, including a live demo stall, indicating an active news cycle and real engagement velocity, not just lifetime views.",
+  "sources": [
+    {
+      "platform": "tiktok",
+      "url": "https://www.tiktok.com/@kodekloud/video/7691154961840852245",
+      "velocity": 2642.75
+    },
+    {
+      "platform": "tiktok",
+      "url": "https://www.tiktok.com/@rpn/video/7691006558662085919",
+      "velocity": 563.99
+    },
+    {
+      "platform": "tiktok",
+      "url": "https://www.tiktok.com/@cnbc/video/7691025459152243982",
+      "velocity": 131.42
+    },
+    {
+      "platform": "youtube",
+      "url": "https://www.youtube.com/watch?v=V_1Vn2WfpEY",
+      "velocity": 122.13
+    },
+    {
+      "platform": "tiktok",
+      "url": "https://www.tiktok.com/@yahoofinance/video/7691032411517291790",
+      "velocity": 106.81
+    },
+    {
+      "platform": "youtube",
+      "url": "https://www.youtube.com/watch?v=y12lBg43rE0",
+      "velocity": 81.72
+    },
+    {
+      "platform": "tiktok",
+      "url": "https://www.tiktok.com/@rowancheung/video/7691014942849387807",
+      "velocity": 62.84
+    },
+    {
+      "platform": "tiktok",
+      "url": "https://www.tiktok.com/@weexplore.ai/video/7691392687835991309",
+      "velocity": 4.54
+    }
+  ],
+  "replies": [],
+  "notes": [],
+  "caption": "There's a detail in the OpenAI Dots launch that matters more than the chatbot interface.\n\nDots gives an agent its own compute and its own browser. It can keep working between conversations, not just respond inside one.\n\nThat's a different question than \"what can this answer.\"\n\nIt's \"what can this own without me watching it.\"\n\nBusinesses have been quietly wrestling with that question for years, just under a different name: automation.\n\nWhich steps can run unattended. Which ones need a human to check before anything moves forward. Where does a retry happen automatically, and where does a mistake actually cost money or trust.\n\nA persistent agent doesn't remove that design problem. It just makes it more visible, because now the agent is running when nobody's looking at the screen.\n\nThe interesting part isn't that the model got smarter.\n\nIt's that the industry is finally building infrastructure around the same guardrails automation teams have needed all along: ownership boundaries, monitoring, and a clear answer to what happens when something goes wrong while no one's watching.\n\nWhat would you actually trust an agent to own in your business without supervision right now?",
+  "hook": "There's a detail in the OpenAI Dots launch that matters more than the chatbot interface.",
+  "structure": "New development → Why it matters → What to do",
+  "imageConcept": "A single office desk lamp left on, illuminating an empty chair and a keyboard, photographed at night through an office window from outside — the workspace clearly active with no person present.",
+  "gate": "passed",
+  "imagePath": null,
+  "imagePrompt": "A clean, minimal illustration of a dashboard showing multiple AI agent status indicators (small glowing dots labeled 'active') running continuously in the background of a workspace, with a subtle day-to-night gradient across the image to signal 'always-on.' Include light UI elements like timestamps or uptime counters to emphasize infrastructure and reliability, avoiding generic office stock-photo imagery.",
+  "imageStatus": "generation error: HTTPSConnectionPool(host='ai.api.nvidia.com', port=443): Read timed out. (read timeout=180)"
+}
