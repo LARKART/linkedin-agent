@@ -99,8 +99,8 @@ crontab -e        # paste the three lines below
 ```
 
 ```cron
-0 13 * * *  cd /home/user/linkedin-agent && ./.venv/bin/python -m agent.cli run --lane post      >> logs/cron.post.log 2>&1
-0 20 * * *  cd /home/user/linkedin-agent && ./.venv/bin/python -m agent.cli run --lane carousel  >> logs/cron.carousel.log 2>&1
+0 8 * * *   cd /home/user/linkedin-agent && ./.venv/bin/python -m agent.cli run --lane post      >> logs/cron.post.log 2>&1
+0 18 * * *  cd /home/user/linkedin-agent && ./.venv/bin/python -m agent.cli run --lane carousel  >> logs/cron.carousel.log 2>&1
 0 */4 * * * cd /home/user/linkedin-agent && ./.venv/bin/python -m agent.cli comments             >> logs/cron.comments.log 2>&1
 ```
 
