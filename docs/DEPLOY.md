@@ -13,14 +13,53 @@ API keys and file-based state, so any cheap Linux VPS works.
 - Start in **approve** (`AGENT_MODE=approve`): it stages drafts and notifies you; you
   approve remotely. Good for the first few days to watch quality.
 - Switch to **auto** (`AGENT_MODE=auto`): after the gates pass it publishes on its own.
-  Set it in `.env` (or the compose `environment:` block) and restart.
 
-Set a `NOTIFY_WEBHOOK_URL` (Slack/Discord) in `.env` so you actually see the pings —
-on a headless server that webhook is your only notification channel.
+Set a `NOTIFY_WEBHOOK_URL` (Slack/Discord) so you actually see the pings — on an
+unattended runner that webhook is your only notification channel.
 
 ---
 
-## Option A — Docker (recommended)
+## Option A — GitHub Actions (chosen; no server to run)
+
+The workflow is already in `.github/workflows/agent.yml`. Schedules (UTC):
+`07:00` = 08:00 WAT post, `17:00` = 18:00 WAT carousel, every 4h = comments.
+
+### 1. Push the repo to GitHub (private)
+```bash
+cd ~/linkedin-agent
+gh repo create linkedin-agent --private --source=. --push    # or add a remote + git push
+```
+`.env` is gitignored and never leaves your machine.
+
+### 2. Add the secrets (Settings → Secrets and variables → Actions → Secrets)
+`ANTHROPIC_API_KEY`, `APIFY_TOKEN`, `LINKEDIN_ACCESS_TOKEN`, `LINKEDIN_AUTHOR_URN`,
+`NVIDIA_API_KEY`, and optionally `OPENAI_API_KEY`, `NOTIFY_WEBHOOK_URL`.
+
+### 3. Add the variables (same page → Variables tab)
+`AGENT_MODE=approve` to start (flip to `auto` when ready). Optional: `IMAGE_PROVIDER`,
+`LINKEDIN_API_VERSION`.
+
+### 4. Test now
+Actions tab → "LinkedIn agent" → **Run workflow** → command `run`, lane `post`.
+In approve mode it stages a draft, commits it back, and uploads it as a run
+**artifact** (download to eyeball the caption + image). To publish a staged draft:
+Run workflow → command `approve`, lane `post`.
+
+### 5. Go hands-off
+Change the `AGENT_MODE` variable to `auto`. From then on the scheduled runs publish
+after the gates pass. No approve step needed.
+
+**GitHub Actions caveats**
+- Times are UTC and scheduled runs can be **delayed** several minutes under load.
+- Scheduled workflows are **auto-disabled after 60 days** with no repo activity —
+  the auto-publish commits keep it active, but if you pause it, re-enable in Actions.
+- State (`state/`, `drafts/`) is **committed back** to the repo each run for dedup and
+  approve. Keep the repo **private**.
+- The LinkedIn token expires ~60 days — refresh it locally and update the secret.
+
+---
+
+## Option B — Docker on a VPS
 
 On any VPS with Docker + Docker Compose (DigitalOcean, Hetzner, Fly.io, EC2, …):
 
@@ -48,7 +87,7 @@ Switch to auto mode: set `AGENT_MODE=auto` in `.env`, then `docker compose up -d
 
 ---
 
-## Option B — No Docker (plain VPS + cron)
+## Option C — Plain VPS + cron
 
 ```bash
 rsync -av --exclude .venv ~/linkedin-agent/ user@server:~/linkedin-agent/
