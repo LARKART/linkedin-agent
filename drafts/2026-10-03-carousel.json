@@ -1,0 +1,38 @@
+{
+  "date": "2026-10-03",
+  "lane": "carousel",
+  "status": "blocked",
+  "topic": "Claude Code Mods",
+  "subtopic": "Customizing agentic coding tools with plain-English configuration",
+  "whyNow": "Three independent YouTube creators published dedicated breakdowns of Claude Code mods within the last 24-56 hours, all framing it as the biggest upgrade since Skills, with strong view counts and fast velocity (147, 142, 44) suggesting a genuine platform shift rather than one creator's hype.",
+  "sources": [
+    {
+      "platform": "youtube",
+      "url": "https://www.youtube.com/watch?v=9hetShMMp2s",
+      "velocity": 147.71
+    },
+    {
+      "platform": "youtube",
+      "url": "https://www.youtube.com/watch?v=Rn4nmFRPe0s",
+      "velocity": 142.6
+    },
+    {
+      "platform": "youtube",
+      "url": "https://www.youtube.com/watch?v=uvIopT_2sY0",
+      "velocity": 44.47
+    }
+  ],
+  "replies": [],
+  "notes": [],
+  "documentPath": "/home/runner/work/linkedin-agent/linkedin-agent/carousels/2026-10-03/carousel.pdf",
+  "title": "Claude Code Mods: Your Coding Assistant Is Now a Configurable Platform",
+  "slideReview": {
+    "pass": true,
+    "problems": []
+  },
+  "caption": "Claude Code can now be reconfigured with plain-English instructions instead of code changes.\n\nThat's a small-sounding feature with a bigger implication.\n\nUp until now, most agentic dev tools behaved like fixed software. You got the default behavior, and if you wanted something different, you worked around it with prompting tricks or custom scripts.\n\nMods change that. You describe the behavior you want, in plain language, and the tool adapts its own operating rules.\n\nThis is the same shift I see in workflow automation. In n8n, the durable systems aren't the ones with the cleverest single node. They're the ones where the configuration layer, retries, conditions, fallback paths, is treated as part of the design from day one, not patched in later.\n\nMods push Claude Code toward that same idea: the configuration isn't an afterthought, it's the interface.\n\nThree separate breakdowns of this feature went up in the last two days, all independently landing on the same point. That kind of fast, parallel attention usually means people are reacting to an actual shift in how the tool is used, not just a feature announcement.\n\nThe useful takeaway isn't the mod feature itself. It's this: if your dev tools can be configured instead of just used, the teams that treat them as platforms, worth customizing deliberately, will end up with more durable workflows than the teams that just use the defaults.\n\nThat's true whether it's Claude Code, an n8n workflow, or a CRM automation.\n\nCurious how this could work in your business?\n\n#ClaudeCode #AgenticAI #Automation",
+  "hook": "Claude Code can now be reconfigured with plain-English instructions instead of code changes.",
+  "structure": "New development → Why it matters → What to do",
+  "imageConcept": "A single mechanical adjustment knob mounted on a plain wooden control panel, labeled only with a short handwritten instruction card next to it instead of printed markings — shot in flat, even studio light, nothing else in frame.",
+  "gate": "FAILED"
+}
