@@ -1,0 +1,32 @@
+{
+  "date": "2026-10-03",
+  "lane": "post",
+  "status": "blocked",
+  "topic": "Claude Code Mods",
+  "subtopic": "customizing agentic coding tools with plain English",
+  "whyNow": "Three separate creators published videos on this within the last 51 hours, all framing it as the biggest Claude Code upgrade since Skills, showing real velocity on a feature release",
+  "sources": [
+    {
+      "platform": "youtube",
+      "url": "https://www.youtube.com/watch?v=9hetShMMp2s",
+      "velocity": 161.51
+    },
+    {
+      "platform": "youtube",
+      "url": "https://www.youtube.com/watch?v=Rn4nmFRPe0s",
+      "velocity": 153.77
+    },
+    {
+      "platform": "youtube",
+      "url": "https://www.youtube.com/watch?v=uvIopT_2sY0",
+      "velocity": 48.13
+    }
+  ],
+  "replies": [],
+  "notes": [],
+  "caption": "Config files are usually the wall between a business owner and the automation they're paying for.\n\nClaude Code just removed a piece of that wall. A new feature lets you change how the coding agent behaves by describing it in plain English, instead of editing settings files or writing config syntax.\n\nThat sounds like a small developer convenience. It isn't.\n\nMost of the AI systems I build end up with a layer of configuration underneath: rules about tone, formatting, what to automate, what needs approval, how to handle edge cases. Right now, changing that layer usually means a developer opens a file and edits it.\n\nIf agent behavior can be adjusted through plain instructions instead, the person closest to the actual business process can shape how the system behaves without waiting on someone else to touch the code.\n\nThat's the direction agentic tools need to go. Not fewer humans in the loop, but less friction for the humans who should be in it.\n\nThe technical team still needs to design the guardrails. But the day-to-day adjustments shouldn't require a pull request.\n\nWhere in your workflows are non-technical people stuck waiting on someone else to make a small change?",
+  "hook": "Config files are usually the wall between a business owner and the automation they're paying for.",
+  "structure": "New development → Why it matters → What to do",
+  "imageConcept": "A locked filing cabinet drawer standing next to an open notebook with a handwritten sentence on it, photographed in natural light — the contrast between rigid stored rules and a simple written instruction, no screens or tech iconography.",
+  "gate": "FAILED"
+}
