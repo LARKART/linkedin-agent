@@ -1,42 +1,55 @@
 {
   "date": "2026-10-04",
   "lane": "post",
-  "status": "blocked",
+  "status": "staged",
   "topic": "Claude Code Mods",
-  "subtopic": "Extensibility and customization layer for Claude Code",
-  "whyNow": "Multiple independent YouTube creators published breakdowns within the last 18-35 hours, all describing this as the biggest Claude Code upgrade since Skills, indicating a genuine fresh platform shift rather than a single creator's opinion.",
+  "subtopic": "Agentic coding tooling upgrades",
+  "whyNow": "At least five separate YouTube uploads in the last 18-35 hours independently cover the same new Claude Code mods feature, showing a concentrated, fresh spike in creator attention around one specific product update.",
   "sources": [
     {
       "platform": "youtube",
       "url": "https://www.youtube.com/watch?v=Rn4nmFRPe0s",
-      "velocity": 116.28
+      "velocity": 116.18
     },
     {
       "platform": "youtube",
       "url": "https://www.youtube.com/watch?v=9hetShMMp2s",
-      "velocity": 115.85
+      "velocity": 115.76
     },
     {
       "platform": "youtube",
       "url": "https://www.youtube.com/watch?v=XaYubuLtW8M",
-      "velocity": 61.17
+      "velocity": 61.01
     },
     {
       "platform": "youtube",
       "url": "https://www.youtube.com/watch?v=xG9UIliOX3E",
-      "velocity": 35.46
+      "velocity": 35.33
     },
     {
       "platform": "youtube",
       "url": "https://www.youtube.com/watch?v=uvIopT_2sY0",
-      "velocity": 34.45
+      "velocity": 34.44
+    },
+    {
+      "platform": "youtube",
+      "url": "https://www.youtube.com/watch?v=Zu-hJAHKJug",
+      "velocity": 17.52
+    },
+    {
+      "platform": "youtube",
+      "url": "https://www.youtube.com/watch?v=DP7mgLUKN_U",
+      "velocity": 11.04
     }
   ],
   "replies": [],
   "notes": [],
-  "caption": "Claude Code just moved from fixed tool to customizable platform.\n\nThe new mod layer lets developers write JS/TS functions that intercept tool calls, block or modify them before they execute, and render custom UI panels inside Claude Code itself.\n\nThat's a different kind of upgrade than what came before.\n\nSkills extended what Claude Code could know.\nMods extend how Claude Code behaves.\n\nIn agent systems generally, the hard part is rarely getting a model to attempt a task. It's controlling what happens around the task — which calls are allowed, what gets logged, what gets stopped before it causes damage, and how a human stays in the loop without slowing everything down.\n\nAn interception layer is exactly the kind of thing that problem needs. You're not just prompting the agent anymore. You're defining the boundaries it operates inside.\n\nThat's a meaningful shift for anyone building production agent workflows, not just demos.\n\nIf you're experimenting with Claude Code already, where would custom interception be most useful in your workflow — approvals, logging, or blocking specific actions outright?",
-  "hook": "Claude Code just moved from fixed tool to customizable platform.",
-  "structure": "New development → Why it matters → What to do",
-  "imageConcept": "A single wooden gate installed midway along a running conveyor belt in an otherwise empty warehouse — the belt carries plain cardboard boxes, some passing through the open gate, one stopped and flagged with a red tag in front of it. Clean industrial lighting, minimal composition, no screens or digital overlays — the gate is the entire visual metaphor for interception and control.",
-  "gate": "FAILED"
+  "caption": "Five different YouTube channels covered the same Claude Code mods update in the last day and a half.\n\nThat kind of concentrated attention usually means one of two things: either the update is genuinely useful, or it's a small change that looks exciting in a 10-minute video.\n\nI haven't tested the mods myself yet, so I can't tell you which one this is.\n\nBut the direction is worth watching. Claude Code has mostly been customized through prompts and instructions. If mods start letting you configure behavior closer to the tool-call level, that's a meaningfully different kind of control than writing a better system prompt.\n\nFor anyone building agent workflows that need to run reliably in production, that distinction matters more than the demo. Prompt-level tweaks are easy to ship and easy to break. Anything that moves customization into the tooling layer tends to be more stable, but also harder to get right the first time.\n\nI'll wait for people to actually build with it before deciding how much of this is a real shift versus a good week of content.\n\nIf you've tried the mods already, I'd genuinely like to know what's configurable versus what's just a prompt with a new name.",
+  "hook": "Five different YouTube channels covered the same Claude Code mods update in the last day and a half.",
+  "structure": "Observation → Explanation → Implication",
+  "imageConcept": "A close-up editorial shot of a mechanic's socket wrench set, open and organized in its case, each socket a slightly different size - a visual metaphor for granular, swappable configuration versus a single all-purpose tool.",
+  "gate": "passed",
+  "imagePath": null,
+  "imagePrompt": "A close-up editorial shot of a mechanic's socket wrench set, open and organized in its case, each socket a slightly different size - a visual metaphor for granular, swappable configuration versus a single all-purpose tool.",
+  "imageStatus": "text-only (image provider unreachable after retries: HTTPSConnectionPool(host='ai.api.nvidia.com', port=443): Read timed out. (read timeout=240))"
 }
