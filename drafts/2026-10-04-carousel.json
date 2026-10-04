@@ -1,48 +1,44 @@
 {
   "date": "2026-10-04",
   "lane": "carousel",
-  "status": "blocked",
-  "topic": "Claude Code Mods",
-  "subtopic": "Plugin-style customization layer for Claude Code",
-  "whyNow": "Four separate YouTube channels published mod-focused tutorials within the same 18-35 hour window with strong comment engagement, signaling a genuine feature-adoption spike rather than a single creator's hype",
+  "status": "published",
+  "topic": "Claude Code Mods as a new customization layer",
+  "subtopic": "Agentic coding workflows",
+  "whyNow": "Three separate creators published breakdowns within the same 48 hours, each framing it as the biggest upgrade since Skills, with the top video already at 200 velocity and 388 comments.",
   "sources": [
     {
       "platform": "youtube",
       "url": "https://www.youtube.com/watch?v=Rn4nmFRPe0s",
-      "velocity": 117.05
+      "velocity": 116.87
     },
     {
       "platform": "youtube",
       "url": "https://www.youtube.com/watch?v=9hetShMMp2s",
-      "velocity": 114.21
+      "velocity": 113.98
     },
     {
       "platform": "youtube",
       "url": "https://www.youtube.com/watch?v=XaYubuLtW8M",
-      "velocity": 59.68
+      "velocity": 59.47
     },
     {
       "platform": "youtube",
       "url": "https://www.youtube.com/watch?v=uvIopT_2sY0",
-      "velocity": 34.02
-    },
-    {
-      "platform": "instagram",
-      "url": "https://www.instagram.com/p/DeEDcrNCu8i/",
-      "velocity": 5.5
+      "velocity": 33.95
     }
   ],
   "replies": [],
   "notes": [],
   "documentPath": "/home/runner/work/linkedin-agent/linkedin-agent/carousels/2026-10-04/carousel.pdf",
-  "title": "Claude Code Mods: Why Developers Are Rebuilding Their Own Agent",
+  "title": "Claude Code Mods: The Programmable Layer Nobody's Talking About Yet",
   "slideReview": {
     "pass": true,
     "problems": []
   },
-  "caption": "Four different Claude Code tutorials showed up this week, all covering the same thing: mods.\n\nNot a new model. Not a new feature announcement. A customization layer.\n\nWorth paying attention to, because of what it signals.\n\nMods let developers write their own functions to intercept what the agent does mid-task, add custom panels for visibility, and redirect its behavior with plain instructions instead of hardcoded rules.\n\nThat's the same shift I keep seeing across automation generally.\n\nFirst you get a tool that does a task. Then you get a layer that lets you control how it does that task. That control layer is usually where the real value shows up, not in the original tool itself.\n\nAn agent that just runs is a demo.\n\nAn agent you can observe, interrupt, and redirect is closer to something you'd actually trust in a real workflow.\n\nThe interesting part isn't the mod itself. It's that Claude Code is being treated less like a fixed product and more like infrastructure people build on top of.\n\nThat's usually a sign a tool is maturing, not just trending.\n\nIf you're building with Claude Code or exploring agent workflows, happy to compare notes on architecture.",
-  "hook": "Four different Claude Code tutorials showed up this week, all covering the same thing: mods.",
-  "structure": "Signal/Data -> Interpretation -> Business implication",
-  "imageConcept": "An editorial close-up of a physical mixing board or modular synth patch panel, cables rerouted between channels, shot with shallow depth of field and natural studio light — visualizing a fixed system being rewired into something configurable, no screens or tech cliches.",
-  "gate": "FAILED"
+  "caption": "Three separate breakdowns of Claude Code Mods landed within 48 hours this week. Different creators, same conclusion: this is the biggest shift since Skills.\n\nHere's the mechanism worth understanding.\n\nMods let developers write plain-English JavaScript/TypeScript that sits between Claude Code and the tool calls it wants to execute. Before an action runs, the mod can intercept it, change it, block it, or render a custom UI panel for a human to review.\n\nThat's a meaningful change in what Claude Code is. Not a fixed tool with a feature list controlled by Anthropic's release schedule. A programmable environment where teams define their own checkpoints.\n\nThe interesting part isn't the new capability itself.\n\nIt's where the guardrail lives.\n\nInstead of a rule written down somewhere and hoped for, the constraint becomes code that runs every time, whether or not anyone remembers it's there.\n\nOne pattern worth watching: don't try to wrap every tool call in a mod on day one. Pick the single riskiest action your agent can take right now, the one you'd least want running unattended, and put a checkpoint on that first.\n\nIf you're already building with Claude Code, this is worth treating less like an app update and more like infrastructure you get to design.\n\nWhat's the first action you'd want a checkpoint on?",
+  "hook": "Three separate breakdowns of Claude Code Mods landed within 48 hours this week. Different creators, same conclusion: this is the biggest shift since Skills.",
+  "structure": "New development → Why it matters → What to do",
+  "imageConcept": "A single turnstile gate installed mid-way along an otherwise open hallway of server racks, shot in clean editorial style — one deliberate checkpoint in an open system, nothing futuristic, strong shadows and negative space.",
+  "gate": "passed",
+  "postUrn": "urn:li:ugcPost:7512419657333526528"
 }

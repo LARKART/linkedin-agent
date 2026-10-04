@@ -34,5 +34,41 @@
       }
     ],
     "status": "published"
+  },
+  {
+    "date": "2026-10-04",
+    "publishedAt": "2026-10-04T07:53:41.104241+00:00",
+    "postUrn": "urn:li:ugcPost:7512419657333526528",
+    "lane": "carousel",
+    "topic": "Claude Code Mods as a new customization layer",
+    "subtopic": "Agentic coding workflows",
+    "hook": "Three separate breakdowns of Claude Code Mods landed within 48 hours this week. Different creators, same conclusion: this is the biggest shift since Skills.",
+    "caption": "Three separate breakdowns of Claude Code Mods landed within 48 hours this week. Different creators, same conclusion: this is the biggest shift since Skills.\n\nHere's the mechanism worth understanding.\n\nMods let developers write plain-English JavaScript/TypeScript that sits between Claude Code and the tool calls it wants to execute. Before an action runs, the mod can intercept it, change it, block it, or render a custom UI panel for a human to review.\n\nThat's a meaningful change in what Claude Code is. Not a fixed tool with a feature list controlled by Anthropic's release schedule. A programmable environment where teams define their own checkpoints.\n\nThe interesting part isn't the new capability itself.\n\nIt's where the guardrail lives.\n\nInstead of a rule written down somewhere and hoped for, the constraint becomes code that runs every time, whether or not anyone remembers it's there.\n\nOne pattern worth watching: don't try to wrap every tool call in a mod on day one. Pick the single riskiest action your agent can take right now, the one you'd least want running unattended, and put a checkpoint on that first.\n\nIf you're already building with Claude Code, this is worth treating less like an app update and more like infrastructure you get to design.\n\nWhat's the first action you'd want a checkpoint on?",
+    "imagePrompt": null,
+    "imagePath": null,
+    "documentPath": "/home/runner/work/linkedin-agent/linkedin-agent/carousels/2026-10-04/carousel.pdf",
+    "sources": [
+      {
+        "platform": "youtube",
+        "url": "https://www.youtube.com/watch?v=Rn4nmFRPe0s",
+        "velocity": 116.87
+      },
+      {
+        "platform": "youtube",
+        "url": "https://www.youtube.com/watch?v=9hetShMMp2s",
+        "velocity": 113.98
+      },
+      {
+        "platform": "youtube",
+        "url": "https://www.youtube.com/watch?v=XaYubuLtW8M",
+        "velocity": 59.47
+      },
+      {
+        "platform": "youtube",
+        "url": "https://www.youtube.com/watch?v=uvIopT_2sY0",
+        "velocity": 33.95
+      }
+    ],
+    "status": "published"
   }
 ]
