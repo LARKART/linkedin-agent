@@ -16,10 +16,14 @@ from . import carousel, config, llm
 
 
 def _ffmpeg() -> str:
-    exe = shutil.which("ffmpeg") or "/Users/apple/bin/ffmpeg"
-    if not Path(exe).exists() and not shutil.which("ffmpeg"):
+    exe = shutil.which("ffmpeg")
+    if not exe:
         raise RuntimeError("ffmpeg not found")
-    return shutil.which("ffmpeg") or exe
+    return exe
+
+
+def _ffprobe() -> str:
+    return shutil.which("ffprobe") or _ffmpeg().replace("ffmpeg", "ffprobe")
 
 
 def available_styles() -> list[str]:
@@ -114,7 +118,7 @@ def make_video(topic: dict, style: str, slug: str, date: str) -> tuple[Path | No
                 per = 4.0
                 try:
                     dur = float(subprocess.run(
-                        [_ffmpeg().replace("ffmpeg", "ffprobe"), "-v", "error", "-show_entries",
+                        [_ffprobe(), "-v", "error", "-show_entries",
                          "format=duration", "-of", "default=nw=1:nk=1", str(audio)],
                         check=True, capture_output=True, text=True).stdout.strip())
                     per = max(3.0, dur / max(1, len(pngs)) + 0.6)

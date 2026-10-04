@@ -86,6 +86,10 @@ jobs:
           echo "args=$ARGS" >> "$GITHUB_OUTPUT"
           echo "Running: python -m agent.cli $ARGS  (mode=$AGENT_MODE)"
 
+      - name: Install ffmpeg (video lane)
+        if: contains(steps.cmd.outputs.args, 'video')
+        run: sudo apt-get update && sudo apt-get install -y ffmpeg
+
       - name: Run agent
         run: python -m agent.cli ${{ steps.cmd.outputs.args }}
 
