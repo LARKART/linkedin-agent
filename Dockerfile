@@ -6,7 +6,7 @@ WORKDIR /app
 
 # Fonts: Poppins is shipped in fonts/; DejaVu as a safety-net fallback.
 RUN apt-get update && apt-get install -y --no-install-recommends \
-        fonts-dejavu-core tzdata ca-certificates curl \
+        fonts-dejavu-core tzdata ca-certificates curl ffmpeg \
     && rm -rf /var/lib/apt/lists/*
 
 # supercronic: a cron runner designed for containers (logs to stdout, no root cron daemon).

@@ -4,7 +4,7 @@ from __future__ import annotations
 import re
 from pathlib import Path
 
-from . import carousel, comments, config, discovery, image, linkedin, notify, selector, state, writer
+from . import carousel, comments, config, discovery, image, linkedin, notify, selector, state, video, writer
 
 
 def _slug(s: str) -> str:
@@ -21,12 +21,14 @@ def _publish_draft(draft: dict) -> dict:
         draft["caption"],
         image=Path(draft["imagePath"]) if draft.get("imagePath") else None,
         document=Path(draft["documentPath"]) if draft.get("documentPath") else None,
+        video=Path(draft["videoPath"]) if draft.get("videoPath") else None,
         title=draft.get("title", draft["topic"]), publish=True)
     record = {
         "date": draft["date"], "publishedAt": state.now().isoformat(), "postUrn": res["postUrn"], "lane": draft["lane"],
         "topic": draft["topic"], "subtopic": draft.get("subtopic"), "hook": draft.get("hook"), "caption": draft["caption"],
         "imagePrompt": draft.get("imagePrompt"), "imagePath": draft.get("imagePath"),
-        "documentPath": draft.get("documentPath"), "sources": draft.get("sources", []), "status": "published",
+        "documentPath": draft.get("documentPath"), "videoPath": draft.get("videoPath"),
+        "videoStyle": draft.get("videoStyle"), "sources": draft.get("sources", []), "status": "published",
     }
     state.add_published(record)
     state.add_topic(draft["topic"], draft.get("hook", ""), draft.get("imageConcept", ""), draft.get("structure", ""))
@@ -101,6 +103,19 @@ def run(lane: str, *, force_discovery: bool = False) -> dict | None:
             state.save_draft(lane, draft)
             notify.send("LinkedIn post: skipped (no image)",
                         f"Topic: {topic['topic']}\nImage step: {status}\nNothing published (a post requires an image).")
+            return draft
+
+    if lane == "video":
+        n_videos = sum(1 for r in state.published() if r.get("lane") == "video")
+        vstyle = video.pick_style(n_videos)
+        vpath, vstatus, vstyle = video.make_video(topic, vstyle, _slug(topic["topic"]), date)
+        draft.update(videoPath=str(vpath) if vpath else None, videoStatus=vstatus, videoStyle=vstyle)
+        if not vpath:
+            draft["status"] = "blocked"
+            draft["gate"] = "blocked-no-video"
+            state.save_draft(lane, draft)
+            notify.send("LinkedIn video: skipped (no video)",
+                        f"Topic: {topic['topic']}\nVideo step: {vstatus}\nNothing published (a video post requires a video).")
             return draft
 
     # 6/7. approve vs auto

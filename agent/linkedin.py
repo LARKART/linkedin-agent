@@ -54,10 +54,39 @@ def _upload(kind: str, path: Path) -> str:
     return init["image"] if kind == "images" else init["document"]
 
 
+def _upload_video(path: Path) -> str:
+    """Chunked video upload per the LinkedIn Videos API. Returns the video URN."""
+    size = Path(path).stat().st_size
+    init = _check(requests.post(
+        f"{BASE}/videos?action=initializeUpload",
+        headers=_headers({"Content-Type": "application/json"}),
+        json={"initializeUploadRequest": {"owner": author_urn(), "fileSizeBytes": size,
+                                           "uploadCaptions": False, "uploadThumbnail": False}},
+        timeout=60)).json()["value"]
+    video_urn = init["video"]
+    token = init.get("uploadToken", "")
+    etags = []
+    with open(path, "rb") as f:
+        for instr in init["uploadInstructions"]:
+            first, last = instr["firstByte"], instr["lastByte"]
+            f.seek(first)
+            chunk = f.read(last - first + 1)
+            r = _check(requests.put(instr["uploadUrl"], data=chunk,
+                                    headers={"Authorization": f"Bearer {config.env('LINKEDIN_ACCESS_TOKEN')}",
+                                             "Content-Type": "application/octet-stream"}, timeout=300))
+            etags.append(r.headers.get("etag") or r.headers.get("ETag"))
+    _check(requests.post(
+        f"{BASE}/videos?action=finalizeUpload",
+        headers=_headers({"Content-Type": "application/json"}),
+        json={"finalizeUploadRequest": {"video": video_urn, "uploadToken": token, "uploadedPartIds": etags}},
+        timeout=60))
+    return video_urn
+
+
 def create_post(text: str, *, image: Path | None = None, document: Path | None = None,
-                title: str = "", publish: bool = False) -> dict:
-    if image and document:
-        raise ValueError("Never pass both image and document")
+                video: Path | None = None, title: str = "", publish: bool = False) -> dict:
+    if sum(x is not None for x in (image, document, video)) > 1:
+        raise ValueError("Pass at most one of image/document/video")
     body = {
         "author": author_urn(),
         "commentary": text,
@@ -68,11 +97,13 @@ def create_post(text: str, *, image: Path | None = None, document: Path | None =
     }
     if not publish:
         return {"dryRun": True, "body": body, "image": str(image) if image else None,
-                "document": str(document) if document else None}
+                "document": str(document) if document else None, "video": str(video) if video else None}
     if image:
         body["content"] = {"media": {"id": _upload("images", image), "altText": (title or "Post visual")[:120]}}
     elif document:
         body["content"] = {"media": {"id": _upload("documents", document), "title": (title or "Carousel")[:100]}}
+    elif video:
+        body["content"] = {"media": {"id": _upload_video(video), "title": (title or "Video")[:100]}}
     r = _check(requests.post(f"{BASE}/posts", headers=_headers({"Content-Type": "application/json"}), json=body, timeout=60))
     return {"dryRun": False, "postUrn": r.headers.get("x-restli-id") or r.headers.get("x-linkedin-id")}
 

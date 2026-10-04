@@ -1,13 +1,15 @@
 name: LinkedIn agent
 
 # Schedules are in UTC. Africa/Lagos is UTC+1, so:
-#   07:00 UTC = 08:00 WAT  -> post
-#   17:00 UTC = 18:00 WAT  -> carousel
-#   every 4h UTC           -> comments
+#   07:00 UTC = 08:00 WAT       -> post (daily)
+#   17:00 UTC = 18:00 WAT       -> carousel (daily)
+#   08:00 UTC = 09:00 WAT Tue/Thu/Sat -> video (3x/week)
+#   every 4h UTC                -> comments
 on:
   schedule:
     - cron: "0 7 * * *"
     - cron: "0 17 * * *"
+    - cron: "0 8 * * 2,4,6"
     - cron: "0 */4 * * *"
   workflow_dispatch:
     inputs:
@@ -19,7 +21,7 @@ on:
       lane:
         description: "Lane (for run/approve/skip)"
         type: choice
-        options: [post, carousel]
+        options: [post, carousel, video]
         default: post
 
 # Serialize runs so the state commit-back never races.
@@ -49,6 +51,9 @@ jobs:
       # Resend HTTPS email (reliable from CI, where Gmail SMTP is blocked).
       RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
       RESEND_FROM: ${{ vars.RESEND_FROM || 'LinkedIn Agent <onboarding@resend.dev>' }}
+      # Video lane: OPENAI_API_KEY enables narrated style; REPLICATE_API_TOKEN enables AI text-to-video.
+      REPLICATE_API_TOKEN: ${{ secrets.REPLICATE_API_TOKEN }}
+      VIDEO_STYLE: ${{ vars.VIDEO_STYLE }}
       # Variables (non-secret) — set in the Variables tab. Defaults applied if unset.
       AGENT_MODE: ${{ vars.AGENT_MODE || 'approve' }}
       IMAGE_PROVIDER: ${{ vars.IMAGE_PROVIDER || 'pollinations' }}
@@ -68,9 +73,10 @@ jobs:
         id: cmd
         run: |
           case "${{ github.event.schedule }}" in
-            "0 7 * * *")   ARGS="run --lane post" ;;
-            "0 17 * * *")  ARGS="run --lane carousel" ;;
-            "0 */4 * * *") ARGS="comments" ;;
+            "0 7 * * *")      ARGS="run --lane post" ;;
+            "0 17 * * *")     ARGS="run --lane carousel" ;;
+            "0 8 * * 2,4,6")  ARGS="run --lane video" ;;
+            "0 */4 * * *")    ARGS="comments" ;;
             *)
               CMD="${{ github.event.inputs.command }}"
               LANE="${{ github.event.inputs.lane }}"
@@ -92,6 +98,7 @@ jobs:
             drafts/
             images/
             carousels/
+            videos/
           if-no-files-found: ignore
           retention-days: 14
 

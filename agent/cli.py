@@ -14,7 +14,7 @@ def main(argv=None) -> int:
 
     for name in ("run", "approve", "skip"):
         s = sub.add_parser(name)
-        s.add_argument("--lane", choices=["post", "carousel"], default="post")
+        s.add_argument("--lane", choices=["post", "carousel", "video"], default="post")
         s.add_argument("--date")
         if name == "run":
             s.add_argument("--fresh", action="store_true", help="ignore today's discovery cache")
