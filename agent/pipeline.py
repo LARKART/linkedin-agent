@@ -94,6 +94,14 @@ def run(lane: str, *, force_discovery: bool = False) -> dict | None:
     if lane == "post":
         path, prompt, status = image.make_image(cap.get("imageConcept", topic["topic"]), topic["topic"], _slug(topic["topic"]), date)
         draft.update(imagePath=str(path) if path else None, imagePrompt=prompt, imageStatus=status)
+        # A post must have an image. If generation failed, do not publish text-only.
+        if not path and config.env("REQUIRE_IMAGE", "true").lower() != "false":
+            draft["status"] = "blocked"
+            draft["gate"] = "blocked-no-image"
+            state.save_draft(lane, draft)
+            notify.send("LinkedIn post: skipped (no image)",
+                        f"Topic: {topic['topic']}\nImage step: {status}\nNothing published (a post requires an image).")
+            return draft
 
     # 6/7. approve vs auto
     if m == "approve":
