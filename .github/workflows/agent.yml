@@ -42,6 +42,10 @@ jobs:
       NVIDIA_API_KEY: ${{ secrets.NVIDIA_API_KEY }}
       OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
       NOTIFY_WEBHOOK_URL: ${{ secrets.NOTIFY_WEBHOOK_URL }}
+      # Gmail email notifications (GMAIL_APP_PASSWORD is a Google App Password, not the account password).
+      GMAIL_ADDRESS: ${{ secrets.GMAIL_ADDRESS }}
+      GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
+      NOTIFY_EMAIL_TO: ${{ secrets.NOTIFY_EMAIL_TO }}
       # Variables (non-secret) — set in the Variables tab. Defaults applied if unset.
       AGENT_MODE: ${{ vars.AGENT_MODE || 'approve' }}
       IMAGE_PROVIDER: ${{ vars.IMAGE_PROVIDER || 'nvidia' }}
