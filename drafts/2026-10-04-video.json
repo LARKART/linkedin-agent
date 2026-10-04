@@ -1,0 +1,25 @@
+{
+  "date": "2026-10-04",
+  "lane": "video",
+  "status": "blocked",
+  "topic": "Coding agent harness design (not the model) determines behavior",
+  "subtopic": "Agent architecture and tool-calling orchestration",
+  "whyNow": "A fresh guide dissecting an open-source harness example is circulating now, and it directly explains the permission/tool-call gap developers keep hitting when agents behave unpredictably in production.",
+  "sources": [
+    {
+      "platform": "instagram",
+      "url": "https://www.instagram.com/p/DeFcN7Jkwbk/",
+      "velocity": 2.43
+    }
+  ],
+  "replies": [],
+  "notes": [],
+  "caption": "Same model. Same prompt. Two completely different agents.\n\nA recent breakdown of an open-source agent harness made this visible in a way most people haven't seen directly.\n\nSwap out the harness around an identical model and the behavior changes entirely. Not because the model got smarter or dumber. Because the scaffolding around it changed.\n\nThe harness is the part nobody demos.\n\nIt decides which tools the model is allowed to call. It decides what happens when a tool call fails. It decides what context gets passed forward and what gets dropped. It decides whether the model can act on its own or has to stop and check with a human first.\n\nNone of that is the model's job. It's the job of whoever built the loop around it.\n\nThis is why two teams can use the exact same foundation model and get wildly different reliability. One team spent their time on the permission structure, the retries, the context management. The other team assumed the model would just handle it.\n\nThe model is the engine. The harness is the car. People keep comparing engines.\n\nIf you're building or evaluating agents right now, the model choice is probably not where your risk is.\n\nIf you already have the tools, I can help connect the pieces.",
+  "hook": "Same model. Same prompt. Two completely different agents.",
+  "structure": "Observation → Explanation → Implication",
+  "imageConcept": "A single engine photographed twice, mounted in two very different vehicle chassis side by side — one a stripped-down go-kart frame, one a fully finished car body — same engine visible in both, emphasizing that the surrounding structure determines the outcome, not the engine itself. Clean editorial product-photography lighting, no people, no text.",
+  "gate": "blocked-no-video",
+  "videoPath": null,
+  "videoStatus": "video generation failed: ffmpeg not found",
+  "videoStyle": "animated"
+}
