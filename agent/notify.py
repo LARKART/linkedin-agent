@@ -23,6 +23,30 @@ def _webhook(title: str, message: str) -> bool:
         return False
 
 
+def _resend(title: str, message: str) -> bool:
+    """Send email over HTTPS via Resend (works from CI where SMTP is blocked).
+    Needs RESEND_API_KEY and NOTIFY_EMAIL_TO. Sender defaults to Resend's test domain."""
+    key = config.env("RESEND_API_KEY")
+    to = config.env("NOTIFY_EMAIL_TO")
+    if not key or not to:
+        return False
+    sender = config.env("RESEND_FROM", "LinkedIn Agent <onboarding@resend.dev>")
+    try:
+        r = requests.post(
+            "https://api.resend.com/emails",
+            headers={"Authorization": f"Bearer {key}", "Content-Type": "application/json"},
+            json={"from": sender, "to": [to], "subject": f"[LinkedIn agent] {title}", "text": message},
+            timeout=20,
+        )
+        if r.ok:
+            return True
+        print(f"[notify] resend failed: {r.status_code} {r.text[:200]}")
+        return False
+    except Exception as e:
+        print(f"[notify] resend failed: {e}")
+        return False
+
+
 def _email(title: str, message: str) -> bool:
     """Send via Gmail SMTP. Needs GMAIL_ADDRESS + GMAIL_APP_PASSWORD (a Google App Password,
     not the account password). NOTIFY_EMAIL_TO defaults to the sender address."""
@@ -62,7 +86,7 @@ def _email(title: str, message: str) -> bool:
 
 def send(title: str, message: str) -> bool:
     print(f"\n=== {title} ===\n{message}\n")
-    # Fire both channels; return True if either delivered.
-    sent_webhook = _webhook(title, message)
-    sent_email = _email(title, message)
-    return sent_webhook or sent_email
+    # Fire all configured channels; return True if any delivered.
+    # Resend (HTTPS) is preferred for CI; SMTP email works from a normal network (e.g. local Mac).
+    results = [_webhook(title, message), _resend(title, message), _email(title, message)]
+    return any(results)

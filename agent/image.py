@@ -27,7 +27,7 @@ def _nvidia(prompt: str, out: Path) -> Path:
         url,
         headers={"Authorization": f"Bearer {key}", "Accept": "application/json"},
         json={"prompt": prompt, "width": 1344, "height": 768, "seed": 0, "steps": 30, "cfg_scale": 3.5},
-        timeout=240,
+        timeout=100,
     )
     r.raise_for_status()
     art = (r.json().get("artifacts") or [{}])[0]
@@ -49,7 +49,7 @@ def _openai(prompt: str, out: Path) -> Path:
         "https://api.openai.com/v1/images/generations",
         headers={"Authorization": f"Bearer {key}"},
         json={"model": config.env("OPENAI_IMAGE_MODEL", "gpt-image-1"), "prompt": prompt, "size": "1536x1024"},
-        timeout=240,
+        timeout=100,
     )
     r.raise_for_status()
     b64 = r.json()["data"][0].get("b64_json")

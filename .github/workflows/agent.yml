@@ -46,6 +46,9 @@ jobs:
       GMAIL_ADDRESS: ${{ secrets.GMAIL_ADDRESS }}
       GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
       NOTIFY_EMAIL_TO: ${{ secrets.NOTIFY_EMAIL_TO }}
+      # Resend HTTPS email (reliable from CI, where Gmail SMTP is blocked).
+      RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
+      RESEND_FROM: ${{ vars.RESEND_FROM || 'LinkedIn Agent <onboarding@resend.dev>' }}
       # Variables (non-secret) — set in the Variables tab. Defaults applied if unset.
       AGENT_MODE: ${{ vars.AGENT_MODE || 'approve' }}
       IMAGE_PROVIDER: ${{ vars.IMAGE_PROVIDER || 'nvidia' }}
