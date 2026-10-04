@@ -1,25 +1,31 @@
 {
   "date": "2026-10-04",
   "lane": "video",
-  "status": "blocked",
-  "topic": "Coding agent harness design (not the model) determines behavior",
-  "subtopic": "Agent architecture and tool-calling orchestration",
-  "whyNow": "A fresh guide dissecting an open-source harness example is circulating now, and it directly explains the permission/tool-call gap developers keep hitting when agents behave unpredictably in production.",
+  "status": "published",
+  "topic": "Context engineering replaces prompt chat",
+  "subtopic": "CLAUDE.md bloat moved into on-demand Skills",
+  "whyNow": "Builders are actively restructuring Claude setups this week around skill-based loading instead of global context files, driven by real session performance problems with bloated context windows.",
   "sources": [
     {
       "platform": "instagram",
-      "url": "https://www.instagram.com/p/DeFcN7Jkwbk/",
-      "velocity": 2.43
+      "url": "https://www.instagram.com/p/DeFSJZgFNwg/",
+      "velocity": 1.08
+    },
+    {
+      "platform": "instagram",
+      "url": "https://www.instagram.com/p/DeFVe-tmhwK/",
+      "velocity": 0.44
     }
   ],
   "replies": [],
   "notes": [],
-  "caption": "Same model. Same prompt. Two completely different agents.\n\nA recent breakdown of an open-source agent harness made this visible in a way most people haven't seen directly.\n\nSwap out the harness around an identical model and the behavior changes entirely. Not because the model got smarter or dumber. Because the scaffolding around it changed.\n\nThe harness is the part nobody demos.\n\nIt decides which tools the model is allowed to call. It decides what happens when a tool call fails. It decides what context gets passed forward and what gets dropped. It decides whether the model can act on its own or has to stop and check with a human first.\n\nNone of that is the model's job. It's the job of whoever built the loop around it.\n\nThis is why two teams can use the exact same foundation model and get wildly different reliability. One team spent their time on the permission structure, the retries, the context management. The other team assumed the model would just handle it.\n\nThe model is the engine. The harness is the car. People keep comparing engines.\n\nIf you're building or evaluating agents right now, the model choice is probably not where your risk is.\n\nIf you already have the tools, I can help connect the pieces.",
-  "hook": "Same model. Same prompt. Two completely different agents.",
+  "caption": "A one-page SOP outperforms a 40-page manual every time, because nobody reads the manual before doing the task.\n\nThat's the same problem showing up in a lot of Claude setups right now.\n\nMany teams built one giant CLAUDE.md file. Every instruction, every edge case, every rule, loaded into context on every single session, regardless of the task in front of the agent.\n\nIt felt thorough. In practice, it just made the context window heavier and the agent's attention more diluted.\n\nWhat builders are shifting toward instead: splitting that knowledge into separate skills that only load when the task actually calls for them. The agent doesn't carry the full manual into every conversation. It pulls the relevant section when the work requires it.\n\nThis is just how operations teams already document real workflows. Nobody hands a new hire one document covering every process in the company. They hand them the SOP for the task they're doing today.\n\nAgent context is starting to get treated the same way: not one static file to maintain, but a library of focused instructions the agent reaches for on demand.\n\nThe reliability gain isn't from a smarter model. It's from giving the agent less to hold onto at once.\n\nIf you're building with Claude or any agent framework right now, worth asking: is your context file documentation, or is it a dumping ground?",
+  "hook": "A one-page SOP outperforms a 40-page manual every time, because nobody reads the manual before doing the task.",
   "structure": "Observation → Explanation → Implication",
-  "imageConcept": "A single engine photographed twice, mounted in two very different vehicle chassis side by side — one a stripped-down go-kart frame, one a fully finished car body — same engine visible in both, emphasizing that the surrounding structure determines the outcome, not the engine itself. Clean editorial product-photography lighting, no people, no text.",
-  "gate": "blocked-no-video",
-  "videoPath": null,
-  "videoStatus": "video generation failed: ffmpeg not found",
-  "videoStyle": "animated"
+  "imageConcept": "A cluttered, overstuffed three-ring binder sitting closed on a desk next to a single crisp index card with one clear instruction on it, soft editorial lighting, shallow depth of field emphasizing the index card as the only sharp object in frame",
+  "gate": "passed",
+  "videoPath": "/home/runner/work/linkedin-agent/linkedin-agent/videos/2026-10-04/context-engineering-replaces-prompt-chat.mp4",
+  "videoStatus": "generated (animated)",
+  "videoStyle": "animated",
+  "postUrn": "urn:li:ugcPost:7512622267474980865"
 }

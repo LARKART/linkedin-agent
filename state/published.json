@@ -70,5 +70,33 @@
       }
     ],
     "status": "published"
+  },
+  {
+    "date": "2026-10-04",
+    "publishedAt": "2026-10-04T21:18:47.145768+00:00",
+    "postUrn": "urn:li:ugcPost:7512622267474980865",
+    "lane": "video",
+    "topic": "Context engineering replaces prompt chat",
+    "subtopic": "CLAUDE.md bloat moved into on-demand Skills",
+    "hook": "A one-page SOP outperforms a 40-page manual every time, because nobody reads the manual before doing the task.",
+    "caption": "A one-page SOP outperforms a 40-page manual every time, because nobody reads the manual before doing the task.\n\nThat's the same problem showing up in a lot of Claude setups right now.\n\nMany teams built one giant CLAUDE.md file. Every instruction, every edge case, every rule, loaded into context on every single session, regardless of the task in front of the agent.\n\nIt felt thorough. In practice, it just made the context window heavier and the agent's attention more diluted.\n\nWhat builders are shifting toward instead: splitting that knowledge into separate skills that only load when the task actually calls for them. The agent doesn't carry the full manual into every conversation. It pulls the relevant section when the work requires it.\n\nThis is just how operations teams already document real workflows. Nobody hands a new hire one document covering every process in the company. They hand them the SOP for the task they're doing today.\n\nAgent context is starting to get treated the same way: not one static file to maintain, but a library of focused instructions the agent reaches for on demand.\n\nThe reliability gain isn't from a smarter model. It's from giving the agent less to hold onto at once.\n\nIf you're building with Claude or any agent framework right now, worth asking: is your context file documentation, or is it a dumping ground?",
+    "imagePrompt": null,
+    "imagePath": null,
+    "documentPath": null,
+    "videoPath": "/home/runner/work/linkedin-agent/linkedin-agent/videos/2026-10-04/context-engineering-replaces-prompt-chat.mp4",
+    "videoStyle": "animated",
+    "sources": [
+      {
+        "platform": "instagram",
+        "url": "https://www.instagram.com/p/DeFSJZgFNwg/",
+        "velocity": 1.08
+      },
+      {
+        "platform": "instagram",
+        "url": "https://www.instagram.com/p/DeFVe-tmhwK/",
+        "velocity": 0.44
+      }
+    ],
+    "status": "published"
   }
 ]
