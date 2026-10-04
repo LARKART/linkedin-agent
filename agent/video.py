@@ -26,9 +26,18 @@ def _ffprobe() -> str:
     return shutil.which("ffprobe") or _ffmpeg().replace("ffmpeg", "ffprobe")
 
 
+def _have_edge_tts() -> bool:
+    try:
+        import edge_tts  # noqa: F401
+        return True
+    except Exception:
+        return False
+
+
 def available_styles() -> list[str]:
     styles = ["animated"]
-    if config.env("OPENAI_API_KEY"):
+    # Narration is free via edge-tts (no key); OpenAI TTS is an optional upgrade.
+    if _have_edge_tts() or config.env("OPENAI_API_KEY"):
         styles.append("narrated")
     if config.env("REPLICATE_API_TOKEN"):
         styles.append("ai")
@@ -68,7 +77,23 @@ def _slideshow(pngs: list[Path], out: Path, per: float = 4.0, xf: float = 0.6) -
 
 
 def _tts(script: str, out_mp3: Path) -> Path | None:
-    """OpenAI TTS -> mp3. Returns None if no key."""
+    """Text-to-speech -> mp3. Prefers free edge-tts; falls back to OpenAI TTS if a key is set."""
+    # 1) edge-tts (Microsoft neural voices, free, no key, works server-side).
+    if _have_edge_tts():
+        try:
+            import asyncio
+            import edge_tts
+            voice = config.env("EDGE_TTS_VOICE", "en-US-GuyNeural")
+
+            async def _gen():
+                await edge_tts.Communicate(script[:4000], voice).save(str(out_mp3))
+
+            asyncio.run(_gen())
+            if out_mp3.exists() and out_mp3.stat().st_size > 2000:
+                return out_mp3
+        except Exception as e:
+            print(f"[video] edge-tts failed, trying OpenAI: {e}")
+    # 2) OpenAI TTS (optional upgrade).
     key = config.env("OPENAI_API_KEY")
     if not key:
         return None
@@ -111,7 +136,7 @@ def make_video(topic: dict, style: str, slug: str, date: str) -> tuple[Path | No
         _, pngs = carousel.render(spec, out_dir / slug)
 
         silent = out_dir / f"{slug}.mp4"
-        if style == "narrated" and config.env("OPENAI_API_KEY"):
+        if style == "narrated":
             audio = _tts(_narration_script(spec), out_dir / f"{slug}.mp3")
             if audio:
                 # pace slides to the narration length
