@@ -2,9 +2,12 @@
 from __future__ import annotations
 
 import base64
+import urllib.parse
+from io import BytesIO
 from pathlib import Path
 
 import requests
+from PIL import Image
 
 from . import config, llm
 
@@ -43,6 +46,24 @@ def _nvidia(prompt: str, out: Path) -> Path:
     return out
 
 
+def _pollinations(prompt: str, out: Path) -> Path:
+    """Free FLUX image endpoint over HTTPS (reliable from CI). No API key."""
+    q = urllib.parse.quote(prompt[:1800], safe="")
+    url = (f"https://image.pollinations.ai/prompt/{q}"
+           f"?width=1344&height=768&model=flux&nologo=true&seed=0")
+    r = requests.get(url, timeout=120)
+    r.raise_for_status()
+    data = r.content
+    if len(data) < 5000:
+        raise ImageError("image looks like a blank placeholder")
+    im = Image.open(BytesIO(data)).convert("RGB")
+    w, h = im.size
+    # Trim the bottom strip where the pollinations.ai watermark sits.
+    im = im.crop((0, 0, w, h - max(1, int(h * 0.06))))
+    im.save(out)
+    return out
+
+
 def _openai(prompt: str, out: Path) -> Path:
     key = config.env("OPENAI_API_KEY", required=True)
     r = requests.post(
@@ -60,9 +81,9 @@ def _openai(prompt: str, out: Path) -> Path:
 
 
 def generate(prompt: str, filename: str) -> Path:
-    provider = config.env("IMAGE_PROVIDER", "nvidia")
+    provider = config.env("IMAGE_PROVIDER", "pollinations")
     out = config.IMAGES / f"{filename}.png"
-    fn = _openai if provider == "openai" else _nvidia
+    fn = {"openai": _openai, "nvidia": _nvidia, "pollinations": _pollinations}.get(provider, _pollinations)
     return fn(prompt + STYLE_SUFFIX, out)
 
 

@@ -51,7 +51,7 @@ jobs:
       RESEND_FROM: ${{ vars.RESEND_FROM || 'LinkedIn Agent <onboarding@resend.dev>' }}
       # Variables (non-secret) — set in the Variables tab. Defaults applied if unset.
       AGENT_MODE: ${{ vars.AGENT_MODE || 'approve' }}
-      IMAGE_PROVIDER: ${{ vars.IMAGE_PROVIDER || 'nvidia' }}
+      IMAGE_PROVIDER: ${{ vars.IMAGE_PROVIDER || 'pollinations' }}
       LINKEDIN_API_VERSION: ${{ vars.LINKEDIN_API_VERSION || '202601' }}
       TZ: Africa/Lagos
     steps:
