@@ -1,0 +1,48 @@
+{
+  "date": "2026-10-04",
+  "lane": "carousel",
+  "status": "blocked",
+  "topic": "Claude Code Mods",
+  "subtopic": "Plugin-style customization layer for Claude Code",
+  "whyNow": "Four separate YouTube channels published mod-focused tutorials within the same 18-35 hour window with strong comment engagement, signaling a genuine feature-adoption spike rather than a single creator's hype",
+  "sources": [
+    {
+      "platform": "youtube",
+      "url": "https://www.youtube.com/watch?v=Rn4nmFRPe0s",
+      "velocity": 117.05
+    },
+    {
+      "platform": "youtube",
+      "url": "https://www.youtube.com/watch?v=9hetShMMp2s",
+      "velocity": 114.21
+    },
+    {
+      "platform": "youtube",
+      "url": "https://www.youtube.com/watch?v=XaYubuLtW8M",
+      "velocity": 59.68
+    },
+    {
+      "platform": "youtube",
+      "url": "https://www.youtube.com/watch?v=uvIopT_2sY0",
+      "velocity": 34.02
+    },
+    {
+      "platform": "instagram",
+      "url": "https://www.instagram.com/p/DeEDcrNCu8i/",
+      "velocity": 5.5
+    }
+  ],
+  "replies": [],
+  "notes": [],
+  "documentPath": "/home/runner/work/linkedin-agent/linkedin-agent/carousels/2026-10-04/carousel.pdf",
+  "title": "Claude Code Mods: Why Developers Are Rebuilding Their Own Agent",
+  "slideReview": {
+    "pass": true,
+    "problems": []
+  },
+  "caption": "Four different Claude Code tutorials showed up this week, all covering the same thing: mods.\n\nNot a new model. Not a new feature announcement. A customization layer.\n\nWorth paying attention to, because of what it signals.\n\nMods let developers write their own functions to intercept what the agent does mid-task, add custom panels for visibility, and redirect its behavior with plain instructions instead of hardcoded rules.\n\nThat's the same shift I keep seeing across automation generally.\n\nFirst you get a tool that does a task. Then you get a layer that lets you control how it does that task. That control layer is usually where the real value shows up, not in the original tool itself.\n\nAn agent that just runs is a demo.\n\nAn agent you can observe, interrupt, and redirect is closer to something you'd actually trust in a real workflow.\n\nThe interesting part isn't the mod itself. It's that Claude Code is being treated less like a fixed product and more like infrastructure people build on top of.\n\nThat's usually a sign a tool is maturing, not just trending.\n\nIf you're building with Claude Code or exploring agent workflows, happy to compare notes on architecture.",
+  "hook": "Four different Claude Code tutorials showed up this week, all covering the same thing: mods.",
+  "structure": "Signal/Data -> Interpretation -> Business implication",
+  "imageConcept": "An editorial close-up of a physical mixing board or modular synth patch panel, cables rerouted between channels, shot with shallow depth of field and natural studio light — visualizing a fixed system being rewired into something configurable, no screens or tech cliches.",
+  "gate": "FAILED"
+}
