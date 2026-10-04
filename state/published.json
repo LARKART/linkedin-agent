@@ -1,1 +1,38 @@
-[]
+[
+  {
+    "date": "2026-10-04",
+    "publishedAt": "2026-10-04T07:35:14.961350+00:00",
+    "postUrn": "urn:li:share:7512415019490230272",
+    "lane": "post",
+    "topic": "Always-on AI agents moving into production tools",
+    "subtopic": "OpenAI Dots and ChatGPT Work turning chat apps into autonomous digital workers",
+    "hook": "There's a shift happening in how AI agents get deployed, and it's worth paying attention to.",
+    "caption": "There's a shift happening in how AI agents get deployed, and it's worth paying attention to.\n\nFor the last two years, most AI tools have been on-demand. You open a chat window, ask a question, get an answer, and the agent goes back to sleep.\n\nThe conversation around OpenAI's Dots and ChatGPT's work-focused agents points somewhere different: agents that stay active across Slack, email, GitHub, and the browser, working while you're not watching.\n\nThat's a meaningful change, not a feature update.\n\nAn on-demand chatbot only needs human-in-the-loop at the moment you're using it. An always-on agent needs it designed into the system itself: what it's allowed to touch, when it escalates, what gets logged, what requires approval before it goes out the door.\n\nMost businesses experimenting with agents right now are still thinking in chatbot terms. Ask a question, review the answer, move on.\n\nAn agent that reads your inbox, opens pull requests, or posts in Slack overnight needs guardrails before it needs intelligence. The interesting engineering problem isn't making the agent smarter. It's deciding where it's allowed to act without you, and building the checkpoints for everywhere else.\n\nIf you're building or evaluating agent systems for your team, that's the question to start with: not what can it do, but what should it be trusted to do unsupervised.\n\nWhat's the first process you'd actually trust to run without you watching it?",
+    "imagePrompt": "A single office desk at night, lit only by a laptop screen showing a quiet chat interface, with an empty chair pushed in — conveying work continuing to happen while the person is away, shot in a clean editorial photography style with strong shadow and minimal color.",
+    "imagePath": null,
+    "documentPath": null,
+    "sources": [
+      {
+        "platform": "tiktok",
+        "url": "https://www.tiktok.com/@kodekloud/video/7691154961840852245",
+        "velocity": 1038.42
+      },
+      {
+        "platform": "tiktok",
+        "url": "https://www.tiktok.com/@bengusberg/video/7692646462072704270",
+        "velocity": 158.03
+      },
+      {
+        "platform": "youtube",
+        "url": "https://www.youtube.com/watch?v=BzS93V2zFTg",
+        "velocity": 45.94
+      },
+      {
+        "platform": "youtube",
+        "url": "https://www.youtube.com/watch?v=y12lBg43rE0",
+        "velocity": 20.11
+      }
+    ],
+    "status": "published"
+  }
+]

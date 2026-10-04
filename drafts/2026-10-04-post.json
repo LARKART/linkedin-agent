@@ -1,55 +1,41 @@
 {
   "date": "2026-10-04",
   "lane": "post",
-  "status": "staged",
-  "topic": "Claude Code Mods",
-  "subtopic": "Agentic coding tooling upgrades",
-  "whyNow": "At least five separate YouTube uploads in the last 18-35 hours independently cover the same new Claude Code mods feature, showing a concentrated, fresh spike in creator attention around one specific product update.",
+  "status": "published",
+  "topic": "Always-on AI agents moving into production tools",
+  "subtopic": "OpenAI Dots and ChatGPT Work turning chat apps into autonomous digital workers",
+  "whyNow": "Multiple fresh sources (TikTok and YouTube, under 24-80 hours old) are breaking down OpenAI's Dots launch with strong velocity, signaling a genuine platform shift rather than a one-off feature release",
   "sources": [
     {
-      "platform": "youtube",
-      "url": "https://www.youtube.com/watch?v=Rn4nmFRPe0s",
-      "velocity": 116.18
+      "platform": "tiktok",
+      "url": "https://www.tiktok.com/@kodekloud/video/7691154961840852245",
+      "velocity": 1038.42
+    },
+    {
+      "platform": "tiktok",
+      "url": "https://www.tiktok.com/@bengusberg/video/7692646462072704270",
+      "velocity": 158.03
     },
     {
       "platform": "youtube",
-      "url": "https://www.youtube.com/watch?v=9hetShMMp2s",
-      "velocity": 115.76
+      "url": "https://www.youtube.com/watch?v=BzS93V2zFTg",
+      "velocity": 45.94
     },
     {
       "platform": "youtube",
-      "url": "https://www.youtube.com/watch?v=XaYubuLtW8M",
-      "velocity": 61.01
-    },
-    {
-      "platform": "youtube",
-      "url": "https://www.youtube.com/watch?v=xG9UIliOX3E",
-      "velocity": 35.33
-    },
-    {
-      "platform": "youtube",
-      "url": "https://www.youtube.com/watch?v=uvIopT_2sY0",
-      "velocity": 34.44
-    },
-    {
-      "platform": "youtube",
-      "url": "https://www.youtube.com/watch?v=Zu-hJAHKJug",
-      "velocity": 17.52
-    },
-    {
-      "platform": "youtube",
-      "url": "https://www.youtube.com/watch?v=DP7mgLUKN_U",
-      "velocity": 11.04
+      "url": "https://www.youtube.com/watch?v=y12lBg43rE0",
+      "velocity": 20.11
     }
   ],
   "replies": [],
   "notes": [],
-  "caption": "Five different YouTube channels covered the same Claude Code mods update in the last day and a half.\n\nThat kind of concentrated attention usually means one of two things: either the update is genuinely useful, or it's a small change that looks exciting in a 10-minute video.\n\nI haven't tested the mods myself yet, so I can't tell you which one this is.\n\nBut the direction is worth watching. Claude Code has mostly been customized through prompts and instructions. If mods start letting you configure behavior closer to the tool-call level, that's a meaningfully different kind of control than writing a better system prompt.\n\nFor anyone building agent workflows that need to run reliably in production, that distinction matters more than the demo. Prompt-level tweaks are easy to ship and easy to break. Anything that moves customization into the tooling layer tends to be more stable, but also harder to get right the first time.\n\nI'll wait for people to actually build with it before deciding how much of this is a real shift versus a good week of content.\n\nIf you've tried the mods already, I'd genuinely like to know what's configurable versus what's just a prompt with a new name.",
-  "hook": "Five different YouTube channels covered the same Claude Code mods update in the last day and a half.",
-  "structure": "Observation → Explanation → Implication",
-  "imageConcept": "A close-up editorial shot of a mechanic's socket wrench set, open and organized in its case, each socket a slightly different size - a visual metaphor for granular, swappable configuration versus a single all-purpose tool.",
+  "caption": "There's a shift happening in how AI agents get deployed, and it's worth paying attention to.\n\nFor the last two years, most AI tools have been on-demand. You open a chat window, ask a question, get an answer, and the agent goes back to sleep.\n\nThe conversation around OpenAI's Dots and ChatGPT's work-focused agents points somewhere different: agents that stay active across Slack, email, GitHub, and the browser, working while you're not watching.\n\nThat's a meaningful change, not a feature update.\n\nAn on-demand chatbot only needs human-in-the-loop at the moment you're using it. An always-on agent needs it designed into the system itself: what it's allowed to touch, when it escalates, what gets logged, what requires approval before it goes out the door.\n\nMost businesses experimenting with agents right now are still thinking in chatbot terms. Ask a question, review the answer, move on.\n\nAn agent that reads your inbox, opens pull requests, or posts in Slack overnight needs guardrails before it needs intelligence. The interesting engineering problem isn't making the agent smarter. It's deciding where it's allowed to act without you, and building the checkpoints for everywhere else.\n\nIf you're building or evaluating agent systems for your team, that's the question to start with: not what can it do, but what should it be trusted to do unsupervised.\n\nWhat's the first process you'd actually trust to run without you watching it?",
+  "hook": "There's a shift happening in how AI agents get deployed, and it's worth paying attention to.",
+  "structure": "New development → Why it matters → What to do",
+  "imageConcept": "A single office desk at night, lit only by a laptop screen showing a quiet chat interface, with an empty chair pushed in — conveying work continuing to happen while the person is away, shot in a clean editorial photography style with strong shadow and minimal color.",
   "gate": "passed",
   "imagePath": null,
-  "imagePrompt": "A close-up editorial shot of a mechanic's socket wrench set, open and organized in its case, each socket a slightly different size - a visual metaphor for granular, swappable configuration versus a single all-purpose tool.",
-  "imageStatus": "text-only (image provider unreachable after retries: HTTPSConnectionPool(host='ai.api.nvidia.com', port=443): Read timed out. (read timeout=240))"
+  "imagePrompt": "A single office desk at night, lit only by a laptop screen showing a quiet chat interface, with an empty chair pushed in — conveying work continuing to happen while the person is away, shot in a clean editorial photography style with strong shadow and minimal color.",
+  "imageStatus": "text-only (image provider unreachable after retries: HTTPSConnectionPool(host='ai.api.nvidia.com', port=443): Read timed out. (read timeout=100))",
+  "postUrn": "urn:li:share:7512415019490230272"
 }
