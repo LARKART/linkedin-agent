@@ -36,16 +36,28 @@ def _email(title: str, message: str) -> bool:
     msg["From"] = sender
     msg["To"] = to
     msg.set_content(message)
+    pw = app_pw.replace(" ", "")  # app passwords are shown with spaces
+    ctx = ssl.create_default_context()
+    # 465 implicit SSL first (reliable on GitHub runners); fall back to 587 STARTTLS.
+    errors = []
     try:
-        ctx = ssl.create_default_context()
-        with smtplib.SMTP("smtp.gmail.com", 587, timeout=30) as s:
-            s.starttls(context=ctx)
-            s.login(sender, app_pw.replace(" ", ""))  # app passwords are shown with spaces
+        with smtplib.SMTP_SSL("smtp.gmail.com", 465, timeout=30, context=ctx) as s:
+            s.login(sender, pw)
             s.send_message(msg)
         return True
     except Exception as e:
-        print(f"[notify] email failed: {e}")
-        return False
+        errors.append(f"465: {e}")
+    try:
+        with smtplib.SMTP("smtp.gmail.com", 587, timeout=30) as s:
+            s.ehlo()
+            s.starttls(context=ctx)
+            s.login(sender, pw)
+            s.send_message(msg)
+        return True
+    except Exception as e:
+        errors.append(f"587: {e}")
+    print(f"[notify] email failed: {' | '.join(errors)}")
+    return False
 
 
 def send(title: str, message: str) -> bool:
