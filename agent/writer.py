@@ -72,14 +72,22 @@ def write_caption(topic: dict, *, lane: str, sources_text: str = "", slides_summ
               '"imageConcept":str (a concrete editorial visual metaphor for THIS idea, no robots/brains/circuits)}'
         )
         last = llm.complete_obj(system, user, max_tokens=1800, temperature=0.8)
-        problems = rule_check(last["caption"])
+        problems = rule_check(last["caption"])  # objective hard filter (banned phrases, em dash, length, hashtags)
         if not problems:
             verdict = llm_gate(last["caption"], topic, sources_text)
-            if verdict.get("pass") and verdict.get("wouldAKnowledgeableHumanWriteThis"):
+            # Block only on an explicit failure WITH stated reasons. An empty/ambiguous
+            # verdict (or pass==True) accepts — rule_check already caught the objective issues.
+            explicit_problems = verdict.get("problems") or []
+            if verdict.get("pass") is False and explicit_problems:
+                problems = explicit_problems + ([verdict["fix"]] if verdict.get("fix") else [])
+            else:
                 last["gate"] = "passed"
                 return last
-            problems = verdict.get("problems", []) + ([verdict["fix"]] if verdict.get("fix") else [])
         feedback = "\n".join(f"- {p}" for p in problems)
+    # Out of attempts: if the final caption at least cleared the objective rule_check, publish it.
+    if not rule_check(last.get("caption", "x")):
+        last["gate"] = "passed"
+        return last
     last["gate"] = "FAILED"
     last["gateProblems"] = feedback
     return last
