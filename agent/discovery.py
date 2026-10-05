@@ -1,80 +1,95 @@
-"""Trend discovery via Apify REST (run-sync-get-dataset-items). Token read from env only."""
+"""Trend discovery from FREE, keyless sources: Google News RSS + Hacker News (Algolia).
+
+No Apify, no API keys. Both give recent, trending AI news; Hacker News adds real engagement
+signals (points/comments) so the selector can rank by velocity. Optional: set USE_APIFY=true
+to fall back to the old Apify actors if that account has credits.
+"""
 from __future__ import annotations
 
-import random
+import xml.etree.ElementTree as ET
 from datetime import datetime, timezone
-from typing import Any
+from email.utils import parsedate_to_datetime
+from urllib.parse import quote
 
 import requests
 
 from . import config, state
 
-TIMEOUT = 300
+UA = "Mozilla/5.0 (compatible; LarkAIAgent/1.0; +https://lark.ai)"
+TIMEOUT = 45
+NEWS_QUERIES = ["AI agents", "OpenAI", "ChatGPT", "artificial intelligence", "AI automation", "Anthropic Claude"]
+HN_QUERIES = ["AI", "LLM", "agents", "OpenAI", "Anthropic"]
 
 
-def _run(actor: str, body: dict) -> list[dict]:
-    token = config.env("APIFY_TOKEN", required=True)
-    url = f"{config.APIFY_BASE}/acts/{actor}/run-sync-get-dataset-items"
-    r = requests.post(url, json=body, headers={"Authorization": f"Bearer {token}"}, timeout=TIMEOUT)
-    r.raise_for_status()
-    data = r.json()
-    return data if isinstance(data, list) else []
-
-
-def _age_hours(iso: str | None) -> float | None:
-    if not iso:
+def _age_hours(dt: datetime | None) -> float | None:
+    if not dt:
         return None
-    try:
-        dt = datetime.fromisoformat(str(iso).replace("Z", "+00:00"))
-        if dt.tzinfo is None:
-            dt = dt.replace(tzinfo=timezone.utc)
-        return max((datetime.now(timezone.utc) - dt).total_seconds() / 3600, 0.5)
-    except Exception:
-        return None
+    if dt.tzinfo is None:
+        dt = dt.replace(tzinfo=timezone.utc)
+    return max((datetime.now(timezone.utc) - dt).total_seconds() / 3600, 0.5)
 
 
-def _num(*vals: Any) -> int:
-    for v in vals:
-        if isinstance(v, (int, float)):
-            return int(v)
-    return 0
-
-
-def _norm(platform: str, raw: dict) -> dict | None:
-    if platform == "youtube":
-        posted = raw.get("date") or raw.get("uploadDate")
-        item = dict(
-            url=raw.get("url"), title=raw.get("title"), text=(raw.get("text") or raw.get("description") or "")[:1500],
-            views=_num(raw.get("viewCount"), raw.get("views")), likes=_num(raw.get("likes")),
-            comments=_num(raw.get("commentsCount")), shares=0, creator=raw.get("channelName"), posted=posted,
-        )
-    elif platform == "tiktok":
-        item = dict(
-            url=raw.get("webVideoUrl"), title=None, text=(raw.get("text") or "")[:1500],
-            views=_num(raw.get("playCount")), likes=_num(raw.get("diggCount")),
-            comments=_num(raw.get("commentCount")), shares=_num(raw.get("shareCount")),
-            creator=(raw.get("authorMeta") or {}).get("name"), posted=raw.get("createTimeISO"),
-        )
-    else:  # instagram
-        item = dict(
-            url=raw.get("url"), title=None, text=(raw.get("caption") or "")[:1500],
-            views=_num(raw.get("videoViewCount"), raw.get("videoPlayCount")), likes=_num(raw.get("likesCount")),
-            comments=_num(raw.get("commentsCount")), shares=0, creator=raw.get("ownerUsername"),
-            posted=raw.get("timestamp"),
-        )
-    if not item["url"]:
-        return None
-    item["platform"] = platform
-    age = _age_hours(item["posted"])
-    item["ageHours"] = age
-    engagement = item["likes"] + 3 * item["comments"] + 4 * item["shares"] + item["views"] * 0.02
-    item["engagement"] = int(engagement)
-    item["velocity"] = round(engagement / age, 2) if age else None  # engagement per hour
+def _finalize(item: dict) -> dict:
+    age = item.get("ageHours")
+    eng = item["likes"] + 3 * item["comments"] + 4 * item["shares"] + item["views"] * 0.02
+    eng = max(eng, 10)  # base so fresh news can still rank
+    item["engagement"] = int(eng)
+    item["velocity"] = round(eng / age, 2) if age else None
     return item
 
 
+def _google_news() -> list[dict]:
+    items: list[dict] = []
+    for q in NEWS_QUERIES:
+        url = (f"https://news.google.com/rss/search?q={quote(q + ' when:3d')}"
+               f"&hl=en-US&gl=US&ceid=US:en")
+        r = requests.get(url, headers={"User-Agent": UA}, timeout=TIMEOUT)
+        r.raise_for_status()
+        root = ET.fromstring(r.content)
+        for it in root.findall(".//item")[:12]:
+            title = (it.findtext("title") or "").strip()
+            link = (it.findtext("link") or "").strip()
+            if not link or not title:
+                continue
+            try:
+                posted = parsedate_to_datetime(it.findtext("pubDate"))
+            except Exception:
+                posted = None
+            src = it.find("{*}source")
+            desc = (it.findtext("description") or "")[:600]
+            items.append(_finalize(dict(
+                url=link, title=title, text=desc, views=0, likes=0, comments=0, shares=0,
+                creator=(src.text if src is not None else None), posted=posted.isoformat() if posted else None,
+                platform="news", ageHours=_age_hours(posted))))
+    return items
+
+
+def _hacker_news() -> list[dict]:
+    items: list[dict] = []
+    since = int(datetime.now(timezone.utc).timestamp()) - 3 * 86400
+    for q in HN_QUERIES:
+        url = ("https://hn.algolia.com/api/v1/search_by_date"
+               f"?query={quote(q)}&tags=story&numericFilters=created_at_i>{since},points>15&hitsPerPage=15")
+        r = requests.get(url, headers={"User-Agent": UA}, timeout=TIMEOUT)
+        r.raise_for_status()
+        for h in r.json().get("hits", []):
+            link = h.get("url") or f"https://news.ycombinator.com/item?id={h.get('objectID')}"
+            title = h.get("title")
+            if not title:
+                continue
+            posted = None
+            if h.get("created_at_i"):
+                posted = datetime.fromtimestamp(h["created_at_i"], tz=timezone.utc)
+            items.append(_finalize(dict(
+                url=link, title=title, text=(title or "")[:600], views=0,
+                likes=int(h.get("points") or 0), comments=int(h.get("num_comments") or 0), shares=0,
+                creator=h.get("author"), posted=posted.isoformat() if posted else None,
+                platform="hackernews", ageHours=_age_hours(posted))))
+    return items
+
+
 def discover(force: bool = False) -> list[dict]:
-    """Return normalized items. Reuses today's cache unless force=True (one scrape/day, both lanes)."""
+    """Return normalized items from free sources. Reuses today's cache unless force=True."""
     if not force:
         cached = state.load_discovery_if_today()
         if cached:
@@ -82,24 +97,19 @@ def discover(force: bool = False) -> list[dict]:
 
     items: list[dict] = []
     errors: list[str] = []
-    # Free actors only (YouTube + Instagram). TikTok actor is paid -> dropped.
-    # Queries skew toward viral/trending AI news; the selector ranks by engagement velocity.
-    jobs = [
-        ("youtube", config.YOUTUBE_ACTOR, {
-            "searchQueries": ["AI news this week", "AI agents", "OpenAI ChatGPT update", "AI automation business"],
-            "dateFilter": "week", "maxResults": 12, "sortingOrder": "relevance"}),
-        ("instagram", config.INSTAGRAM_ACTOR, {
-            "directUrls": [f"https://www.instagram.com/explore/tags/{random.choice(config.INSTAGRAM_TAGS)}/"],
-            "resultsType": "posts", "resultsLimit": 15, "onlyPostsNewerThan": "2 days"}),
-    ]
-    for platform, actor, body in jobs:
+    for name, fn in (("news", _google_news), ("hackernews", _hacker_news)):
         try:
-            for raw in _run(actor, body):
-                n = _norm(platform, raw)
-                if n:
-                    items.append(n)
-        except Exception as e:  # one platform failing must not kill the run
-            errors.append(f"{platform}: {e}")
+            items += fn()
+        except Exception as e:
+            errors.append(f"{name}: {e}")
+
+    # Dedup by URL, keep the higher-engagement copy.
+    best: dict[str, dict] = {}
+    for it in items:
+        k = it["url"]
+        if k not in best or it["engagement"] > best[k]["engagement"]:
+            best[k] = it
+    items = list(best.values())
 
     if not items:
         raise RuntimeError("Discovery returned nothing. " + "; ".join(errors))
