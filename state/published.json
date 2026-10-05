@@ -98,5 +98,28 @@
       }
     ],
     "status": "published"
+  },
+  {
+    "date": "2026-10-05",
+    "publishedAt": "2026-10-05T12:27:08.512983+00:00",
+    "postUrn": "urn:li:ugcPost:7512850862789136384",
+    "lane": "video",
+    "topic": "Agents don't need memory, they need documentation",
+    "subtopic": "agent architecture and context design",
+    "hook": "There's a pattern I keep noticing in how people talk about agent reliability.",
+    "caption": "There's a pattern I keep noticing in how people talk about agent reliability.\n\nSomething breaks, and the instinct is to say the agent needs more memory. A bigger context window. A smarter vector store. More history to pull from.\n\nBut most of the time, that's not the actual gap.\n\nThe agent doesn't need to remember more. It needs better documentation of how the business actually works.\n\nWhat counts as a qualified lead. Which exceptions matter. When to stop and ask a human instead of guessing. What \"done\" looks like for a given task.\n\nMemory stores raw history. Documentation encodes judgment.\n\nAn agent with perfect recall of every past conversation can still make bad decisions if it was never given clear rules, boundaries, and definitions to reason from.\n\nThis is why agent systems that hold up in production usually aren't built around bigger memory. They're built around clear instructions, defined tools, explicit guardrails, and a human checkpoint where judgment calls actually matter.\n\nThe orchestration around the model is doing more work than the model itself.\n\nIf you're building or evaluating an agent right now, it's worth asking: is this failing because it can't remember enough, or because it was never told clearly enough what \"good\" looks like?\n\nWhat's been your experience, memory problem or documentation problem?",
+    "imagePrompt": null,
+    "imagePath": null,
+    "documentPath": null,
+    "videoPath": "/home/runner/work/linkedin-agent/linkedin-agent/videos/2026-10-05/agents-don-t-need-memory-they-need-docum/agents-don-t-need-memory-they-need-docum-narrated.mp4",
+    "videoStyle": "narrated",
+    "sources": [
+      {
+        "platform": "hackernews",
+        "url": "https://liao.gg/blog/agents-dont-need-memory",
+        "velocity": 26.55
+      }
+    ],
+    "status": "published"
   }
 ]
