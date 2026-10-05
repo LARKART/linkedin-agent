@@ -55,7 +55,7 @@ APIFY_BASE = "https://api.apify.com/v2"
 YOUTUBE_ACTOR = "streamers~youtube-scraper"
 TIKTOK_ACTOR = "clockworks~tiktok-scraper"
 INSTAGRAM_ACTOR = "apify~instagram-scraper"
-INSTAGRAM_TAGS = ["aiagents", "claudecode", "automation", "buildinpublic"]
+INSTAGRAM_TAGS = ["ainews", "artificialintelligence", "aiagents", "openai", "chatgpt", "automation"]
 
 MAX_REPLIES_PER_POST_PER_RUN = 3
 TOPIC_WINDOW_DAYS = 14

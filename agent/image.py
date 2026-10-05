@@ -49,8 +49,8 @@ def _nvidia(prompt: str, out: Path) -> Path:
 def _pollinations(prompt: str, out: Path) -> Path:
     """Free FLUX image endpoint over HTTPS (reliable from CI). No API key."""
     q = urllib.parse.quote(prompt[:1800], safe="")
-    url = (f"https://image.pollinations.ai/prompt/{q}"
-           f"?width=1344&height=768&model=flux&nologo=true&seed=0")
+    # Free default model (flux/nologo are now paid tiers); the bottom crop removes the watermark.
+    url = f"https://image.pollinations.ai/prompt/{q}?width=1344&height=768&seed=0"
     r = requests.get(url, timeout=120)
     r.raise_for_status()
     data = r.content

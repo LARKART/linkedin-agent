@@ -82,15 +82,15 @@ def discover(force: bool = False) -> list[dict]:
 
     items: list[dict] = []
     errors: list[str] = []
+    # Free actors only (YouTube + Instagram). TikTok actor is paid -> dropped.
+    # Queries skew toward viral/trending AI news; the selector ranks by engagement velocity.
     jobs = [
         ("youtube", config.YOUTUBE_ACTOR, {
-            "searchQueries": ["AI agents", "Claude Code", "AI automation business"],
-            "dateFilter": "week", "maxResults": 10, "sortingOrder": "relevance"}),
-        ("tiktok", config.TIKTOK_ACTOR, {
-            "searchQueries": ["AI agents", "automation"], "searchSection": "/video", "resultsPerPage": 15}),
+            "searchQueries": ["AI news this week", "AI agents", "OpenAI ChatGPT update", "AI automation business"],
+            "dateFilter": "week", "maxResults": 12, "sortingOrder": "relevance"}),
         ("instagram", config.INSTAGRAM_ACTOR, {
             "directUrls": [f"https://www.instagram.com/explore/tags/{random.choice(config.INSTAGRAM_TAGS)}/"],
-            "resultsType": "posts", "resultsLimit": 15, "onlyPostsNewerThan": "1 day"}),
+            "resultsType": "posts", "resultsLimit": 15, "onlyPostsNewerThan": "2 days"}),
     ]
     for platform, actor, body in jobs:
         try:
