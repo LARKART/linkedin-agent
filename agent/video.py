@@ -313,14 +313,19 @@ def make_video(topic: dict, style: str, slug: str, date: str) -> tuple[Path | No
                 _gradient_bg(shared_bg, seed=random.randint(1, 10**6))
 
         clips = []
+        last_good = None  # reuse the last successful photo if a later scene gets rate-limited
         for i, s in enumerate(scenes):
             if per_scene_images:
                 bg = out_dir / f"bg{i}.png"
                 try:
                     _bg_image(s.get("imagePrompt", topic["topic"]), bg, seed=random.randint(1, 10**6))
+                    last_good = bg
                 except Exception as e:
-                    print(f"[video] scene {i} bg failed ({e}); gradient")
-                    _gradient_bg(bg, seed=random.randint(1, 10**6))
+                    print(f"[video] scene {i} bg rate-limited ({e}); reusing last image/gradient")
+                    if last_good:
+                        bg = last_good
+                    else:
+                        _gradient_bg(bg, seed=random.randint(1, 10**6))
             else:
                 bg = shared_bg
             ov = _text_overlay(s.get("kicker", "AI NEWS"), s["line"], i, len(scenes), out_dir / f"ov{i}.png")
