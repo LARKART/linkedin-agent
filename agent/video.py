@@ -73,8 +73,9 @@ def make_script(topic: dict) -> dict:
         "\n\nTASK: write a short, punchy LinkedIn VIDEO script about this AI-news topic. "
         "4-6 scenes. Each scene has a very short on-screen line (<= 9 words, no hashtags) and a concrete "
         "editorial image concept (a real-world scene/metaphor, no text/robots/UI). Scene 1 is the hook; "
-        "the last is a soft CTA in Paul's voice. Also write a flowing voiceover NARRATION (<= 110 words, "
-        "spoken, natural, no emojis) that tracks the scenes. State only verified facts; invent nothing."
+        "the last is a soft CTA in Paul's voice. Also write a flowing voiceover NARRATION that is punchy and "
+        "spoken, about 60-80 seconds when read aloud (roughly 140-170 words), no emojis, tracking the scenes. "
+        "State only verified facts; invent nothing."
     )
     facts = f"\nVERIFIED FACTS: {topic['verifiedFacts']}" if topic.get("verifiedFacts") else ""
     user = (
@@ -92,12 +93,21 @@ def make_script(topic: dict) -> dict:
 def _bg_image(prompt: str, out: Path, seed: int) -> Path:
     import time
     q = urllib.parse.quote((prompt + BG_SUFFIX)[:1800], safe="")
-    # Free default model (flux/nologo are paid); crop removes the watermark. Retry on rate limits.
-    url = f"https://image.pollinations.ai/prompt/{q}?width={W}&height={H}&seed={seed}"
+    token = config.env("POLLINATIONS_TOKEN")
+    if token:
+        # Token tier: flux quality + nologo + higher rate limits.
+        url = f"https://image.pollinations.ai/prompt/{q}?width={W}&height={H}&model=flux&nologo=true&seed={seed}"
+        headers = {"Authorization": f"Bearer {token}"}
+        crop = 0.0
+    else:
+        # Free anonymous tier: default model; crop removes the watermark.
+        url = f"https://image.pollinations.ai/prompt/{q}?width={W}&height={H}&seed={seed}"
+        headers = {}
+        crop = 0.06
     last = None
     for attempt in range(4):
         try:
-            r = requests.get(url, timeout=120)
+            r = requests.get(url, headers=headers, timeout=120)
             if r.status_code in (402, 429, 500, 503):
                 last = f"{r.status_code}"
                 time.sleep(4 * (attempt + 1))
@@ -105,8 +115,9 @@ def _bg_image(prompt: str, out: Path, seed: int) -> Path:
             r.raise_for_status()
             im = Image.open(BytesIO(r.content)).convert("RGB")
             w, h = im.size
-            im = im.crop((0, 0, w, h - max(1, int(h * 0.06)))).resize((W, H))
-            im.save(out)
+            if crop:
+                im = im.crop((0, 0, w, h - max(1, int(h * crop))))
+            im.resize((W, H)).save(out)
             return out
         except requests.exceptions.RequestException as e:
             last = str(e)
@@ -280,21 +291,38 @@ def make_video(topic: dict, style: str, slug: str, date: str) -> tuple[Path | No
         if style == "narrated":
             audio = _tts(spec.get("narration") or " ".join(s["line"] for s in scenes), out_dir / "vo.mp3")
         total_audio = _audio_duration(audio) if audio else None
-        per = max(3.0, (total_audio / len(scenes) + 0.5)) if total_audio else 4.0
-        per = min(per, 7.0)
+        n = len(scenes)
+        xf = 0.5
+        if total_audio:
+            # Pace scenes so total video length ~= narration length (so -shortest never truncates the voice).
+            per = (total_audio + (n - 1) * xf) / n
+            per = min(max(per, 3.0), 16.0)
+        else:
+            per = 4.0  # silent/animated: punchy ~4s scenes
 
-        # One AI background per video (anonymous Pollinations rate-limits multiple); gradient fallback.
-        bg = out_dir / "bg.png"
-        try:
-            _bg_image(scenes[0].get("imagePrompt", topic["topic"]), bg, seed=random.randint(1, 10**6))
-            bg_kind = "photo"
-        except Exception as e:
-            print(f"[video] bg image failed ({e}); using brand gradient")
-            _gradient_bg(bg, seed=random.randint(1, 10**6))
-            bg_kind = "gradient"
+        # With a Pollinations token: a distinct image per scene. Without: one image reused with
+        # varied Ken Burns moves (anonymous tier rate-limits multiple calls). Gradient fallback either way.
+        per_scene_images = bool(config.env("POLLINATIONS_TOKEN"))
+        shared_bg = None
+        if not per_scene_images:
+            shared_bg = out_dir / "bg.png"
+            try:
+                _bg_image(scenes[0].get("imagePrompt", topic["topic"]), shared_bg, seed=random.randint(1, 10**6))
+            except Exception as e:
+                print(f"[video] bg image failed ({e}); using brand gradient")
+                _gradient_bg(shared_bg, seed=random.randint(1, 10**6))
 
         clips = []
         for i, s in enumerate(scenes):
+            if per_scene_images:
+                bg = out_dir / f"bg{i}.png"
+                try:
+                    _bg_image(s.get("imagePrompt", topic["topic"]), bg, seed=random.randint(1, 10**6))
+                except Exception as e:
+                    print(f"[video] scene {i} bg failed ({e}); gradient")
+                    _gradient_bg(bg, seed=random.randint(1, 10**6))
+            else:
+                bg = shared_bg
             ov = _text_overlay(s.get("kicker", "AI NEWS"), s["line"], i, len(scenes), out_dir / f"ov{i}.png")
             clips.append(_scene_clip(bg, ov, per, out_dir / f"scene{i}.mp4", variant=i))
 

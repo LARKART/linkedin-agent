@@ -3,13 +3,13 @@ name: LinkedIn agent
 # Schedules are in UTC. Africa/Lagos is UTC+1, so:
 #   07:00 UTC = 08:00 WAT       -> post (daily)
 #   17:00 UTC = 18:00 WAT       -> carousel (daily)
-#   08:00 UTC = 09:00 WAT Tue/Thu/Sat -> video (3x/week)
+#   20:00 UTC = 21:00 WAT Tue/Thu/Sat -> video (3x/week)
 #   every 4h UTC                -> comments
 on:
   schedule:
     - cron: "0 7 * * *"
     - cron: "0 17 * * *"
-    - cron: "0 8 * * 2,4,6"
+    - cron: "0 20 * * 2,4,6"
     - cron: "0 */4 * * *"
   workflow_dispatch:
     inputs:
@@ -54,6 +54,8 @@ jobs:
       # Video lane: OPENAI_API_KEY enables narrated style; REPLICATE_API_TOKEN enables AI text-to-video.
       REPLICATE_API_TOKEN: ${{ secrets.REPLICATE_API_TOKEN }}
       VIDEO_STYLE: ${{ vars.VIDEO_STYLE }}
+      # Optional: a free Pollinations token unlocks flux quality + multiple images per video.
+      POLLINATIONS_TOKEN: ${{ secrets.POLLINATIONS_TOKEN }}
       # Variables (non-secret) — set in the Variables tab. Defaults applied if unset.
       AGENT_MODE: ${{ vars.AGENT_MODE || 'approve' }}
       IMAGE_PROVIDER: ${{ vars.IMAGE_PROVIDER || 'pollinations' }}
@@ -75,7 +77,7 @@ jobs:
           case "${{ github.event.schedule }}" in
             "0 7 * * *")      ARGS="run --lane post" ;;
             "0 17 * * *")     ARGS="run --lane carousel" ;;
-            "0 8 * * 2,4,6")  ARGS="run --lane video" ;;
+            "0 20 * * 2,4,6") ARGS="run --lane video" ;;
             "0 */4 * * *")    ARGS="comments" ;;
             *)
               CMD="${{ github.event.inputs.command }}"
