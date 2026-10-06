@@ -40,5 +40,12 @@
     "visual": "A single electrical wall socket mounted on a clean wall, but with three distinct, incompatible plug shapes approaching it from three different cables, lit with simple editorial studio lighting, no text, shallow depth of field, shot like a product photograph",
     "structure": "Observation → Explanation → Implication",
     "at": "2026-10-06T21:28:22.901791+00:00"
+  },
+  {
+    "topic": "OpenAI's Decisions API for agent tool-calling",
+    "hook": "OpenAI just shipped a Decisions API in limited preview.",
+    "visual": "A single physical fork in a warehouse conveyor belt system where packages get routed down one of three clearly labeled chutes, shot from above, cool industrial lighting, nothing futuristic or digital about it, just a mechanical decision point",
+    "structure": "New development → Why it matters → What to do",
+    "at": "2026-10-06T23:40:18.808675+00:00"
   }
 ]

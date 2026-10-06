@@ -182,5 +182,28 @@
       }
     ],
     "status": "published"
+  },
+  {
+    "date": "2026-10-06",
+    "publishedAt": "2026-10-06T23:40:18.807443+00:00",
+    "postUrn": "urn:li:ugcPost:7513382659763507200",
+    "lane": "video",
+    "topic": "OpenAI's Decisions API for agent tool-calling",
+    "subtopic": "API infrastructure for agentic workflows",
+    "hook": "OpenAI just shipped a Decisions API in limited preview.",
+    "caption": "OpenAI just shipped a Decisions API in limited preview.\n\nNot a chatbot. Not a general-purpose assistant. A narrow API that takes text or images and returns one answer from a predefined set of options.\n\nThe stated use cases: classification, routing, and choosing an agent's next action.\n\nThat last one is worth sitting with.\n\nMost teams building agents today handle \"what should the agent do next\" with prompt engineering and a pile of if/else logic wrapped around a general model. It works, but it's brittle, hard to test, and hard to explain when something goes wrong.\n\nA dedicated API for bounded decisions is a different approach. Instead of asking a model to reason freely and hoping it picks the right tool, you constrain it to a fixed set of possible answers up front.\n\nThat's a meaningful shift in how agent architecture gets talked about. Tool selection and routing stop being a side effect of a big prompt and start being their own building block.\n\nWhat's not yet clear: pricing, exact request/response format, and how this performs against the general-purpose approach most teams are using today. OpenAI hasn't published that detail, and it's still limited preview, not something you can build on generally yet.\n\nBut the direction is the interesting part. If routing and next-action selection become a standard primitive rather than something every team hand-rolls, that changes how agent systems get designed.\n\nWhat's your agent stack doing today for tool selection: a big prompt, a rules engine, or something in between?",
+    "imagePrompt": null,
+    "imagePath": null,
+    "documentPath": null,
+    "videoPath": "/home/runner/work/linkedin-agent/linkedin-agent/videos/2026-10-06/openai-s-decisions-api-for-agent-tool-ca/openai-s-decisions-api-for-agent-tool-ca.mp4",
+    "videoStyle": "animated",
+    "sources": [
+      {
+        "platform": "hackernews",
+        "url": "https://developers.openai.com/api/docs/guides/decisions",
+        "velocity": 68.46
+      }
+    ],
+    "status": "published"
   }
 ]
