@@ -1,0 +1,34 @@
+{
+  "date": "2026-10-06",
+  "lane": "carousel",
+  "status": "published",
+  "topic": "Open standards wars for AI agents",
+  "subtopic": "Interoperability protocols emerging from multiple vendors at once",
+  "whyNow": "Two separate open-standard announcements for AI agents landed within the same news cycle, showing multiple serious players racing to define interoperability before fragmentation locks in",
+  "sources": [
+    {
+      "platform": "news",
+      "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTFBoSWlHRnBkU0xVZGRVLXpKZm9GWHdzS3M3VmlZRWIwY0c1RV80eU9NODdldElIeGROc2VlTjdSUUpCZkliZFlEeHc3dXNYcE1VaE5idlhCT2ZDMWg3ZWluNjFoLTRWUFZIRXF0VmFZWnhVd3NNcHFwcTVUZlZ2Zw?oc=5",
+      "velocity": 7.12
+    },
+    {
+      "platform": "news",
+      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE9Wak1PRVBlczd0bHFDYWlra19ZcDVhVDVHSEliUkxyRnllc2NWZkZYLUd6dWw1THlMOV9leU9peUxYS0NuZTVia1lPcHRCSXQ2QWZjb0hVSFB5VDNhMzNOMzkwSUpQOUtQYmUzRVBET2c?oc=5",
+      "velocity": 5.81
+    }
+  ],
+  "replies": [],
+  "notes": [],
+  "documentPath": "/home/runner/work/linkedin-agent/linkedin-agent/carousels/2026-10-06/carousel.pdf",
+  "title": "Why AI agents just entered their protocol wars",
+  "slideReview": {
+    "pass": true,
+    "problems": []
+  },
+  "caption": "Two separate companies just announced competing standards for how AI agents talk to each other, in the same week.\n\nMeta, Walmart, and Stripe are backing one open agent protocol. Sierra shipped its own Personal Agent Protocol days later.\n\nNeither is arguing about what agents can do. They're arguing about how agents connect to other systems, tools, and each other.\n\nThat's a familiar pattern. Every useful piece of technology goes through this phase. The capability exists before the plumbing gets agreed on.\n\nWhen I build agent workflows right now, I don't bet the architecture on any single protocol winning. The orchestration layer, the tool calling, the guardrails, the memory and retrieval, all of that gets built so it can sit on top of whatever standard ends up mattering. The business logic shouldn't care which protocol wins.\n\nThat's the part worth paying attention to if you're building with agents today. Protocols will keep shifting for a while. The workflow design is what actually holds up.\n\nIf you're already running agent workflows, where are you feeling the most friction, the tool connections or the actual decision logic?",
+  "hook": "Two separate companies just announced competing standards for how AI agents talk to each other, in the same week.",
+  "structure": "Observation → Explanation → Implication",
+  "imageConcept": "A single electrical wall socket mounted on a clean wall, but with three distinct, incompatible plug shapes approaching it from three different cables, lit with simple editorial studio lighting, no text, shallow depth of field, shot like a product photograph",
+  "gate": "passed",
+  "postUrn": "urn:li:ugcPost:7513349459389595649"
+}
