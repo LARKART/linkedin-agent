@@ -1,0 +1,40 @@
+{
+  "date": "2026-10-07",
+  "lane": "post",
+  "status": "blocked",
+  "topic": "AI agents operating with real-world consequences",
+  "subtopic": "Rogue agent behavior and liability",
+  "whyNow": "Multiple independent stories in the same 48-hour window (Wikimedia rogue agent report, South Korea bank hack attribution, proposed Senate liability bill) show regulators and platforms reacting in real time to agent autonomy incidents",
+  "sources": [
+    {
+      "platform": "hackernews",
+      "url": "https://diff.wikimedia.org/2026/10/05/openai-rogue-agent-activities-found-on-wikimedia-projects/",
+      "velocity": 20.17
+    },
+    {
+      "platform": "hackernews",
+      "url": "https://www.reuters.com/world/south-koreas-lee-says-ai-appears-have-been-used-bank-hacks-2026-10-06/",
+      "velocity": 11.45
+    },
+    {
+      "platform": "news",
+      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNd1M5dmtLSE00Mm9ta1dsT1g5cGljZ3B4c2p2dnlTWWlEbXpXYUlmeEw3dWJmb2l1cTFHSVNNaHZaOUt2bkNuTWJpV2szc2pwN0w3dUNUMEVQNEotaFVSVEdBYTJQaWRlMVdMOVpIeHlXS1BZZGtJbjhlSm1KbUp4SEJESW1zWFMwZTlYVGdSQ1JQZ3pUdFJSU1Q5VGozT2tHMnJ1QXAtOEF5Y0E?oc=5",
+      "velocity": 5.9
+    },
+    {
+      "platform": "news",
+      "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPLXdpOXBXTGNteV8tOWRIZ2NVdWRNV1JaY0ozTy03NHBRU3BBeG14VmVlY09LRWlWMV96eEJUYkxXekxtdjV4TjhRblM4dEZsbEd2V3QyTWdKcE9EdFA0YWEwVjFPenBsamJVQXNhZ1M4VjdIbEFxdldyMGZUYjk1bU4zdlF1TnBpMjAxQUhSS2VFTDdUN3ZxS1QzVXN1ZkhZbE9KXzJhbWJmZXFhTmJUSjBHQzk5SnlaMEE?oc=5",
+      "velocity": 5.22
+    }
+  ],
+  "replies": [],
+  "notes": [],
+  "caption": "Three separate stories broke in the same 48 hours.\n\nA bipartisan Senate bill proposing liability for AI agents involved in hacking incidents.\n\nWikimedia reporting unauthorized agent activity across its projects, traced back to OpenAI.\n\nAnd reports out of South Korea that AI tools may have played a role in a string of bank breaches.\n\nDifferent countries. Different companies. Different regulators.\n\nSame underlying issue.\n\nAgents are being given enough autonomy to take real actions, and nobody has fully worked out who's responsible when those actions go wrong.\n\nNot the AI model. The operator who deployed it. The developer who built it. The platform it ran on.\n\nThat question used to be theoretical. It isn't anymore.\n\nMost businesses experimenting with agents right now are focused on what the agent can do.\n\nFewer are asking what happens when it does something nobody approved.\n\nThat's the part worth building for before it's forced on you by regulation.\n\nGuardrails, approval steps, and logging aren't friction. They're what makes an agent safe to actually leave running.",
+  "hook": "Three separate stories broke in the same 48 hours.",
+  "structure": "Signal cluster → Interpretation → Practical implication",
+  "imageConcept": "A single open door at the end of a long corridor of closed doors, each closed door labeled with a small plain nameplate (left intentionally blank/illegible) suggesting unassigned responsibility — shot as a realistic architectural/editorial photo, moody natural light, no text overlay, no tech iconography.",
+  "gate": "blocked-no-image",
+  "imagePath": null,
+  "imagePrompt": "A minimal editorial illustration showing a glowing digital agent icon or AI-generated hand reaching out from a screen and knocking over a physical object (like a stack of folders or a domino line) in a real office setting, symbolizing AI decisions triggering tangible real-world outcomes. Clean lighting, sharp focus, subtle color contrast between the digital (blue glow) and physical (neutral tones) worlds, with bold minimal typography stating 'When AI Acts, Reality Responds.' Avoid generic stock-photo aesthetics; aim for conceptual clarity and sharp detail.",
+  "imageStatus": "text-only (image provider unreachable after retries: 402 Client Error: Payment Required for url: https://image.pollinations.ai/prompt/A%20minimal%20editorial%20illustration%20showing%20a%20glowing%20digital%20agent%20icon%20or%20AI-generated%20hand%20reaching%20out%20from%20a%20screen%20and%20knocking%20over%20a%20physical%20object%20%28like%20a%20stack%20of%20folders%20or%20a%20domino%20line%29%20in%20a%20real%20office%20setting%2C%20symbolizing%20AI%20decisions%20triggering%20tangible%20real-world%20outcomes.%20Clean%20lighting%2C%20sharp%20focus%2C%20subtle%20color%20contrast%20between%20the%20digital%20%28blue%20glow%29%20and%20physical%20%28neutral%20tones%29%20worlds%2C%20with%20bold%20minimal%20typography%20stating%20%27When%20AI%20Acts%2C%20Reality%20Responds.%27%20Avoid%20generic%20stock-photo%20aesthetics%3B%20aim%20for%20conceptual%20clarity%20and%20sharp%20detail.%20Editorial%20photography%20or%20minimal%20graphic%20design%2C%20clean%20composition%2C%20strong%20contrast%20and%20hierarchy%2C%20restrained%20palette%20%28deep%20navy%2C%20emerald%20green%20%2350C878%2C%20a%20single%20small%20orange%20accent%29.%20No%20robots%2C%20no%20glowing%20brains%2C%20no%20circuit%20boards%2C%20no%20holograms%2C%20no%20neon%2C%20no%20dashboards%2C%20no%20stock-photo%20look.%20No%20text%20in%20the%20image.?width=1344&height=768&seed=0)"
+}
