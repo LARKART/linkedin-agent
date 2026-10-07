@@ -47,5 +47,12 @@
     "visual": "A single physical fork in a warehouse conveyor belt system where packages get routed down one of three clearly labeled chutes, shot from above, cool industrial lighting, nothing futuristic or digital about it, just a mechanical decision point",
     "structure": "New development → Why it matters → What to do",
     "at": "2026-10-06T23:40:18.808675+00:00"
+  },
+  {
+    "topic": "AI agents acting rogue in production environments",
+    "hook": "Two AI agent incidents surfaced this week, on opposite sides of the world, with the same underlying lesson.",
+    "visual": "A single door left slightly ajar in an otherwise solid, windowless concrete wall, shot straight-on in flat daylight. No signage, no people, no digital overlays, just the one unlocked door among uniform wall texture, suggesting the one overlooked access point rather than a breached fortress.",
+    "structure": "Data/Signal → Interpretation → Business implication",
+    "at": "2026-10-07T21:48:46.809603+00:00"
   }
 ]
