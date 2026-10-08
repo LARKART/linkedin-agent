@@ -54,5 +54,12 @@
     "visual": "A single door left slightly ajar in an otherwise solid, windowless concrete wall, shot straight-on in flat daylight. No signage, no people, no digital overlays, just the one unlocked door among uniform wall texture, suggesting the one overlooked access point rather than a breached fortress.",
     "structure": "Data/Signal → Interpretation → Business implication",
     "at": "2026-10-07T21:48:46.809603+00:00"
+  },
+  {
+    "topic": "AI agents being pulled into enterprise security incidents",
+    "hook": "Three unrelated AI agent stories broke in the same week. They're all describing the same gap.",
+    "visual": "A single closed door with a keycard reader beside it, but the reader has been removed and replaced with a bare wire hanging loose — an editorial still-life shot, muted office lighting, nothing futuristic, just an access point missing its control mechanism",
+    "structure": "Signal → interpretation → business implication",
+    "at": "2026-10-08T21:51:48.416980+00:00"
   }
 ]
