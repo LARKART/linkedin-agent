@@ -61,5 +61,12 @@
     "visual": "A single closed door with a keycard reader beside it, but the reader has been removed and replaced with a bare wire hanging loose — an editorial still-life shot, muted office lighting, nothing futuristic, just an access point missing its control mechanism",
     "structure": "Signal → interpretation → business implication",
     "at": "2026-10-08T21:51:48.416980+00:00"
+  },
+  {
+    "topic": "Personal AI agents leaking sensitive data across contexts",
+    "hook": "Security researchers recently built a test agent, gave it access to a mock Gmail inbox with fake AWS credentials and CRM exports, then sent it a routine-looking message from a \"colleague.\"",
+    "visual": "An editorial still-life of a single manila folder with a red confidential stamp, half-slid out of an open desk drawer, positioned directly beside an open laptop showing a generic chat-style interface with blurred text bubbles — the folder's contents visibly spilling toward the screen, shot in natural office light with shallow depth of field to emphasize the boundary between the two objects.",
+    "structure": "Signal/Data → Interpretation → Business implication",
+    "at": "2026-10-09T00:15:18.163126+00:00"
   }
 ]
