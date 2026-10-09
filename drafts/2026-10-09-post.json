@@ -1,0 +1,35 @@
+{
+  "date": "2026-10-09",
+  "lane": "post",
+  "status": "blocked",
+  "topic": "Enterprises race to give AI agents machine identities",
+  "subtopic": "Zero trust and identity security for non-human actors",
+  "whyNow": "Multiple fresh enterprise/security outlets (SailPoint Navigate recap, Zero Trust identity piece, BEC-style social engineering warning) are converging on the same theme within the last 1-2 hours, signaling a fast-forming narrative shift from agent hype to agent governance",
+  "sources": [
+    {
+      "platform": "news",
+      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNWF9XcjY4VDJ4eTFGNkFyRUU3bzNJRHI3QVBJb3NPeG55aTItVnJ4WVloa3RUN2NHNktINC1aa3YxYnZIcWxoNGFQN1MxZFNkNk5NUHFHbVdKdE9Md3lZWGRVODFsdk9uQUYyR1h6WU95V3A0QVBWckNnS3pzZkIybjBSd3VTRjhCb1NQMzd0VnVLWVNmLWJNc3prZENEOXUweTBqc3BUVmRxSVdzdFhETjFNVQ?oc=5",
+      "velocity": 17.85
+    },
+    {
+      "platform": "news",
+      "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNbHZZSENvN3luY2g5aVNMTnBUeWU1R1JZM19fV2JnbUNlWE1WRHIxMWN3UHhiZUM4bDlva3dIRWpUOExhcmpaSnRUUFpKeVVlSjFqUk82Q29rNWJCa2ZLaFhJbGc0ZmwxNWNpVS1pVUpXdlgxQ0duWlFTX3hCbG5uTWVhUU9EQjE1dE00YVMwR2FIUFRFSnZGQTRvaXlQS3hjNVdoQTB6N0VWVkwybnpYZl9vbWNLQTVHS0RQWA?oc=5",
+      "velocity": 13.69
+    },
+    {
+      "platform": "news",
+      "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxONm1ITlEtb2Nyb01hdkJ2MzhDX3R3bFBTMlVXeVlRRXZUQWs4M3RWVFZoTkxEVmFqSVNNbFFaWG90dDZaWS03QXJDZHhkVFZmSHFOQTd4bWpjQm5yRnFVVldUcVNobmM2NmdyNkxxN3M2VUtiRk1JbmJzU0hfZmlqdkpGNE52ZnF4WjlqYV9jOHFvdkxM?oc=5",
+      "velocity": 9.95
+    }
+  ],
+  "replies": [],
+  "notes": [],
+  "caption": "Something is shifting in how enterprises talk about AI agents.\n\nA few weeks ago the conversation was about capability. What can the agent do, how fast, how autonomously.\n\nNow the conversation is about identity. Does this agent have a defined access scope? Can you audit what it touched? If it makes a mistake, can you trace exactly which workflow, which credential, which step?\n\nThat's not a minor detail. It's a different category of problem.\n\nAn employee gets onboarded with a role, permissions, and a manager who's accountable for their output. Most agent deployments still don't have that. They get API keys, broad tool access, and nobody checking whether the scope still makes sense three months later.\n\nSecurity teams are starting to treat agents like non-human identities that need the same governance as a contractor: least-privilege access, session logging, and a clear owner.\n\nThis matters for anyone building automation right now, not just large enterprises. If an agent can read your CRM, send emails, or touch customer data, someone should be able to answer: what can it actually do, and who approved that.\n\nThe interesting shift isn't agents getting smarter. It's businesses realizing that capability without accountability is just a bigger blast radius.\n\nIf you're building agentic workflows, where does access control sit in your setup right now?",
+  "hook": "Something is shifting in how enterprises talk about AI agents.",
+  "structure": "Observation → Explanation → Implication",
+  "imageConcept": "A clean editorial shot of an employee badge/access card reader, but the badge is blank and slightly askew in the slot — visually implying an unverified identity trying to gain entry. Minimal, high-contrast, office security-desk realism, no tech clutter.",
+  "gate": "blocked-no-image",
+  "imagePath": null,
+  "imagePrompt": "Create a conceptual editorial illustration showing a digital identity badge or ID card being issued to a robotic/AI agent icon, set against a clean corporate background with subtle network or circuit patterns symbolizing enterprise systems. Include a clear visual metaphor for 'identity verification' (e.g., a glowing key, fingerprint, or access token) connecting to multiple AI agent icons, conveying enterprises assigning secure machine identities to AI agents. Keep typography minimal and purposeful, avoid stock-photo office clutter, and ensure all elements directly reinforce the theme of machine identity management for AI agents.",
+  "imageStatus": "text-only (image provider unreachable after retries: 402 Client Error: Payment Required for url: https://image.pollinations.ai/prompt/Create%20a%20conceptual%20editorial%20illustration%20showing%20a%20digital%20identity%20badge%20or%20ID%20card%20being%20issued%20to%20a%20robotic%2FAI%20agent%20icon%2C%20set%20against%20a%20clean%20corporate%20background%20with%20subtle%20network%20or%20circuit%20patterns%20symbolizing%20enterprise%20systems.%20Include%20a%20clear%20visual%20metaphor%20for%20%27identity%20verification%27%20%28e.g.%2C%20a%20glowing%20key%2C%20fingerprint%2C%20or%20access%20token%29%20connecting%20to%20multiple%20AI%20agent%20icons%2C%20conveying%20enterprises%20assigning%20secure%20machine%20identities%20to%20AI%20agents.%20Keep%20typography%20minimal%20and%20purposeful%2C%20avoid%20stock-photo%20office%20clutter%2C%20and%20ensure%20all%20elements%20directly%20reinforce%20the%20theme%20of%20machine%20identity%20management%20for%20AI%20agents.%20Editorial%20photography%20or%20minimal%20graphic%20design%2C%20clean%20composition%2C%20strong%20contrast%20and%20hierarchy%2C%20restrained%20palette%20%28deep%20navy%2C%20emerald%20green%20%2350C878%2C%20a%20single%20small%20orange%20accent%29.%20No%20robots%2C%20no%20glowing%20brains%2C%20no%20circuit%20boards%2C%20no%20holograms%2C%20no%20neon%2C%20no%20dashboards%2C%20no%20stock-photo%20look.%20No%20text%20in%20the%20image.?width=1344&height=768&seed=0)"
+}
