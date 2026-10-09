@@ -1,0 +1,38 @@
+{
+  "date": "2026-10-09",
+  "lane": "carousel",
+  "status": "blocked",
+  "topic": "AI coding agents produce more code but not more working software",
+  "subtopic": "Coding agent output quality vs quantity",
+  "whyNow": "Fresh Ars Technica piece plus related HN discussion on why coding agents feel dumb are converging on the same theme within hours of each other",
+  "sources": [
+    {
+      "platform": "news",
+      "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOY0N5OUtIcEtlOWpOYlo1cnZnTXNYbEdpUnBZUDlSeE5IdXRBcXBmNlJBZ010QjFKOUxVYUNRclkzSGNreWV4Tkd0VUpRT2dzUE9OWUwybjdqYlkxaFBiUVRZUHgtbXh1a18zeE1BX3VKU1c5bHAzaXJ4a2tsTW5MbGM3dVNNejBGeHlTNWFEUjZiNVJFOGtueQ?oc=5",
+      "velocity": 5.71
+    },
+    {
+      "platform": "hackernews",
+      "url": "https://mtlynch.io/why-are-coding-agents-so-dumb/",
+      "velocity": 10.67
+    },
+    {
+      "platform": "hackernews",
+      "url": "https://github.com/pingdotgg/ts-rust",
+      "velocity": 16.66
+    }
+  ],
+  "replies": [],
+  "notes": [],
+  "documentPath": "/home/runner/work/linkedin-agent/linkedin-agent/carousels/2026-10-09/carousel.pdf",
+  "title": "More Code Isn't More Software",
+  "slideReview": {
+    "pass": true,
+    "problems": []
+  },
+  "caption": "There's a pattern showing up across engineering teams right now: AI coding agents are producing a lot more code. The amount of shippable, maintained software isn't growing at the same rate.\n\nThat gap is the interesting part.\n\nSwipe through for what's actually happening:\n\n- Your agent shipped 10x more code this month\n- Code volume is up. Shippable software isn't\n- Agents optimize for output, not outcomes\n- Where the gap actually gets created\n- Treat the agent like a fast junior engineer\n- Engineering discipline becomes the differentiator\n- Measure shipped software, not lines generated\n\nAn agent will happily generate a working-looking function, a new endpoint, a full feature branch, in minutes. What it won't do on its own is decide whether that code fits the architecture, handles the edge cases, or should exist at all.\n\nThat judgment still sits with a human.\n\nThe teams getting real value out of these tools aren't the ones generating the most code. They're the ones who kept their review process, their testing discipline, and their architectural standards intact while the agent took over the typing.\n\nMore output without more oversight just moves the bottleneck. It doesn't remove it.\n\nIf you're building with Claude Code or similar tools, what's the current ratio of agent-written code that actually makes it to production without rework?",
+  "hook": "AI coding agents are producing a lot more code right now. The amount of shippable software isn't growing at the same rate.",
+  "structure": "Signal/Observation → Interpretation → Practical implication",
+  "imageConcept": "A single oversized stack of printed code pages on one side of a desk, and a much smaller, neatly bound finished manual on the other side, lit simply in natural daylight, shot like an editorial still life about volume versus output.",
+  "gate": "FAILED"
+}
