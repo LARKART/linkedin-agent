@@ -1,0 +1,25 @@
+{
+  "date": "2026-10-10",
+  "lane": "post",
+  "status": "blocked",
+  "topic": "Coding agents producing weak results despite hype",
+  "subtopic": "Agent reliability gap between demo and daily use",
+  "whyNow": "Active front-page discussion comparing agent capability claims against actual day-to-day coding agent performance",
+  "sources": [
+    {
+      "platform": "hackernews",
+      "url": "https://mtlynch.io/why-are-coding-agents-so-dumb/",
+      "velocity": 16.03
+    }
+  ],
+  "replies": [],
+  "notes": [],
+  "caption": "There's a pattern in the current discussion around coding agents underperforming their demos.\n\nThe common assumption is that the model isn't smart enough yet.\n\nBut the more detailed breakdowns point somewhere else entirely: context handling and tool orchestration.\n\nAn agent can be excellent at writing code and still fail in production because:\n\n- it loses track of earlier context\n- it calls the wrong tool at the wrong step\n- it doesn't know when to ask instead of guess\n- error handling around it is thin or missing\n\nThat's not a model problem. That's an architecture problem.\n\nThe same gap shows up outside of coding agents too. A workflow that looks flawless in a demo often breaks the moment real data, edge cases, or multiple steps get involved.\n\nThe fix usually isn't a better model. It's better structure around the model: clearer instructions, defined tools, retry logic, and a point where a human checks the output before it goes further.\n\nThat's the less exciting part of building with agents. It's also the part that actually determines whether something works on day one hundred, not just day one.\n\nWhere have you seen this gap show up, in coding tools or elsewhere?",
+  "hook": "There's a pattern in the current discussion around coding agents underperforming their demos.",
+  "structure": "Observation → Explanation → Implication",
+  "imageConcept": "A single wobbly scaffolding structure holding up one perfectly placed brick wall on a construction site, shot in flat editorial daylight — the wall looks finished and solid, but the support behind it is visibly improvised and thin, making clear the finished result depends entirely on the unglamorous structure propping it up.",
+  "gate": "blocked-no-image",
+  "imagePath": null,
+  "imagePrompt": "A single wobbly scaffolding structure holding up one perfectly placed brick wall on a construction site, shot in flat editorial daylight — the wall looks finished and solid, but the support behind it is visibly improvised and thin, making clear the finished result depends entirely on the unglamorous structure propping it up.",
+  "imageStatus": "text-only (image provider unreachable after retries: HTTPSConnectionPool(host='image.pollinations.ai', port=443): Read timed out. (read timeout=120))"
+}
