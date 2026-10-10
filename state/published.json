@@ -312,5 +312,33 @@
       }
     ],
     "status": "published"
+  },
+  {
+    "date": "2026-10-10",
+    "publishedAt": "2026-10-10T23:22:26.862571+00:00",
+    "postUrn": "urn:li:ugcPost:7514827715502321664",
+    "lane": "video",
+    "topic": "Operating systems building containment layers for AI agents",
+    "subtopic": "OS-level sandboxing (Microsoft Execution Containers, Apple disk access controls)",
+    "hook": "An AI agent with full filesystem access can read your tax documents, your SSH keys, and your browser history in the same session it uses to rename a folder.",
+    "caption": "An AI agent with full filesystem access can read your tax documents, your SSH keys, and your browser history in the same session it uses to rename a folder.\n\nThat's the default most agent tools ship with today. Broad permissions, because narrow ones are harder to build and slower to demo.\n\nPlatform vendors are starting to push back on that default. The direction is OS-level containment: agents get a defined execution boundary instead of the same access as the logged-in user. Permissions get scoped at the system level instead of trusted to whatever the agent's own code claims it will do.\n\nIf that holds, it changes where businesses need to focus.\n\nRight now, most teams handle agent safety themselves. Custom scopes, manual approval steps, someone reviewing what an agent touched after the fact. That works, but it's fragile. It depends on every team building guardrails correctly, every time, for every agent.\n\nOS-level containment moves part of that responsibility down a layer. The operating system decides what's reachable before your workflow logic even runs.\n\nThat doesn't remove the need for human-in-the-loop review. It just means the floor is higher. Less depends on someone remembering to scope a permission correctly.\n\nFor anyone deploying agents into real business workflows right now, this is worth watching. The permission model you design around today may not be the one you're working with in six months.\n\nWhat's your current approach to scoping what an agent can actually touch?",
+    "imagePrompt": null,
+    "imagePath": null,
+    "documentPath": null,
+    "videoPath": "/home/runner/work/linkedin-agent/linkedin-agent/videos/2026-10-10/operating-systems-building-containment-l/operating-systems-building-containment-l.mp4",
+    "videoStyle": "animated",
+    "sources": [
+      {
+        "platform": "hackernews",
+        "url": "https://blogs.windows.com/windowsdeveloper/2026/10/07/microsoft-execution-containers-policy-driven-containment-for-ai-agents/",
+        "velocity": 5.99
+      },
+      {
+        "platform": "news",
+        "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPUDRRTmRHQURXblJFVlgwQ2JpNUFLRVVBcTNRVmxKRDgzX1pWbVUxZHJfeUNBTlVsT0pQV2Q5T2xOdzFjQ1FlQ09NajFXU2xfODhBNVNiOWJIbnphRTF2VDJzNWEtTHBpOFlGSmw5Tmtnc2FUcjBKTVExeDZ6MFNlSFh2ODlYWmh4OFZtb1FR?oc=5",
+        "velocity": 3.21
+      }
+    ],
+    "status": "published"
   }
 ]

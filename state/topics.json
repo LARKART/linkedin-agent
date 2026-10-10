@@ -75,5 +75,12 @@
     "visual": "A single sticky note with a vague one-line task description pinned to a wall-sized, dense architectural blueprint — the note is legible and simple, the blueprint behind it is detailed and slightly out of focus, visually capturing the gap between a thin instruction and the real complexity it's meant to address. Shot like an editorial office photo, natural light, no screens or tech imagery.",
     "structure": "Observation → Explanation → Implication",
     "at": "2026-10-10T20:29:57.593346+00:00"
+  },
+  {
+    "topic": "Operating systems building containment layers for AI agents",
+    "hook": "An AI agent with full filesystem access can read your tax documents, your SSH keys, and your browser history in the same session it uses to rename a folder.",
+    "visual": "A single key sitting on a desk next to a large ring of labeled keys, but the single key is isolated inside a clear glass box with one small slot cut into it — a visual metaphor for scoped access versus full access, shot as a simple, high-contrast editorial still life with natural light.",
+    "structure": "Problem → Unexpected insight → Practical takeaway",
+    "at": "2026-10-10T23:22:26.864285+00:00"
   }
 ]
