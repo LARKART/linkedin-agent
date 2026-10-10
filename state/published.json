@@ -289,5 +289,28 @@
       }
     ],
     "status": "published"
+  },
+  {
+    "date": "2026-10-10",
+    "publishedAt": "2026-10-10T20:29:57.592023+00:00",
+    "postUrn": "urn:li:ugcPost:7514784307803168768",
+    "lane": "carousel",
+    "topic": "Coding agents producing shallow or confused output",
+    "subtopic": "Why coding agents underperform expectations in real repos",
+    "hook": "A 97-comment Hacker News thread this week was full of developers venting about coding agents producing shallow, confused output on real repos.",
+    "caption": "A 97-comment Hacker News thread this week was full of developers venting about coding agents producing shallow, confused output on real repos.\n\nReading through it, the complaints weren't really about model intelligence.\n\nThey were about missing context. People were dropping agents into large codebases with no structure, no constraints, and no way for the agent to check its own work, then calling the output dumb.\n\nA new engineer handed a vague ticket and zero onboarding would struggle the same way. Nobody blames the engineer's intelligence for that.\n\nThe interesting part of the thread was how often the fix people landed on had nothing to do with switching models. It was giving the agent clearer scope, relevant files, and some way to verify its own output before handing it back.\n\nThat's closer to workflow design than AI capability.\n\nIf you're working with Claude Code or similar tools, what's the gap, context, scoping, or verification, that trips your agent up most often?\n\nIf you're building something similar, happy to compare architectures.",
+    "imagePrompt": null,
+    "imagePath": null,
+    "documentPath": "/home/runner/work/linkedin-agent/linkedin-agent/carousels/2026-10-10/carousel.pdf",
+    "videoPath": null,
+    "videoStyle": null,
+    "sources": [
+      {
+        "platform": "hackernews",
+        "url": "https://mtlynch.io/why-are-coding-agents-so-dumb/",
+        "velocity": 12.88
+      }
+    ],
+    "status": "published"
   }
 ]

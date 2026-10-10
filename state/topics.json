@@ -68,5 +68,12 @@
     "visual": "An editorial still-life of a single manila folder with a red confidential stamp, half-slid out of an open desk drawer, positioned directly beside an open laptop showing a generic chat-style interface with blurred text bubbles — the folder's contents visibly spilling toward the screen, shot in natural office light with shallow depth of field to emphasize the boundary between the two objects.",
     "structure": "Signal/Data → Interpretation → Business implication",
     "at": "2026-10-09T00:15:18.163126+00:00"
+  },
+  {
+    "topic": "Coding agents producing shallow or confused output",
+    "hook": "A 97-comment Hacker News thread this week was full of developers venting about coding agents producing shallow, confused output on real repos.",
+    "visual": "A single sticky note with a vague one-line task description pinned to a wall-sized, dense architectural blueprint — the note is legible and simple, the blueprint behind it is detailed and slightly out of focus, visually capturing the gap between a thin instruction and the real complexity it's meant to address. Shot like an editorial office photo, natural light, no screens or tech imagery.",
+    "structure": "Observation → Explanation → Implication",
+    "at": "2026-10-10T20:29:57.593346+00:00"
   }
 ]

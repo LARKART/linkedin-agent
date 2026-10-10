@@ -1,0 +1,31 @@
+{
+  "date": "2026-10-10",
+  "lane": "carousel",
+  "status": "published",
+  "topic": "Coding agents producing shallow or confused output",
+  "subtopic": "Why coding agents underperform expectations in real repos",
+  "whyNow": "Active HN discussion (97 comments) dissecting a hands-on frustration that's highly relevant to anyone building with Claude Code or agentic coding tools right now",
+  "sources": [
+    {
+      "platform": "hackernews",
+      "url": "https://mtlynch.io/why-are-coding-agents-so-dumb/",
+      "velocity": 12.88
+    }
+  ],
+  "replies": [],
+  "notes": [
+    "SKIPPED (unverified security story): Personal AI agents leaking sensitive data in shared workspaces - could not corroborate with independent sources"
+  ],
+  "documentPath": "/home/runner/work/linkedin-agent/linkedin-agent/carousels/2026-10-10/carousel.pdf",
+  "title": "Your Coding Agent Isn't Dumb. It's Unonboarded.",
+  "slideReview": {
+    "pass": true,
+    "problems": []
+  },
+  "caption": "A 97-comment Hacker News thread this week was full of developers venting about coding agents producing shallow, confused output on real repos.\n\nReading through it, the complaints weren't really about model intelligence.\n\nThey were about missing context. People were dropping agents into large codebases with no structure, no constraints, and no way for the agent to check its own work, then calling the output dumb.\n\nA new engineer handed a vague ticket and zero onboarding would struggle the same way. Nobody blames the engineer's intelligence for that.\n\nThe interesting part of the thread was how often the fix people landed on had nothing to do with switching models. It was giving the agent clearer scope, relevant files, and some way to verify its own output before handing it back.\n\nThat's closer to workflow design than AI capability.\n\nIf you're working with Claude Code or similar tools, what's the gap, context, scoping, or verification, that trips your agent up most often?\n\nIf you're building something similar, happy to compare architectures.",
+  "hook": "A 97-comment Hacker News thread this week was full of developers venting about coding agents producing shallow, confused output on real repos.",
+  "structure": "Observation → Explanation → Implication",
+  "imageConcept": "A single sticky note with a vague one-line task description pinned to a wall-sized, dense architectural blueprint — the note is legible and simple, the blueprint behind it is detailed and slightly out of focus, visually capturing the gap between a thin instruction and the real complexity it's meant to address. Shot like an editorial office photo, natural light, no screens or tech imagery.",
+  "gate": "passed",
+  "postUrn": "urn:li:ugcPost:7514784307803168768"
+}
