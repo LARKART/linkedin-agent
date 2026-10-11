@@ -1,0 +1,30 @@
+{
+  "date": "2026-10-11",
+  "lane": "post",
+  "status": "blocked",
+  "topic": "Coding agents produce shallow fixes without understanding root causes",
+  "subtopic": "AI-assisted development reliability",
+  "whyNow": "Two independent posts this week dig into coding agent reliability from different angles: one asking why agents produce dumb output, another sharing a five-month experiment with a structured debugging process, generating over 150 comments combined",
+  "sources": [
+    {
+      "platform": "hackernews",
+      "url": "https://mtlynch.io/why-are-coding-agents-so-dumb/",
+      "velocity": 8.46
+    },
+    {
+      "platform": "hackernews",
+      "url": "https://www.cockroachlabs.com/blog/experiment-running-hospital-code/",
+      "velocity": 7.99
+    }
+  ],
+  "replies": [],
+  "notes": [],
+  "caption": "A pattern keeps showing up in developer discussions about coding agents.\n\nAsk an agent to fix a bug, and it often patches the symptom. The error disappears. The underlying cause stays put.\n\nA few builders have been writing about this in detail recently. One thread breaks down why agents default to shallow fixes. Another documents a five month experiment where a team built a structured review process, treating each bug almost like a patient: symptoms, history, diagnosis, before any fix gets proposed. Over 150 comments between the two, mostly from people who have hit the same wall.\n\nThe mechanism is simple once you see it. Coding agents are optimized to produce output that resolves the immediate error. They are not naturally forced to ask what caused it, whether it will recur, or what else depends on that code path.\n\nThat is not a model limitation. It is a process gap.\n\nThe teams getting better results are the ones adding structure around the agent. Clear diagnostic steps. Required context before a fix is accepted. A review stage that checks for root cause, not just passing tests.\n\nThis matters for anyone using Claude Code or similar tools for real production work. The agent is a capable contributor. It still needs a workflow that asks the right questions before it writes the fix.\n\nWhat does your review process look like when an agent proposes a fix?",
+  "hook": "A pattern keeps showing up in developer discussions about coding agents.",
+  "structure": "Observation → Explanation → Implication",
+  "imageConcept": "A single X-ray light box on a clean desk, showing an X-ray of a circuit-free mechanical object like an old typewriter or clock mechanism, with a magnifying glass resting beside it. No screens, no code. The metaphor: looking past the visible symptom to the structure underneath.",
+  "gate": "blocked-no-image",
+  "imagePath": null,
+  "imagePrompt": "A clean, flat illustration or diagram showing a magnifying glass over a small visible crack in code (surface-level patch) while a larger hidden crack/root system lies underneath labeled 'root cause'. Use a minimal tech-editorial style with clear typography, muted professional color palette (navy, white, one accent color), and a simple visual metaphor (like an iceberg or tree roots) to show the gap between visible fixes and underlying causes in code.",
+  "imageStatus": "text-only (image provider unreachable after retries: 402 Client Error: Payment Required for url: https://image.pollinations.ai/prompt/A%20clean%2C%20flat%20illustration%20or%20diagram%20showing%20a%20magnifying%20glass%20over%20a%20small%20visible%20crack%20in%20code%20%28surface-level%20patch%29%20while%20a%20larger%20hidden%20crack%2Froot%20system%20lies%20underneath%20labeled%20%27root%20cause%27.%20Use%20a%20minimal%20tech-editorial%20style%20with%20clear%20typography%2C%20muted%20professional%20color%20palette%20%28navy%2C%20white%2C%20one%20accent%20color%29%2C%20and%20a%20simple%20visual%20metaphor%20%28like%20an%20iceberg%20or%20tree%20roots%29%20to%20show%20the%20gap%20between%20visible%20fixes%20and%20underlying%20causes%20in%20code.%20Editorial%20photography%20or%20minimal%20graphic%20design%2C%20clean%20composition%2C%20strong%20contrast%20and%20hierarchy%2C%20restrained%20palette%20%28deep%20navy%2C%20emerald%20green%20%2350C878%2C%20a%20single%20small%20orange%20accent%29.%20No%20robots%2C%20no%20glowing%20brains%2C%20no%20circuit%20boards%2C%20no%20holograms%2C%20no%20neon%2C%20no%20dashboards%2C%20no%20stock-photo%20look.%20No%20text%20in%20the%20image.?width=1344&height=768&seed=0)"
+}
