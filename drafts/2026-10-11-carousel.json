@@ -1,0 +1,34 @@
+{
+  "date": "2026-10-11",
+  "lane": "carousel",
+  "status": "published",
+  "topic": "Coding agents producing dumb or shallow output under real workloads",
+  "subtopic": "Why coding agents struggle with hard engineering problems",
+  "whyNow": "Two independent high-engagement HN threads in the last 48 hours dig into practical failure patterns of coding agents on real, large codebases, generating active technical debate rather than hype.",
+  "sources": [
+    {
+      "platform": "hackernews",
+      "url": "https://momo5502.com/posts/2026-10-09-game-decompilation/",
+      "velocity": 21.69
+    },
+    {
+      "platform": "hackernews",
+      "url": "https://mtlynch.io/why-are-coding-agents-so-dumb/",
+      "velocity": 7.38
+    }
+  ],
+  "replies": [],
+  "notes": [],
+  "documentPath": "/home/runner/work/linkedin-agent/linkedin-agent/carousels/2026-10-11/carousel.pdf",
+  "title": "Why coding agents feel dumb on real codebases",
+  "slideReview": {
+    "pass": true,
+    "problems": []
+  },
+  "caption": "Two separate threads on Hacker News this week dug into the same failure pattern in coding agents working on large, real codebases.\n\nOne was a 500-billion-token decompilation experiment. The other was a breakdown of why coding agents feel shallow on hard engineering problems.\n\nDifferent setups. Same conclusion.\n\nThe agents weren't failing because the model was weak. They were failing because the task had no checkpoints.\n\nA giant open-ended prompt like 'refactor this module' gives the agent no way to know if step three was actually correct before it builds step four on top of it. Errors compound quietly until the output looks confident and wrong.\n\nCompare that to a workflow broken into narrow steps: generate a function, run the tests, confirm the output, then move to the next piece. Each step has a validation point before the agent is allowed to continue.\n\nSame model. Same capability. Completely different reliability.\n\nThat's the actual lesson from both threads. Coding agents don't need smarter models as much as they need defined checkpoints, feedback loops, and scopes narrow enough that failure shows up immediately instead of three steps later.\n\nArchitecture is doing more work than people give it credit for.\n\nWhere is your agent currently working without a checkpoint?",
+  "hook": "Two separate Hacker News threads this week looked at coding agents on large, real codebases and landed on the same conclusion.",
+  "structure": "Signal → Interpretation → Business implication",
+  "imageConcept": "A single long assembly line shown from above, but every few meters there's a physical gate or turnstile the item must pass through before continuing — some gates open, one gate closed with an item stopped at it. Clean industrial photography, no screens or digital overlays, natural warehouse lighting, shot like an editorial piece about process control rather than technology.",
+  "gate": "passed",
+  "postUrn": "urn:li:ugcPost:7515151739306553344"
+}

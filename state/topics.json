@@ -82,5 +82,12 @@
     "visual": "A single key sitting on a desk next to a large ring of labeled keys, but the single key is isolated inside a clear glass box with one small slot cut into it — a visual metaphor for scoped access versus full access, shot as a simple, high-contrast editorial still life with natural light.",
     "structure": "Problem → Unexpected insight → Practical takeaway",
     "at": "2026-10-10T23:22:26.864285+00:00"
+  },
+  {
+    "topic": "Coding agents producing dumb or shallow output under real workloads",
+    "hook": "Two separate Hacker News threads this week looked at coding agents on large, real codebases and landed on the same conclusion.",
+    "visual": "A single long assembly line shown from above, but every few meters there's a physical gate or turnstile the item must pass through before continuing — some gates open, one gate closed with an item stopped at it. Clean industrial photography, no screens or digital overlays, natural warehouse lighting, shot like an editorial piece about process control rather than technology.",
+    "structure": "Signal → Interpretation → Business implication",
+    "at": "2026-10-11T20:49:59.802287+00:00"
   }
 ]
