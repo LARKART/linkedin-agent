@@ -47,21 +47,37 @@ def _nvidia(prompt: str, out: Path) -> Path:
 
 
 def _pollinations(prompt: str, out: Path) -> Path:
-    """Free FLUX image endpoint over HTTPS (reliable from CI). No API key."""
+    """Pollinations image over HTTPS. Uses POLLINATIONS_TOKEN (flux/nologo) when set;
+    the anonymous tier now returns 402, so a token is effectively required."""
+    import time
     q = urllib.parse.quote(prompt[:1800], safe="")
-    # Free default model (flux/nologo are now paid tiers); the bottom crop removes the watermark.
-    url = f"https://image.pollinations.ai/prompt/{q}?width=1344&height=768&seed=0"
-    r = requests.get(url, timeout=120)
-    r.raise_for_status()
-    data = r.content
-    if len(data) < 5000:
-        raise ImageError("image looks like a blank placeholder")
-    im = Image.open(BytesIO(data)).convert("RGB")
-    w, h = im.size
-    # Trim the bottom strip where the pollinations.ai watermark sits.
-    im = im.crop((0, 0, w, h - max(1, int(h * 0.06))))
-    im.save(out)
-    return out
+    token = config.env("POLLINATIONS_TOKEN")
+    if token:
+        url = f"https://image.pollinations.ai/prompt/{q}?width=1344&height=768&model=flux&nologo=true&seed=0"
+        headers = {"Authorization": f"Bearer {token}"}
+        crop = 0.0
+    else:
+        url = f"https://image.pollinations.ai/prompt/{q}?width=1344&height=768&seed=0"
+        headers = {}
+        crop = 0.06
+    last = None
+    for attempt in range(4):
+        r = requests.get(url, headers=headers, timeout=120)
+        if r.status_code in (402, 429, 500, 503):
+            last = f"{r.status_code}"
+            time.sleep(4 * (attempt + 1))
+            continue
+        r.raise_for_status()
+        data = r.content
+        if len(data) < 5000:
+            raise ImageError("image looks like a blank placeholder")
+        im = Image.open(BytesIO(data)).convert("RGB")
+        w, h = im.size
+        if crop:
+            im = im.crop((0, 0, w, h - max(1, int(h * crop))))
+        im.save(out)
+        return out
+    raise ImageError(f"pollinations unreachable after retries: {last}")
 
 
 def _openai(prompt: str, out: Path) -> Path:
