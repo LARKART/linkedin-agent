@@ -1,0 +1,29 @@
+{
+  "date": "2026-10-12",
+  "lane": "carousel",
+  "status": "published",
+  "topic": "AI coding agents generate volume, not real software progress",
+  "subtopic": "Coding agent output quality vs. quantity",
+  "whyNow": "Front-page HN story with strong early velocity (166 velocity at just 6 hours old) sparking active debate about what coding agents actually deliver in production teams",
+  "sources": [
+    {
+      "platform": "hackernews",
+      "url": "https://arstechnica.com/ai/2026/10/ai-coding-agents-generate-more-code-but-not-more-software/",
+      "velocity": 165.99
+    }
+  ],
+  "replies": [],
+  "notes": [],
+  "documentPath": "/home/runner/work/linkedin-agent/linkedin-agent/carousels/2026-10-12/carousel.pdf",
+  "title": "AI Agents Write More Code. They Don't Ship More Software.",
+  "slideReview": {
+    "pass": true,
+    "problems": []
+  },
+  "caption": "More pull requests. Same release cadence.\n\nThat's the pattern showing up in discussions about AI coding agents right now. Teams generate more code, more commits, more PRs. The number of features that actually ship stays roughly the same.\n\nIt's worth sitting with why.\n\nTyping speed was never the constraint in most software teams. Code review, testing, deployment approval, product decisions, and integration work were always the slow parts. An agent that writes functions faster doesn't touch any of that.\n\nThis is the same lesson I keep seeing play out in automation work generally. Speeding up one step in a pipeline doesn't speed up the pipeline. If the bottleneck is the handoff between systems, or the approval step, or the review queue, adding velocity upstream just creates a bigger backlog in front of the real constraint.\n\nBefore wiring an AI agent into a workflow, it's worth mapping where the process actually slows down. Sometimes it's generation. More often it's the steps around it: review, validation, handoffs between tools and people.\n\nWhat's the slowest step in your delivery process right now?",
+  "hook": "More pull requests. Same release cadence.",
+  "structure": "Observation → Explanation → Implication",
+  "imageConcept": "An editorial overhead shot of a single narrow funnel with a wide, fast-moving stream of paper pouring in at the top but only a thin, steady trickle coming out the bottom — clean studio lighting, minimal composition, no text.",
+  "gate": "passed",
+  "postUrn": "urn:li:ugcPost:7515554823262470144"
+}

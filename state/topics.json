@@ -103,5 +103,12 @@
     "visual": "An editorial overhead shot of a long, unrolled paper scroll or printout covered in dense code/diff markings, trailing off a desk edge onto the floor, with a single red pen correction mark partway through — visualizing sustained, long-running work that still requires a human checkpoint, no screens or robots.",
     "structure": "New development → Why it matters → What to do",
     "at": "2026-10-12T09:49:07.425376+00:00"
+  },
+  {
+    "topic": "AI coding agents generate volume, not real software progress",
+    "hook": "More pull requests. Same release cadence.",
+    "visual": "An editorial overhead shot of a single narrow funnel with a wide, fast-moving stream of paper pouring in at the top but only a thin, steady trickle coming out the bottom — clean studio lighting, minimal composition, no text.",
+    "structure": "Observation → Explanation → Implication",
+    "at": "2026-10-12T23:31:42.482066+00:00"
   }
 ]
