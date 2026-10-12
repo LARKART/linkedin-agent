@@ -3,13 +3,14 @@ name: LinkedIn agent
 # Schedules are in UTC. Africa/Lagos is UTC+1, so:
 #   07:00 UTC = 08:00 WAT       -> post (daily)
 #   17:00 UTC = 18:00 WAT       -> carousel (daily)
-#   20:00 UTC = 21:00 WAT Tue/Thu/Sat -> video (3x/week)
+#   20:00 UTC = 21:00 WAT Tue/Thu/Sat -> video; Mon/Fri -> slide-video
 #   every 4h UTC                -> comments
 on:
   schedule:
     - cron: "0 7 * * *"
     - cron: "0 17 * * *"
     - cron: "0 20 * * 2,4,6"
+    - cron: "0 20 * * 1,5"
     - cron: "0 */4 * * *"
   workflow_dispatch:
     inputs:
@@ -21,7 +22,7 @@ on:
       lane:
         description: "Lane (for run/approve/skip)"
         type: choice
-        options: [post, carousel, video]
+        options: [post, carousel, video, slidevideo]
         default: post
 
 # Serialize runs so the state commit-back never races.
@@ -78,6 +79,7 @@ jobs:
             "0 7 * * *")      ARGS="run --lane post" ;;
             "0 17 * * *")     ARGS="run --lane carousel" ;;
             "0 20 * * 2,4,6") ARGS="run --lane video" ;;
+            "0 20 * * 1,5")   ARGS="run --lane slidevideo" ;;
             "0 */4 * * *")    ARGS="comments" ;;
             *)
               CMD="${{ github.event.inputs.command }}"

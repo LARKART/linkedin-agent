@@ -118,6 +118,17 @@ def run(lane: str, *, force_discovery: bool = False) -> dict | None:
                         f"Topic: {topic['topic']}\nVideo step: {vstatus}\nNothing published (a video post requires a video).")
             return draft
 
+    if lane == "slidevideo":
+        vpath, vstatus, vstyle = video.make_slide_video(topic, _slug(topic["topic"]), date)
+        draft.update(videoPath=str(vpath) if vpath else None, videoStatus=vstatus, videoStyle=vstyle)
+        if not vpath:
+            draft["status"] = "blocked"
+            draft["gate"] = "blocked-no-video"
+            state.save_draft(lane, draft)
+            notify.send("LinkedIn slide-video: skipped (no video)",
+                        f"Topic: {topic['topic']}\nVideo step: {vstatus}\nNothing published (requires a video).")
+            return draft
+
     # 6/7. approve vs auto
     if m == "approve":
         state.save_draft(lane, draft)

@@ -277,6 +277,66 @@ def _mux(video: Path, audio: Path, out: Path) -> Path:
     return out
 
 
+# ---------- slide video (carousel RUNBOOK design -> narrated MP4) ----------
+
+def _slideshow_from_images(pngs: list[Path], out: Path, per: float, xf: float = 0.5) -> Path:
+    n = len(pngs)
+    cmd = [_ffmpeg(), "-y"]
+    for p in pngs:
+        cmd += ["-loop", "1", "-t", f"{per}", "-i", str(p)]
+    if n == 1:
+        filt = "[0:v]fps=30,format=yuv420p[vf]"
+    else:
+        parts, prev = [], "[0:v]"
+        for i in range(1, n):
+            off = i * (per - xf)
+            label = "[vout]" if i == n - 1 else f"[x{i}]"
+            parts.append(f"{prev}[{i}:v]xfade=transition=fade:duration={xf}:offset={off:.3f}{label}")
+            prev = label
+        filt = ";".join(parts) + ";[vout]fps=30,format=yuv420p[vf]"
+    cmd += ["-filter_complex", filt, "-map", "[vf]", "-c:v", "libx264", "-r", "30",
+            "-pix_fmt", "yuv420p", "-movflags", "+faststart", str(out)]
+    subprocess.run(cmd, check=True, capture_output=True)
+    return out
+
+
+def _slide_narration(spec: dict) -> str:
+    lines = []
+    for s in spec["slides"]:
+        if s.get("headline"):
+            lines.append(s["headline"])
+        if s.get("sub"):
+            lines.append(s["sub"])
+        for b in s.get("bullets", [])[:3]:
+            lines.append(b)
+    return ". ".join(lines)
+
+
+def make_slide_video(topic: dict, slug: str, date: str) -> tuple[Path | None, str, str]:
+    """Video from the branded carousel slides (RUNBOOK design), always narrated (edge-tts)."""
+    try:
+        spec = carousel.make_spec(topic)
+        out_dir = config.CAROUSELS.parent / "videos" / date
+        out_dir.mkdir(parents=True, exist_ok=True)
+        _, pngs = carousel.render(spec, out_dir / f"{slug}-slides")
+        n, xf = len(pngs), 0.5
+        audio = _tts(_slide_narration(spec), out_dir / f"{slug}.mp3")
+        if audio:
+            A = _audio_duration(audio) or (n * 4)
+            per = min(max((A + (n - 1) * xf) / n, 3.0), 16.0)
+        else:
+            per = 4.0
+        silent = out_dir / f"{slug}-slides.mp4"
+        _slideshow_from_images(pngs, silent, per, xf)
+        if audio:
+            final = out_dir / f"{slug}-slidevideo.mp4"
+            _mux(silent, audio, final)
+            return final, "generated (slide video, narrated)", "slides"
+        return silent, "generated (slide video, silent)", "slides"
+    except Exception as e:
+        return None, f"slide video failed: {e}", "slides"
+
+
 # ---------- orchestration ----------
 
 def make_video(topic: dict, style: str, slug: str, date: str) -> tuple[Path | None, str, str]:
