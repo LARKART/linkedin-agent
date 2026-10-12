@@ -120,6 +120,7 @@ def make_image(concept: str, post_idea: str, slug: str, date: str) -> tuple[Path
     """Return (path|None, final_prompt, status). Text-only beats a bad image (RUNBOOK 5)."""
     prompt = concept
     last_net_err = None
+    last_good = None  # a successfully generated image, even if the gate wasn't satisfied
     for attempt in range(3):
         try:
             path = generate(prompt, f"{date}-{slug}-{attempt}")
@@ -134,10 +135,14 @@ def make_image(concept: str, post_idea: str, slug: str, date: str) -> tuple[Path
             continue
         except Exception as e:
             return None, prompt, f"generation error: {e}"
+        last_good = path
         verdict = quality_gate(path, post_idea)
         if verdict.get("pass"):
             return path, prompt, "generated, gate passed"
         prompt = verdict.get("betterPrompt") or prompt
+    # A real generated image beats skipping the post. Keep the last one if the gate just never said "pass".
+    if last_good is not None:
+        return last_good, prompt, "generated, gate soft-passed"
     if last_net_err is not None:
         return None, prompt, f"text-only (image provider unreachable after retries: {last_net_err})"
-    return None, prompt, "text-only (image failed generation or quality gate)"
+    return None, prompt, "text-only (image generation failed)"
