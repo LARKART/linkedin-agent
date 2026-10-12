@@ -1,0 +1,30 @@
+{
+  "date": "2026-10-12",
+  "lane": "post",
+  "status": "blocked",
+  "topic": "Coding agents struggling on real-world production work",
+  "subtopic": "Agent reliability under real workloads",
+  "whyNow": "Two independent sources this week dig into the same gap between demo-level coding agent performance and messy production reality, with one offering a concrete process fix rather than just complaints",
+  "sources": [
+    {
+      "platform": "hackernews",
+      "url": "https://www.cockroachlabs.com/blog/experiment-running-hospital-code/",
+      "velocity": 8.1
+    },
+    {
+      "platform": "hackernews",
+      "url": "https://mtlynch.io/why-are-coding-agents-so-dumb/",
+      "velocity": 6.0
+    }
+  ],
+  "replies": [],
+  "notes": [],
+  "caption": "Two different write-ups this week landed on the same gap.\n\nOne team described treating software bugs like patients, running coding agents through a structured diagnostic process instead of letting them guess at fixes. Symptoms first, hypothesis second, verification before anything gets called \"done.\"\n\nThe other was a deep dive into why agentic coding tools still underperform on real codebases, even after months of benchmark headlines saying otherwise.\n\nSame underlying problem: a demo and a production codebase are not the same environment.\n\nIn a demo, the agent sees a clean, scoped, well-labeled task. In production, it's hitting legacy code, undocumented dependencies, flaky tests, and context that no prompt fully captures.\n\nThat's not an argument against using agents for real engineering work. It's an argument for treating the process around the agent as seriously as the model itself.\n\nA diagnostic loop. Clear verification steps. A place for a human to check the reasoning before it ships, not just the output.\n\nThis matters for anyone building with Claude Code, n8n, or similar tools right now. The orchestration and guardrails around the agent are usually what decide whether it's useful on day one or still useful on day ninety.\n\nWhat's your current process for verifying agent-written code before it goes anywhere near production?",
+  "hook": "Two different write-ups this week landed on the same gap.",
+  "structure": "Signal/Signal → Shared pattern → Practical implication",
+  "imageConcept": "A doctor's clipboard-style chart, but the patient chart is replaced with a printed code diff and a stethoscope resting across the keyboard next to it — shot like a clean editorial still life, no screens glowing, natural light, minimal props",
+  "gate": "blocked-no-image",
+  "imagePath": null,
+  "imagePrompt": "A clean, editorial-style illustration showing a robotic/AI arm confidently writing code on one monitor, while a second monitor shows a tangled mess of error messages, broken pipelines, and a production outage alert. Use a professional dark-mode IDE aesthetic, legible (even if placeholder) code snippets, a clear visual contrast between 'confidence' and 'real-world chaos', minimal color palette (navy, white, one accent red for errors), no gibberish text, no watermarks, sharp focused composition suitable for a LinkedIn post about AI coding agents failing in production.",
+  "imageStatus": "text-only (image failed generation or quality gate)"
+}
