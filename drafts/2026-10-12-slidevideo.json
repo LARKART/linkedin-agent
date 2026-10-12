@@ -1,0 +1,26 @@
+{
+  "date": "2026-10-12",
+  "lane": "slidevideo",
+  "status": "published",
+  "topic": "Coding agents treated as collaborators in long-running experimental work",
+  "subtopic": "AI-assisted decompilation at massive token scale",
+  "whyNow": "Strong velocity (19.4) and high comment count within 32 hours on a concrete, unusually large-scale agentic coding experiment that shows real production friction, not hype",
+  "sources": [
+    {
+      "platform": "hackernews",
+      "url": "https://momo5502.com/posts/2026-10-09-game-decompilation/",
+      "velocity": 19.37
+    }
+  ],
+  "replies": [],
+  "notes": [],
+  "caption": "Most demos of agentic coding show a 10-minute task.\n\nA developer recently documented something very different: a coding agent run across hundreds of billions of tokens on a single decompilation project, publicly shared as a build log.\n\nThat scale changes what actually matters.\n\nIn a short demo, the model's raw capability is the story. Over a project that long, the story becomes everything around the model: how context gets managed, how errors get caught before they compound, how progress gets checkpointed, when a human needs to step in and redirect.\n\nThe interesting part isn't that the agent could write code for that long. It's what kind of scaffolding makes that possible without the whole thing drifting off course.\n\nThat's the actual engineering problem in agentic coding right now. Not \"can it code,\" but \"can it stay reliable, correctable, and on-task across thousands of steps.\"\n\nMost businesses experimenting with AI agents will never run a job that large. But the same principle applies at smaller scale: the orchestration around the model, not the model itself, is what determines whether an agent is production-ready or just a good demo.\n\nWhat's the longest-running agent task you've seen someone actually document in public?",
+  "hook": "Most demos of agentic coding show a 10-minute task.",
+  "structure": "New development → Why it matters → What to do",
+  "imageConcept": "An editorial overhead shot of a long, unrolled paper scroll or printout covered in dense code/diff markings, trailing off a desk edge onto the floor, with a single red pen correction mark partway through — visualizing sustained, long-running work that still requires a human checkpoint, no screens or robots.",
+  "gate": "passed",
+  "videoPath": "/home/runner/work/linkedin-agent/linkedin-agent/videos/2026-10-12/coding-agents-treated-as-collaborators-i-slides.mp4",
+  "videoStatus": "generated (slide video, silent)",
+  "videoStyle": "slides",
+  "postUrn": "urn:li:ugcPost:7515347811417374720"
+}

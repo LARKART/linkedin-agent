@@ -96,5 +96,12 @@
     "visual": "An editorial close-up of three separate desks in a row, each with a different single tool on it (a magnifying glass on one, a wrench on another, a checklist clipboard on the third), shot from directly above with strong directional light and clean negative space — visually separating diagnosis, fixing, and verification as distinct stations rather than one cluttered workbench.",
     "structure": "Observation → Explanation → Implication",
     "at": "2026-10-12T09:40:13.370607+00:00"
+  },
+  {
+    "topic": "Coding agents treated as collaborators in long-running experimental work",
+    "hook": "Most demos of agentic coding show a 10-minute task.",
+    "visual": "An editorial overhead shot of a long, unrolled paper scroll or printout covered in dense code/diff markings, trailing off a desk edge onto the floor, with a single red pen correction mark partway through — visualizing sustained, long-running work that still requires a human checkpoint, no screens or robots.",
+    "structure": "New development → Why it matters → What to do",
+    "at": "2026-10-12T09:49:07.425376+00:00"
   }
 ]
