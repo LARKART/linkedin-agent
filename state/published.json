@@ -368,5 +368,28 @@
       }
     ],
     "status": "published"
+  },
+  {
+    "date": "2026-10-12",
+    "publishedAt": "2026-10-12T09:40:13.365576+00:00",
+    "postUrn": "urn:li:share:7515345571784720384",
+    "lane": "post",
+    "topic": "Coding agents treated like a medical team for debugging",
+    "subtopic": "Agent reliability and workflow design for real engineering teams",
+    "hook": "Most people debugging with AI agents still use one agent for everything.",
+    "caption": "Most people debugging with AI agents still use one agent for everything.\n\nAsk it to find the bug, fix the bug, and confirm the fix is correct.\n\nThat's three different jobs, and they require three different kinds of thinking.\n\nFinding a bug means reading broadly and staying skeptical.\nFixing it means narrowing focus and writing precisely.\nVerifying it means ignoring your own assumptions and checking the actual outcome.\n\nOne agent trying to do all three in the same context tends to anchor on its first theory and carry that bias through the rest of the task.\n\nA workflow I've seen gaining traction recently splits these roles apart. One agent investigates and reports findings. A separate agent, with a clean context, proposes the fix. A third agent checks the result against the original problem, not against the first agent's explanation.\n\nThe interesting part isn't that it uses more agents.\n\nIt's that each handoff forces a fresh perspective instead of letting one flawed assumption travel through the entire task.\n\nThis matters because most agent reliability problems get blamed on the model. Often it's the workflow design that's letting errors compound unchecked.\n\nIf you're building with coding agents: where in your setup does one agent currently do diagnosis, fix, and verification all in a single pass?",
+    "imagePrompt": "A clean, editorial-style illustration showing a stylized operating room scene where surgeons (styled as AI agents, perhaps with circuit-pattern scrubs or robotic features) huddle around a glowing laptop/monitor displaying red error code, as if performing surgery on broken software. Use a limited color palette (navy, white, one accent color), flat or semi-flat illustration style, clear focal point, and bold minimal text overlay reading 'Code Red: AI Agents on Call' to directly reinforce the medical-team debugging metaphor.",
+    "imagePath": "/home/runner/work/linkedin-agent/linkedin-agent/images/2026-10-12-coding-agents-treated-like-a-medical-tea-2.png",
+    "documentPath": null,
+    "videoPath": null,
+    "videoStyle": null,
+    "sources": [
+      {
+        "platform": "hackernews",
+        "url": "https://www.cockroachlabs.com/blog/experiment-running-hospital-code/",
+        "velocity": 8.08
+      }
+    ],
+    "status": "published"
   }
 ]

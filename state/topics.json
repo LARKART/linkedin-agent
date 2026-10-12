@@ -89,5 +89,12 @@
     "visual": "A single long assembly line shown from above, but every few meters there's a physical gate or turnstile the item must pass through before continuing — some gates open, one gate closed with an item stopped at it. Clean industrial photography, no screens or digital overlays, natural warehouse lighting, shot like an editorial piece about process control rather than technology.",
     "structure": "Signal → Interpretation → Business implication",
     "at": "2026-10-11T20:49:59.802287+00:00"
+  },
+  {
+    "topic": "Coding agents treated like a medical team for debugging",
+    "hook": "Most people debugging with AI agents still use one agent for everything.",
+    "visual": "An editorial close-up of three separate desks in a row, each with a different single tool on it (a magnifying glass on one, a wrench on another, a checklist clipboard on the third), shot from directly above with strong directional light and clean negative space — visually separating diagnosis, fixing, and verification as distinct stations rather than one cluttered workbench.",
+    "structure": "Observation → Explanation → Implication",
+    "at": "2026-10-12T09:40:13.370607+00:00"
   }
 ]

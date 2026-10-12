@@ -1,30 +1,26 @@
 {
   "date": "2026-10-12",
   "lane": "post",
-  "status": "blocked",
-  "topic": "Coding agents struggling on real-world production work",
-  "subtopic": "Agent reliability under real workloads",
-  "whyNow": "Two independent sources this week dig into the same gap between demo-level coding agent performance and messy production reality, with one offering a concrete process fix rather than just complaints",
+  "status": "published",
+  "topic": "Coding agents treated like a medical team for debugging",
+  "subtopic": "Agent reliability and workflow design for real engineering teams",
+  "whyNow": "Fresh case study (66h old) with strong lifetime engagement (214 likes, 107 comments) showing a concrete, replicable structure for using coding agents in production engineering workflows, distinct from the generic 'agents are dumb' complaint thread.",
   "sources": [
     {
       "platform": "hackernews",
       "url": "https://www.cockroachlabs.com/blog/experiment-running-hospital-code/",
-      "velocity": 8.1
-    },
-    {
-      "platform": "hackernews",
-      "url": "https://mtlynch.io/why-are-coding-agents-so-dumb/",
-      "velocity": 6.0
+      "velocity": 8.08
     }
   ],
   "replies": [],
   "notes": [],
-  "caption": "Two different write-ups this week landed on the same gap.\n\nOne team described treating software bugs like patients, running coding agents through a structured diagnostic process instead of letting them guess at fixes. Symptoms first, hypothesis second, verification before anything gets called \"done.\"\n\nThe other was a deep dive into why agentic coding tools still underperform on real codebases, even after months of benchmark headlines saying otherwise.\n\nSame underlying problem: a demo and a production codebase are not the same environment.\n\nIn a demo, the agent sees a clean, scoped, well-labeled task. In production, it's hitting legacy code, undocumented dependencies, flaky tests, and context that no prompt fully captures.\n\nThat's not an argument against using agents for real engineering work. It's an argument for treating the process around the agent as seriously as the model itself.\n\nA diagnostic loop. Clear verification steps. A place for a human to check the reasoning before it ships, not just the output.\n\nThis matters for anyone building with Claude Code, n8n, or similar tools right now. The orchestration and guardrails around the agent are usually what decide whether it's useful on day one or still useful on day ninety.\n\nWhat's your current process for verifying agent-written code before it goes anywhere near production?",
-  "hook": "Two different write-ups this week landed on the same gap.",
-  "structure": "Signal/Signal → Shared pattern → Practical implication",
-  "imageConcept": "A doctor's clipboard-style chart, but the patient chart is replaced with a printed code diff and a stethoscope resting across the keyboard next to it — shot like a clean editorial still life, no screens glowing, natural light, minimal props",
-  "gate": "blocked-no-image",
-  "imagePath": null,
-  "imagePrompt": "A clean, editorial-style illustration showing a robotic/AI arm confidently writing code on one monitor, while a second monitor shows a tangled mess of error messages, broken pipelines, and a production outage alert. Use a professional dark-mode IDE aesthetic, legible (even if placeholder) code snippets, a clear visual contrast between 'confidence' and 'real-world chaos', minimal color palette (navy, white, one accent red for errors), no gibberish text, no watermarks, sharp focused composition suitable for a LinkedIn post about AI coding agents failing in production.",
-  "imageStatus": "text-only (image failed generation or quality gate)"
+  "caption": "Most people debugging with AI agents still use one agent for everything.\n\nAsk it to find the bug, fix the bug, and confirm the fix is correct.\n\nThat's three different jobs, and they require three different kinds of thinking.\n\nFinding a bug means reading broadly and staying skeptical.\nFixing it means narrowing focus and writing precisely.\nVerifying it means ignoring your own assumptions and checking the actual outcome.\n\nOne agent trying to do all three in the same context tends to anchor on its first theory and carry that bias through the rest of the task.\n\nA workflow I've seen gaining traction recently splits these roles apart. One agent investigates and reports findings. A separate agent, with a clean context, proposes the fix. A third agent checks the result against the original problem, not against the first agent's explanation.\n\nThe interesting part isn't that it uses more agents.\n\nIt's that each handoff forces a fresh perspective instead of letting one flawed assumption travel through the entire task.\n\nThis matters because most agent reliability problems get blamed on the model. Often it's the workflow design that's letting errors compound unchecked.\n\nIf you're building with coding agents: where in your setup does one agent currently do diagnosis, fix, and verification all in a single pass?",
+  "hook": "Most people debugging with AI agents still use one agent for everything.",
+  "structure": "Observation → Explanation → Implication",
+  "imageConcept": "An editorial close-up of three separate desks in a row, each with a different single tool on it (a magnifying glass on one, a wrench on another, a checklist clipboard on the third), shot from directly above with strong directional light and clean negative space — visually separating diagnosis, fixing, and verification as distinct stations rather than one cluttered workbench.",
+  "gate": "passed",
+  "imagePath": "/home/runner/work/linkedin-agent/linkedin-agent/images/2026-10-12-coding-agents-treated-like-a-medical-tea-2.png",
+  "imagePrompt": "A clean, editorial-style illustration showing a stylized operating room scene where surgeons (styled as AI agents, perhaps with circuit-pattern scrubs or robotic features) huddle around a glowing laptop/monitor displaying red error code, as if performing surgery on broken software. Use a limited color palette (navy, white, one accent color), flat or semi-flat illustration style, clear focal point, and bold minimal text overlay reading 'Code Red: AI Agents on Call' to directly reinforce the medical-team debugging metaphor.",
+  "imageStatus": "generated, gate soft-passed",
+  "postUrn": "urn:li:share:7515345571784720384"
 }
