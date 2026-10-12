@@ -49,9 +49,19 @@ def _have_edge_tts() -> bool:
         return False
 
 
+def _have_tts() -> bool:
+    if _have_edge_tts() or config.env("OPENAI_API_KEY"):
+        return True
+    try:
+        import gtts  # noqa: F401
+        return True
+    except Exception:
+        return False
+
+
 def available_styles() -> list[str]:
     styles = ["animated"]
-    if _have_edge_tts() or config.env("OPENAI_API_KEY"):
+    if _have_tts():
         styles.append("narrated")
     if config.env("REPLICATE_API_TOKEN"):
         styles.append("ai")
@@ -248,7 +258,15 @@ def _tts(script: str, out_mp3: Path) -> Path | None:
             if out_mp3.exists() and out_mp3.stat().st_size > 2000:
                 return out_mp3
         except Exception as e:
-            print(f"[video] edge-tts failed, trying OpenAI: {e}")
+            print(f"[video] edge-tts failed, trying gTTS: {e}")
+    # gTTS: free, no key, reliable from CI (Google Translate voice).
+    try:
+        from gtts import gTTS
+        gTTS(script[:4500]).save(str(out_mp3))
+        if out_mp3.exists() and out_mp3.stat().st_size > 2000:
+            return out_mp3
+    except Exception as e:
+        print(f"[video] gTTS failed, trying OpenAI: {e}")
     key = config.env("OPENAI_API_KEY")
     if not key:
         return None
