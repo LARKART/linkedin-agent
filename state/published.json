@@ -437,5 +437,28 @@
       }
     ],
     "status": "published"
+  },
+  {
+    "date": "2026-10-13",
+    "publishedAt": "2026-10-13T14:47:32.317381+00:00",
+    "postUrn": "urn:li:share:7515785296089849856",
+    "lane": "post",
+    "topic": "AI coding agents generate volume, not real software",
+    "subtopic": "Measuring output vs actual software progress",
+    "hook": "There's a growing conversation about AI coding agents producing huge amounts of code without a matching increase in working, maintained software.",
+    "caption": "There's a growing conversation about AI coding agents producing huge amounts of code without a matching increase in working, maintained software.\n\nThat distinction matters.\n\nLines of code were never the real output of a software team. Working systems were. Code that handles edge cases. Code someone can still read in six months. Code that fails safely instead of silently.\n\nAn agent can generate a working-looking function in seconds. It can also generate ten versions of that function across a codebase, each slightly different, none of them the one someone will remember to update.\n\nVolume isn't the hard part of software. It never was. The hard part is deciding what the system should do, handling the cases nobody mentioned in the spec, and keeping it maintainable once three more features get bolted on.\n\nAgents are very good at the first part now. The second part still needs a person who understands the business logic, not just the prompt.\n\nThis is probably why \"productivity\" is getting harder to measure honestly. More commits isn't the same signal it used to be.\n\nThe teams getting real value aren't the ones generating the most code. They're the ones treating agent output as a draft that still needs review, structure, and ownership.\n\nWhat are you actually measuring when you check if AI is helping your team ship?",
+    "imagePrompt": "Create a sharp editorial graphic contrasting 'volume vs. real software': one side shows a wall of identical, repetitive code blocks or file icons stacked high (symbolizing mass-generated code), the other side shows a single, clean, well-structured piece of code or a solid gear/mechanism (symbolizing real working software). Use a minimal dark navy and white palette, bold sans-serif typography for a short headline like 'Volume ≠ Software', high contrast, no placeholder text, no watermarks, clean geometric composition with clear focal hierarchy.",
+    "imagePath": "/home/runner/work/linkedin-agent/linkedin-agent/images/2026-10-13-ai-coding-agents-generate-volume-not-rea-2.png",
+    "documentPath": null,
+    "videoPath": null,
+    "videoStyle": null,
+    "sources": [
+      {
+        "platform": "hackernews",
+        "url": "https://arstechnica.com/ai/2026/10/ai-coding-agents-generate-more-code-but-not-more-software/",
+        "velocity": 56.49
+      }
+    ],
+    "status": "published"
   }
 ]

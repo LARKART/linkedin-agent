@@ -110,5 +110,12 @@
     "visual": "An editorial overhead shot of a single narrow funnel with a wide, fast-moving stream of paper pouring in at the top but only a thin, steady trickle coming out the bottom — clean studio lighting, minimal composition, no text.",
     "structure": "Observation → Explanation → Implication",
     "at": "2026-10-12T23:31:42.482066+00:00"
+  },
+  {
+    "topic": "AI coding agents generate volume, not real software",
+    "hook": "There's a growing conversation about AI coding agents producing huge amounts of code without a matching increase in working, maintained software.",
+    "visual": "An editorial shot of a cluttered desk with dozens of printed code pages stacked haphazardly next to a single, small, neatly bound manual labeled with a checkmark sticker — the stack is tall and messy, the bound manual is thin but clearly finished, lit with simple directional light to emphasize the contrast between volume and completion.",
+    "structure": "Data/Signal → Interpretation → Business implication",
+    "at": "2026-10-13T14:47:32.319121+00:00"
   }
 ]
