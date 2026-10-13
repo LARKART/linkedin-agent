@@ -1,0 +1,22 @@
+{
+  "date": "2026-10-13",
+  "lane": "slidevideo",
+  "status": "blocked",
+  "topic": "Codex CLI silently installs a background daemon",
+  "subtopic": "default agent tooling behavior without explicit consent",
+  "whyNow": "Fast-rising HN thread (460 points, 238 comments in ~7 hours) showing developers are actively scrutinizing what coding agents do behind the scenes once they move past the demo stage.",
+  "sources": [
+    {
+      "platform": "hackernews",
+      "url": "https://github.com/openai/codex/issues/48195",
+      "velocity": 163.24
+    }
+  ],
+  "replies": [],
+  "notes": [],
+  "caption": "Codex CLI was shipping a persistent, self-updating background daemon by default.\n\nNo prompt. No explicit opt-in. It just installed itself and kept running.\n\nA thread on Hacker News picked this apart this week — 460+ points, 238 comments in about seven hours. Developers going through what the tool actually does once you install it, not just what it demos well.\n\nThat reaction makes sense.\n\nA coding agent isn't just a chat window anymore. It's a process with permissions, update cycles, and access to your machine. That deserves the same scrutiny as any other software you'd let run in the background: what it installs, what it touches, whether it tells you first.\n\nMost people evaluating agent tools right now are still testing capability — can it write the code, can it fix the bug. Fewer are asking what it's doing when you're not looking at the terminal.\n\nBoth questions matter. Right now, only one of them is getting asked.\n\nWhat would you want disclosed before an agent installs anything persistent on your system?",
+  "hook": "Codex CLI was shipping a persistent, self-updating background daemon by default.",
+  "structure": "New development → Why it matters → What to do",
+  "imageConcept": "A close-up editorial photo of a laptop's Activity Monitor / Task Manager window, showing a single unfamiliar background process quietly running with a steady CPU line, shot like a product photo — stark, high-contrast, nothing else on screen.",
+  "gate": "FAILED"
+}
