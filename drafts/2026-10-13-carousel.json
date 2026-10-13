@@ -1,0 +1,28 @@
+{
+  "date": "2026-10-13",
+  "lane": "carousel",
+  "status": "blocked",
+  "topic": "Anthropic rebuilding source control around Claude Code agent workflows",
+  "subtopic": "Agentic coding infrastructure",
+  "whyNow": "Fresh engineering writeup from Anthropic generating heavy HN discussion (382 likes, 386 comments in under 6 hours), signaling strong velocity and technical relevance to anyone building with Claude Code",
+  "sources": [
+    {
+      "platform": "hackernews",
+      "url": "https://www.anthropic.com/engineering/redesigning-source-control",
+      "velocity": 260.68
+    }
+  ],
+  "replies": [],
+  "notes": [],
+  "documentPath": "/home/runner/work/linkedin-agent/linkedin-agent/carousels/2026-10-13/carousel.pdf",
+  "title": "Why Anthropic Is Rebuilding Source Control for Agents",
+  "slideReview": {
+    "pass": true,
+    "problems": []
+  },
+  "caption": "Git has no idea what an agent is.\n\nIt was built for humans who commit a few times a day, write messages for other humans, and reason about code in files and functions.\n\nAgents don't work that way.\n\nAnthropic published a detailed engineering writeup this week on rebuilding source control around how Claude Code actually reads, writes, and reasons about a codebase. It's getting heavy traction on Hacker News right now, not because it's a product announcement, but because of the problem underneath it.\n\nA few things stood out:\n\nAgents need different commit granularity than humans. A human commits a finished thought. An agent might need to checkpoint every intermediate step so it can backtrack without losing work.\n\nCode isn't the only thing that needs versioning. The context an agent used to make a decision — the files it read, the reasoning it followed — matters just as much as the diff it produced.\n\nThis isn't a wrapper on existing dev tools. It's new infrastructure, built specifically for a non-human collaborator.\n\nThat's the real signal here. Agent-native infrastructure is becoming its own engineering discipline, not a feature bolted onto tools designed for people.\n\nMost teams adopting Claude Code or similar agents are still running them through tooling built entirely for human workflows — version control, task tracking, documentation — and wondering why things get messy at scale.\n\nThe takeaway isn't \"switch tools.\" It's worth auditing where your current stack assumes a human is the one reading, writing, and deciding. Those are the exact points where agents tend to break down.\n\nWhat's the first piece of your stack you'd rebuild if you assumed an agent, not a person, was using it?",
+  "hook": "Git has no idea what an agent is.",
+  "structure": "Observation → Explanation → Implication",
+  "imageConcept": "A single analog ledger book split down the middle: left page filled with handwritten human notes in pen, right page filled with dense, overlapping timestamped annotations and crossed-out revisions in a different color ink — two different systems of record-keeping on the same spine, shot as a clean editorial still-life, no tech iconography.",
+  "gate": "FAILED"
+}
