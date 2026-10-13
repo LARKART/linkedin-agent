@@ -117,5 +117,12 @@
     "visual": "An editorial shot of a cluttered desk with dozens of printed code pages stacked haphazardly next to a single, small, neatly bound manual labeled with a checkmark sticker — the stack is tall and messy, the bound manual is thin but clearly finished, lit with simple directional light to emphasize the contrast between volume and completion.",
     "structure": "Data/Signal → Interpretation → Business implication",
     "at": "2026-10-13T14:47:32.319121+00:00"
+  },
+  {
+    "topic": "Version control wasn't built for AI-generated code volume",
+    "hook": "An AI agent can now generate more code in an afternoon than a team used to write in a week.",
+    "visual": "A single wooden inbox tray overflowing with stacked paper documents, several spilling onto the floor, photographed in sharp editorial lighting against a plain background — a visual metaphor for review capacity failing to keep pace with output volume.",
+    "structure": "Observation → Explanation → Implication",
+    "at": "2026-10-13T23:44:29.361547+00:00"
   }
 ]
