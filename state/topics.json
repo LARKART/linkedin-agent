@@ -124,5 +124,12 @@
     "visual": "A single wooden inbox tray overflowing with stacked paper documents, several spilling onto the floor, photographed in sharp editorial lighting against a plain background — a visual metaphor for review capacity failing to keep pace with output volume.",
     "structure": "Observation → Explanation → Implication",
     "at": "2026-10-13T23:44:29.361547+00:00"
+  },
+  {
+    "topic": "Rethinking version control for AI-generated code",
+    "hook": "There's a headline going around from Anthropic's engineering team about rethinking source control for AI-generated code.",
+    "visual": "A single long receipt-style paper trail unspooling off a desk onto the floor in coils, next to a small stack of ordinary index cards representing old-style commit notes — contrast between overwhelming continuous output and a sparse manual process, shot editorially with natural light, no screens or tech iconography",
+    "structure": "Signal → Hedge → Implication → Open question",
+    "at": "2026-10-14T12:39:05.239856+00:00"
   }
 ]

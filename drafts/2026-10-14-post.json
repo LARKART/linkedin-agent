@@ -1,0 +1,26 @@
+{
+  "date": "2026-10-14",
+  "lane": "post",
+  "status": "published",
+  "topic": "Rethinking version control for AI-generated code",
+  "subtopic": "Git wasn't designed for agent-scale commits",
+  "whyNow": "Anthropic published an engineering deep-dive on this exact problem in the last 20 hours with very high velocity (162 likes/855 comments on HN), making it the single hottest technical discussion right now",
+  "sources": [
+    {
+      "platform": "hackernews",
+      "url": "https://www.anthropic.com/engineering/redesigning-source-control",
+      "velocity": 162.26
+    }
+  ],
+  "replies": [],
+  "notes": [],
+  "caption": "There's a headline going around from Anthropic's engineering team about rethinking source control for AI-generated code.\n\nI haven't seen the full writeup, just the framing, so take this as a question rather than a conclusion.\n\nBut the premise is worth sitting with.\n\nGit was built around a simple assumption: a human sits down, makes a change, writes a commit message, and does this a handful of times a day.\n\nAgentic coding breaks that assumption. If an agent is generating commits continuously, the bottleneck probably isn't how fast code gets written. It's whether anyone can meaningfully review, track, and roll back that volume of change.\n\nIf that's actually what's happening inside teams shipping with Claude Code or similar tools, it raises a real question for anyone building this way right now.\n\nAre we just going to keep bolting agents onto tooling designed for human pacing? Or does reviewing AI-generated code need its own workflow, not just a faster version of code review?\n\nI don't think there's a clean answer yet. But it's the kind of constraint that matters more than model speed.\n\nCurious if anyone here has hit this wall already, where the agent isn't the slow part anymore, the review process is.",
+  "hook": "There's a headline going around from Anthropic's engineering team about rethinking source control for AI-generated code.",
+  "structure": "Signal → Hedge → Implication → Open question",
+  "imageConcept": "A single long receipt-style paper trail unspooling off a desk onto the floor in coils, next to a small stack of ordinary index cards representing old-style commit notes — contrast between overwhelming continuous output and a sparse manual process, shot editorially with natural light, no screens or tech iconography",
+  "gate": "passed",
+  "imagePath": "/home/runner/work/linkedin-agent/linkedin-agent/images/2026-10-14-rethinking-version-control-for-ai-genera-2.png",
+  "imagePrompt": "Design a clean, editorial-style illustration representing version control for AI-generated code: show a branching git-like tree diagram where some branches are labeled 'human-written' and others 'AI-generated', with subtle diff markers (+/-) and a merge point. Use a modern flat or semi-flat illustration style, limited color palette (e.g., navy, white, one accent color), minimal clutter, no watermarks, with optional short bold text overlay like 'Version Control, Reimagined'.",
+  "imageStatus": "generated, gate soft-passed",
+  "postUrn": "urn:li:share:7516115358404014080"
+}
