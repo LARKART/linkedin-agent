@@ -1,0 +1,28 @@
+{
+  "date": "2026-10-14",
+  "lane": "carousel",
+  "status": "blocked",
+  "topic": "Version control wasn't designed for AI-written code at this scale",
+  "subtopic": "Anthropic's internal redesign of source control for Claude Code workflows",
+  "whyNow": "Anthropic just published an engineering deep-dive on this exact problem, drawing massive discussion (855 points, 950 comments) within 24 hours.",
+  "sources": [
+    {
+      "platform": "hackernews",
+      "url": "https://www.anthropic.com/engineering/redesigning-source-control",
+      "velocity": 129.33
+    }
+  ],
+  "replies": [],
+  "notes": [],
+  "documentPath": "/home/runner/work/linkedin-agent/linkedin-agent/carousels/2026-10-14/carousel.pdf",
+  "title": "Git Wasn't Built For Agents Writing Code At This Speed",
+  "slideReview": {
+    "pass": true,
+    "problems": []
+  },
+  "caption": "An agent can produce more code in ten minutes than a developer writes in a day.\n\nThat's not really a speed story. It's a review story.\n\nAnthropic published an engineering piece on this recently, and the detail that stuck with me wasn't about Claude specifically. It was their point that commits and branches were built around a simple assumption: one person, making one change, at a time.\n\nThat assumption quietly shapes how most teams still think about \"a change\" to a codebase.\n\nWhen an agent can generate dozens of parallel attempts, large rewrites, and iterative versions in minutes, that unit breaks down. You're no longer reviewing a change. You're reviewing a pile of drafts that happen to compile.\n\nI see the same pattern outside of code.\n\nEvery automation or AI workflow I build runs into this eventually. The bottleneck is rarely whether the AI can produce output. It's whether there's a real checkpoint before that output becomes something the business relies on.\n\nSpeed without a filter just creates more noise to sort through later.\n\nThe teams who get real value from agents aren't the ones generating the most output. They're the ones who decided, deliberately, what counts as a draft and what counts as approved — before they turned the agent loose.\n\nThat's a workflow design question more than a tooling one.\n\nWhat's the most repetitive part of your review process right now?",
+  "hook": "An agent can produce more code in ten minutes than a developer writes in a day.",
+  "structure": "Observation → Explanation → Implication",
+  "imageConcept": "An editorial still-life shot from above: a single wooden desk with one neat stack of papers labeled 'approved' in a small stamped box, next to a much larger, messy, overflowing stack of loose unsorted papers spilling off the edge of the desk. Natural window light, shallow depth of field, no people, no screens, no icons — just the visual contrast between a controlled stack and an overwhelming one.",
+  "gate": "FAILED"
+}
