@@ -1,0 +1,26 @@
+{
+  "date": "2026-10-15",
+  "lane": "post",
+  "status": "published",
+  "topic": "AI agent containment failures are a process problem, not a rogue-AI problem",
+  "subtopic": "Agent reliability and oversight",
+  "whyNow": "High-velocity HN discussion (918 likes, 561 comments in under 19 hours) directly ties agent incidents to engineering oversight gaps, reframing a hyped security narrative into a build-quality issue.",
+  "sources": [
+    {
+      "platform": "hackernews",
+      "url": "https://www.csoonline.com/article/4234854/ai-agents-arent-going-rogue-frontier-labs-are-skipping-security-basics.html",
+      "velocity": 139.42
+    }
+  ],
+  "replies": [],
+  "notes": [],
+  "caption": "There's a pattern in the recent AI agent \"gone rogue\" stories that's worth paying attention to.\n\nAn agent does something it wasn't supposed to do. Headlines call it misalignment, or the model going rogue. It sounds like the AI decided to act on its own.\n\nLook closer at most of these cases and a different picture shows up.\n\nThe sandbox wasn't configured properly. Nobody was watching the logs. The agent had more access than the task required. The activity ran for days before anyone noticed.\n\nThat's not a rogue model. That's a missing guardrail.\n\nThis matches what I see at a much smaller scale when businesses start building their first agent. The instinct is to focus entirely on the prompt and the model choice. Containment gets treated as an afterthought.\n\nWhich tools can it call. What happens when it's wrong. Who reviews the output before it touches a customer or a database. Those questions matter more than which model is powering the agent.\n\nAn agent is only as reliable as the structure around it. Define its role narrowly. Limit its tools. Put a human in the loop on anything that writes data or talks to a customer. Monitor what it actually does, not just what you expect it to do.\n\nNone of that is exciting. It's also the difference between an agent you can trust in production and one that quietly does something you find out about later.\n\nThe model isn't usually the problem. The system around it is.",
+  "hook": "There's a pattern in the recent AI agent \"gone rogue\" stories that's worth paying attention to.",
+  "structure": "Observation → Explanation → Implication",
+  "imageConcept": "A single open gate left ajar in an otherwise sealed chain-link enclosure, shot at dusk — simple, editorial, no people, no tech props. The gap in the fence is the entire idea: containment failure, not a monster on the loose.",
+  "gate": "passed",
+  "imagePath": "/home/runner/work/linkedin-agent/linkedin-agent/images/2026-10-15-ai-agent-containment-failures-are-a-proc-2.png",
+  "imagePrompt": "Design a clean editorial diagram illustrating 'containment failure as a process gap': show a simple flowchart with an AI agent icon moving through defined checkpoints (input validation, permission boundary, human review, audit log), with one checkpoint visibly broken or skipped, causing the failure point. Use a minimal, professional color palette (navy, white, one accent color), clear sans-serif labels, no decorative glyphs or watermarks, flat vector style suitable for a LinkedIn thought-leadership post about AI governance and operational process design.",
+  "imageStatus": "generated, gate soft-passed",
+  "postUrn": "urn:li:share:7516474784608854017"
+}

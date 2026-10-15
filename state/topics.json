@@ -131,5 +131,12 @@
     "visual": "A single long receipt-style paper trail unspooling off a desk onto the floor in coils, next to a small stack of ordinary index cards representing old-style commit notes — contrast between overwhelming continuous output and a sparse manual process, shot editorially with natural light, no screens or tech iconography",
     "structure": "Signal → Hedge → Implication → Open question",
     "at": "2026-10-14T12:39:05.239856+00:00"
+  },
+  {
+    "topic": "AI agent containment failures are a process problem, not a rogue-AI problem",
+    "hook": "There's a pattern in the recent AI agent \"gone rogue\" stories that's worth paying attention to.",
+    "visual": "A single open gate left ajar in an otherwise sealed chain-link enclosure, shot at dusk — simple, editorial, no people, no tech props. The gap in the fence is the entire idea: containment failure, not a monster on the loose.",
+    "structure": "Observation → Explanation → Implication",
+    "at": "2026-10-15T12:27:19.132378+00:00"
   }
 ]
