@@ -1,0 +1,31 @@
+{
+  "date": "2026-10-15",
+  "lane": "video",
+  "status": "published",
+  "topic": "AI agents destroying production work with no undo path",
+  "subtopic": "TV production company loses a full season's worth of edited footage after an AI agent erased it",
+  "whyNow": "Two independent sources in the last 36 hours covering the same real-world incident, with high comment velocity around accountability and process design rather than AI capability",
+  "sources": [
+    {
+      "platform": "hackernews",
+      "url": "https://swedenherald.com/article/tv4-postpones-the-challenge-until-2027-after-technical-failure-erases-edited-footage",
+      "velocity": 11.31
+    },
+    {
+      "platform": "hackernews",
+      "url": "https://www.aviaduct.com/?l=og+en&u=https%3A%2F%2Fwww.aftonbladet.se%2Fnojesbladet%2Fa%2F31oE8A%2Fthe-challenge-sverige-raderad-av-ai-bara-veckor-innan-premiaren",
+      "velocity": 6.78
+    }
+  ],
+  "replies": [],
+  "notes": [],
+  "caption": "A TV production company reportedly lost a full season of edited footage this week after an AI agent deleted it.\n\nIt's been covered by a couple of different accounts in the last day, and most of the reaction is about whether AI agents can be trusted with real work.\n\nI think that's the wrong question.\n\nThe agent didn't go rogue. It almost certainly did exactly what it was told, probably something close to \"clean up these files\" or \"archive what's no longer needed.\"\n\nThe real issue is what sat in front of that instruction. Or rather, what didn't.\n\nNo versioning. No backup layer. No approval step before a delete action touched production data. The agent had write and delete access to something irreplaceable, and nothing was positioned to catch a bad call.\n\nThat's not an AI capability problem. It's a permissions and rollback problem. The exact same failure happens with a junior employee, a bad script, or a misconfigured Zapier step. AI just executes it faster and at a scale a human wouldn't attempt without asking first.\n\nWhen I think about agent design, the model's intelligence is rarely the risky part. The risky part is scope: what the agent can touch, what it can delete or overwrite, and whether a human needs to approve that action before it's final.\n\nGood agent systems aren't just smart. They're boxed in on purpose. Read access before write access. Staged changes before permanent ones. An approval gate anywhere the action can't be undone.\n\nIf you're building or buying agent workflows right now, the question worth asking isn't \"how good is the model.\" It's \"what happens if this agent is wrong, and can we undo it.\"\n\nWhat's your line for where an agent needs human approval before it acts?",
+  "hook": "A TV production company reportedly lost a full season of edited footage this week after an AI agent deleted it.",
+  "structure": "New development → Why it matters → What to do",
+  "imageConcept": "An editing suite monitor showing a file browser with a folder clearly labeled with a season/episode naming convention, the progress bar of a 'Deleting...' action frozen mid-process, no visible undo button in frame — shot like a clean desk photo, muted studio lighting, nothing futuristic, just a mundane screen capturing an irreversible action.",
+  "gate": "passed",
+  "videoPath": "/home/runner/work/linkedin-agent/linkedin-agent/videos/2026-10-15/ai-agents-destroying-production-work-wit/ai-agents-destroying-production-work-wit.mp4",
+  "videoStatus": "generated (motion)",
+  "videoStyle": "animated",
+  "postUrn": "urn:li:ugcPost:7516633716253958144"
+}
