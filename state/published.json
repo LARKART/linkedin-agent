@@ -562,5 +562,28 @@
       }
     ],
     "status": "published"
+  },
+  {
+    "date": "2026-10-16",
+    "publishedAt": "2026-10-16T12:08:52.579974+00:00",
+    "postUrn": "urn:li:share:7516832533343498240",
+    "lane": "post",
+    "topic": "ChatGPT browsing your open tabs to do tasks",
+    "subtopic": "Browser-context agents entering mainstream consumer products",
+    "hook": "ChatGPT reading your open tabs to take action is a small feature update with a bigger implication.",
+    "caption": "ChatGPT reading your open tabs to take action is a small feature update with a bigger implication.\n\nFor the last two years, the automation conversation has been about connecting tools. Pull data from this app, push it into that one, build the pipeline in between.\n\nBrowser-context agents skip that step entirely. The agent doesn't need an integration to your CRM, your inbox, or your spreadsheet. It just needs to see what's already on your screen.\n\nThat's a different kind of access than an API call. No auth flow, no webhook, no mapped fields. Just visual and textual context, read directly from the environment you're already working in.\n\nFor businesses, this doesn't replace the workflows I build. It changes where the agent sits. Instead of living inside a tool, it starts living alongside the person using several tools at once.\n\nThe interesting question isn't whether this is impressive. It's where the judgment still needs to sit. Reading tabs is easy. Knowing which action is safe to take without a human checking first is the actual engineering problem.\n\nThat's the part worth watching as this moves from demo to default.",
+    "imagePrompt": "A clean browser window UI mockup showing multiple open tabs (Gmail, Google Docs, a calendar, a project tool), with a ChatGPT interface overlay highlighting/connecting to specific tabs via subtle glowing lines or cursor actions, illustrating it reading and acting on tab content. Flat, modern UI illustration style, minimal color palette, crisp typography, no photorealistic desk clutter.",
+    "imagePath": "/home/runner/work/linkedin-agent/linkedin-agent/images/2026-10-16-chatgpt-browsing-your-open-tabs-to-do-ta-2.png",
+    "documentPath": null,
+    "videoPath": null,
+    "videoStyle": null,
+    "sources": [
+      {
+        "platform": "news",
+        "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQQzBYWEtkbUVZLXVORzRqVU5ZMENvMmFUZmlzMEVRQzFPNjFUWS1yMHlEVk1odjVXTjE3aEFiN3dNeWZTUExBR2ZWdEN1Qm1fMWRSdDFNUFpHOWZid05XdFV5R3g5ZDhMTk9UdnhESHh3NW1ndHB3RkdYZC1TYzNua19OOUY?oc=5",
+        "velocity": 5.1
+      }
+    ],
+    "status": "published"
   }
 ]
