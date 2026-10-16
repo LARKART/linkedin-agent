@@ -159,5 +159,12 @@
     "visual": "A single inbox tray overflowing with paper slips, but the slips are neatly stacked and color-coded by priority sticker, while a second empty tray behind it sits untouched — shot like an editorial still life, warm office lighting, shallow depth of field, no screens or devices visible, just the physical metaphor of intake outpacing processing.",
     "structure": "Data/Signal → Interpretation → Business implication",
     "at": "2026-10-16T19:50:04.757641+00:00"
+  },
+  {
+    "topic": "AI code review catching bugs humans can't triage fast enough",
+    "hook": "An AI reviewer found more real bugs in a major open-source project than the maintainers could fix before the planned release.",
+    "visual": "A single overflowing inbox tray sitting on an otherwise empty, clean desk, lit from one side — stacks of paper spilling slightly over the edges, everything else in the frame minimal and orderly. The visual metaphor: the intake got faster, but the tray downstream is where the backlog now sits.",
+    "structure": "Problem → Unexpected insight → Practical takeaway",
+    "at": "2026-10-16T22:17:53.527743+00:00"
   }
 ]

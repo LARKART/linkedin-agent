@@ -1,0 +1,31 @@
+{
+  "date": "2026-10-16",
+  "lane": "slidevideo",
+  "status": "published",
+  "topic": "AI code review catching bugs humans can't triage fast enough",
+  "subtopic": "Postgres 19 delay due to AI reviewer findings exceeding human fix capacity",
+  "whyNow": "Fresh story (6h old) with strong velocity on HN showing a real production consequence of AI code review at scale, paired with a parallel story of Anthropic's own internal code review process for Claude Code.",
+  "sources": [
+    {
+      "platform": "hackernews",
+      "url": "https://www.theregister.com/databases/2026/10/16/postgres-19-delayed-after-ai-reviewers-find-more-bugs-than-humans-can-fix/5303471",
+      "velocity": 55.86
+    },
+    {
+      "platform": "hackernews",
+      "url": "https://claude.dev/blog/solving-code-review-at-anthropic/",
+      "velocity": 179.58
+    }
+  ],
+  "replies": [],
+  "notes": [],
+  "caption": "An AI reviewer found more real bugs in a major open-source project than the maintainers could fix before the planned release.\n\nSo the release got delayed.\n\nNot because the tool failed. Because it worked.\n\nThis is a pattern worth paying attention to. For years, the assumption was that finding bugs was the hard part. Teams built linters, static analysis, review checklists, all aimed at surfacing problems earlier.\n\nNow a different bottleneck is showing up. AI code review can surface legitimate issues faster than a human team can realistically triage, prioritize, and resolve them.\n\nThe constraint didn't disappear. It moved.\n\nIt's the same thing I see in automation work outside of code. Once you remove the slow manual step, whatever's downstream becomes the new slow step. Faster lead capture just means someone needs to respond to more leads. Faster data sync just means someone needs to act on more accurate data, sooner.\n\nAI doesn't remove bottlenecks. It relocates them to wherever human judgment still has to happen.\n\nThat's not an argument against using these tools. It's an argument for designing the process around the new bottleneck, not the old one. More findings only help if there's a realistic plan for who reviews, prioritizes, and closes them out.\n\nWhere do you think the bottleneck moves in your workflow once the first one gets automated away?",
+  "hook": "An AI reviewer found more real bugs in a major open-source project than the maintainers could fix before the planned release.",
+  "structure": "Problem → Unexpected insight → Practical takeaway",
+  "imageConcept": "A single overflowing inbox tray sitting on an otherwise empty, clean desk, lit from one side — stacks of paper spilling slightly over the edges, everything else in the frame minimal and orderly. The visual metaphor: the intake got faster, but the tray downstream is where the backlog now sits.",
+  "gate": "passed",
+  "videoPath": "/home/runner/work/linkedin-agent/linkedin-agent/videos/2026-10-16/ai-code-review-catching-bugs-humans-can--slidevideo.mp4",
+  "videoStatus": "generated (slide video, narrated)",
+  "videoStyle": "slides",
+  "postUrn": "urn:li:ugcPost:7516985798257483776"
+}
