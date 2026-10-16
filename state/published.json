@@ -585,5 +585,28 @@
       }
     ],
     "status": "published"
+  },
+  {
+    "date": "2026-10-16",
+    "publishedAt": "2026-10-16T19:50:04.755854+00:00",
+    "postUrn": "urn:li:ugcPost:7516948599046467584",
+    "lane": "carousel",
+    "topic": "AI code review catching more bugs than human teams can triage",
+    "subtopic": "Postgres 19 delayed due to AI reviewer bug volume",
+    "hook": "Postgres 19 is being delayed. Not because of a major bug. Because an AI reviewer found more bugs than the maintainers could triage in time.",
+    "caption": "Postgres 19 is being delayed. Not because of a major bug. Because an AI reviewer found more bugs than the maintainers could triage in time.\n\nThat sentence is worth sitting with.\n\nFor years, the hard part of code review was detection. Humans are slow readers, they get tired, they miss edge cases. AI reviewers don't have that problem. They read everything, every time, at the same quality.\n\nSo the catch rate goes up. A lot.\n\nBut finding a bug and fixing a bug are two different jobs. One scales with compute. The other scales with human attention, context, and judgment about what's actually worth fixing before a release.\n\nThis is what's inside the carousel I put together on it:\n\n- AI found more bugs than the team could fix\n- Detection got easy, fixing didn't\n- Catch rate was never the hard part\n- Where the new bottleneck actually sits\n- More findings isn't automatically progress\n- Severity triage has to happen before humans do\n- Release processes need to expect this now\n- Before adding AI review, plan the queue\n\nThe useful takeaway: if you're bringing AI code review into your pipeline, the question isn't \"will it find more issues.\" It will. The question is who triages those findings, how severity gets ranked before a human ever looks at them, and whether your release process assumes a flat queue or a growing one.\n\nTeams that plan for the backlog before it shows up will handle this fine. Teams that don't will keep shipping on the old timeline while the queue quietly grows underneath them.\n\nWhat's the most repetitive part of your workflow right now?",
+    "imagePrompt": null,
+    "imagePath": null,
+    "documentPath": "/home/runner/work/linkedin-agent/linkedin-agent/carousels/2026-10-16/carousel.pdf",
+    "videoPath": null,
+    "videoStyle": null,
+    "sources": [
+      {
+        "platform": "hackernews",
+        "url": "https://www.theregister.com/databases/2026/10/16/postgres-19-delayed-after-ai-reviewers-find-more-bugs-than-humans-can-fix/5303471",
+        "velocity": 76.42
+      }
+    ],
+    "status": "published"
   }
 ]
