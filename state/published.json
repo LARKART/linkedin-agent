@@ -664,5 +664,33 @@
       }
     ],
     "status": "published"
+  },
+  {
+    "date": "2026-10-17",
+    "publishedAt": "2026-10-17T19:03:23.613870+00:00",
+    "postUrn": "urn:li:ugcPost:7517299237118943232",
+    "lane": "carousel",
+    "topic": "Websites actively blocking AI agents from accessing their content",
+    "subtopic": "Agent access control and the open web",
+    "hook": "An agent that can technically do something is no longer the same as an agent that's allowed to do it.",
+    "caption": "An agent that can technically do something is no longer the same as an agent that's allowed to do it.\n\nThat gap is becoming the real design problem.\n\nSite owners and banks are starting to treat agent traffic differently than human traffic. Logins, bot-detection, and explicit blocks aimed specifically at autonomous agents, not generic scrapers.\n\nFor any workflow that depends on browsing, scraping, or logging into a site on someone's behalf, that's a structural shift, not a minor inconvenience.\n\nA few things that change once access becomes the constraint:\n\nAgents get treated differently than the humans they're acting for.\n\nThe question moves from \"can this agent complete the task\" to \"is this agent allowed to be here at all.\"\n\nWorkflows that assume open access are fragile by default, because that access can be revoked without warning.\n\nPermission and authentication become part of the system's reliability, not a side detail handled once during setup.\n\nThe practical shift: access has to be mapped and designed for before the task logic gets built, not patched in after something breaks.\n\nAn agent with great reasoning and no reliable way in isn't a system you can depend on.\n\nWhat's the riskiest access point in your current workflow, the one thing that breaks everything if it gets blocked?",
+    "imagePrompt": null,
+    "imagePath": null,
+    "documentPath": "/home/runner/work/linkedin-agent/linkedin-agent/carousels/2026-10-17/carousel.pdf",
+    "videoPath": null,
+    "videoStyle": null,
+    "sources": [
+      {
+        "platform": "news",
+        "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPdWVVZVlZZlZ6YTRDVjJGb0RXcWRwQS03TVJGOEt4XzdJaGNUYlJGQ2JhTUM3bUJzTkowZlFIVkpzbUJwNWlNWDF5Z2RlQUlHbVJNYWhUczhCd3N6RFVucE5kSUNndXpDc2s1S01nU3pDSk9oa2VZb1ZtTXl4XzQxUkxPaE9TUm9H?oc=5",
+        "velocity": 1.66
+      },
+      {
+        "platform": "news",
+        "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxObmRuRG0tcmtGMjk4Yk9QR3BFZm5OVU96UkZUU2xYelF4NHJabjlTd3ktVDVQaWNSeGNGOTgzNS1oNjlkZi1IZ2hXcm9ycDFRZFdUZnVDcS12YzJVZnZ0UTRWUFRjTlZtc2pKMkc5cjRzdy1KU2Z6WlhLYXNRamkwOTdLQzNveTJQb0c5eGk1VlNydXZuRTY4OXB6TjBKMWJEV2piZVFwU1BjRFZqb2k4?oc=5",
+        "velocity": 4.74
+      }
+    ],
+    "status": "published"
   }
 ]

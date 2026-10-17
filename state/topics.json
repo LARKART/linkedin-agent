@@ -173,5 +173,12 @@
     "visual": "An editorial overhead shot of a single inbox tray overflowing with stacked paper tickets/sticky notes, next to one empty outbox tray — a visual metaphor for detection outpacing triage capacity, shot in clean natural light, no screens or tech imagery.",
     "structure": "New development → Why it matters → What to do",
     "at": "2026-10-17T11:20:52.340091+00:00"
+  },
+  {
+    "topic": "Websites actively blocking AI agents from accessing their content",
+    "hook": "An agent that can technically do something is no longer the same as an agent that's allowed to do it.",
+    "visual": "A single closed turnstile gate photographed head-on in an otherwise empty, clean corridor — stark, minimal, editorial lighting, no people, no screens, no robots. The turnstile is the entire story: something built to let some things through and stop others.",
+    "structure": "Observation → Explanation → Implication",
+    "at": "2026-10-17T19:03:23.616019+00:00"
   }
 ]
