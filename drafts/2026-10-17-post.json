@@ -1,0 +1,31 @@
+{
+  "date": "2026-10-17",
+  "lane": "post",
+  "status": "published",
+  "topic": "AI code review catching bugs faster than teams can fix them",
+  "subtopic": "Postgres 19 release delayed by AI-flagged bug backlog",
+  "whyNow": "A major open-source project just delayed a release because AI code review surfaced more issues than maintainers could work through, showing this is now a real operational constraint, not a hypothetical",
+  "sources": [
+    {
+      "platform": "hackernews",
+      "url": "https://www.theregister.com/databases/2026/10/16/postgres-19-delayed-after-ai-reviewers-find-more-bugs-than-humans-can-fix/5303471",
+      "velocity": 22.33
+    },
+    {
+      "platform": "hackernews",
+      "url": "https://claude.dev/blog/solving-code-review-at-anthropic/",
+      "velocity": 83.55
+    }
+  ],
+  "replies": [],
+  "notes": [],
+  "caption": "A Postgres release just got delayed because AI code review found more bugs than the maintainers could triage.\n\nNot because the bugs were unfixable. Because there were too many to evaluate at once.\n\nThis is worth sitting with.\n\nFor years, the assumption was that better detection equals better software. Find more issues, fix more issues, ship something more solid.\n\nBut once a reviewer can flag issues faster than humans can decide which ones matter, detection stops being the constraint.\n\nThe new bottleneck is judgment: which bugs are actually worth fixing right now, which are edge cases, which are noise, and who has the context to make that call.\n\nThat's not a tooling problem. It's a process problem.\n\nI see the same pattern in businesses adopting AI agents and automation. The hard part was never getting an agent to find anomalies, flag leads, or surface exceptions. It's building the triage layer around it: what gets escalated, what gets auto-handled, what waits for a human.\n\nMore AI output without a prioritization system just moves the backlog somewhere else.\n\nWhat does your team do with the extra signal once the tooling starts outperforming your capacity to act on it?",
+  "hook": "A Postgres release just got delayed because AI code review found more bugs than the maintainers could triage.",
+  "structure": "New development → Why it matters → What to do",
+  "imageConcept": "An editorial overhead shot of a single inbox tray overflowing with stacked paper tickets/sticky notes, next to one empty outbox tray — a visual metaphor for detection outpacing triage capacity, shot in clean natural light, no screens or tech imagery.",
+  "gate": "passed",
+  "imagePath": "/home/runner/work/linkedin-agent/linkedin-agent/images/2026-10-17-ai-code-review-catching-bugs-faster-than-2.png",
+  "imagePrompt": "A clean, flat-illustration split-screen graphic: left side shows a human developer slowly fixing one bug on a monitor with a clock icon ticking; right side shows an AI icon scanning code and flagging multiple bug icons instantly with checkmarks. Bold sans-serif headline at top reads 'AI finds bugs faster than you can fix them.' Minimal color palette (navy, white, one accent color), no photorealism, no stock-photo office scenes, high contrast and simple shapes for LinkedIn feed readability.",
+  "imageStatus": "generated, gate soft-passed",
+  "postUrn": "urn:li:share:7517182838534938624"
+}

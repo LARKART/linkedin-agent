@@ -166,5 +166,12 @@
     "visual": "A single overflowing inbox tray sitting on an otherwise empty, clean desk, lit from one side — stacks of paper spilling slightly over the edges, everything else in the frame minimal and orderly. The visual metaphor: the intake got faster, but the tray downstream is where the backlog now sits.",
     "structure": "Problem → Unexpected insight → Practical takeaway",
     "at": "2026-10-16T22:17:53.527743+00:00"
+  },
+  {
+    "topic": "AI code review catching bugs faster than teams can fix them",
+    "hook": "A Postgres release just got delayed because AI code review found more bugs than the maintainers could triage.",
+    "visual": "An editorial overhead shot of a single inbox tray overflowing with stacked paper tickets/sticky notes, next to one empty outbox tray — a visual metaphor for detection outpacing triage capacity, shot in clean natural light, no screens or tech imagery.",
+    "structure": "New development → Why it matters → What to do",
+    "at": "2026-10-17T11:20:52.340091+00:00"
   }
 ]
