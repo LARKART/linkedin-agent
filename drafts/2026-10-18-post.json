@@ -1,0 +1,31 @@
+{
+  "date": "2026-10-18",
+  "lane": "post",
+  "status": "published",
+  "topic": "How Anthropic rebuilt code review for AI-generated volume",
+  "subtopic": "Internal engineering process change at an AI lab",
+  "whyNow": "Fresh engineering writeup (under 48h) from the team building Claude Code, directly describing a process redesign rather than a tool launch, with strong discussion volume",
+  "sources": [
+    {
+      "platform": "hackernews",
+      "url": "https://claude.dev/blog/solving-code-review-at-anthropic/",
+      "velocity": 45.45
+    },
+    {
+      "platform": "hackernews",
+      "url": "https://simonwillison.net/2026/Oct/13/redesigning-source-control-at-anthropic/",
+      "velocity": 3.4
+    }
+  ],
+  "replies": [],
+  "notes": [],
+  "caption": "Anthropic just published something more useful than another model announcement.\n\nThey described how their Claude Code team had to rebuild code review, because AI-generated pull requests started arriving faster than humans could reasonably review them.\n\nThe bottleneck wasn't writing code anymore. It was reviewing it.\n\nThat's a quiet but important shift.\n\nFor years, engineering teams optimized for writing speed: better tooling, better autocomplete, better scaffolding. Review was treated as a secondary step, something a senior engineer did between other tasks.\n\nOnce AI can generate a working PR in minutes, that assumption breaks. You can produce far more code than any team can safely verify, merge, and maintain.\n\nThe interesting part of their writeup isn't the tooling they used. It's the acknowledgment that process, not model capability, was the actual constraint.\n\nThis matches what I see with businesses adopting AI agents and automation. The hard part is rarely getting the AI to do the task. It's building the review, approval, and verification layer around it so the output can be trusted at scale.\n\nMore AI output without a redesigned review process just moves the risk downstream.\n\nIf you're building with AI agents or AI-assisted development right now, where is your actual bottleneck: generating the work, or verifying it?",
+  "hook": "Anthropic just published something more useful than another model announcement.",
+  "structure": "New development → Why it matters → What to do",
+  "imageConcept": "An editorial overhead shot of a single long conveyor belt feeding dozens of identical manila folders into a narrow doorway where only one person stands stamping them one at a time — a visual metaphor for output outpacing review capacity, shot in clean studio lighting with no tech iconography.",
+  "gate": "passed",
+  "imagePath": "/home/runner/work/linkedin-agent/linkedin-agent/images/2026-10-18-how-anthropic-rebuilt-code-review-for-ai-2.png",
+  "imagePrompt": "Design a clean, high-contrast editorial graphic with a bold headline 'Rebuilding Code Review for the AI Era' in strong sans-serif typography. Include a simple before/after diagram: left side shows a cluttered, overwhelmed code review queue icon with a red warning indicator; right side shows a streamlined, organized review pipeline with a green checkmark, connected by a clear arrow. Use Anthropic's brand-appropriate muted color palette (warm neutrals, terracotta, or deep charcoal), minimal flat icons, generous white space, and no fake UI screenshots or stock-photo-style tech imagery. Ensure all text is crisp, legible, and directly tied to the concept of scaling code review for AI-generated code.",
+  "imageStatus": "generated, gate soft-passed",
+  "postUrn": "urn:li:share:7517554224931729408"
+}
