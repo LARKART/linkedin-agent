@@ -743,5 +743,43 @@
       }
     ],
     "status": "published"
+  },
+  {
+    "date": "2026-10-18",
+    "publishedAt": "2026-10-18T19:15:39.465499+00:00",
+    "postUrn": "urn:li:ugcPost:7517664711535132672",
+    "lane": "carousel",
+    "topic": "AI Security in Enterprises",
+    "subtopic": "Firms can't control what agents access",
+    "hook": "An AI agent can read a filing system, open a browser tab, and query a customer database, often in the same session, with permissions nobody fully mapped out ahead of time.",
+    "caption": "An AI agent can read a filing system, open a browser tab, and query a customer database, often in the same session, with permissions nobody fully mapped out ahead of time.\n\nThat's the pattern showing up across enterprise security conversations right now. Not one dramatic breach, but a slower, more uncomfortable realization: companies rolled out agents faster than they defined what those agents should actually be allowed to touch.\n\nIt tracks with how most automation gets built. Someone connects an agent to a tool because it needs that tool to finish a task. Then another integration gets added. Then another. Permissions accumulate. Nobody goes back and asks whether the agent still needs everything it was originally given access to.\n\nThe result is a system that technically works, until it reads something it shouldn't have, or takes an action nobody approved, and the first question in the room is \"wait, why could it even see that?\"\n\nThis isn't really an AI capability problem. The models aren't the risk. The risk is treating agent access the same way teams treat a new hire's laptop setup: grant broad permissions upfront, sort out scope later, hope later comes before something goes wrong.\n\nA more basic starting point works better. Define exactly what an agent needs to complete its job, scope its access to that, and log what it actually does once it's live. Boring, unglamorous, and far more useful than adding another layer of AI on top of the problem.\n\nIf you're running agents in your business right now, it's worth a five-minute check: what can each one actually see and touch, and does that match what it's supposed to be doing?\n\nWhat's the most repetitive part of your workflow right now, and does an agent touching it have more access than the task requires?",
+    "imagePrompt": null,
+    "imagePath": null,
+    "documentPath": "/home/runner/work/linkedin-agent/linkedin-agent/carousels/2026-10-18/carousel.pdf",
+    "videoPath": null,
+    "videoStyle": null,
+    "sources": [
+      {
+        "platform": "news",
+        "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTFA3VXR4NFhjbmlwWm8wc013NWx1S09wR2JBeGdfajVJdU5HcXBEQnNZcng1Y3BDUXItRGcteUN2bWJWbVctZFROM1pMRE9CT1ExVlNJdzR5NUF5d3dlRkRRUmpnNWEtSTFkTmFOY01vZ09IRXhObVMxRlVROTE?oc=5",
+        "velocity": 5.45
+      },
+      {
+        "platform": "news",
+        "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxObFEtOTlTc3pBRFFja05HZGpKeHNQekFHTGpiTUN2dnNvOEdxVC1ya3gxb3NtTnNJVzhHX0hRcHpsYUdYSkZwQ3pMbG53aEtYa21ZZW5BbEtuVTlsQ2RCcFZ5VzZxWUZVRDVrN25lRnlZeDNaak8wdlNTODc3VUlkc1EySXBmZFUxTEktNmQ5N0x6TGtYSjFHRFBwVVNySjBpRE5IMjlZVnk?oc=5",
+        "velocity": 3.26
+      },
+      {
+        "platform": "news",
+        "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQV0ItRFFncEt0MmdCMkNKU3NTS2tFUHJIWktWeEtyMGI4a1hsZzRQbWM5SjJIaFQ5Rm1CQUQ3Yk00aHlfRGZJUG9uUF9HdnVZQzh3azZreDBjX2FydmhxcjQxMW9YbUlwTVZiOVM0ZXFKXzY4bmtnc2FuQXBqRXpYajR4NUxldkRpemNPTkpUZ2I1dlVVcDJnT2R3M1hhZFg0VlFSWTd0dTN2cEdsSnp0VmszS2hQMEc4YVZLUlVFVDEyZw?oc=5",
+        "velocity": 14.98
+      },
+      {
+        "platform": "news",
+        "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQT0dicG5PclJaa3dBSHhNWTJablctRUdUcllkSmdCMG9HZExGSG1TYjFCeU1GR0ctRXpTc0JabnFFd1RMdWotbmt5WlBqYjJaMUEyaVZXVHA1SmhfOFRQeDZZSEpaZUZ5VjFQTFlPdHlxQzB4UVFLWGVuU012d2VpX2pxQXlRX1F6bG04OHJzVU5zR2cxaVh0aElwVDNrdnNkVGdLZ3UxcTlFZmZuUjdMcW9BbGc?oc=5",
+        "velocity": 3.5
+      }
+    ],
+    "status": "published"
   }
 ]
