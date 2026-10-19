@@ -1,0 +1,30 @@
+{
+  "date": "2026-10-19",
+  "lane": "post",
+  "status": "blocked",
+  "topic": "The real bottleneck in AI coding is the harness, not the model",
+  "subtopic": "Agent orchestration architecture",
+  "whyNow": "Fresh post (2 hours old) gaining fast traction (88 points, 41 comments) reframes agent reliability as a systems-engineering problem rather than a model-capability problem, directly reinforcing the production-readiness debate happening across HN this week",
+  "sources": [
+    {
+      "platform": "hackernews",
+      "url": "https://github.com/IsuruMaduranga/harness-engineering-101",
+      "velocity": 97.87
+    },
+    {
+      "platform": "hackernews",
+      "url": "https://github.com/google-research/harness2",
+      "velocity": 11.77
+    }
+  ],
+  "replies": [],
+  "notes": [],
+  "caption": "There's a framing going around that splits AI agents into two parts: the model is the brain, the harness is the body.\n\nI think that's the right way to look at it.\n\nMost of the time when an agent fails in production, it's not because the model made a bad decision. It's because of what's wrapped around the model.\n\nHow much context does it actually have at that step.\nWhat tools can it call, and what happens when a call fails.\nIs there retry logic, or does one bad response break the whole run.\nWhere does a human need to check the output before anything moves forward.\n\nSwap in a stronger model and none of that changes. The agent is still only as reliable as the control loop around it.\n\nThis is most of what I spend time on when I build agent systems for a business. Not picking the model, deciding the role, the guardrails, the memory, and what happens when something goes wrong.\n\nThe model is close to a commodity decision at this point. The harness is the actual engineering work.\n\nIf you're building or evaluating an agent right now, what does your error handling look like when a tool call fails?",
+  "hook": "There's a framing going around that splits AI agents into two parts: the model is the brain, the harness is the body.",
+  "structure": "New development → Why it matters → What to do",
+  "imageConcept": "A simple wooden puppet with visible strings and a control bar, photographed in soft editorial studio light against a plain background — the puppet's head is small and unremarkable, but the strings, joints, and control bar are rendered in sharp, deliberate detail, visually implying that the mechanism controlling movement matters more than the head itself.",
+  "gate": "blocked-no-image",
+  "imagePath": null,
+  "imagePrompt": "A minimalist illustration of a marionette figure constructed from natural wood, suspended by translucent thread-like lines connected to an ornate control frame above, rendered in soft warm lighting against a neutral backdrop—the composition emphasizes the intricate mechanical joints and articulated limbs in fine detail while the carved wooden head remains simple and stylized, creating a visual metaphor about external influence and orchestration through careful emphasis on the control apparatus.",
+  "imageStatus": "text-only (image provider unreachable after retries: HTTPSConnectionPool(host='image.pollinations.ai', port=443): Read timed out. (read timeout=120))"
+}
