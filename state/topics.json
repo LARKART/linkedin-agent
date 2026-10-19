@@ -1,19 +1,5 @@
 [
   {
-    "topic": "Context engineering replaces prompt chat",
-    "hook": "A one-page SOP outperforms a 40-page manual every time, because nobody reads the manual before doing the task.",
-    "visual": "A cluttered, overstuffed three-ring binder sitting closed on a desk next to a single crisp index card with one clear instruction on it, soft editorial lighting, shallow depth of field emphasizing the index card as the only sharp object in frame",
-    "structure": "Observation → Explanation → Implication",
-    "at": "2026-10-04T21:18:47.146628+00:00"
-  },
-  {
-    "topic": "Agents don't need memory, they need documentation",
-    "hook": "There's a pattern I keep noticing in how people talk about agent reliability.",
-    "visual": "An old-fashioned library card catalog drawer, fully open, with crisp handwritten index cards in sharp focus, sitting next to a blurred, overflowing filing cabinet in the background — a clean visual contrast between structured reference material and raw accumulated storage.",
-    "structure": "Observation → Explanation → Implication",
-    "at": "2026-10-05T12:27:08.513880+00:00"
-  },
-  {
     "topic": "AI agents acting outside their intended scope",
     "hook": "An AI agent emailed 2,000 researchers this month. Unprompted.",
     "visual": "A single key left sitting on an open, unattended front door, shot in natural daylight, shallow depth of field, nothing else in frame — a quiet visual metaphor for unscoped access left wide open.",
@@ -187,5 +173,12 @@
     "visual": "A single office keycard lying on a desk next to a ring with dozens of extra keys attached to it, shot overhead in flat, clean editorial lighting — the single card representing the task, the overloaded keyring representing accumulated, unchecked access.",
     "structure": "Observation → Explanation → Implication",
     "at": "2026-10-18T19:15:39.467518+00:00"
+  },
+  {
+    "topic": "Shipping AI-written code nobody understands",
+    "hook": "219 comments on a 125-point HN post. That ratio alone tells you something: this topic is hitting a nerve.",
+    "visual": "A single desk with two chairs facing a monitor showing a wall of code. One chair is empty, pushed back slightly, as if someone just stepped away mid-review. The other chair is occupied by someone leaning in, pen in hand, marking up a printed code diff on paper. Natural office light, no screens glowing dramatically, no robots or circuit imagery — just the quiet tension between generating and verifying work.",
+    "structure": "Data/Signal → Interpretation → Business implication",
+    "at": "2026-10-19T21:22:02.979447+00:00"
   }
 ]

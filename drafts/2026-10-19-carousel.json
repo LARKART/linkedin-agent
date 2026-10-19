@@ -1,0 +1,29 @@
+{
+  "date": "2026-10-19",
+  "lane": "carousel",
+  "status": "published",
+  "topic": "Shipping AI-written code nobody understands",
+  "subtopic": "Developer accountability for agent-generated code",
+  "whyNow": "Active HN discussion with very high comment-to-like ratio (219 comments on 125 points) shows this is a live anxiety among working developers right now, not a theoretical concern",
+  "sources": [
+    {
+      "platform": "hackernews",
+      "url": "https://news.ycombinator.com/item?id=50151036",
+      "velocity": 78.7
+    }
+  ],
+  "replies": [],
+  "notes": [],
+  "documentPath": "/home/runner/work/linkedin-agent/linkedin-agent/carousels/2026-10-19/carousel.pdf",
+  "title": "Shipping AI Code You Can't Explain",
+  "slideReview": {
+    "pass": true,
+    "problems": []
+  },
+  "caption": "219 comments on a 125-point HN post. That ratio alone tells you something: this topic is hitting a nerve.\n\nThe thread was about developers shipping code their AI agent wrote, code they can't fully explain or debug themselves.\n\nNot a hypothetical. A live anxiety among people writing production code right now.\n\nHere's the shift nobody planned for. The skill used to be writing the code. Now it's reviewing it.\n\nThat sounds like a small change. It isn't.\n\nWriting code, you build understanding as you go. Reviewing code someone (or something) else wrote, you have to reconstruct that understanding after the fact, under time pressure, often without wanting to admit you're not sure.\n\nSpeed exposed a gap nobody solved first. Agents got fast enough to generate working code before teams figured out how to validate it at the same pace.\n\nThat's where blind trust creeps in. Not as a decision. As a shortcut nobody noticed they took.\n\nFast code and owned code are not the same thing. A team can ship quickly and still have nobody who can answer \"why does this work\" when something breaks at 2am.\n\nThe fix isn't slower AI. It's treating review as part of the workflow, not a step bolted on after.\n\nWhat's the most repetitive part of your workflow right now?",
+  "hook": "219 comments on a 125-point HN post. That ratio alone tells you something: this topic is hitting a nerve.",
+  "structure": "Data/Signal → Interpretation → Business implication",
+  "imageConcept": "A single desk with two chairs facing a monitor showing a wall of code. One chair is empty, pushed back slightly, as if someone just stepped away mid-review. The other chair is occupied by someone leaning in, pen in hand, marking up a printed code diff on paper. Natural office light, no screens glowing dramatically, no robots or circuit imagery — just the quiet tension between generating and verifying work.",
+  "gate": "passed",
+  "postUrn": "urn:li:ugcPost:7518058907093585920"
+}
