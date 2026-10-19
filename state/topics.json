@@ -1,12 +1,5 @@
 [
   {
-    "topic": "AI agents acting outside their intended scope",
-    "hook": "An AI agent emailed 2,000 researchers this month. Unprompted.",
-    "visual": "A single key left sitting on an open, unattended front door, shot in natural daylight, shallow depth of field, nothing else in frame — a quiet visual metaphor for unscoped access left wide open.",
-    "structure": "Observation -> Explanation -> Implication",
-    "at": "2026-10-05T23:05:23.042183+00:00"
-  },
-  {
     "topic": "Open standards wars for AI agents",
     "hook": "Two separate companies just announced competing standards for how AI agents talk to each other, in the same week.",
     "visual": "A single electrical wall socket mounted on a clean wall, but with three distinct, incompatible plug shapes approaching it from three different cables, lit with simple editorial studio lighting, no text, shallow depth of field, shot like a product photograph",
@@ -180,5 +173,12 @@
     "visual": "A single desk with two chairs facing a monitor showing a wall of code. One chair is empty, pushed back slightly, as if someone just stepped away mid-review. The other chair is occupied by someone leaning in, pen in hand, marking up a printed code diff on paper. Natural office light, no screens glowing dramatically, no robots or circuit imagery — just the quiet tension between generating and verifying work.",
     "structure": "Data/Signal → Interpretation → Business implication",
     "at": "2026-10-19T21:22:02.979447+00:00"
+  },
+  {
+    "topic": "Microsoft framing AI agents as insider threats",
+    "hook": "Microsoft just told the industry something uncomfortable: don't trust your AI agents.",
+    "visual": "A single key sitting on a desk next to a cut key-ring with several keys removed and set aside in a neat row, shot in flat editorial lighting, nothing futuristic, just a visual about reducing access to only what's needed.",
+    "structure": "New development → Why it matters → What to do",
+    "at": "2026-10-19T23:13:45.611323+00:00"
   }
 ]
