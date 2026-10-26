@@ -11,7 +11,7 @@ on:
     - cron: "0 17 * * *"
     - cron: "0 20 * * 2,4,6"
     - cron: "0 20 * * 1,5"
-    - cron: "0 */4 * * *"
+    - cron: "0 10 * * *"
   workflow_dispatch:
     inputs:
       command:
@@ -80,7 +80,7 @@ jobs:
             "0 17 * * *")     ARGS="run --lane carousel" ;;
             "0 20 * * 2,4,6") ARGS="run --lane video" ;;
             "0 20 * * 1,5")   ARGS="run --lane slidevideo" ;;
-            "0 */4 * * *")    ARGS="comments" ;;
+            "0 10 * * *")     ARGS="comments" ;;
             *)
               CMD="${{ github.event.inputs.command }}"
               LANE="${{ github.event.inputs.lane }}"
