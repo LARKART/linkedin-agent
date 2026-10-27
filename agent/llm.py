@@ -24,7 +24,6 @@ def _text(resp) -> str:
     return "".join(b.text for b in resp.content if getattr(b, "type", "") == "text").strip()
 
 
-_NVIDIA_BASE = "https://integrate.api.nvidia.com/v1"
 _nvidia_working_model = None  # cached within a run once we find one that responds
 
 
@@ -32,10 +31,18 @@ def _nvidia_key() -> str:
     return config.env("NVIDIA_CHAT_API_KEY") or config.env("NVIDIA_API_KEY", required=True)
 
 
+def _chat_url() -> str:
+    return config.env("NVIDIA_CHAT_URL", "https://integrate.api.nvidia.com/v1/chat/completions")
+
+
+def _models_url() -> str:
+    return _chat_url().rsplit("/chat/completions", 1)[0] + "/models"
+
+
 def _nvidia_call(model: str, system: str, user: str, max_tokens: int, temperature: float) -> str:
     import json as _json
     import requests
-    url = config.env("NVIDIA_CHAT_URL", _NVIDIA_BASE + "/chat/completions")
+    url = _chat_url()
     r = requests.post(url, headers={"Authorization": f"Bearer {_nvidia_key()}", "Content-Type": "application/json"},
                       json={"model": model, "max_tokens": max_tokens, "temperature": temperature, "stream": True,
                             "messages": [{"role": "system", "content": system}, {"role": "user", "content": user}]},
@@ -66,7 +73,7 @@ def _nvidia_candidates() -> list[str]:
     """Live chat-capable models from NVIDIA, best general-purpose chat first."""
     import requests
     try:
-        r = requests.get(_NVIDIA_BASE + "/models", headers={"Authorization": f"Bearer {_nvidia_key()}"}, timeout=(10, 30))
+        r = requests.get(_models_url(), headers={"Authorization": f"Bearer {_nvidia_key()}"}, timeout=(10, 30))
         r.raise_for_status()
         ids = [m["id"] for m in r.json().get("data", [])]
     except Exception as e:
