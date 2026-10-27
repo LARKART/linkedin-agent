@@ -24,18 +24,22 @@ def _text(resp) -> str:
     return "".join(b.text for b in resp.content if getattr(b, "type", "") == "text").strip()
 
 
-def _nvidia_chat(system: str, user: str, max_tokens: int, temperature: float) -> str:
-    """Free fallback LLM: NVIDIA NIM (OpenAI-compatible). Uses NVIDIA_CHAT_API_KEY or NVIDIA_API_KEY."""
-    import requests
-    key = config.env("NVIDIA_CHAT_API_KEY") or config.env("NVIDIA_API_KEY", required=True)
-    url = config.env("NVIDIA_CHAT_URL", "https://integrate.api.nvidia.com/v1/chat/completions")
-    model = config.env("NVIDIA_CHAT_MODEL", "z-ai/glm-5.3-flash")
+_NVIDIA_BASE = "https://integrate.api.nvidia.com/v1"
+_nvidia_working_model = None  # cached within a run once we find one that responds
+
+
+def _nvidia_key() -> str:
+    return config.env("NVIDIA_CHAT_API_KEY") or config.env("NVIDIA_API_KEY", required=True)
+
+
+def _nvidia_call(model: str, system: str, user: str, max_tokens: int, temperature: float) -> str:
     import json as _json
-    # Stream (reasoning models hang on non-stream); accumulate content deltas.
-    r = requests.post(url, headers={"Authorization": f"Bearer {key}", "Content-Type": "application/json"},
+    import requests
+    url = config.env("NVIDIA_CHAT_URL", _NVIDIA_BASE + "/chat/completions")
+    r = requests.post(url, headers={"Authorization": f"Bearer {_nvidia_key()}", "Content-Type": "application/json"},
                       json={"model": model, "max_tokens": max_tokens, "temperature": temperature, "stream": True,
                             "messages": [{"role": "system", "content": system}, {"role": "user", "content": user}]},
-                      timeout=(10, 120), stream=True)
+                      timeout=(10, 90), stream=True)
     r.raise_for_status()
     parts, reasoning = [], []
     for line in r.iter_lines(decode_unicode=True):
@@ -52,7 +56,49 @@ def _nvidia_chat(system: str, user: str, max_tokens: int, temperature: float) ->
             parts.append(delta["content"])
         elif delta.get("reasoning_content"):
             reasoning.append(delta["reasoning_content"])
-    return ("".join(parts) or "".join(reasoning)).strip()
+    text = ("".join(parts) or "".join(reasoning)).strip()
+    if not text:
+        raise RuntimeError(f"empty response from {model}")
+    return text
+
+
+def _nvidia_candidates() -> list[str]:
+    """Live chat-capable models from NVIDIA, best general-purpose chat first."""
+    import requests
+    try:
+        r = requests.get(_NVIDIA_BASE + "/models", headers={"Authorization": f"Bearer {_nvidia_key()}"}, timeout=(10, 30))
+        r.raise_for_status()
+        ids = [m["id"] for m in r.json().get("data", [])]
+    except Exception as e:
+        print(f"[llm] NVIDIA model list failed: {str(e)[:100]}")
+        return []
+    bad = ("embed", "rerank", "reward", "guard", "ocr", "vila", "clip", "retriev", "parakeet", "riva")
+    chat = [i for i in ids if not any(b in i.lower() for b in bad)]
+    pref = ("llama-3.3-70b-instruct", "llama-3.1-70b-instruct", "llama-3.1-8b-instruct",
+            "qwen2.5-7b-instruct", "mixtral-8x7b-instruct", "instruct")
+    ranked = sorted(chat, key=lambda i: next((n for n, p in enumerate(pref) if p in i.lower()), len(pref)))
+    return ranked[:5]
+
+
+def _nvidia_chat(system: str, user: str, max_tokens: int, temperature: float) -> str:
+    """Free fallback LLM: NVIDIA NIM (OpenAI-compatible). Auto-discovers a working model."""
+    global _nvidia_working_model
+    tried = []
+    order = []
+    if _nvidia_working_model:
+        order.append(_nvidia_working_model)
+    configured = config.env("NVIDIA_CHAT_MODEL")
+    if configured and configured not in order:
+        order.append(configured)
+    for model in order + [m for m in _nvidia_candidates() if m not in order]:
+        tried.append(model)
+        try:
+            text = _nvidia_call(model, system, user, max_tokens, temperature)
+            _nvidia_working_model = model
+            return text
+        except Exception as e:
+            print(f"[llm] NVIDIA model '{model}' failed: {str(e)[:90]}")
+    raise RuntimeError(f"all NVIDIA models failed: {tried}")
 
 
 def complete(system: str, user: str, *, model: str | None = None, max_tokens: int = 2000, temperature: float = 0.7) -> str:
