@@ -114,6 +114,16 @@ def list_comments(post_urn: str, count: int = 50) -> list[dict]:
     return r.json().get("elements", [])
 
 
+def comment_on_post(post_urn: str, text: str, *, publish: bool = False) -> dict:
+    """Top-level comment on a post (e.g. the author's own first comment). Needs w_member_social."""
+    body = {"actor": author_urn(), "object": post_urn, "message": {"text": text}}
+    if not publish:
+        return {"dryRun": True, "body": body}
+    r = _check(requests.post(f"{BASE}/socialActions/{quote(post_urn, safe='')}/comments",
+                             headers=_headers({"Content-Type": "application/json"}), json=body, timeout=60))
+    return {"dryRun": False, "commentUrn": r.headers.get("x-restli-id")}
+
+
 def reply_comment(post_urn: str, parent_comment_urn: str, text: str, *, publish: bool = False) -> dict:
     body = {"actor": author_urn(), "object": post_urn, "parentComment": parent_comment_urn, "message": {"text": text}}
     if not publish:

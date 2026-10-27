@@ -4,7 +4,7 @@ from __future__ import annotations
 import re
 from pathlib import Path
 
-from . import carousel, comments, config, discovery, image, linkedin, notify, selector, state, video, writer
+from . import carousel, comments, config, discovery, image, linkedin, notify, quote, selector, state, video, writer
 
 
 def _slug(s: str) -> str:
@@ -35,6 +35,38 @@ def _publish_draft(draft: dict) -> dict:
     return record
 
 
+def _run_quote(m: str, date: str, replies: list) -> dict | None:
+    """Quote-card post: generate quote + Acosta-style caption, render card, publish, self-comment."""
+    recent = [t.get("topic", "") for t in state.topics()]
+    q = quote.generate(recent)
+    slug = _slug(q.get("topic", "quote"))
+    card = config.IMAGES / f"{date}-quote-{slug}.png"
+    quote.render_card(q["quote"], card)
+    draft = {"date": date, "lane": "post", "status": "staged", "topic": q.get("topic", "AI quote"),
+             "caption": q["caption"], "hook": q["quote"], "imageConcept": q["quote"],
+             "imagePath": str(card), "imageStatus": "quote card", "gate": "passed",
+             "firstComment": q.get("firstComment"), "sources": [], "replies": replies, "whyNow": "quote lane"}
+
+    if m == "approve":
+        state.save_draft("post", draft)
+        notify.send("LinkedIn quote post ready - approval needed",
+                    f"QUOTE: {q['quote']}\n\n{q['caption']}\n\nFirst comment: {q.get('firstComment','')}\n"
+                    f"Card: {card}\nRun: python -m agent.cli approve --lane post")
+        return draft
+
+    record = _publish_draft(draft)
+    state.save_draft("post", {**draft, "status": "published", "postUrn": record["postUrn"]})
+    # Lara Acosta tactic: author's own first comment to seed discussion.
+    if q.get("firstComment"):
+        try:
+            linkedin.comment_on_post(record["postUrn"], q["firstComment"], publish=True)
+        except Exception as e:
+            print(f"[quote] self-comment failed: {e}")
+    notify.send("LinkedIn quote post published",
+                f"QUOTE: {q['quote']}\nPost: {record['postUrn']}\nFirst comment posted: {bool(q.get('firstComment'))}")
+    return record
+
+
 def run(lane: str, *, force_discovery: bool = False) -> dict | None:
     """lane: 'post' | 'carousel'. Returns the draft/record, or None if nothing viable."""
     m = config.mode()
@@ -55,6 +87,10 @@ def run(lane: str, *, force_discovery: bool = False) -> dict | None:
             replies = []
     except Exception as e:
         notes.append(f"comment pass failed: {e}")
+
+    # The 'post' lane is a tweet-style quote card (no discovery needed).
+    if lane == "post":
+        return _run_quote(m, date, replies)
 
     # 2-3b. discovery, selection, security verification
     items = discovery.discover(force=force_discovery)
