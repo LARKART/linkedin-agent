@@ -30,14 +30,29 @@ def _nvidia_chat(system: str, user: str, max_tokens: int, temperature: float) ->
     key = config.env("NVIDIA_CHAT_API_KEY") or config.env("NVIDIA_API_KEY", required=True)
     url = config.env("NVIDIA_CHAT_URL", "https://integrate.api.nvidia.com/v1/chat/completions")
     model = config.env("NVIDIA_CHAT_MODEL", "z-ai/glm-5.3-flash")
+    import json as _json
+    # Stream (reasoning models hang on non-stream); accumulate content deltas.
     r = requests.post(url, headers={"Authorization": f"Bearer {key}", "Content-Type": "application/json"},
-                      json={"model": model, "max_tokens": max_tokens, "temperature": temperature, "stream": False,
+                      json={"model": model, "max_tokens": max_tokens, "temperature": temperature, "stream": True,
                             "messages": [{"role": "system", "content": system}, {"role": "user", "content": user}]},
-                      timeout=(10, 90))
+                      timeout=(10, 120), stream=True)
     r.raise_for_status()
-    msg = r.json()["choices"][0]["message"]
-    # Some models put the answer in reasoning_content; fall back to that if content is empty.
-    return ((msg.get("content") or msg.get("reasoning_content") or "")).strip()
+    parts, reasoning = [], []
+    for line in r.iter_lines(decode_unicode=True):
+        if not line or not line.startswith("data:"):
+            continue
+        payload = line[5:].strip()
+        if payload == "[DONE]":
+            break
+        try:
+            delta = _json.loads(payload)["choices"][0]["delta"]
+        except Exception:
+            continue
+        if delta.get("content"):
+            parts.append(delta["content"])
+        elif delta.get("reasoning_content"):
+            reasoning.append(delta["reasoning_content"])
+    return ("".join(parts) or "".join(reasoning)).strip()
 
 
 def complete(system: str, user: str, *, model: str | None = None, max_tokens: int = 2000, temperature: float = 0.7) -> str:
