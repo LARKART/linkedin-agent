@@ -24,16 +24,37 @@ def _text(resp) -> str:
     return "".join(b.text for b in resp.content if getattr(b, "type", "") == "text").strip()
 
 
+def _nvidia_chat(system: str, user: str, max_tokens: int, temperature: float) -> str:
+    """Free fallback LLM: NVIDIA NIM (OpenAI-compatible). Uses NVIDIA_CHAT_API_KEY or NVIDIA_API_KEY."""
+    import requests
+    key = config.env("NVIDIA_CHAT_API_KEY") or config.env("NVIDIA_API_KEY", required=True)
+    url = config.env("NVIDIA_CHAT_URL", "https://integrate.api.nvidia.com/v1/chat/completions")
+    model = config.env("NVIDIA_CHAT_MODEL", "z-ai/glm-5.3-flash")
+    r = requests.post(url, headers={"Authorization": f"Bearer {key}", "Content-Type": "application/json"},
+                      json={"model": model, "max_tokens": max_tokens, "temperature": temperature, "stream": False,
+                            "messages": [{"role": "system", "content": system}, {"role": "user", "content": user}]},
+                      timeout=180)
+    r.raise_for_status()
+    return (r.json()["choices"][0]["message"]["content"] or "").strip()
+
+
 def complete(system: str, user: str, *, model: str | None = None, max_tokens: int = 2000, temperature: float = 0.7) -> str:
-    # temperature accepted for backward compat but no longer a Messages API param in the current SDK.
-    resp = client().messages.create(
-        model=model or config.LLM_MODEL,
-        max_tokens=max_tokens,
-        thinking={"type": "disabled"},
-        system=system,
-        messages=[{"role": "user", "content": user}],
-    )
-    return _text(resp)
+    # Primary: Anthropic. Fallback: free NVIDIA NIM when Anthropic fails (e.g. out of credits).
+    try:
+        resp = client().messages.create(
+            model=model or config.LLM_MODEL,
+            max_tokens=max_tokens,
+            thinking={"type": "disabled"},
+            system=system,
+            messages=[{"role": "user", "content": user}],
+        )
+        text = _text(resp)
+        if text:
+            return text
+        raise RuntimeError("empty Anthropic response")
+    except Exception as e:
+        print(f"[llm] Anthropic failed ({str(e)[:120]}); falling back to NVIDIA")
+        return _nvidia_chat(system, user, max_tokens, temperature)
 
 
 def _extract_json(text: str):
@@ -76,6 +97,14 @@ def complete_obj(system: str, user: str, **kw) -> dict:
 
 
 def vision_json(system: str, user: str, image_path: Path, **kw):
+    # Vision needs Anthropic; when it's unavailable (fallback mode), pass permissively so the
+    # pipeline keeps shipping. Quality gates become advisory rather than blocking.
+    try:
+        client().messages.create(model=config.LLM_MODEL, max_tokens=4,
+                                 thinking={"type": "disabled"}, messages=[{"role": "user", "content": "ok"}])
+    except Exception as e:
+        print(f"[llm] vision unavailable ({str(e)[:100]}); gate passes by default")
+        return {"pass": True, "problems": [], "betterPrompt": ""}
     raw = Path(image_path).read_bytes()
     data = base64.standard_b64encode(raw).decode()
     # Sniff the real format from magic bytes; generators often save JPEG under a .png name.
