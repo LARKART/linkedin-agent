@@ -33,9 +33,11 @@ def _nvidia_chat(system: str, user: str, max_tokens: int, temperature: float) ->
     r = requests.post(url, headers={"Authorization": f"Bearer {key}", "Content-Type": "application/json"},
                       json={"model": model, "max_tokens": max_tokens, "temperature": temperature, "stream": False,
                             "messages": [{"role": "system", "content": system}, {"role": "user", "content": user}]},
-                      timeout=180)
+                      timeout=(10, 90))
     r.raise_for_status()
-    return (r.json()["choices"][0]["message"]["content"] or "").strip()
+    msg = r.json()["choices"][0]["message"]
+    # Some models put the answer in reasoning_content; fall back to that if content is empty.
+    return ((msg.get("content") or msg.get("reasoning_content") or "")).strip()
 
 
 def complete(system: str, user: str, *, model: str | None = None, max_tokens: int = 2000, temperature: float = 0.7) -> str:
