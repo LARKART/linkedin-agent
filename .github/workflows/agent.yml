@@ -45,7 +45,8 @@ jobs:
       NVIDIA_API_KEY: ${{ secrets.NVIDIA_API_KEY }}
       # Free fallback LLM (NVIDIA NIM, OpenAI-compatible) used when Anthropic fails.
       NVIDIA_CHAT_API_KEY: ${{ secrets.NVIDIA_CHAT_API_KEY }}
-      NVIDIA_CHAT_MODEL: ${{ vars.NVIDIA_CHAT_MODEL || 'z-ai/glm-5.3-flash' }}
+      NVIDIA_CHAT_MODEL: ${{ vars.NVIDIA_CHAT_MODEL }}
+      NVIDIA_CHAT_URL: ${{ vars.NVIDIA_CHAT_URL }}
       OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
       NOTIFY_WEBHOOK_URL: ${{ secrets.NOTIFY_WEBHOOK_URL }}
       # Gmail email notifications (GMAIL_APP_PASSWORD is a Google App Password, not the account password).
