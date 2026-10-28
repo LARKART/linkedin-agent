@@ -43,10 +43,12 @@ def _nvidia_call(model: str, system: str, user: str, max_tokens: int, temperatur
     import json as _json
     import requests
     url = _chat_url()
+    # reasoning_effort low keeps reasoning models (gpt-oss, GLM) from spending the token budget on thinking.
+    body = {"model": model, "max_tokens": max(max_tokens, 1024), "temperature": temperature, "stream": True,
+            "reasoning_effort": config.env("LLM_REASONING_EFFORT", "low"),
+            "messages": [{"role": "system", "content": system}, {"role": "user", "content": user}]}
     r = requests.post(url, headers={"Authorization": f"Bearer {_nvidia_key()}", "Content-Type": "application/json"},
-                      json={"model": model, "max_tokens": max_tokens, "temperature": temperature, "stream": True,
-                            "messages": [{"role": "system", "content": system}, {"role": "user", "content": user}]},
-                      timeout=(10, 90), stream=True)
+                      json=body, timeout=(10, 90), stream=True)
     r.raise_for_status()
     parts, reasoning = [], []
     for line in r.iter_lines(decode_unicode=True):
