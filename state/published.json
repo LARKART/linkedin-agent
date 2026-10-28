@@ -827,5 +827,22 @@
       }
     ],
     "status": "published"
+  },
+  {
+    "date": "2026-10-28",
+    "publishedAt": "2026-10-28T12:54:45.526752+00:00",
+    "postUrn": "urn:li:share:7521192735979085824",
+    "lane": "post",
+    "topic": "WorkflowâCentric Automation",
+    "subtopic": null,
+    "hook": "Automation wins when the workflow decides, not the tool",
+    "caption": "Your team spends hours moving data between apps.\n\nGive the process a brain, not a gimmick.\n\nBuild a small n8n flow that watches your lead form, enriches the contact, and pushes it to CRM automatically.\n\nNo extra UI, just the handoff you already have, now seamless.\n\nCuriousâwhat's the most manual handoff you still tolerate?",
+    "imagePrompt": null,
+    "imagePath": "/home/runner/work/linkedin-agent/linkedin-agent/images/2026-10-28-quote-workflow-centric-automation.png",
+    "documentPath": null,
+    "videoPath": null,
+    "videoStyle": null,
+    "sources": [],
+    "status": "published"
   }
 ]

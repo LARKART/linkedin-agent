@@ -1,0 +1,17 @@
+{
+  "date": "2026-10-28",
+  "lane": "post",
+  "status": "published",
+  "topic": "WorkflowâCentric Automation",
+  "caption": "Your team spends hours moving data between apps.\n\nGive the process a brain, not a gimmick.\n\nBuild a small n8n flow that watches your lead form, enriches the contact, and pushes it to CRM automatically.\n\nNo extra UI, just the handoff you already have, now seamless.\n\nCuriousâwhat's the most manual handoff you still tolerate?",
+  "hook": "Automation wins when the workflow decides, not the tool",
+  "imageConcept": "Automation wins when the workflow decides, not the tool",
+  "imagePath": "/home/runner/work/linkedin-agent/linkedin-agent/images/2026-10-28-quote-workflow-centric-automation.png",
+  "imageStatus": "quote card",
+  "gate": "passed",
+  "firstComment": "Even a tiny automation can free up hours each week. What bottleneck would you eliminate first?",
+  "sources": [],
+  "replies": [],
+  "whyNow": "quote lane",
+  "postUrn": "urn:li:share:7521192735979085824"
+}
