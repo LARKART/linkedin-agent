@@ -56,14 +56,13 @@ def _run_quote(m: str, date: str, replies: list) -> dict | None:
 
     record = _publish_draft(draft)
     state.save_draft("post", {**draft, "status": "published", "postUrn": record["postUrn"]})
-    # Lara Acosta tactic: author's own first comment to seed discussion.
-    if q.get("firstComment"):
-        try:
-            linkedin.comment_on_post(record["postUrn"], q["firstComment"], publish=True)
-        except Exception as e:
-            print(f"[quote] self-comment failed: {e}")
+    # Lara Acosta tactic: author's own first comment seeds discussion. LinkedIn's comment-create
+    # API needs the restricted Community Management product, which this app does not have, so we
+    # surface the first comment in the email for Paul to paste manually (~5s) instead of posting it.
+    fc = q.get("firstComment") or ""
     notify.send("LinkedIn quote post published",
-                f"QUOTE: {q['quote']}\nPost: {record['postUrn']}\nFirst comment posted: {bool(q.get('firstComment'))}")
+                f"QUOTE: {q['quote']}\nPost: {record['postUrn']}\n\n"
+                f"PASTE THIS AS YOUR FIRST COMMENT (seeds engagement):\n{fc}")
     return record
 
 
