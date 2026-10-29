@@ -1,12 +1,5 @@
 [
   {
-    "topic": "AI agent containment failures are a process problem, not a rogue-AI problem",
-    "hook": "There's a pattern in the recent AI agent \"gone rogue\" stories that's worth paying attention to.",
-    "visual": "A single open gate left ajar in an otherwise sealed chain-link enclosure, shot at dusk — simple, editorial, no people, no tech props. The gap in the fence is the entire idea: containment failure, not a monster on the loose.",
-    "structure": "Observation → Explanation → Implication",
-    "at": "2026-10-15T12:27:19.132378+00:00"
-  },
-  {
     "topic": "AI agents destroying production work with no undo path",
     "hook": "A TV production company reportedly lost a full season of edited footage this week after an AI agent deleted it.",
     "visual": "An editing suite monitor showing a file browser with a folder clearly labeled with a season/episode naming convention, the progress bar of a 'Deleting...' action frozen mid-process, no visible undo button in frame — shot like a clean desk photo, muted studio lighting, nothing futuristic, just a mundane screen capturing an irreversible action.",
@@ -89,5 +82,12 @@
     "visual": "Automation wins when the workflow decides, not the tool",
     "structure": "",
     "at": "2026-10-28T12:54:45.528464+00:00"
+  },
+  {
+    "topic": "Practical Automation Insight",
+    "hook": "Automation wins when you let tools handle the repeat, not the hype",
+    "visual": "Automation wins when you let tools handle the repeat, not the hype",
+    "structure": "",
+    "at": "2026-10-29T13:54:04.734337+00:00"
   }
 ]

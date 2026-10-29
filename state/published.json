@@ -844,5 +844,22 @@
     "videoStyle": null,
     "sources": [],
     "status": "published"
+  },
+  {
+    "date": "2026-10-29",
+    "publishedAt": "2026-10-29T13:54:04.732314+00:00",
+    "postUrn": "urn:li:share:7521570051641122818",
+    "lane": "post",
+    "topic": "Practical Automation Insight",
+    "subtopic": null,
+    "hook": "Automation wins when you let tools handle the repeat, not the hype",
+    "caption": "Most teams drown in manual handoffs.\nGive the repetitive steps to an AIâdriven workflow.\nMap the exact trigger, the data source, and the desired outcome.\nBuild a n8n or Make.com flow that moves the data automatically.\nAdd a simple retry and alert so nothing falls through.\nYour team then focuses on decisions, not data entry.\nWhat repetitive task would you hand over to a bot today?",
+    "imagePrompt": null,
+    "imagePath": "/home/runner/work/linkedin-agent/linkedin-agent/images/2026-10-29-quote-practical-automation-insight.png",
+    "documentPath": null,
+    "videoPath": null,
+    "videoStyle": null,
+    "sources": [],
+    "status": "published"
   }
 ]
