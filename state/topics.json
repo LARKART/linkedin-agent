@@ -1,19 +1,5 @@
 [
   {
-    "topic": "AI agents destroying production work with no undo path",
-    "hook": "A TV production company reportedly lost a full season of edited footage this week after an AI agent deleted it.",
-    "visual": "An editing suite monitor showing a file browser with a folder clearly labeled with a season/episode naming convention, the progress bar of a 'Deleting...' action frozen mid-process, no visible undo button in frame — shot like a clean desk photo, muted studio lighting, nothing futuristic, just a mundane screen capturing an irreversible action.",
-    "structure": "New development → Why it matters → What to do",
-    "at": "2026-10-15T22:58:51.029222+00:00"
-  },
-  {
-    "topic": "ChatGPT browsing your open tabs to do tasks",
-    "hook": "ChatGPT reading your open tabs to take action is a small feature update with a bigger implication.",
-    "visual": "A tidy desk shot from above: a laptop screen showing several overlapping browser tabs (email, spreadsheet, CRM) slightly fanned out like playing cards, with one tab subtly glowing at the edge to suggest it's being 'read' — no robots, no UI chrome exaggeration, just a clean editorial desk photo implying something is quietly observing the workspace.",
-    "structure": "New development → Why it matters → What to do",
-    "at": "2026-10-16T12:08:52.581880+00:00"
-  },
-  {
     "topic": "AI code review catching more bugs than human teams can triage",
     "hook": "Postgres 19 is being delayed. Not because of a major bug. Because an AI reviewer found more bugs than the maintainers could triage in time.",
     "visual": "A single inbox tray overflowing with paper slips, but the slips are neatly stacked and color-coded by priority sticker, while a second empty tray behind it sits untouched — shot like an editorial still life, warm office lighting, shallow depth of field, no screens or devices visible, just the physical metaphor of intake outpacing processing.",
@@ -89,5 +75,12 @@
     "visual": "Automation wins when you let tools handle the repeat, not the hype",
     "structure": "",
     "at": "2026-10-29T13:54:04.734337+00:00"
+  },
+  {
+    "topic": "Guarded Automation",
+    "hook": "Automation thrives when humans design the guardrails, not when they disappear",
+    "visual": "Automation thrives when humans design the guardrails, not when they disappear",
+    "structure": "",
+    "at": "2026-10-30T13:46:27.163873+00:00"
   }
 ]

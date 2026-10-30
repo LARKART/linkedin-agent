@@ -1,0 +1,17 @@
+{
+  "date": "2026-10-30",
+  "lane": "post",
+  "status": "published",
+  "topic": "Guarded Automation",
+  "caption": "The biggest mistake teams make is assuming AI will run everything on its own.\n\nStart by mapping every manual handoff.\nIdentify the exact decision point where a human must intervene.\nBuild an explicit guardrail â a rule, a approval step, or a fallback.\nThen let the AI handle the repeatable work around it.\n\nGuardrails turn risky automation into reliable growth engines.\n\nWhat handoff in your workflow could use a clear guardrail?",
+  "hook": "Automation thrives when humans design the guardrails, not when they disappear",
+  "imageConcept": "Automation thrives when humans design the guardrails, not when they disappear",
+  "imagePath": "/home/runner/work/linkedin-agent/linkedin-agent/images/2026-10-30-quote-guarded-automation.png",
+  "imageStatus": "quote card",
+  "gate": "passed",
+  "firstComment": "Guardrails arenât about limiting AI; theyâre about giving it a safe space to add value. Which part of your process needs a human checkpoint?",
+  "sources": [],
+  "replies": [],
+  "whyNow": "quote lane",
+  "postUrn": "urn:li:share:7521930520956596224"
+}
