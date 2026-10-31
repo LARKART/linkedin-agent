@@ -918,5 +918,28 @@
       }
     ],
     "status": "published"
+  },
+  {
+    "date": "2026-10-31",
+    "publishedAt": "2026-10-31T23:10:52.328820+00:00",
+    "postUrn": "urn:li:ugcPost:7522434949661089792",
+    "lane": "video",
+    "topic": "NotebookLM vs. ChatGPT Dots: shifting AI study tools",
+    "subtopic": "AIâpowered learning assistants",
+    "hook": "Stop scrolling through PDFsâturn podcasts into searchable knowledge.",
+    "caption": "Most professionals still rely on endless PDFs and handwritten notes to learn new skills. But what if the same content could be turned into searchable, multimodal snippets that you can ask questions about on the fly? Emerging AI podcast tools like NotebookLM are turning audio into structured knowledge bases, letting you pull up exact quotes or visual aids without scrolling. That means less time hunting, more time applying. If your team is still digging through slides to find a single line, it might be time to try a learning assistant that turns listening into actionable insights.",
+    "imagePrompt": null,
+    "imagePath": null,
+    "documentPath": null,
+    "videoPath": "/home/runner/work/linkedin-agent/linkedin-agent/videos/2026-10-31/notebooklm-vs-chatgpt-dots-shifting-ai-s/notebooklm-vs-chatgpt-dots-shifting-ai-s.mp4",
+    "videoStyle": "animated",
+    "sources": [
+      {
+        "platform": "news",
+        "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPZFg5aXRMWE9WZUxQTW5SRnhSUVhwanZCeGpETGNQMFJMTGV3RmJHRTVWOGRMcEtmZXRTSDUydzFqUVhFNWJGN3BsSWdOOE81Y0FTNHY2MFZlVk9TUkRZQ2hWM1FzRFpVa3J6UXhLaEFlWlNDampZUDB1c2Q1THNFc1M1VkxaX1k?oc=5",
+        "velocity": 20.0
+      }
+    ],
+    "status": "published"
   }
 ]
