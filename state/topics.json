@@ -1,12 +1,5 @@
 [
   {
-    "topic": "Websites actively blocking AI agents from accessing their content",
-    "hook": "An agent that can technically do something is no longer the same as an agent that's allowed to do it.",
-    "visual": "A single closed turnstile gate photographed head-on in an otherwise empty, clean corridor — stark, minimal, editorial lighting, no people, no screens, no robots. The turnstile is the entire story: something built to let some things through and stop others.",
-    "structure": "Observation → Explanation → Implication",
-    "at": "2026-10-17T19:03:23.616019+00:00"
-  },
-  {
     "topic": "Financial institutions building permission walls against autonomous AI agents",
     "hook": "Schwab and JPMorgan just put up permission walls against AI agents.",
     "visual": "A single bank teller's brass turnstile or velvet-rope stanchion positioned in front of a plain office door, shot in sharp editorial light, nothing else in frame — a literal access-control barrier standing in for digital permission systems, no screens or tech imagery.",
@@ -68,5 +61,12 @@
     "visual": "Automation wins when humans stay in the loop, not out of it",
     "structure": "",
     "at": "2026-10-31T13:15:08.882652+00:00"
+  },
+  {
+    "topic": "Generative AIâs impact on critical thinking in the workplace",
+    "hook": "Most teams love the speed of AI, but a new study shows that when itâs the first person in the room, critical analysis drops.",
+    "visual": "A splitâscreen illustration: on one side a stopwatch and a stack of paperwork (speed), on the other side a magnifying glass over a document with a question mark (critical thinking), connected by a hand passing a checkmark between them",
+    "structure": "Hook â Whatâs inside the carousel â One useful takeaway â Soft CTA",
+    "at": "2026-10-31T20:24:13.150904+00:00"
   }
 ]

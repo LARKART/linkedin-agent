@@ -1,0 +1,32 @@
+{
+  "date": "2026-10-31",
+  "lane": "carousel",
+  "status": "published",
+  "topic": "Generative AIâs impact on critical thinking in the workplace",
+  "subtopic": "Decisionâmaking bias",
+  "whyNow": "The findings were just published, sparking debate about how teams should integrate AI without eroding judgment.",
+  "sources": [
+    {
+      "platform": "hackernews",
+      "url": "https://dl.acm.org/doi/full/10.1145/3706598.3713778",
+      "velocity": 73.76
+    }
+  ],
+  "replies": [],
+  "notes": [
+    "SKIPPED (unverified security story): Malware leveraging LLMs to prioritize victims - verification search failed: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CgawVoYz2ZZtJVZs7FfQJ'}",
+    "SKIPPED (unverified security story): Hijacking ChatGPT accounts for unauthorized use - verification search failed: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CgawVp9TuBQV9bh8znX7e'}"
+  ],
+  "documentPath": "/home/runner/work/linkedin-agent/linkedin-agent/carousels/2026-10-31/carousel.pdf",
+  "title": "Generative AIâs Effect on Workplace Critical Thinking",
+  "slideReview": {
+    "pass": true,
+    "problems": []
+  },
+  "caption": "Most teams love the speed of AI, but a new study shows that when itâs the first person in the room, critical analysis drops.  Thatâs the tradeâoff: faster decisions, weaker judgment.  In this carousel we map the patternâAI proposes, humans acceptâshow the blind spot of overâreliance, and lay out simple gates: a review checkpoint, a question prompt, and a balance check between speed and insight.  The takeaway?  Build an oversight loop that keeps the human in the decision loop, not just the data feed.  Think of AI as a coâworker who needs a human supervisor before the final signâoff.  Want to protect your teamâs critical thinking while still enjoying AIâs efficiency?  Letâs talk about setting those review gates together.",
+  "hook": "Most teams love the speed of AI, but a new study shows that when itâs the first person in the room, critical analysis drops.",
+  "structure": "Hook â Whatâs inside the carousel â One useful takeaway â Soft CTA",
+  "imageConcept": "A splitâscreen illustration: on one side a stopwatch and a stack of paperwork (speed), on the other side a magnifying glass over a document with a question mark (critical thinking), connected by a hand passing a checkmark between them",
+  "gate": "passed",
+  "postUrn": "urn:li:ugcPost:7522393010014212097"
+}
