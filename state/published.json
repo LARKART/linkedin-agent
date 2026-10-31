@@ -878,5 +878,22 @@
     "videoStyle": null,
     "sources": [],
     "status": "published"
+  },
+  {
+    "date": "2026-10-31",
+    "publishedAt": "2026-10-31T13:15:08.880579+00:00",
+    "postUrn": "urn:li:share:7522285030904320000",
+    "lane": "post",
+    "topic": "HumanâCentric Automation",
+    "subtopic": null,
+    "hook": "Automation wins when humans stay in the loop, not out of it",
+    "caption": "Turn the hype into results.\nYour team spends hours on repetitive data entry.\nBuild a small AI assistant that captures the input, validates it, and hands it to the right system.\nYou keep control, reduce errors, and free up time for strategic work.\nWhat repetitive task would you hand over to an AI today?",
+    "imagePrompt": null,
+    "imagePath": "/home/runner/work/linkedin-agent/linkedin-agent/images/2026-10-31-quote-human-centric-automation.png",
+    "documentPath": null,
+    "videoPath": null,
+    "videoStyle": null,
+    "sources": [],
+    "status": "published"
   }
 ]

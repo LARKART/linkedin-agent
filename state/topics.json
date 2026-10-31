@@ -1,26 +1,5 @@
 [
   {
-    "topic": "AI code review catching more bugs than human teams can triage",
-    "hook": "Postgres 19 is being delayed. Not because of a major bug. Because an AI reviewer found more bugs than the maintainers could triage in time.",
-    "visual": "A single inbox tray overflowing with paper slips, but the slips are neatly stacked and color-coded by priority sticker, while a second empty tray behind it sits untouched — shot like an editorial still life, warm office lighting, shallow depth of field, no screens or devices visible, just the physical metaphor of intake outpacing processing.",
-    "structure": "Data/Signal → Interpretation → Business implication",
-    "at": "2026-10-16T19:50:04.757641+00:00"
-  },
-  {
-    "topic": "AI code review catching bugs humans can't triage fast enough",
-    "hook": "An AI reviewer found more real bugs in a major open-source project than the maintainers could fix before the planned release.",
-    "visual": "A single overflowing inbox tray sitting on an otherwise empty, clean desk, lit from one side — stacks of paper spilling slightly over the edges, everything else in the frame minimal and orderly. The visual metaphor: the intake got faster, but the tray downstream is where the backlog now sits.",
-    "structure": "Problem → Unexpected insight → Practical takeaway",
-    "at": "2026-10-16T22:17:53.527743+00:00"
-  },
-  {
-    "topic": "AI code review catching bugs faster than teams can fix them",
-    "hook": "A Postgres release just got delayed because AI code review found more bugs than the maintainers could triage.",
-    "visual": "An editorial overhead shot of a single inbox tray overflowing with stacked paper tickets/sticky notes, next to one empty outbox tray — a visual metaphor for detection outpacing triage capacity, shot in clean natural light, no screens or tech imagery.",
-    "structure": "New development → Why it matters → What to do",
-    "at": "2026-10-17T11:20:52.340091+00:00"
-  },
-  {
     "topic": "Websites actively blocking AI agents from accessing their content",
     "hook": "An agent that can technically do something is no longer the same as an agent that's allowed to do it.",
     "visual": "A single closed turnstile gate photographed head-on in an otherwise empty, clean corridor — stark, minimal, editorial lighting, no people, no screens, no robots. The turnstile is the entire story: something built to let some things through and stop others.",
@@ -82,5 +61,12 @@
     "visual": "Automation thrives when humans design the guardrails, not when they disappear",
     "structure": "",
     "at": "2026-10-30T13:46:27.163873+00:00"
+  },
+  {
+    "topic": "HumanâCentric Automation",
+    "hook": "Automation wins when humans stay in the loop, not out of it",
+    "visual": "Automation wins when humans stay in the loop, not out of it",
+    "structure": "",
+    "at": "2026-10-31T13:15:08.882652+00:00"
   }
 ]
