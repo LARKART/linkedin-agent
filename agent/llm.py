@@ -51,8 +51,9 @@ def _nvidia_call(model: str, system: str, user: str, max_tokens: int, temperatur
     import json as _json
     import requests
     url = _chat_url()
-    # Free providers (Groq) cap request size and return 413; clip to a safe budget.
-    budget = int(config.env("LLM_FALLBACK_CHAR_BUDGET", "14000"))
+    # Free providers (Groq) enforce a tokens-per-minute cap and return 413 when a prompt (or the
+    # minute's cumulative usage) exceeds it; clip each side to a safe budget (~1 token per 4 chars).
+    budget = int(config.env("LLM_FALLBACK_CHAR_BUDGET", "8000"))
     system, user = _clip(system, budget), _clip(user, budget)
     # reasoning_effort low keeps reasoning models (gpt-oss, GLM) from spending the token budget on thinking.
     body = {"model": model, "max_tokens": max(max_tokens, 1024), "temperature": temperature, "stream": True,
@@ -119,7 +120,7 @@ def _nvidia_chat(system: str, user: str, max_tokens: int, temperature: float) ->
             _nvidia_working_model = model
             return text
         except Exception as e:
-            print(f"[llm] NVIDIA model '{model}' failed: {str(e)[:90]}")
+            print(f"[llm] NVIDIA model '{model}' failed: {str(e)[:240]}")
     raise RuntimeError(f"all NVIDIA models failed: {tried}")
 
 
