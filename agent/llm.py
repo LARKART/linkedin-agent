@@ -39,10 +39,21 @@ def _models_url() -> str:
     return _chat_url().rsplit("/chat/completions", 1)[0] + "/models"
 
 
+def _clip(text: str, budget: int) -> str:
+    """Trim a prompt to a char budget so free-tier providers (Groq) don't 413. Keeps head+tail."""
+    if len(text) <= budget:
+        return text
+    head = int(budget * 0.7)
+    return text[:head] + "\n\n[...trimmed...]\n\n" + text[-(budget - head):]
+
+
 def _nvidia_call(model: str, system: str, user: str, max_tokens: int, temperature: float) -> str:
     import json as _json
     import requests
     url = _chat_url()
+    # Free providers (Groq) cap request size and return 413; clip to a safe budget.
+    budget = int(config.env("LLM_FALLBACK_CHAR_BUDGET", "14000"))
+    system, user = _clip(system, budget), _clip(user, budget)
     # reasoning_effort low keeps reasoning models (gpt-oss, GLM) from spending the token budget on thinking.
     body = {"model": model, "max_tokens": max(max_tokens, 1024), "temperature": temperature, "stream": True,
             "reasoning_effort": config.env("LLM_REASONING_EFFORT", "low"),
@@ -81,10 +92,12 @@ def _nvidia_candidates() -> list[str]:
     except Exception as e:
         print(f"[llm] NVIDIA model list failed: {str(e)[:100]}")
         return []
-    bad = ("embed", "rerank", "reward", "guard", "ocr", "vila", "clip", "retriev", "parakeet", "riva")
+    bad = ("embed", "rerank", "reward", "guard", "ocr", "vila", "clip", "retriev", "parakeet", "riva",
+           "tts", "whisper", "orpheus", "allam", "audio", "speech", "vision", "playai", "distil")
     chat = [i for i in ids if not any(b in i.lower() for b in bad)]
-    pref = ("llama-3.3-70b-instruct", "llama-3.1-70b-instruct", "llama-3.1-8b-instruct",
-            "qwen2.5-7b-instruct", "mixtral-8x7b-instruct", "instruct")
+    # Prefer general-purpose instruction/chat models (works for both Groq and NVIDIA naming).
+    pref = ("gpt-oss-120b", "llama-3.3-70b-versatile", "llama-3.3-70b", "llama-3.1-70b",
+            "llama-3.1-8b", "gpt-oss-20b", "qwen", "mixtral", "instruct", "versatile")
     ranked = sorted(chat, key=lambda i: next((n for n, p in enumerate(pref) if p in i.lower()), len(pref)))
     return ranked[:5]
 
