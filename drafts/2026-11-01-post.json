@@ -1,0 +1,17 @@
+{
+  "date": "2026-11-01",
+  "lane": "post",
+  "status": "published",
+  "topic": "Connected Tools Efficiency",
+  "caption": "If your apps are still shouting at each other, youâre losing time.\nConnect them with a simple n8n flow.\nMap the data once, let the automation handle the rest.\nYour team focuses on decisions, not data entry.\nWhatâs the most stubborn integration youâve faced?",
+  "hook": "When your tools talk, your team finally starts listening",
+  "imageConcept": "When your tools talk, your team finally starts listening",
+  "imagePath": "/home/runner/work/linkedin-agent/linkedin-agent/images/2026-11-01-quote-connected-tools-efficiency.png",
+  "imageStatus": "quote card",
+  "gate": "passed",
+  "firstComment": "I recently helped a marketing team sync their CRM and email platform, cutting manual updates by 70%. What integration challenges are you dealing with?",
+  "sources": [],
+  "replies": [],
+  "whyNow": "quote lane",
+  "postUrn": "urn:li:share:7522658451769085953"
+}
