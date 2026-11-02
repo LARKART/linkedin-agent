@@ -958,5 +958,193 @@
     "videoStyle": null,
     "sources": [],
     "status": "published"
+  },
+  {
+    "date": "2026-11-02",
+    "publishedAt": "2026-11-02T12:05:03.658050+00:00",
+    "postUrn": "urn:li:ugcPost:7522992166697246721",
+    "lane": "carousel",
+    "topic": "Practical AI ROI",
+    "subtopic": "Bridging the gap between AI investment and business value",
+    "hook": "Businesses are investing heavily in AI, yet many are still asking: \"Where's the ROI?\"",
+    "caption": "Businesses are investing heavily in AI, yet many are still asking: \"Where's the ROI?\" \n\nThe reality is, significant funds are being allocated to AI tools and experiments, but the tangible financial payoffs often remain elusive. This isn't about the technology failing, it's about how it's being implemented.\n\nMany teams get stuck in the 'experimentation' phase. They test new AI features without integrating them into core workflows or connecting them to measurable business outcomes.\n\nFor AI to deliver real value, it needs to move beyond isolated tools. It requires building practical systems that solve specific business problems, reduce repetitive work, and fit how your team operates.\n\nThis means starting with a clear business problem, integrating AI directly into daily operations, and defining measurable ROI metrics from the start. Itâs about building AI that actually works within your existing structure, not just another standalone tool.\n\nReady to move past experiments and build AI systems that deliver tangible results?\n\n#AIBusiness #AIStrategy",
+    "imagePrompt": null,
+    "imagePath": null,
+    "documentPath": "/home/runner/work/linkedin-agent/linkedin-agent/carousels/2026-11-02/carousel.pdf",
+    "videoPath": null,
+    "videoStyle": null,
+    "sources": [
+      {
+        "platform": "hackernews",
+        "url": "https://techcrunch.com/2026/10/25/ai-delivers-zero-financial-payoff-to-most-companies-according-to-apollo-economist/",
+        "velocity": 65.51
+      },
+      {
+        "platform": "news",
+        "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxOTGlhakQzenVjemZjMTRqTC11MlItWkFLZ3VMREZBV05TMTdMQ0dtb1lpeHRSMmdaZXNRNnlCZlhna3dJMV9JelZSdVlwNTkzTWNRODh5Z1F6TXo2YVFsZjFKQ0JLcjRkMmRISHVwOUZTZmJxU253SXB3Zm1rNmVsUVFkRVNJREdTWE9NVkJ6OVh2QnprMmJLTFJPZmhVTnU5ekktMEhsc28ybENQSjY4VTFJNG5udmFXWHJjLW8wR19uNnFXQlhldEhyYkQ0VC10d3c?oc=5",
+        "velocity": 20.0
+      },
+      {
+        "platform": "news",
+        "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQV0ZwWEI5ZVJjVEpXb2lmWmFULVExYl9VcXZiblI1OGJyczJMa3lWRzB3azh5RDB3M1RGZGlQekNuVE83cVdTN2ZEME9DRzB5cmNMTUVFbGpob0ZBOVA5OVdJNzdFdExGU0NJTHV6T0hCblJzdXJraWlBWlRxRkM4N1lsaE1fdmZZdGlpb3R5OA?oc=5",
+        "velocity": 20.0
+      },
+      {
+        "platform": "news",
+        "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE45U3VKU1FTSHZJNDZYVVdfaGM0aWRXNVdkRFBUNjNEanBFYUNFbTY0Skc0RUJhUlllb0c2dGpvd1BlS1l2MWhiYXVEdHo2bU9NV21JQUtqN3RWYWltMDlRczZjaG9QSnFLSkowNmpLLTZVX1FGa3VlSg?oc=5",
+        "velocity": 20.0
+      },
+      {
+        "platform": "news",
+        "url": "https://news.google.com/rss/articles/CBMigAJBVV95cUxNaWJyOFNXVE1STVJzckIxTlZEbFBMWkdqbnEwZlA2S0tFMGhia2pTR3l1QTRDVm9CNW5xOVM1SHZpUFpvWTlheFN3d1ZQTldidjRodUMybDQ5SkgyejE2NHdzS1BweHd2cXZtanN2M2YwZ3U5ZEVtbE9ISlowazl6UEVGbVluZjFSbHZyS1NYanJzUmtGcERUUzFBSE5qVHNvYmxLNk0yYXMwZEZya1FWd0VyMjlQWWlhOTJxaFdQMkdZYmRkaHlBQUxiSno2bkkwSTRjQlE0Z2w3VUU1SEJSb1BLOEkxajU1Nk5KbjdDQWZhb1FBLXRKNm4tU180R2NZ?oc=5",
+        "velocity": 20.0
+      },
+      {
+        "platform": "news",
+        "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxPY3lwakctV2EwbkRFeU93QUVXVHNCckxld2xrcHhNSmpaS3UwUFVPczg1MlllbWJnaUxPWVRnV0xZUnZyLWtTWjVQV2FNZk8zWV83dTdUa2M4UTN3cklQaDhLWEY4QUNIRTIwS0U4aHVBeURvMzRyZ25KajBnSXRyRU9XRG1Kc05DS2kwX2loN3lYZWtPTTFlOWNFSUxST3lMWWd6ZFgtQm41MzQ3LUdMZE1YQ3VhYVlfMTRXTWhmZE92VVdaMFlCMy1UT08zNlBnQlpFc1U5dktBd2NmWTdr?oc=5",
+        "velocity": 20.0
+      },
+      {
+        "platform": "news",
+        "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPQXFaNHRHaGJETzFUNTNtSVY0dzJxZDI0b3JJOHI5aGhfb0xXV1ZqcDNsU01rYXBfeDFVTFAwRHY4YkttRG1MbUNCeTZ5TjBfVkFHQmtpTHcydlc3MVotQ2xzQmxQbXRNOERlSTdQWVJTa0hBSjJITEhHMXN1b0d5MEM4UUdoWFE?oc=5",
+        "velocity": 20.0
+      },
+      {
+        "platform": "hackernews",
+        "url": "https://help.openai.com/en/articles/20001625-understanding-chatgpt-and-codex-usage-limits",
+        "velocity": 19.03
+      },
+      {
+        "platform": "news",
+        "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQcm9BbVF4WXAwNC1vRmZneGl5Yk1GSk8wM1JjbS01VXdvOGJzaFpFeGJIcHE1OWxJNi1UTzVwcjk5NXB1RExmOWlXNEpsOXhlYU5kdG00THR5NDRFZkl2cU5sM1Nsd2tfNHVzcDZTT2ZwOWQxM1hrVWNsTGwyenhiUk84WExaZExwNExQTVI2SVJJQnhCMWd1UTExVXZ0QXM?oc=5",
+        "velocity": 18.79
+      },
+      {
+        "platform": "hackernews",
+        "url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/ai-agent-swarms-unleashed-in-minecraft-to-build-a-thriving-civilization-50-agent-teams-fail-after-falling-into-paralyzing-bureaucracy",
+        "velocity": 18.72
+      },
+      {
+        "platform": "hackernews",
+        "url": "https://www.ft.com/content/59383c7f-8d82-493f-bf01-d2e862a1018f",
+        "velocity": 18.07
+      },
+      {
+        "platform": "hackernews",
+        "url": "https://www.parameter.ai/labs/we-found-a-gap-at-openai",
+        "velocity": 17.89
+      },
+      {
+        "platform": "news",
+        "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTFAwZlVsSV93WjRjT3g2VGgtLVA5NXd6NUpONnhNaXA3SFlzaHItSW45Tnl6Yzl1TFNxWWltaGhFNEdidHJuaTZHS3VWdFA2cTdaSVNhVDhyNVVaMVNqc2ZfWjhlNVpQeE53UlN1X3BIUGRDRFczbE1zTjJB?oc=5",
+        "velocity": 17.54
+      },
+      {
+        "platform": "hackernews",
+        "url": "https://blog.talosintelligence.com/appraisal-by-ai-model-driven-victim-prioritization-in-the-volta-infostealer/",
+        "velocity": 14.7
+      },
+      {
+        "platform": "hackernews",
+        "url": "https://www.wsj.com/tech/ai/openai-raises-less-than-half-of-30-billion-target-in-latest-round-91aecdc5",
+        "velocity": 13.92
+      },
+      {
+        "platform": "hackernews",
+        "url": "https://mashable.com/tech/anthropic-takes-steps-to-block-video-game-cloning-and-reverse-engineering",
+        "velocity": 13.64
+      },
+      {
+        "platform": "hackernews",
+        "url": "https://news.ycombinator.com/",
+        "velocity": 13.4
+      },
+      {
+        "platform": "hackernews",
+        "url": "https://proton.me/blog/ai-manifesto",
+        "velocity": 12.08
+      },
+      {
+        "platform": "hackernews",
+        "url": "https://news.ycombinator.com/item?id=50331001",
+        "velocity": 11.99
+      },
+      {
+        "platform": "news",
+        "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxQY1RvS04tMEhwLS1MQXBHRkNwYjMtdjJpTGxJc1RJMXdjeHhZbW96dUdnQzQ4R3c0VTZGbWx3WFBXbEpxTGtEWnkzREJXUkNGRjBGRGlSOWtrd2dSbkNTa2paejdkZnFJZW9YM3RFMndzOV9Rdm1xR1hOWWZlVXBlWHl1b3d1WU81MlRCcnJqVDJyNFplenM3b1cwd2dUMjA2d201clVUWEpDUVpZN3loYkVQSHhXS0poX1g0M2JiTWZOM3VDY0NuajJnQXNrdzhmd1BmOVE3Yw?oc=5",
+        "velocity": 11.71
+      },
+      {
+        "platform": "hackernews",
+        "url": "https://www.tomshardware.com/tech-industry/data-centers/openai-ceo-says-its-quite-terrible-for-your-pc-to-have-ram-sam-altman-says-data-centers-offer-better-utilization",
+        "velocity": 11.6
+      },
+      {
+        "platform": "hackernews",
+        "url": "https://picon.dev/en/publications/ai-assisted-engineering/",
+        "velocity": 11.54
+      },
+      {
+        "platform": "news",
+        "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOc01IeDljYkxEaWZBUHVSTmVQMnJJbmF1OUtJbnhUVUZ0TGI2TEYzZ0lYbTRKTjZYVWg3cGtHVlFHcmo1a1N5UDhHcmk0TmtMNHpvWnNtbk5xd2YxQ1FRU0FYMUNSWGJRUzJvdFJhWmpDelJnNGtQY2JFREdFVmYtYW41U0w4dzJCQnlMc3NaMVo4ay03YnNuY2lkMA?oc=5",
+        "velocity": 10.57
+      },
+      {
+        "platform": "news",
+        "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE81T1duN2Z3bHR6OWZVdG1Eb3R5bE5zd2xCazlsaTkxZmg3bkpBbTI2bUJOLXZaVHBaWWF4Qndqb3Vra2FjY1R4REJrdHYyaFRuZTI5VXpCNGlnenRUQ0RFMmZqTEVfUQ?oc=5",
+        "velocity": 9.94
+      },
+      {
+        "platform": "news",
+        "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxPZmVGYmU1bVM1b0dsVHRfZkhoX3FNdkZsSFlYemJ1QzhIWlRtNWxpNHFOV0hiTlBmNHBROFRRUDdCZVptLTN1OGZKdmZuTlp6OF9sVnpFM2VpWl9Pd3VVSldXSG5UR3BTNlR0UGFXY3FFVjA1Rm45c3M2TlpoLUg1Qmx4aU8xRzZJXzRPcEZaa1UyY2VTVTIxZjI5VGVaWU9zZlhSek1wTVVQb0xMUUZ0UTJsNGlNWkF1ekE5M21MeDhuWnVfS1E?oc=5",
+        "velocity": 9.35
+      },
+      {
+        "platform": "news",
+        "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxNQ0pOdE1lZG13ZnNVdFZDY0p3Z0JjN2hGWGd3bTBUVmotSEFNTEMwbFB3SjdzVEJPVy1EcmEyWlNiN0I0ejhhcDNLQWpYSkVSaHdMNGlHb2xJREl3X1VubHBLUFBkN25lN1F5R0RILWtVN1NJMHdOZU9GQnVoYm1naks4bzlzdjV5VTRrcEpqbW0yMjg3YllmWTVPdzRRZw?oc=5",
+        "velocity": 9.33
+      },
+      {
+        "platform": "hackernews",
+        "url": "https://news.ycombinator.com/item?id=50326727",
+        "velocity": 9.01
+      },
+      {
+        "platform": "hackernews",
+        "url": "https://chaosmanage.github.io/i-killed-unlimited-chatgpt/",
+        "velocity": 8.35
+      },
+      {
+        "platform": "hackernews",
+        "url": "https://twitter.com/chasmmmmmmmmmmm/status/2116062991686721968",
+        "velocity": 7.91
+      },
+      {
+        "platform": "hackernews",
+        "url": "https://github.com/l0ng-ai/openidea",
+        "velocity": 7.65
+      },
+      {
+        "platform": "news",
+        "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPWncyM3hqOFdZY0NvcnhaczJoVGxpb0NaNl9ldWdUUXNYN3dsUEVCVHBOQUJZREtGaGctV0QtS0ZxU25tNjFzbmMzNjNrVV9TU3k1OU9TaXdHaXVuTmlEVGY2M3Y4R0l1WG1oS2cwTUo3RGdqcVpJNWt0VkJFNHJScVBCVTVWVGlOTFVTYThpUnc?oc=5",
+        "velocity": 7.32
+      },
+      {
+        "platform": "hackernews",
+        "url": "https://frvr.com/blog/news/openai-ceo-sam-altman-says-its-terrible-to-have-everybody-have-a-bunch-of-the-worlds-limited-supply-of-dram-instead-of-shoving-it-all-in-datacentres/",
+        "velocity": 6.59
+      },
+      {
+        "platform": "hackernews",
+        "url": "https://www.thebignewsletter.com/p/why-anthropics-filing-crushed-tech",
+        "velocity": 6.04
+      },
+      {
+        "platform": "hackernews",
+        "url": "https://techcrunch.com/2026/10/30/anthropic-expected-to-receive-high-junk-rating-from-credit-agencies-following-ipo-report-says/",
+        "velocity": 5.51
+      }
+    ],
+    "status": "published"
   }
 ]

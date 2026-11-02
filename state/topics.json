@@ -1,12 +1,5 @@
 [
   {
-    "topic": "AI Security in Enterprises",
-    "hook": "An AI agent can read a filing system, open a browser tab, and query a customer database, often in the same session, with permissions nobody fully mapped out ahead of time.",
-    "visual": "A single office keycard lying on a desk next to a ring with dozens of extra keys attached to it, shot overhead in flat, clean editorial lighting — the single card representing the task, the overloaded keyring representing accumulated, unchecked access.",
-    "structure": "Observation → Explanation → Implication",
-    "at": "2026-10-18T19:15:39.467518+00:00"
-  },
-  {
     "topic": "Shipping AI-written code nobody understands",
     "hook": "219 comments on a 125-point HN post. That ratio alone tells you something: this topic is hitting a nerve.",
     "visual": "A single desk with two chairs facing a monitor showing a wall of code. One chair is empty, pushed back slightly, as if someone just stepped away mid-review. The other chair is occupied by someone leaning in, pen in hand, marking up a printed code diff on paper. Natural office light, no screens glowing dramatically, no robots or circuit imagery — just the quiet tension between generating and verifying work.",
@@ -68,5 +61,12 @@
     "visual": "When your tools talk, your team finally starts listening",
     "structure": "",
     "at": "2026-11-01T13:58:59.425159+00:00"
+  },
+  {
+    "topic": "Practical AI ROI",
+    "hook": "Businesses are investing heavily in AI, yet many are still asking: \"Where's the ROI?\"",
+    "visual": "A blueprint or architectural drawing of a business process, with some elements highlighted or connected by glowing lines, representing AI integration bringing efficiency, rather than a standalone AI component.",
+    "structure": "Problem observation -> Explanation of the problem (stuck in experimentation) -> Solution approach (practical systems, integration, measurable outcomes) -> Call to action.",
+    "at": "2026-11-02T12:05:03.660751+00:00"
   }
 ]
