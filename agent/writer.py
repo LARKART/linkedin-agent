@@ -6,10 +6,18 @@ import re
 from . import llm
 
 BANNED_PHRASES = [
-    "agree?", "thoughts?", "let that sink in", "here's the thing", "in today's rapidly changing world",
-    "game changer", "game-changer", "revolutionary", "the future is here", "10x", "unlock the power",
-    "i am passionate", "excited to announce", "delve", "leverage the power", "cutting-edge", "ecosystem",
-    "in the ever-evolving", "supercharge", "skyrocket", "guaranteed",
+    # engagement-bait and tired openers
+    "agree?", "thoughts?", "let that sink in", "here's the thing", "the truth is", "let's be honest",
+    "let's dive in", "dive into", "buckle up", "spoiler", "plot twist", "hot take", "read that again",
+    # AI-slop vocabulary
+    "in today's rapidly changing world", "in today's fast-paced", "in the ever-evolving", "ever-changing",
+    "game changer", "game-changer", "revolutionary", "revolutionize", "the future is here", "10x",
+    "unlock the power", "unlock", "i am passionate", "excited to announce", "thrilled to", "delve", "delving",
+    "leverage the power", "leverage", "cutting-edge", "ecosystem", "supercharge", "skyrocket", "guaranteed",
+    "elevate", "harness", "seamless", "seamlessly", "robust", "paradigm", "synergy", "tapestry",
+    "testament to", "navigate the", "landscape of", "realm of", "at the end of the day", "needle-moving",
+    "move the needle", "low-hanging fruit", "best-in-class", "world-class", "next-level", "transformative",
+    "it's not just", "this isn't just", "more than just", "let's unpack", "the bottom line",
 ]
 MAX_HASHTAGS = 3
 MAX_EMOJI = 2
@@ -54,7 +62,16 @@ def write_caption(topic: dict, *, lane: str, sources_text: str = "", slides_summ
         "\n\nTASK: write ONE LinkedIn caption in Paul's voice. Lead with the business problem or a concrete observation, show the "
         "mechanism, connect technology to outcomes. Short paragraphs, strong first line, no cheap clickbait. "
         "Do NOT claim Paul built, tested or measured anything unless it is stated in BRAND. Frame what was learned from "
-        "public conversation as an observation, not as personal experience. At most 3 hashtags (or none)."
+        "public conversation as an observation, not as personal experience. At most 3 hashtags (or none).\n\n"
+        "WRITE LIKE A HUMAN, NOT AN AI. Hard rules:\n"
+        "- No em dashes. Use a period or comma.\n"
+        "- No slop vocabulary: delve, leverage, unlock, elevate, harness, seamless, robust, game-changer, "
+        "revolutionize, supercharge, cutting-edge, testament, tapestry, landscape, realm, ecosystem, synergy, "
+        "transformative, 'in today's fast-paced', 'it's not just X it's Y', 'the truth is', 'let's dive in'.\n"
+        "- No engagement bait ('Agree?', 'Thoughts?', 'Read that again').\n"
+        "- No hype adjectives or empty intensifiers. Concrete nouns and plain verbs only.\n"
+        "- Vary sentence length. Say one real thing a practitioner would say out loud. If a line could open any "
+        "post on any topic, delete it."
     )
     if lane == "carousel":
         system += (" Structure: hook -> what's inside the carousel -> one useful takeaway -> soft CTA taken from BRAND section 14. "

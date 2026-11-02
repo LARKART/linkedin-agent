@@ -7,7 +7,7 @@ from pathlib import Path
 
 from PIL import Image, ImageDraw
 
-from . import carousel, config, llm
+from . import carousel, config, llm, writer
 
 W, H = 1080, 1350
 BLACK = (0, 0, 0)
@@ -81,13 +81,24 @@ def generate(recent_topics: list[str]) -> dict:
         "CAPTION RULES (Lara Acosta engagement style): open with a scroll-stopping one-line hook; then short, "
         "skimmable, left-aligned lines (F-shaped: front-load the strong words, one idea per line, generous line breaks); "
         "teach ONE concrete idea tied to the quote; write like you think, not corporate; end with a specific question "
-        "that invites a reply. Under 1100 characters. At most 2 hashtags or none. No em dashes.\n"
+        "that invites a reply. Under 1100 characters. At most 2 hashtags or none.\n"
+        "WRITE LIKE A HUMAN, NOT AN AI. No em dashes. Ban slop words: delve, leverage, unlock, elevate, harness, "
+        "seamless, robust, game-changer, revolutionize, supercharge, cutting-edge, testament, tapestry, landscape, "
+        "realm, ecosystem, synergy, transformative, 'it's not just X it's Y', 'in today's fast-paced', 'the truth is'. "
+        "No engagement bait like 'Agree?' or 'Read that again'. Concrete nouns, plain verbs, no hype adjectives.\n"
         "FIRST COMMENT: a short thoughtful comment Paul can pin under his own post that adds one more angle and "
         "explicitly invites discussion (Acosta self-comment tactic). One or two sentences."
     )
-    user = ("Avoid repeating these recent themes:\n- " + "\n- ".join(recent_topics[:14]) +
-            '\n\nReturn JSON: {"quote":str,"caption":str,"firstComment":str,"topic":str (3-6 word label of the quote theme)}')
-    out = llm.complete_obj(system, user, max_tokens=1200, temperature=0.9)
+    base_user = ("Avoid repeating these recent themes:\n- " + "\n- ".join(recent_topics[:14]) +
+                 '\n\nReturn JSON: {"quote":str,"caption":str,"firstComment":str,"topic":str (3-6 word label of the quote theme)}')
+    # Regenerate if the caption or quote trips the human-writing filter (banned slop, em dash, etc.).
+    out, user = {}, base_user
+    for _ in range(3):
+        out = llm.complete_obj(system, user, max_tokens=1200, temperature=0.9)
+        problems = writer.rule_check(out.get("caption", "")) + writer.rule_check(out.get("quote", ""))
+        if not problems:
+            break
+        user = base_user + "\n\nYour previous reply broke these rules, fix them:\n- " + "\n- ".join(problems)
     # Enforce the 13-word / one-sentence cap defensively.
     q = " ".join((out.get("quote") or "").replace("\n", " ").split())
     q = q.split(". ")[0].rstrip(".")

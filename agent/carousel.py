@@ -36,7 +36,11 @@ def make_spec(topic: dict) -> dict:
         "\n\nTASK: design an educational LinkedIn carousel (RUNBOOK carousel lane). 6-9 slides: hook -> what it is / why it's "
         "blowing up -> 3-6 teaching slides (mechanism, steps, lessons) -> practical takeaway -> CTA (last). The reader must leave "
         "knowing something usable. Teach the idea in Paul's voice; never copy source wording; state only verified facts; "
-        "no invented stats or builds. Headlines <= 60 chars, bullets <= 80 chars, max 4 bullets per slide."
+        "no invented stats or builds. Headlines <= 60 chars, bullets <= 80 chars, max 4 bullets per slide.\n\n"
+        "WRITE LIKE A HUMAN, NOT AN AI. No em dashes. Ban slop words: delve, leverage, unlock, elevate, harness, "
+        "seamless, robust, game-changer, revolutionize, supercharge, cutting-edge, testament, tapestry, landscape, "
+        "realm, ecosystem, synergy, transformative, 'it's not just X it's Y', 'in today's fast-paced'. "
+        "Plain concrete language a practitioner would actually use. No hype adjectives, no filler headlines."
     )
     facts = f"\nVERIFIED FACTS: {topic['verifiedFacts']}" if topic.get("verifiedFacts") else ""
     user = (

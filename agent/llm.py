@@ -1,4 +1,5 @@
-"""Thin Anthropic wrapper with JSON helpers, brand context, and optional web search."""
+"""LLM wrapper: Anthropic primary with a free OpenAI-compatible fallback (Gemini/Groq/NVIDIA,
+selected via the NVIDIA_CHAT_URL/MODEL/API_KEY env vars). JSON helpers, brand context, web search."""
 from __future__ import annotations
 
 import base64
@@ -139,7 +140,7 @@ def complete(system: str, user: str, *, model: str | None = None, max_tokens: in
             return text
         raise RuntimeError("empty Anthropic response")
     except Exception as e:
-        print(f"[llm] Anthropic failed ({str(e)[:120]}); falling back to NVIDIA")
+        print(f"[llm] Anthropic failed ({str(e)[:120]}); falling back to free LLM")
         return _nvidia_chat(system, user, max_tokens, temperature)
 
 
