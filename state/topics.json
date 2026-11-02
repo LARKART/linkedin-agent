@@ -68,5 +68,12 @@
     "visual": "A blueprint or architectural drawing of a business process, with some elements highlighted or connected by glowing lines, representing AI integration bringing efficiency, rather than a standalone AI component.",
     "structure": "Problem observation -> Explanation of the problem (stuck in experimentation) -> Solution approach (practical systems, integration, measurable outcomes) -> Call to action.",
     "at": "2026-11-02T12:05:03.660751+00:00"
+  },
+  {
+    "topic": "Agent Workflow Orchestration",
+    "hook": "AI agents need smart workflows, not just raw power",
+    "visual": "AI agents need smart workflows, not just raw power",
+    "structure": "",
+    "at": "2026-11-02T16:46:16.877263+00:00"
   }
 ]

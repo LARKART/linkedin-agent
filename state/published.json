@@ -1146,5 +1146,22 @@
       }
     ],
     "status": "published"
+  },
+  {
+    "date": "2026-11-02",
+    "publishedAt": "2026-11-02T16:46:16.874828+00:00",
+    "postUrn": "urn:li:share:7523062938597953536",
+    "lane": "post",
+    "topic": "Agent Workflow Orchestration",
+    "subtopic": null,
+    "hook": "AI agents need smart workflows, not just raw power",
+    "caption": "Everyone talks about AI agent power.\n\nBut the real magic isn't just a powerful agent.\n\nIt's how you orchestrate its actions.\n\nThink about it: an agent is a specialist.\n\nIt needs clear steps, defined inputs, and expected outputs to do its best work.\n\nWithout a structured workflow, even the smartest agent gets lost.\n\nIt's the difference between an AI tool and a reliable system.\n\nAre you thinking about agent workflows first, or just agent capabilities?",
+    "imagePrompt": null,
+    "imagePath": "/home/runner/work/linkedin-agent/linkedin-agent/images/2026-11-02-quote-agent-workflow-orchestration.png",
+    "documentPath": null,
+    "videoPath": null,
+    "videoStyle": null,
+    "sources": [],
+    "status": "published"
   }
 ]
