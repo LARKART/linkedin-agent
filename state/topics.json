@@ -75,5 +75,12 @@
     "visual": "Effective AI systems start with clean data and clear process steps",
     "structure": "",
     "at": "2026-11-03T14:48:57.662625+00:00"
+  },
+  {
+    "topic": "AI Adoption & Vendor Influence",
+    "hook": "The conversation around AI adoption is shifting. It is no longer just about choosing to use AI.",
+    "visual": "A single, strong visual metaphor. Perhaps a hand struggling to hold onto a compass while being pulled by a large, almost invisible, magnetic force. Or a set of gears where one large central gear is forcing the movement and direction of all smaller, interconnected gears, with one smaller gear trying to resist. The focus is on external control versus internal direction.",
+    "structure": "Hook -> Observation (Google schools report) -> Business problem (vendor influence, loss of choice) -> Paul's solution/perspective (build practical, business-first AI systems) -> Soft CTA.",
+    "at": "2026-11-03T22:13:32.997853+00:00"
   }
 ]

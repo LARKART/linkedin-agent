@@ -1233,5 +1233,28 @@
     "videoStyle": null,
     "sources": [],
     "status": "published"
+  },
+  {
+    "date": "2026-11-03",
+    "publishedAt": "2026-11-03T22:13:32.995143+00:00",
+    "postUrn": "urn:li:ugcPost:7523507685321940992",
+    "lane": "carousel",
+    "topic": "AI Adoption & Vendor Influence",
+    "subtopic": "Mandatory AI Integration",
+    "hook": "The conversation around AI adoption is shifting. It is no longer just about choosing to use AI.",
+    "caption": "The conversation around AI adoption is shifting. It is no longer just about choosing to use AI.\n\nReports suggest Google might soon mandate AI integration for schools, potentially threatening access to critical services if rejected. This raises questions for any business relying heavily on major tech vendors.\n\nWhat happens when your core tools dictate your AI strategy? This kind of vendor influence can limit choice, create lock-in, and force you into data and workflow decisions that do not align with your specific business needs.\n\nIt moves the focus from *how AI can solve your specific business problems* to *how you fit into a vendor's AI roadmap*.\n\nMy work centers on building practical AI systems and automations that genuinely fit the way your team works. It is about creating an AI strategy that supports your business goals, not just adopting the latest tool a vendor pushes.\n\nIf you are looking to build AI systems that genuinely fit your operations, I am here to help.",
+    "imagePrompt": null,
+    "imagePath": null,
+    "documentPath": "/home/runner/work/linkedin-agent/linkedin-agent/carousels/2026-11-03/carousel.pdf",
+    "videoPath": null,
+    "videoStyle": null,
+    "sources": [
+      {
+        "platform": "hackernews",
+        "url": "https://www.nytimes.com/2026/11/03/us/google-search-schools-restrict-ai.html",
+        "velocity": 225.72
+      }
+    ],
+    "status": "published"
   }
 ]

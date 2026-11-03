@@ -1,0 +1,31 @@
+{
+  "date": "2026-11-03",
+  "lane": "carousel",
+  "status": "published",
+  "topic": "AI Adoption & Vendor Influence",
+  "subtopic": "Mandatory AI Integration",
+  "whyNow": "Google's reported policy for schools is a fresh, high-velocity topic, sparking debate about the implications of mandatory AI adoption and vendor control.",
+  "sources": [
+    {
+      "platform": "hackernews",
+      "url": "https://www.nytimes.com/2026/11/03/us/google-search-schools-restrict-ai.html",
+      "velocity": 225.72
+    }
+  ],
+  "replies": [],
+  "notes": [
+    "SKIPPED (unverified security story): AI Data Privacy & Ethics - verification search failed: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CggmDobsoPPdbLcUe96DW'}"
+  ],
+  "documentPath": "/home/runner/work/linkedin-agent/linkedin-agent/carousels/2026-11-03/carousel.pdf",
+  "title": "When AI Adoption Becomes Mandatory",
+  "slideReview": {
+    "pass": true,
+    "problems": []
+  },
+  "caption": "The conversation around AI adoption is shifting. It is no longer just about choosing to use AI.\n\nReports suggest Google might soon mandate AI integration for schools, potentially threatening access to critical services if rejected. This raises questions for any business relying heavily on major tech vendors.\n\nWhat happens when your core tools dictate your AI strategy? This kind of vendor influence can limit choice, create lock-in, and force you into data and workflow decisions that do not align with your specific business needs.\n\nIt moves the focus from *how AI can solve your specific business problems* to *how you fit into a vendor's AI roadmap*.\n\nMy work centers on building practical AI systems and automations that genuinely fit the way your team works. It is about creating an AI strategy that supports your business goals, not just adopting the latest tool a vendor pushes.\n\nIf you are looking to build AI systems that genuinely fit your operations, I am here to help.",
+  "hook": "The conversation around AI adoption is shifting. It is no longer just about choosing to use AI.",
+  "structure": "Hook -> Observation (Google schools report) -> Business problem (vendor influence, loss of choice) -> Paul's solution/perspective (build practical, business-first AI systems) -> Soft CTA.",
+  "imageConcept": "A single, strong visual metaphor. Perhaps a hand struggling to hold onto a compass while being pulled by a large, almost invisible, magnetic force. Or a set of gears where one large central gear is forcing the movement and direction of all smaller, interconnected gears, with one smaller gear trying to resist. The focus is on external control versus internal direction.",
+  "gate": "passed",
+  "postUrn": "urn:li:ugcPost:7523507685321940992"
+}
