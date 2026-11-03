@@ -1,19 +1,5 @@
 [
   {
-    "topic": "Shipping AI-written code nobody understands",
-    "hook": "219 comments on a 125-point HN post. That ratio alone tells you something: this topic is hitting a nerve.",
-    "visual": "A single desk with two chairs facing a monitor showing a wall of code. One chair is empty, pushed back slightly, as if someone just stepped away mid-review. The other chair is occupied by someone leaning in, pen in hand, marking up a printed code diff on paper. Natural office light, no screens glowing dramatically, no robots or circuit imagery — just the quiet tension between generating and verifying work.",
-    "structure": "Data/Signal → Interpretation → Business implication",
-    "at": "2026-10-19T21:22:02.979447+00:00"
-  },
-  {
-    "topic": "Microsoft framing AI agents as insider threats",
-    "hook": "Microsoft just told the industry something uncomfortable: don't trust your AI agents.",
-    "visual": "A single key sitting on a desk next to a cut key-ring with several keys removed and set aside in a neat row, shot in flat editorial lighting, nothing futuristic, just a visual about reducing access to only what's needed.",
-    "structure": "New development → Why it matters → What to do",
-    "at": "2026-10-19T23:13:45.611323+00:00"
-  },
-  {
     "topic": "WorkflowâCentric Automation",
     "hook": "Automation wins when the workflow decides, not the tool",
     "visual": "Automation wins when the workflow decides, not the tool",
@@ -75,5 +61,12 @@
     "visual": "AI agents need smart workflows, not just raw power",
     "structure": "",
     "at": "2026-11-02T16:46:16.877263+00:00"
+  },
+  {
+    "topic": "Anthropic's Business & Market Position",
+    "hook": "When a major AI company like Anthropic reportedly uses its own AI to manage internal operations, itâs a powerful signal.",
+    "visual": "A visible, intricate clockwork mechanism, with some gears clearly labeled 'AI' meshing smoothly with others labeled 'Operations', 'Sales', 'Data', emphasizing internal function and precision rather than outward display.",
+    "structure": "Observation about Anthropic's internal AI use -> Connect to broader business relevance (internal optimization) -> Validate the approach for Paul's audience -> Reiterate core service (agentic systems, smart tools).",
+    "at": "2026-11-03T01:55:20.829710+00:00"
   }
 ]
