@@ -1216,5 +1216,22 @@
       }
     ],
     "status": "published"
+  },
+  {
+    "date": "2026-11-03",
+    "publishedAt": "2026-11-03T14:48:57.660072+00:00",
+    "postUrn": "urn:li:share:7523395801788616704",
+    "lane": "post",
+    "topic": "AI Data & Process Foundation",
+    "subtopic": null,
+    "hook": "Effective AI systems start with clean data and clear process steps",
+    "caption": "Many jump straight to building AI. \n\nBut the real magic isn't in the fancy model.\n\nIt's in the groundwork.\n\nGarbage in, garbage out isn't just a cliche; it's an expensive lesson.\n\nYour AI, whether an agent or a simple automation, relies on accurate, structured information.\n\nTake the time to organize your inputs.\n\nDefine the exact steps a human would follow.\n\nThen, and only then, does AI become a force multiplier.\n\nWhere do you usually find the biggest data roadblocks in your business?",
+    "imagePrompt": null,
+    "imagePath": "/home/runner/work/linkedin-agent/linkedin-agent/images/2026-11-03-quote-ai-data-process-foundation.png",
+    "documentPath": null,
+    "videoPath": null,
+    "videoStyle": null,
+    "sources": [],
+    "status": "published"
   }
 ]
