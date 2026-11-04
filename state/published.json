@@ -1256,5 +1256,33 @@
       }
     ],
     "status": "published"
+  },
+  {
+    "date": "2026-11-04",
+    "publishedAt": "2026-11-04T00:25:31.944361+00:00",
+    "postUrn": "urn:li:ugcPost:7523540901776773122",
+    "lane": "video",
+    "topic": "AI Investment & Financial Risk",
+    "subtopic": "Hidden AI Debt and Market Volatility",
+    "hook": "Tech giants are pouring billions into AI infrastructure and R&D. But a growing number of analysts are pointing to a significant 'hidden debt' accumulating from this rapid investment.",
+    "caption": "Tech giants are pouring billions into AI infrastructure and R&D. But a growing number of analysts are pointing to a significant 'hidden debt' accumulating from this rapid investment.\n\nThis isn't about traditional loans. It's about massive, often unquantified spending on GPUs, data centers, and specialized talent, without a clear path to immediate, widespread profitability.\n\nThe concern is that this level of speculative spending, while driving innovation, could lead to market volatility or unsustainable growth models down the line.\n\nFor businesses looking to use AI, this underscores the importance of focusing on practical, outcome-driven systems. Building AI that solves specific problems and integrates with existing workflows offers tangible value, rather than chasing the next big, unproven investment wave.\n\nReal AI systems should reduce repetitive work and improve operations, not add to a company's hidden balance sheet.",
+    "imagePrompt": null,
+    "imagePath": null,
+    "documentPath": null,
+    "videoPath": "/home/runner/work/linkedin-agent/linkedin-agent/videos/2026-11-04/ai-investment-financial-risk/ai-investment-financial-risk-narrated.mp4",
+    "videoStyle": "narrated",
+    "sources": [
+      {
+        "platform": "hackernews",
+        "url": "https://asia.nikkei.com/business/technology/artificial-intelligence/us-tech-giants-hidden-ai-debt-swells-90-to-3.2tn-in-6-months",
+        "velocity": 107.31
+      },
+      {
+        "platform": "hackernews",
+        "url": "https://www.bloomberg.com/opinion/articles/2026-11-03/ai-investment-boom-demands-stronger-financial-oversight",
+        "velocity": 75.53
+      }
+    ],
+    "status": "published"
   }
 ]
