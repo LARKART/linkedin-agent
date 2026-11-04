@@ -1,0 +1,38 @@
+{
+  "date": "2026-11-04",
+  "lane": "carousel",
+  "status": "blocked",
+  "topic": "AI Agent Cost & ROI",
+  "subtopic": "Budgeting for advanced AI systems",
+  "whyNow": "Recent discussions highlight high token spend by prominent AI users, prompting questions about practical implementation costs and value.",
+  "sources": [
+    {
+      "platform": "hackernews",
+      "url": "https://techcrunch.com/2026/11/02/y-combinators-garry-tan-uses-ai-agents-so-much-he-spends-up-to-200k-a-year-on-tokens/",
+      "velocity": 38.29
+    },
+    {
+      "platform": "hackernews",
+      "url": "https://news.ycombinator.com/item?id=50366117",
+      "velocity": 37.82
+    },
+    {
+      "platform": "news",
+      "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE8tZ1REaXFZNldxR0xNNnB3MlZRQjJVcmFkSC1XQXVGVlhORkFZelZiVVp6NWI1SVBuc24taG03VGd3OXl6NDl5dTNrWkluRW9KYWF2WFhLMS1FRWJJME5hZkRBaXEzaVRfYXRMUG9lU1Eyc3FlV2pESlgzRWc?oc=5",
+      "velocity": 12.29
+    }
+  ],
+  "replies": [],
+  "notes": [],
+  "documentPath": "/home/runner/work/linkedin-agent/linkedin-agent/carousels/2026-11-04/carousel.pdf",
+  "title": "AI Agent Costs: How to Control Spend & Prove ROI",
+  "slideReview": {
+    "pass": true,
+    "problems": []
+  },
+  "caption": "Recent conversations about AI agent token costs are hitting a nerve. Many businesses are realizing that as these systems get more complex, the spend isn't always what they expected. \n\nIt's easy for token usage to escalate, especially with multi-step agentic workflows that involve multiple tool calls, extensive reasoning, or RAG lookups. Each interaction, each re-prompt, each API call adds to the bill.\n\nThe real challenge isn't just knowing what you spend, but understanding if that spend delivers a clear return. Are these advanced AI systems actually reducing manual work, improving follow-up, or connecting your tools in a way that justifies the cost?\n\nBefore you scale your agentic AI, ask these questions: \n\n1. Where are the highest token costs coming from?\n2. Can we optimize the prompts or workflow steps?\n3. What's the measurable business outcome for this specific agent?\n\nBuilding practical AI systems means building them smart, with cost efficiency and long-term value in mind. If you are exploring how to implement AI agents while keeping an eye on the bottom line, let's connect. I focus on building systems that deliver real outcomes.",
+  "hook": "Recent conversations about AI agent token costs are hitting a nerve.",
+  "structure": "Observation about rising AI agent costs -> Explanation of why costs escalate (complex workflows, token usage) -> Business problem (ROI vs. spend) -> Actionable questions for businesses -> Paul's value proposition (building practical, cost-efficient AI systems) -> Soft CTA.",
+  "imageConcept": "A weighing scale with a pile of small, abstract 'data' or 'token' blocks on one side, and a stack of 'value' or 'outcome' blocks (e.g., simplified process diagrams, revenue graphs) on the other. The scale should be clearly unbalanced, with the 'token' side heavier, implying costs outweighing value, or the need to balance them. The background is clean and professional, perhaps with a subtle, abstract representation of interconnected business processes.",
+  "gate": "FAILED"
+}
