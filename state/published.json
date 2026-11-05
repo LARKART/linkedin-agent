@@ -1284,5 +1284,22 @@
       }
     ],
     "status": "published"
+  },
+  {
+    "date": "2026-11-05",
+    "publishedAt": "2026-11-05T15:07:17.431317+00:00",
+    "postUrn": "urn:li:share:7524125191568998400",
+    "lane": "post",
+    "topic": "Practical Agentic AI Start",
+    "subtopic": null,
+    "hook": "Agentic AI isn't magic",
+    "caption": "Many think AI agents are for complex, 'moonshot' projects.\n\nBut the most effective AI systems start small.\n\nIdentify one specific, repetitive task.\n\nMap its current manual steps.\n\nThen, build a simple agent to handle just that.\n\nThis focused approach ensures it fits your team's real workflow.\n\nIt reduces friction immediately, giving you clear wins.\n\nScaling comes later, based on real results.\n\nWhere's one process you could simplify with a small AI agent?",
+    "imagePrompt": null,
+    "imagePath": "/home/runner/work/linkedin-agent/linkedin-agent/images/2026-11-05-quote-practical-agentic-ai-start.png",
+    "documentPath": null,
+    "videoPath": null,
+    "videoStyle": null,
+    "sources": [],
+    "status": "published"
   }
 ]
