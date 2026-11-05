@@ -96,5 +96,12 @@
     "visual": "Agentic AI isn't magic",
     "structure": "",
     "at": "2026-11-05T15:07:17.434012+00:00"
+  },
+  {
+    "topic": "Multi-Agent System Architecture Patterns",
+    "hook": "A 600-comment thread asking people to share their actual agent setups says more than another demo video ever could.",
+    "visual": "An editorial overhead shot of a mechanical switchboard or old telephone exchange panel, cables routed from a central hub to multiple outlets, lit cleanly against a dark background, no screens or digital overlays, representing routing and control rather than AI iconography",
+    "structure": "Signal → Interpretation → Business implication",
+    "at": "2026-11-05T22:34:46.547365+00:00"
   }
 ]

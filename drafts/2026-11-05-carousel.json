@@ -1,0 +1,34 @@
+{
+  "date": "2026-11-05",
+  "lane": "carousel",
+  "status": "published",
+  "topic": "Multi-Agent System Architecture Patterns",
+  "subtopic": "How developers structure agent orchestration from scratch",
+  "whyNow": "A detailed architecture writeup is gaining traction alongside a 600+ comment HN thread asking what people's actual agentic setups look like right now, signaling a shift from agent hype to practitioners wanting concrete, comparable implementation detail",
+  "sources": [
+    {
+      "platform": "hackernews",
+      "url": "https://kadhar.dev/blog/multi-agent-systems-from-scratch",
+      "velocity": 18.38
+    },
+    {
+      "platform": "hackernews",
+      "url": "https://news.ycombinator.com/item?id=50366117",
+      "velocity": 73.49
+    }
+  ],
+  "replies": [],
+  "notes": [],
+  "documentPath": "/home/runner/work/linkedin-agent/linkedin-agent/carousels/2026-11-05/carousel.pdf",
+  "title": "Multi-Agent Systems: The Architecture Nobody Shows You",
+  "slideReview": {
+    "pass": true,
+    "problems": []
+  },
+  "caption": "A 600-comment thread asking people to share their actual agent setups says more than another demo video ever could.\n\nThe question wasn't \"what can agents do.\" It was \"what does your config actually look like.\" That's a different conversation.\n\nMost multi-agent systems come down to three decisions, whether teams name them that way or not.\n\nFirst, who's in charge. Orchestrator-worker is the pattern most people land on, because something needs to decide what happens next. Peer-to-peer setups look more interesting in a diagram. They also cost more to run and get harder to debug when two agents disagree.\n\nSecond, where state lives. This is the part that quietly breaks systems. Agents without shared memory repeat work, lose context, or contradict each other three steps later. Shared memory isn't optional once you're past a single agent doing a single task.\n\nThird, who picks the tool. Not which tools exist, who decides which one gets used in a given situation. Skip this decision and you end up with an agent that technically has access to ten tools and reliably picks the wrong one.\n\nThe pattern comes before the model. Picking GPT-whatever or Claude-whatever doesn't matter much if the orchestration underneath has no clear owner for state or tool routing.\n\nWhat does your actual setup look like right now? Orchestrator-worker, peer-to-peer, something else?",
+  "hook": "A 600-comment thread asking people to share their actual agent setups says more than another demo video ever could.",
+  "structure": "Signal → Interpretation → Business implication",
+  "imageConcept": "An editorial overhead shot of a mechanical switchboard or old telephone exchange panel, cables routed from a central hub to multiple outlets, lit cleanly against a dark background, no screens or digital overlays, representing routing and control rather than AI iconography",
+  "gate": "passed",
+  "postUrn": "urn:li:ugcPost:7524237802776150017"
+}
