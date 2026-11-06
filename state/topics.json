@@ -124,5 +124,12 @@
     "visual": "A bank vault door standing slightly ajar, with a single visible keypad showing one button highlighted mid-press, shot in flat editorial lighting against a plain concrete wall. No people, no screens, no circuitry. The composition emphasizes the one point of entry and the one pending action, nothing else in frame.",
     "structure": "New development → Why it matters → What to do",
     "at": "2026-11-06T21:57:25.156527+00:00"
+  },
+  {
+    "topic": "Orchestration Infrastructure for Agents at Scale",
+    "hook": "A new YC launch this week is building infrastructure to run agents on object storage at scale.",
+    "visual": "A single warehouse shelving unit photographed straight on, each shelf slot holding an identical small cardboard box except one slot sits empty with a shadow where a box should be, shot in flat even industrial lighting, no people, no screens, conveying one failed unit in a running system",
+    "structure": "New development → Why it matters → What to do",
+    "at": "2026-11-06T23:53:18.758252+00:00"
   }
 ]

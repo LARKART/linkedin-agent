@@ -1,0 +1,33 @@
+{
+  "date": "2026-11-06",
+  "lane": "slidevideo",
+  "status": "published",
+  "topic": "Orchestration Infrastructure for Agents at Scale",
+  "subtopic": "Agent compute/orchestration platforms",
+  "whyNow": "Fresh launch (HN Launch post) plus a concurrent architecture-pattern writeup landing in the same 24-48hr window shows real builder attention moving toward orchestration and reliability rather than raw model capability.",
+  "sources": [
+    {
+      "platform": "hackernews",
+      "url": "https://github.com/rivet-dev/rivet",
+      "velocity": 9.55
+    },
+    {
+      "platform": "hackernews",
+      "url": "https://kadhar.dev/blog/multi-agent-systems-from-scratch",
+      "velocity": 7.19
+    }
+  ],
+  "replies": [],
+  "notes": [
+    "SKIPPED (unverified security story): Agent Permission Leakage Beyond One Tool - could not corroborate with independent sources"
+  ],
+  "caption": "A new YC launch this week is building infrastructure to run agents on object storage at scale. Around the same time, developers started publishing writeups on multi-agent architecture patterns, like how to split responsibilities across agents, handle failures, and keep state consistent.\n\nNeither of these is about model quality.\n\nThey're about what happens after the model works. Once you can get an agent to do a task reliably once, the next question is different: how do you run that same agent a hundred times a day without it quietly failing, duplicating work, or losing context halfway through.\n\nThat's not a prompting problem. It's an infrastructure problem. State management, retries, logging, orchestration between agents that depend on each other's output.\n\nMost demos skip this part because it's not exciting. But it's where the actual engineering work lives once you move past a single use case.\n\nIf builder attention is shifting toward orchestration and reliability instead of raw capability, that says something about where agentic AI actually is right now. The models are good enough for a lot of tasks. Running them consistently is the harder problem.\n\nWhat does your current agent setup do when a step fails halfway through?",
+  "hook": "A new YC launch this week is building infrastructure to run agents on object storage at scale.",
+  "structure": "New development → Why it matters → What to do",
+  "imageConcept": "A single warehouse shelving unit photographed straight on, each shelf slot holding an identical small cardboard box except one slot sits empty with a shadow where a box should be, shot in flat even industrial lighting, no people, no screens, conveying one failed unit in a running system",
+  "gate": "passed",
+  "videoPath": "/home/runner/work/linkedin-agent/linkedin-agent/videos/2026-11-06/orchestration-infrastructure-for-agents--slidevideo.mp4",
+  "videoStatus": "generated (slide video, narrated)",
+  "videoStyle": "slides",
+  "postUrn": "urn:li:ugcPost:7524619954969767937"
+}
