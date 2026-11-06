@@ -110,5 +110,12 @@
     "visual": "A close-up editorial shot of a sealed envelope slipped inside a stack of outgoing mail trays at a sorting office, slightly askew from the rest, lit with hard directional light, nothing futuristic, just the visual idea of something personal going out unnoticed in a batch of routine outbound traffic.",
     "structure": "Problem → Unexpected insight → Practical takeaway",
     "at": "2026-11-06T00:51:30.663393+00:00"
+  },
+  {
+    "topic": "Handoffs breaking automation workflows",
+    "hook": "Most automation fails at the handoff, not the task",
+    "visual": "Most automation fails at the handoff, not the task",
+    "structure": "",
+    "at": "2026-11-06T14:45:25.539886+00:00"
   }
 ]

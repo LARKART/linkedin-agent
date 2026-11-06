@@ -1352,5 +1352,22 @@
       }
     ],
     "status": "published"
+  },
+  {
+    "date": "2026-11-06",
+    "publishedAt": "2026-11-06T14:45:25.537868+00:00",
+    "postUrn": "urn:li:share:7524482074276204544",
+    "lane": "post",
+    "topic": "Handoffs breaking automation workflows",
+    "subtopic": null,
+    "hook": "Most automation fails at the handoff, not the task",
+    "caption": "Nobody tells you the hardest part of automation.\n\nIt's not the AI.\nIt's not the trigger.\nIt's not even the logic.\n\nIt's the handoff.\n\nThe moment one system finishes its job and another system has to pick it up without losing context, formatting, or meaning.\n\nI see this constantly.\n\nA lead fills out a form. The data lands in a spreadsheet. Someone copies it into the CRM. Half the fields get mistyped or skipped.\n\nThe form worked fine.\nThe CRM worked fine.\n\nThe handoff broke.\n\nSame thing happens with AI agents. The model gives a great output, but if nothing validates it before it moves to the next step, errors compound quietly until someone notices three weeks later.\n\nGood automation isn't about adding more tools.\n\nIt's about designing what happens at every single handoff.\n\nWhere's the weakest handoff in your current workflow?",
+    "imagePrompt": null,
+    "imagePath": "/home/runner/work/linkedin-agent/linkedin-agent/images/2026-11-06-quote-handoffs-breaking-automation-workflows.png",
+    "documentPath": null,
+    "videoPath": null,
+    "videoStyle": null,
+    "sources": [],
+    "status": "published"
   }
 ]
