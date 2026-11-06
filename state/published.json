@@ -1369,5 +1369,28 @@
     "videoStyle": null,
     "sources": [],
     "status": "published"
+  },
+  {
+    "date": "2026-11-06",
+    "publishedAt": "2026-11-06T21:57:25.153459+00:00",
+    "postUrn": "urn:li:ugcPost:7524590789386027008",
+    "lane": "carousel",
+    "topic": "Claude Connects to Financial Accounts",
+    "subtopic": "Agent permissions and data access scope",
+    "hook": "Claude can now connect to financial accounts.",
+    "caption": "Claude can now connect to financial accounts.\n\nThat headline will get attention for the wrong reason.\n\nThe interesting shift isn't that an agent can read bank data. It's what happens around that access. Any agent that touches financial systems needs an answer to three questions before it touches anything else.\n\nWhat can it see. Not the account, the actual fields. Balances, transaction history, counterparties, categories. Each of those is a different exposure.\n\nWhat can it act on. Reading a balance and initiating a transfer are not the same risk. Most of the value is in the first one. Most of the danger is in the second.\n\nWhere does a human still have to approve the step. This is the part that gets skipped in the demo and matters most in production.\n\nI see this pattern in every automation that touches something sensitive, not just finance. CRM records, contracts, payroll data, customer PII. The same three questions apply. Scope of visibility, scope of action, and the checkpoint where a person signs off before the system commits to something irreversible.\n\nApproval steps get framed as a limitation. They're the opposite. They're what lets you give an agent real access instead of a sandboxed demo version that can't actually do the job.\n\nThe agents that get adopted inside real businesses won't be the ones with the most permissions. They'll be the ones with permissions that match what the business is actually willing to risk.\n\nJudge this kind of news by the guardrails, not the capability.\n\nIf you're building something that touches sensitive data right now, what does your approval step look like?",
+    "imagePrompt": null,
+    "imagePath": null,
+    "documentPath": "/home/runner/work/linkedin-agent/linkedin-agent/carousels/2026-11-06/carousel.pdf",
+    "videoPath": null,
+    "videoStyle": null,
+    "sources": [
+      {
+        "platform": "news",
+        "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPMWgyS0t1LW4xMndzblFOYmpYb2tmM0l3SUpfV1poZWV5VF9DQU5hcHk0NmpCWk5MdEZqWDFSVnlQMk1WcExKWWR2M05sa3lnYmMyWUVtLUJjcHR5TFdBampXTHEtU29OSWhVZklOblpqR3l5dHhJRzNITlUyeEVlZkh3anV4TGtsWTFzc1U2Q3hLY3ZqaU9WdUNn?oc=5",
+        "velocity": 6.75
+      }
+    ],
+    "status": "published"
   }
 ]
