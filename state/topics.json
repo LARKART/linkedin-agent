@@ -103,5 +103,12 @@
     "visual": "An editorial overhead shot of a mechanical switchboard or old telephone exchange panel, cables routed from a central hub to multiple outlets, lit cleanly against a dark background, no screens or digital overlays, representing routing and control rather than AI iconography",
     "structure": "Signal → Interpretation → Business implication",
     "at": "2026-11-05T22:34:46.547365+00:00"
+  },
+  {
+    "topic": "Coding Agent Data Privacy Leak",
+    "hook": "Claude Code has been writing users' email addresses into the User-Agent header of its outbound web requests.",
+    "visual": "A close-up editorial shot of a sealed envelope slipped inside a stack of outgoing mail trays at a sorting office, slightly askew from the rest, lit with hard directional light, nothing futuristic, just the visual idea of something personal going out unnoticed in a batch of routine outbound traffic.",
+    "structure": "Problem → Unexpected insight → Practical takeaway",
+    "at": "2026-11-06T00:51:30.663393+00:00"
   }
 ]

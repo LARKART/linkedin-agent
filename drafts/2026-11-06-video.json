@@ -1,0 +1,26 @@
+{
+  "date": "2026-11-06",
+  "lane": "video",
+  "status": "published",
+  "topic": "Coding Agent Data Privacy Leak",
+  "subtopic": "Claude Code sending email addresses to third-party websites",
+  "whyNow": "Very fresh (under 3 hours old) with the highest velocity of any source in this set, and it sits right at the center of Paul's agentic coding audience",
+  "sources": [
+    {
+      "platform": "hackernews",
+      "url": "https://github.com/anthropics/claude-code/issues/107757",
+      "velocity": 324.46
+    }
+  ],
+  "replies": [],
+  "notes": [],
+  "caption": "Claude Code has been writing users' email addresses into the User-Agent header of its outbound web requests.\n\nThat header gets sent to every site the agent touches during a session. Not stored locally. Sent out, to third parties, as part of normal use.\n\nA developer filed the bug on Anthropic's own GitHub repo. A separate, earlier report found the same email showing up in git commits, overriding a correctly configured user.noreply identity. No setting existed to turn it off. The mechanism is simple: Claude Code reads your account email from a local config file and quietly tells the model \"the user's email address is...\" at the start of every session.\n\nAnthropic shipped a fix, a built-in privacy mod enabled by default from version 2.1.317. Then another instance of the same behavior got reported in November. Whether that's a recurrence or a new variant isn't confirmed yet.\n\nThis is the part worth sitting with if you're giving any agent tool access: the risk usually isn't the model doing something malicious. It's the model including context you never asked it to include, because that context was sitting in a local file it had permission to read.\n\nWhen I scope what an agent can access, the question isn't just \"what can it do.\" It's \"what does it know by default, and does any of that leave the room when it makes a request.\"\n\nWorth checking what your coding agent has read access to right now, and where that data goes when it talks to the outside world.",
+  "hook": "Claude Code has been writing users' email addresses into the User-Agent header of its outbound web requests.",
+  "structure": "Problem → Unexpected insight → Practical takeaway",
+  "imageConcept": "A close-up editorial shot of a sealed envelope slipped inside a stack of outgoing mail trays at a sorting office, slightly askew from the rest, lit with hard directional light, nothing futuristic, just the visual idea of something personal going out unnoticed in a batch of routine outbound traffic.",
+  "gate": "passed",
+  "videoPath": "/home/runner/work/linkedin-agent/linkedin-agent/videos/2026-11-06/coding-agent-data-privacy-leak/coding-agent-data-privacy-leak.mp4",
+  "videoStatus": "generated (motion)",
+  "videoStyle": "animated",
+  "postUrn": "urn:li:ugcPost:7524272215345889280"
+}
