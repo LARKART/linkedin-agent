@@ -1460,5 +1460,28 @@
       }
     ],
     "status": "published"
+  },
+  {
+    "date": "2026-11-07",
+    "publishedAt": "2026-11-07T23:31:58.565935+00:00",
+    "postUrn": "urn:li:ugcPost:7524976975359270913",
+    "lane": "video",
+    "topic": "Coding Agent Permission Fatigue",
+    "subtopic": "Claude Code 'Don't Ask Again' secret leaks",
+    "hook": "A coding agent asked for permission once, got told \"don't ask again,\" and from then on it had a blank check.",
+    "caption": "A coding agent asked for permission once, got told \"don't ask again,\" and from then on it had a blank check.\n\nThat's the pattern behind a new report making the rounds this week. Researchers scanning public GitHub repos found over a thousand files where Claude Code had saved a command exactly as written, including the secret inside it, because someone had clicked through the confirmation prompt and never saw it again. Database passwords. Cloud keys. Production tokens. All sitting in a settings file that got committed without anyone noticing.\n\nThe mechanism is simple. \"Yes, and don't ask again\" isn't just a UI convenience. It's a permission that persists. The agent remembers the decision, not the context around it. Nobody goes back later and asks whether that specific command was safe to save in plain text.\n\nThis is the part teams miss when they adopt agentic tools quickly. Access control questions don't disappear because the thing asking for access is an AI instead of a person. If anything they matter more, because an agent will reuse that permission exactly as granted, every time, without judgment.\n\nThe fix isn't avoiding automation. It's treating \"skip this prompt forever\" with the same seriousness as handing someone a production credential. Because that's functionally what it is.\n\nIf you're running coding agents on real repos, it's worth checking what's sitting in your local settings files right now.",
+    "imagePrompt": null,
+    "imagePath": null,
+    "documentPath": null,
+    "videoPath": "/home/runner/work/linkedin-agent/linkedin-agent/videos/2026-11-07/coding-agent-permission-fatigue/coding-agent-permission-fatigue-narrated.mp4",
+    "videoStyle": "narrated",
+    "sources": [
+      {
+        "platform": "hackernews",
+        "url": "https://apiiro.com/blog/coding-agents-leaking-secrets-github-dont-ask-again",
+        "velocity": 100.62
+      }
+    ],
+    "status": "published"
   }
 ]

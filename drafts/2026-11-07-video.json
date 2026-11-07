@@ -1,0 +1,26 @@
+{
+  "date": "2026-11-07",
+  "lane": "video",
+  "status": "published",
+  "topic": "Coding Agent Permission Fatigue",
+  "subtopic": "Claude Code 'Don't Ask Again' secret leaks",
+  "whyNow": "Fresh report (under 3 hours old) with strong HN velocity showing 1,122 public GitHub files exposed passwords because of a permission shortcut, directly relevant to anyone deploying coding agents",
+  "sources": [
+    {
+      "platform": "hackernews",
+      "url": "https://apiiro.com/blog/coding-agents-leaking-secrets-github-dont-ask-again",
+      "velocity": 100.62
+    }
+  ],
+  "replies": [],
+  "notes": [],
+  "caption": "A coding agent asked for permission once, got told \"don't ask again,\" and from then on it had a blank check.\n\nThat's the pattern behind a new report making the rounds this week. Researchers scanning public GitHub repos found over a thousand files where Claude Code had saved a command exactly as written, including the secret inside it, because someone had clicked through the confirmation prompt and never saw it again. Database passwords. Cloud keys. Production tokens. All sitting in a settings file that got committed without anyone noticing.\n\nThe mechanism is simple. \"Yes, and don't ask again\" isn't just a UI convenience. It's a permission that persists. The agent remembers the decision, not the context around it. Nobody goes back later and asks whether that specific command was safe to save in plain text.\n\nThis is the part teams miss when they adopt agentic tools quickly. Access control questions don't disappear because the thing asking for access is an AI instead of a person. If anything they matter more, because an agent will reuse that permission exactly as granted, every time, without judgment.\n\nThe fix isn't avoiding automation. It's treating \"skip this prompt forever\" with the same seriousness as handing someone a production credential. Because that's functionally what it is.\n\nIf you're running coding agents on real repos, it's worth checking what's sitting in your local settings files right now.",
+  "hook": "A coding agent asked for permission once, got told \"don't ask again,\" and from then on it had a blank check.",
+  "structure": "Contrarian observation → Evidence → Lesson",
+  "imageConcept": "A single door with a keypad lock, propped permanently open with a wooden wedge, shot in flat editorial light. The keypad still shows its numbers glowing, unused. Clean, minimal, slightly off-center composition. No people, no screens, no tech clutter. The wedge is the entire story.",
+  "gate": "passed",
+  "videoPath": "/home/runner/work/linkedin-agent/linkedin-agent/videos/2026-11-07/coding-agent-permission-fatigue/coding-agent-permission-fatigue-narrated.mp4",
+  "videoStatus": "generated (narrated motion)",
+  "videoStyle": "narrated",
+  "postUrn": "urn:li:ugcPost:7524976975359270913"
+}
