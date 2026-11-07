@@ -131,5 +131,12 @@
     "visual": "A single warehouse shelving unit photographed straight on, each shelf slot holding an identical small cardboard box except one slot sits empty with a shadow where a box should be, shot in flat even industrial lighting, no people, no screens, conveying one failed unit in a running system",
     "structure": "New development → Why it matters → What to do",
     "at": "2026-11-06T23:53:18.758252+00:00"
+  },
+  {
+    "topic": "Automation handoff reliability",
+    "hook": "Most automations fail at the handoff, not the logic",
+    "visual": "Most automations fail at the handoff, not the logic",
+    "structure": "",
+    "at": "2026-11-07T13:42:54.417071+00:00"
   }
 ]

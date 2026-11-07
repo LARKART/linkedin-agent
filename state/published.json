@@ -1420,5 +1420,22 @@
       }
     ],
     "status": "published"
+  },
+  {
+    "date": "2026-11-07",
+    "publishedAt": "2026-11-07T13:42:54.414192+00:00",
+    "postUrn": "urn:li:share:7524828730494455809",
+    "lane": "post",
+    "topic": "Automation handoff reliability",
+    "subtopic": null,
+    "hook": "Most automations fail at the handoff, not the logic",
+    "caption": "Everyone debugs the wrong part of their automation.\n\nThey check the AI model.\nThey check the prompt.\nThey check the integration logs.\n\nThe actual break is usually smaller than that.\n\nIt's the handoff.\n\nThe moment data moves from one tool to another and nobody decided what happens if a field is empty, a format changes, or an API times out.\n\nI see this constantly in client workflows.\n\nThe lead scoring works fine. The CRM update works fine. But the five seconds between them has no error handling, no retry, no fallback.\n\nSo one Tuesday, a webhook times out and three days of leads just vanish from the pipeline.\n\nNobody notices until someone asks why the numbers look light.\n\nA workflow isn't reliable because the AI step is smart. It's reliable because someone thought through what happens when the handoff fails.\n\nWhere does your current setup have the weakest handoff between tools?",
+    "imagePrompt": null,
+    "imagePath": "/home/runner/work/linkedin-agent/linkedin-agent/images/2026-11-07-quote-automation-handoff-reliability.png",
+    "documentPath": null,
+    "videoPath": null,
+    "videoStyle": null,
+    "sources": [],
+    "status": "published"
   }
 ]

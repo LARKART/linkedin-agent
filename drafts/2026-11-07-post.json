@@ -1,0 +1,17 @@
+{
+  "date": "2026-11-07",
+  "lane": "post",
+  "status": "published",
+  "topic": "Automation handoff reliability",
+  "caption": "Everyone debugs the wrong part of their automation.\n\nThey check the AI model.\nThey check the prompt.\nThey check the integration logs.\n\nThe actual break is usually smaller than that.\n\nIt's the handoff.\n\nThe moment data moves from one tool to another and nobody decided what happens if a field is empty, a format changes, or an API times out.\n\nI see this constantly in client workflows.\n\nThe lead scoring works fine. The CRM update works fine. But the five seconds between them has no error handling, no retry, no fallback.\n\nSo one Tuesday, a webhook times out and three days of leads just vanish from the pipeline.\n\nNobody notices until someone asks why the numbers look light.\n\nA workflow isn't reliable because the AI step is smart. It's reliable because someone thought through what happens when the handoff fails.\n\nWhere does your current setup have the weakest handoff between tools?",
+  "hook": "Most automations fail at the handoff, not the logic",
+  "imageConcept": "Most automations fail at the handoff, not the logic",
+  "imagePath": "/home/runner/work/linkedin-agent/linkedin-agent/images/2026-11-07-quote-automation-handoff-reliability.png",
+  "imageStatus": "quote card",
+  "gate": "passed",
+  "firstComment": "Curious how many people have actually traced a dropped lead back to a silent handoff failure versus just blaming the CRM. What was the culprit in your case?",
+  "sources": [],
+  "replies": [],
+  "whyNow": "quote lane",
+  "postUrn": "urn:li:share:7524828730494455809"
+}
