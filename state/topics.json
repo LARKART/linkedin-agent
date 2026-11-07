@@ -138,5 +138,12 @@
     "visual": "Most automations fail at the handoff, not the logic",
     "structure": "",
     "at": "2026-11-07T13:42:54.417071+00:00"
+  },
+  {
+    "topic": "Agent Memory Architecture",
+    "hook": "An agent that forgets everything between sessions isn't broken. It was never given memory to begin with.",
+    "visual": "A single office desk shot from above, covered in sticky notes, but half of them have been swept into a wastebasket just out of frame. The remaining notes are organized in a neat row. No people, no screens, just the physical metaphor of selective memory versus clutter.",
+    "structure": "Problem → Unexpected insight → Practical takeaway",
+    "at": "2026-11-07T20:41:51.882052+00:00"
   }
 ]

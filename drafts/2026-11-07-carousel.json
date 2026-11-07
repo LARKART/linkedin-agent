@@ -1,0 +1,29 @@
+{
+  "date": "2026-11-07",
+  "lane": "carousel",
+  "status": "published",
+  "topic": "Agent Memory Architecture",
+  "subtopic": "What actually makes agents remember context across sessions",
+  "whyNow": "Published within the last 14 hours by Anthropic itself, directly tied to agent reliability conversations already happening around tool calling and orchestration",
+  "sources": [
+    {
+      "platform": "hackernews",
+      "url": "https://www.anthropic.com/research/components-of-agent-memory",
+      "velocity": 24.46
+    }
+  ],
+  "replies": [],
+  "notes": [],
+  "documentPath": "/home/runner/work/linkedin-agent/linkedin-agent/carousels/2026-11-07/carousel.pdf",
+  "title": "Why Your AI Agent Forgets Everything (And How to Fix It)",
+  "slideReview": {
+    "pass": true,
+    "problems": []
+  },
+  "caption": "An agent that forgets everything between sessions isn't broken. It was never given memory to begin with.\n\nAnthropic put out a breakdown this week on what working memory actually requires for an agent. It lines up with something I keep seeing in agent builds: people assume a bigger context window solves the forgetting problem. It doesn't.\n\nHere's where it actually breaks down.\n\nA long context window just means the agent can hold more in front of it right now. It says nothing about what happens next session, or what gets pulled back in when it matters.\n\nRetrieval is the part doing the real work. If your agent can't pull the right fact at the right moment, it doesn't matter how much history you've stored. Most teams build storage and skip retrieval logic entirely, then wonder why the agent answers like it's meeting the customer for the first time.\n\nSummarization is what keeps a long-running task from collapsing under its own weight. Without it, every new turn drags the full history along, costs climb, and the agent starts losing the thread of what actually matters versus what was just said five steps ago.\n\nState is the one people treat as an afterthought. Did the task get approved. Did the invoice get sent. Where did the workflow leave off yesterday. This isn't conversation history, it's the actual status of the work, and most agent demos have none of it because demos don't need to survive a restart.\n\nThe pattern I keep noticing: teams design the agent's personality and prompts first, then bolt memory on when something breaks in testing. It goes better the other way around. Decide what the agent needs to know a week from now before you decide how it should sound today.\n\nWhat's breaking in your agent builds right now, retrieval, state, or something else?",
+  "hook": "An agent that forgets everything between sessions isn't broken. It was never given memory to begin with.",
+  "structure": "Problem → Unexpected insight → Practical takeaway",
+  "imageConcept": "A single office desk shot from above, covered in sticky notes, but half of them have been swept into a wastebasket just out of frame. The remaining notes are organized in a neat row. No people, no screens, just the physical metaphor of selective memory versus clutter.",
+  "gate": "passed",
+  "postUrn": "urn:li:ugcPost:7524934165264310274"
+}
