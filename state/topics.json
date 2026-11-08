@@ -159,5 +159,12 @@
     "visual": "An agent without a budget will spend forever",
     "structure": "",
     "at": "2026-11-08T14:01:45.258547+00:00"
+  },
+  {
+    "topic": "Coding Agent Permission Bypass Creates Secret Leaks",
+    "hook": "A coding agent asked for permission once. The user clicked \"don't ask again.\" That one click is why security researchers are now finding credentials sitting in plain text across public repositories.",
+    "visual": "A single physical door key left sitting in an open mail slot on a front door, shot straight-on in flat editorial lighting. No people, no tech props. The key is slightly too large for the slot, half-exposed to the street. Clean negative space around the door, muted color palette (navy door, brass key), nothing digital in frame. The image should read as 'something private left somewhere public' without any AI or circuit imagery.",
+    "structure": "Observation → Explanation → Implication",
+    "at": "2026-11-08T20:59:21.146076+00:00"
   }
 ]

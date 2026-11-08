@@ -1,0 +1,29 @@
+{
+  "date": "2026-11-08",
+  "lane": "carousel",
+  "status": "published",
+  "topic": "Coding Agent Permission Bypass Creates Secret Leaks",
+  "subtopic": "Claude Code 'Don't Ask Again' flag exposing credentials in public repos",
+  "whyNow": "542 points and 385 comments within 24 hours on HN, directly tied to a live Claude Code permission design flaw",
+  "sources": [
+    {
+      "platform": "hackernews",
+      "url": "https://apiiro.com/blog/coding-agents-leaking-secrets-github-dont-ask-again",
+      "velocity": 70.11
+    }
+  ],
+  "replies": [],
+  "notes": [],
+  "documentPath": "/home/runner/work/linkedin-agent/linkedin-agent/carousels/2026-11-08/carousel.pdf",
+  "title": "Why 1,100+ Repos Just Leaked Secrets Through Claude Code",
+  "slideReview": {
+    "pass": true,
+    "problems": []
+  },
+  "caption": "A coding agent asked for permission once. The user clicked \"don't ask again.\" That one click is why security researchers are now finding credentials sitting in plain text across public repositories.\n\nHere's the mechanism, based on recent reporting on a Claude Code permission flaw.\n\nWhen you approve a command and tell the agent not to ask again, that approval gets written to a local settings file in the project. If the command included a secret, like an API key or token, the secret gets written too. Not masked. Not encrypted. Just saved as part of the rule.\n\nThen someone pushes the repo public, settings file included.\n\nThe part worth sitting with: this isn't a model intelligence problem. The agent didn't fail to understand what a secret was. It did exactly what it was told, which was stop asking and remember the answer. The flaw is in the permission design, not the reasoning.\n\nAnd agents being helpful makes it worse. Ask one to commit your changes, a completely reasonable request, and it may commit the very file holding the leaked credential.\n\nI think about this anytime an automation gets a blanket \"always allow\" setting instead of per-action approval. Convenience and judgment are usually a trade-off, not a package deal. The more autonomy you hand an agent, the more that autonomy needs boundaries that don't depend on the human remembering to check.\n\nA few things worth checking before your next agent session:\n\nWhat gets written to disk when you approve an action.\n\nWhether your repo's local settings files are in .gitignore.\n\nWhether \"don't ask again\" is scoped to a single command or quietly became a standing rule.\n\nAgent permissions deserve the same scrutiny teams already give API scopes and IAM roles. Most people just haven't started treating them that way yet.\n\nWhat's the most repetitive part of your workflow right now?",
+  "hook": "A coding agent asked for permission once. The user clicked \"don't ask again.\" That one click is why security researchers are now finding credentials sitting in plain text across public repositories.",
+  "structure": "Observation → Explanation → Implication",
+  "imageConcept": "A single physical door key left sitting in an open mail slot on a front door, shot straight-on in flat editorial lighting. No people, no tech props. The key is slightly too large for the slot, half-exposed to the street. Clean negative space around the door, muted color palette (navy door, brass key), nothing digital in frame. The image should read as 'something private left somewhere public' without any AI or circuit imagery.",
+  "gate": "passed",
+  "postUrn": "urn:li:ugcPost:7525300952287961088"
+}
