@@ -1483,5 +1483,22 @@
       }
     ],
     "status": "published"
+  },
+  {
+    "date": "2026-11-08",
+    "publishedAt": "2026-11-08T14:01:45.255326+00:00",
+    "postUrn": "urn:li:share:7525195859240689664",
+    "lane": "post",
+    "topic": "Agent cost control and limits",
+    "subtopic": null,
+    "hook": "An agent without a budget will spend forever",
+    "caption": "Most agent demos skip the part that breaks production.\n\nNobody shows the cost.\n\nEvery tool call costs tokens.\nEvery retry costs tokens.\nEvery loop that runs one extra time costs money, and sometimes it runs a hundred extra times before anyone notices.\n\nI've seen agents built with zero budget constraints.\nNo max iterations.\nNo cost ceiling.\nNo check that says stop here.\n\nThey work fine in testing because testing is short.\n\nThen they go live, hit an edge case, and loop quietly for hours.\n\nThe fix is boring:\n\nSet a hard limit on steps.\nSet a hard limit on spend.\nLog every tool call with its cost.\nBuild in a stop condition that isn't optional.\n\nIt's not exciting work.\nIt's the work that keeps an agent from becoming a surprise invoice.\n\nIf you're running agents in production, what's your stop condition?",
+    "imagePrompt": null,
+    "imagePath": "/home/runner/work/linkedin-agent/linkedin-agent/images/2026-11-08-quote-agent-cost-control-and-limits.png",
+    "documentPath": null,
+    "videoPath": null,
+    "videoStyle": null,
+    "sources": [],
+    "status": "published"
   }
 ]
