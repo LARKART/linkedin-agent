@@ -1,0 +1,17 @@
+{
+  "date": "2026-11-09",
+  "lane": "post",
+  "status": "published",
+  "topic": "Agent reliability over intelligence",
+  "caption": "Nobody talks about the boring part of AI agents.\n\nEveryone wants to discuss reasoning.\nPrompt design.\nModel choice.\n\nBut almost every agent I've seen break down didn't break because it got the task wrong.\n\nIt broke at the handoff.\n\nThe moment it had to pass data to another system.\nThe moment a tool call failed silently.\nThe moment nobody told it what to do when the API timed out.\n\nAn agent that reasons well but has no retry logic is a demo.\nAn agent with guardrails, fallback steps, and clear boundaries is something you can actually run in a business.\n\nThe intelligence gets all the attention.\n\nThe plumbing is what decides if it survives production.\n\nWhat's the last handoff that broke a workflow for you?",
+  "hook": "Most AI agents fail at handoffs, not intelligence",
+  "imageConcept": "Most AI agents fail at handoffs, not intelligence",
+  "imagePath": "/home/runner/work/linkedin-agent/linkedin-agent/images/2026-11-09-quote-agent-reliability-over-intelligence.png",
+  "imageStatus": "quote card",
+  "gate": "passed",
+  "firstComment": "The part that surprised me most building these: the failure almost never shows up where you expect it. Curious where other people have seen agents quietly fall apart in real use.",
+  "sources": [],
+  "replies": [],
+  "whyNow": "quote lane",
+  "postUrn": "urn:li:share:7525604321967763456"
+}
