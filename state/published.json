@@ -1586,5 +1586,22 @@
       }
     ],
     "status": "published"
+  },
+  {
+    "date": "2026-11-10",
+    "publishedAt": "2026-11-10T15:23:07.989952+00:00",
+    "postUrn": "urn:li:share:7525941114147774464",
+    "lane": "post",
+    "topic": "Human checkpoints in AI agents",
+    "subtopic": null,
+    "hook": "An agent without a human checkpoint is just a risk generator",
+    "caption": "Most agent builds skip the one step that actually matters.\n\nEveryone wants full autonomy.\n\nNobody wants to be the one explaining why the agent emailed a client the wrong invoice.\n\nHere is what I have learned building these systems.\n\nAutonomy is not the goal.\n\nControl at the right moment is.\n\nA good agent knows three things:\n\nWhat it can decide alone.\n\nWhat needs a second pair of eyes.\n\nWhen to stop and ask.\n\nThat third one is the hard part.\n\nMost teams design for the happy path.\n\nFew design for the moment the agent is unsure.\n\nThat is exactly where a human checkpoint earns its keep.\n\nNot because AI is unreliable.\n\nBecause business outcomes carry real consequences.\n\nA missed step in a demo costs nothing.\n\nA missed step in production costs a client.\n\nSo before you ship the next agent, ask where it should pause, not just where it should act.\n\nWhere are you still letting agents run fully unsupervised in your business right now?",
+    "imagePrompt": null,
+    "imagePath": "/home/runner/work/linkedin-agent/linkedin-agent/images/2026-11-10-quote-human-checkpoints-in-ai-agents.png",
+    "documentPath": null,
+    "videoPath": null,
+    "videoStyle": null,
+    "sources": [],
+    "status": "published"
   }
 ]
