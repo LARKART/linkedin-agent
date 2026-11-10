@@ -180,5 +180,12 @@
     "visual": "A single door propped open with a wedge in an otherwise locked server room corridor, shot editorial-style with strong shadow and minimal color, the wedge clearly the focal point against rows of closed doors",
     "structure": "Observation → Explanation → Implication",
     "at": "2026-11-10T00:34:54.639466+00:00"
+  },
+  {
+    "topic": "Coding Agent Secrets Exposure at Scale",
+    "hook": "A security firm scanned over 100,000 public GitHub repos for one specific file: Claude Code's settings.local.json.",
+    "visual": "A single open desk drawer among a long row of closed identical drawers, one drawer slightly ajar with papers spilling out just enough to see handwriting on them, shot in flat editorial lighting, no text, no tech iconography, emphasizing the ordinary thing left unlocked among many identical ones",
+    "structure": "Data/Signal → Interpretation → Business implication",
+    "at": "2026-11-10T02:40:04.981463+00:00"
   }
 ]

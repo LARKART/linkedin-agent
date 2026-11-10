@@ -1563,5 +1563,28 @@
       }
     ],
     "status": "published"
+  },
+  {
+    "date": "2026-11-10",
+    "publishedAt": "2026-11-10T02:40:04.978037+00:00",
+    "postUrn": "urn:li:ugcPost:7525749088269594625",
+    "lane": "slidevideo",
+    "topic": "Coding Agent Secrets Exposure at Scale",
+    "subtopic": "Default-allow permissions in coding agents leaking credentials to public repos",
+    "hook": "A security firm scanned over 100,000 public GitHub repos for one specific file: Claude Code's settings.local.json.",
+    "caption": "A security firm scanned over 100,000 public GitHub repos for one specific file: Claude Code's settings.local.json.\n\n1,122 of them had secrets sitting inside. Database passwords, AWS keys, SSH logins, API tokens. 1,379 credentials total, out in the open.\n\nHere's how it happened.\n\nWhen Claude Code asks permission to run a command and you click \"don't ask again,\" it saves that command to a local settings file so it won't ask next time. If the command you approved had a password typed into it, the password gets saved too. Word for word.\n\nThat file is supposed to be gitignored automatically. In a lot of these repos, it wasn't, and it got committed and pushed like any other file.\n\nNobody did anything obviously wrong. A developer approved a command. The tool remembered it. The repo went public. Three unremarkable steps, one exposed credential.\n\nAnthropic's Claude Code lead responded directly on Hacker News, saying they're looking at built-in secret scanning and changes to how permissions get handled. That's the right instinct, but it's worth sitting with why this slipped through for this long.\n\nConvenience settings are where security gaps hide best. Nobody reviews a \"don't ask again\" click the way they'd review a pull request. It feels like a UI preference, not a data handling decision.\n\nIf you're running coding agents against real credentials, worth checking what they're writing to disk, not just what they're writing to your codebase.\n\nWhat gets saved quietly is usually more interesting than what gets asked out loud.",
+    "imagePrompt": null,
+    "imagePath": null,
+    "documentPath": null,
+    "videoPath": "/home/runner/work/linkedin-agent/linkedin-agent/videos/2026-11-10/coding-agent-secrets-exposure-at-scale-slidevideo.mp4",
+    "videoStyle": "slides",
+    "sources": [
+      {
+        "platform": "hackernews",
+        "url": "https://apiiro.com/blog/coding-agents-leaking-secrets-github-dont-ask-again",
+        "velocity": 35.04
+      }
+    ],
+    "status": "published"
   }
 ]
