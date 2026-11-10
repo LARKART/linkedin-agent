@@ -173,5 +173,12 @@
     "visual": "Most AI agents fail at handoffs, not intelligence",
     "structure": "",
     "at": "2026-11-09T17:04:50.462159+00:00"
+  },
+  {
+    "topic": "Coding Agent Default Permissions Leaking Secrets at Scale",
+    "hook": "A security research team recently found a coding agent's \"don't ask again\" permission setting had quietly saved credentials into project files, and those files ended up pushed to public repos by the thousand.",
+    "visual": "A single door propped open with a wedge in an otherwise locked server room corridor, shot editorial-style with strong shadow and minimal color, the wedge clearly the focal point against rows of closed doors",
+    "structure": "Observation → Explanation → Implication",
+    "at": "2026-11-10T00:34:54.639466+00:00"
   }
 ]

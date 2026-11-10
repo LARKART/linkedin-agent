@@ -1,0 +1,29 @@
+{
+  "date": "2026-11-10",
+  "lane": "carousel",
+  "status": "published",
+  "topic": "Coding Agent Default Permissions Leaking Secrets at Scale",
+  "subtopic": "Claude Code 'Don't Ask Again' exposing credentials in public repos",
+  "whyNow": "Apiiro report of 1,122 public GitHub files with leaked passwords tied to a permission-skip feature is fresh (~52h) and generated very high engagement (622 likes, 421 comments), signaling active practitioner concern about agent permission design.",
+  "sources": [
+    {
+      "platform": "hackernews",
+      "url": "https://apiiro.com/blog/coding-agents-leaking-secrets-github-dont-ask-again",
+      "velocity": 36.39
+    }
+  ],
+  "replies": [],
+  "notes": [],
+  "documentPath": "/home/runner/work/linkedin-agent/linkedin-agent/carousels/2026-11-10/carousel.pdf",
+  "title": "Your Coding Agent's 'Don't Ask Again' Button Is a Leak Machine",
+  "slideReview": {
+    "pass": true,
+    "problems": []
+  },
+  "caption": "A security research team recently found a coding agent's \"don't ask again\" permission setting had quietly saved credentials into project files, and those files ended up pushed to public repos by the thousand.\n\nNobody did anything malicious. A developer clicked approve once, the agent remembered the decision, and that memory got committed along with everything else.\n\nThis is the part people miss when they talk about AI agent safety.\n\nThe model didn't fail. The permission design did.\n\nI see the same pattern in automation builds that have nothing to do with AI. Someone sets a workflow to skip confirmation steps because it's faster. It works fine for three months. Then a credential, a webhook, or a customer record moves somewhere it shouldn't, and nobody notices until it's already happened a hundred times.\n\nConvenience settings don't fail loudly. They fail quietly, in the background, at scale.\n\nWhen I build agent or automation systems for clients, permissions aren't an afterthought I bolt on at the end. They're part of the architecture from the start: what the agent can touch, what needs a human to approve, what gets logged, what gets rejected automatically.\n\n\"Don't ask again\" is a reasonable feature. It's a dangerous default.\n\nIf you're running coding agents or automations with any kind of stored credentials, it's worth checking what your tools remember and where that memory lives.\n\nWhat's your team's policy on agent permissions right now? Written down, or just assumed?",
+  "hook": "A security research team recently found a coding agent's \"don't ask again\" permission setting had quietly saved credentials into project files, and those files ended up pushed to public repos by the thousand.",
+  "structure": "Observation → Explanation → Implication",
+  "imageConcept": "A single door propped open with a wedge in an otherwise locked server room corridor, shot editorial-style with strong shadow and minimal color, the wedge clearly the focal point against rows of closed doors",
+  "gate": "passed",
+  "postUrn": "urn:li:ugcPost:7525717586903244800"
+}
