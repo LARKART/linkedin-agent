@@ -1648,5 +1648,43 @@
     "videoStyle": null,
     "sources": [],
     "status": "published"
+  },
+  {
+    "date": "2026-11-11",
+    "publishedAt": "2026-11-11T23:19:17.692342+00:00",
+    "postUrn": "urn:li:ugcPost:7526423333568045056",
+    "lane": "carousel",
+    "topic": "Platforms Shutting Out AI Agents",
+    "subtopic": "United Airlines blocks third-party booking agents",
+    "hook": "United Airlines just blocked third-party AI agents from booking flights on its site.",
+    "caption": "United Airlines just blocked third-party AI agents from booking flights on its site.\n\nThe story is getting attention because it exposes something most agentic AI demos skip over.\n\nThere's a difference between an agent automating work inside a business and an agent acting autonomously on someone else's platform.\n\nInside your own systems, you control the rules. You decide what the agent can touch, what it logs, what triggers a human check.\n\nOutside, on someone else's platform, none of that applies. The platform owner has no way to verify intent, no way to rate-limit trust, no way to tell a helpful agent from a scraper wearing a nicer outfit. So they block the door.\n\nThis isn't a story about AI agents failing. It's a story about a trust boundary nobody has solved yet.\n\nA few things follow from that:\n\nPlatforms will keep tightening access for anything acting on a user's behalf without a direct relationship.\n\nInternal automation, the kind connecting your CRM, your inbox, your scheduling, your data, stays wide open because you own the boundary.\n\nHuman-in-the-loop isn't a fallback for weak AI. It's the design pattern that works everywhere permissions are unclear.\n\nIf you're building agent workflows right now, the useful question isn't \"can this act autonomously.\" It's \"whose system is it acting inside, and do they know it's there.\"\n\nBuild for the platform's rules. Not around them.\n\nWhat's the most manual part of your workflow right now?",
+    "imagePrompt": null,
+    "imagePath": null,
+    "documentPath": "/home/runner/work/linkedin-agent/linkedin-agent/carousels/2026-11-11/carousel.pdf",
+    "videoPath": null,
+    "videoStyle": null,
+    "sources": [
+      {
+        "platform": "hackernews",
+        "url": "https://www.cbsnews.com/news/united-airlines-bans-ai-agents-booking-flights/",
+        "velocity": 451.41
+      },
+      {
+        "platform": "news",
+        "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxPZDJtSXdwdkJWUlI4SlRWMzhQNlFKTG00LW4xVW9tZ1pLcFUtRzBQYklOMWRvZVZ4a3AwOTliX2hvcWpjYTN2eGR4NWp2M1BiMGNUMl9SZUxqQnpOWDU0QnRpUkdyX1FVSkVaRDFSUmw1R1pQWFFEMzNfVDN1MjY3QUNn?oc=5",
+        "velocity": 20.0
+      },
+      {
+        "platform": "news",
+        "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOU055ZHZiWnZVVmVocjRrekMyeFdOdE1odTZPZDRlaFVYV2EwWkgxVHlaS3hpMTVwM1UxZllUU0h1RWRSMHBwY2pNV3d3VmVnTG1CaVB3N2I3U3lCMDJlc250eldYdU1fSWt5dTVqbW1Fa0wxSER6Q0UyZkd5RXNWX2w0YWFLRl9oeVItU3B3Nkgyam9ERnhHQ3FPcWZWYjRKQzVvV184dXNXM25LREJB?oc=5",
+        "velocity": 7.66
+      },
+      {
+        "platform": "news",
+        "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOU0MxbTdiY3luWnR1d1hrbGtna0lRV0I2ZnBSemZGWnBld0dTdG5hVzJWbm56RUpPdHQ2dkxsdXdSblJIWHYyVXV2V1ZITVhDa2pOa1N4U3lSRktzS191UFY0QWc3bC1La3ExODRvNWkteEk4RFNBVVN3eUFWZ1JtM0huSkRDb0tRME8yUHl5MWdwc2dxNkZSVW0zOA?oc=5",
+        "velocity": 5.11
+      }
+    ],
+    "status": "published"
   }
 ]
