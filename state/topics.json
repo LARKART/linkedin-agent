@@ -194,5 +194,12 @@
     "visual": "An agent without a human checkpoint is just a risk generator",
     "structure": "",
     "at": "2026-11-10T15:23:07.992821+00:00"
+  },
+  {
+    "topic": "AI-Generated Code Fragility",
+    "hook": "A codebase can grow fast and still get harder to work in every week.",
+    "visual": "A printed architectural blueprint on a desk with hand-drawn red pen corrections and crossed-out sections overlaid on top of it, shot like an editorial photo, natural light, nothing digital or glowing in the frame.",
+    "structure": "Observation → Explanation → Implication",
+    "at": "2026-11-11T00:30:12.656302+00:00"
   }
 ]

@@ -1603,5 +1603,33 @@
     "videoStyle": null,
     "sources": [],
     "status": "published"
+  },
+  {
+    "date": "2026-11-11",
+    "publishedAt": "2026-11-11T00:30:12.652965+00:00",
+    "postUrn": "urn:li:ugcPost:7526078792096903169",
+    "lane": "video",
+    "topic": "AI-Generated Code Fragility",
+    "subtopic": "Coding agent output quality and technical debt",
+    "hook": "A codebase can grow fast and still get harder to work in every week.",
+    "caption": "A codebase can grow fast and still get harder to work in every week.\n\nThat's the pattern showing up in developer discussions right now. Teams ship AI-written code quickly, tests pass, features ship. Then six weeks later nobody can explain why a function works, because nobody wrote it line by line.\n\nThe code runs. It just isn't understood.\n\nThis isn't an argument against using Claude Code or any coding agent. It's an argument for treating the output the way you'd treat a pull request from a new contractor. Read the diff. Ask why a function was structured that way. Reject the parts that solve the problem in a way nobody on the team can maintain.\n\nSpeed from an agent only holds up if a human still owns the architecture. Once nobody can draw the system on a whiteboard from memory, every future change gets slower and riskier, not faster.\n\nThe fix is boring: mandatory review before merge, same as always. The agent changes how fast code gets written. It doesn't change who has to be able to explain it later.",
+    "imagePrompt": null,
+    "imagePath": null,
+    "documentPath": null,
+    "videoPath": "/home/runner/work/linkedin-agent/linkedin-agent/videos/2026-11-11/ai-generated-code-fragility/ai-generated-code-fragility.mp4",
+    "videoStyle": "animated",
+    "sources": [
+      {
+        "platform": "hackernews",
+        "url": "https://evanxmerz.com/post/ai-usage-generates-a-fragile-codebase/",
+        "velocity": 108.44
+      },
+      {
+        "platform": "hackernews",
+        "url": "https://news.ycombinator.com/item?id=50444380",
+        "velocity": 13.56
+      }
+    ],
+    "status": "published"
   }
 ]
