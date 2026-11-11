@@ -1631,5 +1631,22 @@
       }
     ],
     "status": "published"
+  },
+  {
+    "date": "2026-11-11",
+    "publishedAt": "2026-11-11T14:53:00.944732+00:00",
+    "postUrn": "urn:li:share:7526295925468848128",
+    "lane": "post",
+    "topic": "Workflow handoffs over automation tasks",
+    "subtopic": null,
+    "hook": "Automation fails at the handoff, not the task",
+    "caption": "Most automations die in the handoff.\n\nNot in the task itself.\n\nA workflow can scrape data, write copy, send an email.\n\nBut the moment it needs to pass context to the next step, things break.\n\nA lead comes in.\nSomeone qualifies it manually.\nThen someone else copies it into the CRM.\nThen someone else follows up late.\n\nEvery handoff is a place where information gets lost, delayed, or forgotten.\n\nThe fix isn't a smarter AI model.\n\nIt's designing the handoff itself.\n\nWhat happens to the output.\nWho or what receives it.\nWhat triggers the next step.\nWhat happens if that step fails.\n\nI spend more time thinking about handoffs than about the AI part.\n\nThat's usually where the real work is.\n\nWhere does your process actually break down, the task or the handoff?",
+    "imagePrompt": null,
+    "imagePath": "/home/runner/work/linkedin-agent/linkedin-agent/images/2026-11-11-quote-workflow-handoffs-over-automation-tasks.png",
+    "documentPath": null,
+    "videoPath": null,
+    "videoStyle": null,
+    "sources": [],
+    "status": "published"
   }
 ]

@@ -1,12 +1,5 @@
 [
   {
-    "topic": "WorkflowâCentric Automation",
-    "hook": "Automation wins when the workflow decides, not the tool",
-    "visual": "Automation wins when the workflow decides, not the tool",
-    "structure": "",
-    "at": "2026-10-28T12:54:45.528464+00:00"
-  },
-  {
     "topic": "Practical Automation Insight",
     "hook": "Automation wins when you let tools handle the repeat, not the hype",
     "visual": "Automation wins when you let tools handle the repeat, not the hype",
@@ -201,5 +194,12 @@
     "visual": "A printed architectural blueprint on a desk with hand-drawn red pen corrections and crossed-out sections overlaid on top of it, shot like an editorial photo, natural light, nothing digital or glowing in the frame.",
     "structure": "Observation → Explanation → Implication",
     "at": "2026-11-11T00:30:12.656302+00:00"
+  },
+  {
+    "topic": "Workflow handoffs over automation tasks",
+    "hook": "Automation fails at the handoff, not the task",
+    "visual": "Automation fails at the handoff, not the task",
+    "structure": "",
+    "at": "2026-11-11T14:53:00.947244+00:00"
   }
 ]
