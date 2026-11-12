@@ -1,0 +1,17 @@
+{
+  "date": "2026-11-12",
+  "lane": "post",
+  "status": "published",
+  "topic": "Automation reliability at handoffs",
+  "caption": "Nobody talks about the boring part of automation.\n\nEveryone wants to show off the AI step.\n\nThe prompt. The agent. The clever output.\n\nBut almost every broken workflow I've looked at doesn't fail there.\n\nIt fails at the handoff.\n\nData moves from one tool to another.\n\nA field gets renamed.\n\nA format changes.\n\nA system expects JSON and gets a string.\n\nNo error. No alert. Just silence, and a record that never shows up where it should.\n\nThe AI step usually works fine.\n\nIt's the five seconds before and after it that nobody designs for.\n\nWhen I build workflows now, I spend more time on the handoffs than the logic.\n\nWhat happens if this API times out.\n\nWhat happens if the field is empty.\n\nWhere does this go if it fails silently.\n\nThat's the unglamorous work that makes automation actually reliable.\n\nWhere has a handoff quietly broken in your workflow before anyone noticed?",
+  "hook": "Most automations fail at the handoff, not the task",
+  "imageConcept": "Most automations fail at the handoff, not the task",
+  "imagePath": "/home/runner/work/linkedin-agent/linkedin-agent/images/2026-11-12-quote-automation-reliability-at-handoffs.png",
+  "imageStatus": "quote card",
+  "gate": "passed",
+  "firstComment": "The handoff between your CRM and your inbox is usually the weakest link nobody checks. Where does your data go quiet first?",
+  "sources": [],
+  "replies": [],
+  "whyNow": "quote lane",
+  "postUrn": "urn:li:share:7526671260228018177"
+}
