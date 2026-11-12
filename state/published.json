@@ -1703,5 +1703,33 @@
     "videoStyle": null,
     "sources": [],
     "status": "published"
+  },
+  {
+    "date": "2026-11-12",
+    "publishedAt": "2026-11-12T22:36:22.841570+00:00",
+    "postUrn": "urn:li:ugcPost:7526774922266689536",
+    "lane": "carousel",
+    "topic": "Platforms Banning AI Agent Access",
+    "subtopic": "United Airlines blocks AI booking agents, CEO explains real motive",
+    "hook": "United Airlines blocked AI agents from booking flights on behalf of customers this week.",
+    "caption": "United Airlines blocked AI agents from booking flights on behalf of customers this week.\n\nThe airline's position is straightforward. If an agent is making the booking, the airline loses the ability to upsell seats, manage pricing in real time, and handle the customer directly when something goes wrong.\n\nThat's the actual tension. Not whether the technology works. Whether the business wants to give up control of the moment where it makes money and owns the relationship.\n\nI see a version of this in almost every workflow I build. An agent that moves fast and skips the handoff points a business actually relies on will get blocked, rate-limited, or banned, no matter how well it performs.\n\nThe fix isn't less autonomy. It's knowing which steps need a human or a confirmation screen and which ones don't.\n\nPricing, payment, and anything tied to liability usually need a checkpoint. Data lookup, scheduling, and research usually don't.\n\nIf you're designing an agent to act on someone's behalf, map out where the business on the other end will want a say. Build the guardrail before someone else builds the block.\n\nWhat's the most repetitive part of your workflow right now?",
+    "imagePrompt": null,
+    "imagePath": null,
+    "documentPath": "/home/runner/work/linkedin-agent/linkedin-agent/carousels/2026-11-12/carousel.pdf",
+    "videoPath": null,
+    "videoStyle": null,
+    "sources": [
+      {
+        "platform": "hackernews",
+        "url": "https://www.cbsnews.com/news/united-airlines-bans-ai-agents-booking-flights/",
+        "velocity": 107.35
+      },
+      {
+        "platform": "news",
+        "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxNbEhkQW8yWHhRNTJ3aUo0MGNibGhNMnVWeXVfaGstZGU4T2FXbUhiYmJTOEpCQVJWNFFndUc5c0w5SnNTU0kwd1BJZ1dFUWhtMElYbHJnczJJNENwMTFVa0VmdnA1QjhkamcwVi11bnE0blZNaElIbHJ5TjdYaDZ4dFhHTjUtMmZkM0dMbVJqbVVPU2tYRmxoclY2c1ZXMldTcm5GdGFqWkt5TGtuWmo3eDkwLWxBZnh2dHNMeFhYWXBzeDQ5N3FnaEVEVEdSZ2hPckE?oc=5",
+        "velocity": 10.33
+      }
+    ],
+    "status": "published"
   }
 ]
