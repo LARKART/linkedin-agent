@@ -1,0 +1,39 @@
+{
+  "date": "2026-11-13",
+  "lane": "carousel",
+  "status": "published",
+  "topic": "Agentic Payments Go Mainstream",
+  "subtopic": "ChatGPT Wallet and Dots agents making purchases autonomously",
+  "whyNow": "Two independent sources in the last few hours (OpenAI ChatGPT Wallet launch, Brave x402 agentic payments) show payment-capable agents moving from experiment to shipped product simultaneously",
+  "sources": [
+    {
+      "platform": "news",
+      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBHeTFKZ0NySWhLdXF5bXRNLU5MOHJUUU9WcTVwOGFOc2xNaEstLVp6cy1Ia3BKTzJFczNBY2NOTW56SHJIWXRzY2UxY2NhQmJnQUgtZG5MemVpOG5XcWtUdjhWUzRjbjQ?oc=5",
+      "velocity": 20.0
+    },
+    {
+      "platform": "news",
+      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNazB2cTNEbl9qWDE2Z3BCOVh4Q1U1eDRka1Uxc18wQWhQNXRRTGRQV3VSOHRrUFlhZ0FKamNQb21zYkM5WWVfc0tJcGUwWktRbUFWTkkwc0Nya1RFbTVjNTBKa01XMzNhOTFyNzNWTG9NQXVHcGVTM2xwZ2xyUjNEVkxmSU9rY3Nq?oc=5",
+      "velocity": 6.08
+    },
+    {
+      "platform": "hackernews",
+      "url": "https://brave.com/blog/search-api-agentic-payments/",
+      "velocity": 35.51
+    }
+  ],
+  "replies": [],
+  "notes": [],
+  "documentPath": "/home/runner/work/linkedin-agent/linkedin-agent/carousels/2026-11-13/carousel.pdf",
+  "title": "Agents Can Now Spend Money. Here's Where To Put The Brakes",
+  "slideReview": {
+    "pass": true,
+    "problems": []
+  },
+  "caption": "Two agents got a wallet this week.\n\nOpenAI's ChatGPT Wallet lets an agent complete purchases on a user's behalf. Brave's search API now accepts agentic payments through x402. Different companies, same capability, same few days.\n\nFor the last two years, agent demos were mostly about drafting things. Writing an email. Summarizing a doc. A human still had to click send.\n\nPayment execution changes that. The agent isn't drafting an action anymore. It's completing one. Money leaves an account without a person in the loop at the moment it happens.\n\nThat's a different kind of decision for a business to make.\n\nIt's not really a question about whether the AI is capable enough. Language models have been able to reason about purchases for a while. The real question is where the approval checkpoint lives once spending is on the table.\n\nA few worth building before any agent gets access to a budget:\n\nSpending limits per transaction and per time window, enforced outside the model, not requested from it.\n\nA clear log of what was purchased, when, and against which instruction, so a decision can be reconstructed later.\n\nA human review step for anything above a threshold, or anything outside a predefined category.\n\nNone of that removes the usefulness of the agent. It just means the business decides where oversight sits instead of discovering it after a charge nobody expected.\n\nAutonomy and oversight aren't opposites. The agents that last in production tend to have both.\n\nIf you're looking at agentic payments or already piloting one, what checkpoint would you put in place first?",
+  "hook": "Two agents got a wallet this week.",
+  "structure": "New development -> why it matters -> what to do",
+  "imageConcept": "A close-up editorial shot of a physical wallet left open on a desk next to a laptop showing a simple approval dialog box on screen, natural office light, nothing futuristic, the focus is the contrast between the physical object and the on-screen approval step",
+  "gate": "passed",
+  "postUrn": "urn:li:ugcPost:7527134422291357696"
+}
