@@ -1731,5 +1731,28 @@
       }
     ],
     "status": "published"
+  },
+  {
+    "date": "2026-11-13",
+    "publishedAt": "2026-11-13T00:58:42.126669+00:00",
+    "postUrn": "urn:li:ugcPost:7526810737755701248",
+    "lane": "video",
+    "topic": "Platforms Banning AI Agents From Taking Action On Users' Behalf",
+    "subtopic": "United Airlines blocks AI booking agents",
+    "hook": "United Airlines just blocked AI agents from booking flights on behalf of customers.",
+    "caption": "United Airlines just blocked AI agents from booking flights on behalf of customers.\n\nNot a bug. A policy decision.\n\nThe story is getting attention because it exposes something most agent demos skip over. Building an agent that can act is the easy part. Getting a platform to trust that agent with a login, a payment method, and a booking flow is a different problem entirely.\n\nAirlines have fraud rules, rate limits, and terms of service built around a human clicking buttons. An agent doesn't fit that model cleanly. It moves faster than a person, it doesn't get rate-limited by fatigue, and if something goes wrong, who is actually responsible for the transaction.\n\nThis is going to keep happening. Banks, airlines, ticketing platforms, anyone handling money or identity is going to draw hard lines around autonomous access before they open an official channel.\n\nFor anyone building agent systems for clients right now, this is the real constraint. Not model capability. Access, authentication, and liability.\n\nThe agents that get adopted first probably won't be the ones that act most independently. They'll be the ones with the clearest audit trail and the clearest point where a human signs off.\n\nWorth remembering the next time someone pitches full autonomy as the goal.",
+    "imagePrompt": null,
+    "imagePath": null,
+    "documentPath": null,
+    "videoPath": "/home/runner/work/linkedin-agent/linkedin-agent/videos/2026-11-13/platforms-banning-ai-agents-from-taking-/platforms-banning-ai-agents-from-taking--narrated.mp4",
+    "videoStyle": "narrated",
+    "sources": [
+      {
+        "platform": "hackernews",
+        "url": "https://www.cbsnews.com/news/united-airlines-bans-ai-agents-booking-flights/",
+        "velocity": 98.53
+      }
+    ],
+    "status": "published"
   }
 ]
