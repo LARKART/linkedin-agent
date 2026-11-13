@@ -1754,5 +1754,22 @@
       }
     ],
     "status": "published"
+  },
+  {
+    "date": "2026-11-13",
+    "publishedAt": "2026-11-13T15:03:55.857293+00:00",
+    "postUrn": "urn:li:share:7527023448162902016",
+    "lane": "post",
+    "topic": "Automation ownership and maintenance",
+    "subtopic": null,
+    "hook": "Automation without an owner just automates confusion faster",
+    "caption": "Most automations don't fail from bad logic.\n\nThey fail because nobody owns them after launch.\n\nHere's what I mean.\n\nA workflow goes live.\nIt works great for three weeks.\n\nThen a field name changes in the CRM.\nOr an API updates its response format.\nOr someone adds a new step to the sales process manually, without telling anyone.\n\nThe automation keeps running.\nIt just runs wrong.\n\nNo error message. No alert.\nJust quietly bad data piling up until someone notices three months later.\n\nThe fix isn't more AI.\n\nIt's assigning a real person to watch the workflow, check the logs, and update it when the business changes.\n\nEvery system I build gets a named owner before it goes live.\nNot a team. A person.\n\nSomeone whose job includes noticing when the automation and the business have drifted apart.\n\nWhat's one automation in your business that nobody actually checks on anymore?",
+    "imagePrompt": null,
+    "imagePath": "/home/runner/work/linkedin-agent/linkedin-agent/images/2026-11-13-quote-automation-ownership-and-maintenance.png",
+    "documentPath": null,
+    "videoPath": null,
+    "videoStyle": null,
+    "sources": [],
+    "status": "published"
   }
 ]
