@@ -1872,5 +1872,28 @@
       }
     ],
     "status": "published"
+  },
+  {
+    "date": "2026-11-14",
+    "publishedAt": "2026-11-14T23:43:01.336137+00:00",
+    "postUrn": "urn:li:ugcPost:7527516468880732160",
+    "lane": "video",
+    "topic": "Claude Code Projects Running Parallel Workers",
+    "subtopic": "Agentic coding infrastructure upgrade",
+    "hook": "Anthropic announced an update to Claude Code Projects this week. A single project can now run multiple workers in parallel on related tasks instead of one agent handling one task at a time.",
+    "caption": "Anthropic announced an update to Claude Code Projects this week. A single project can now run multiple workers in parallel on related tasks instead of one agent handling one task at a time.\n\nThat is a real shift in how agentic coding tools get used.\n\nMost of the automation work I do runs on the same principle, just outside of code. You break a workflow into parts that can run at the same time instead of waiting on each other. A lead gets enriched while the CRM record gets created. A document gets summarized while the notification goes out.\n\nThe bottleneck was never the AI model. It was always the orchestration around it, deciding what can run in parallel and what has to run in sequence because one step depends on the output of another.\n\nIf this holds up in practice, teams building with Claude Code will need to think less about prompting a single agent well and more about structuring work so multiple agents do not step on each other. Shared context, task boundaries, and conflict handling become the actual engineering problem.\n\nThat is the part that does not show up in a product announcement but ends up mattering most once you try to run it for real.\n\nWhat's the first thing you'd want parallel workers to handle in your own workflow?",
+    "imagePrompt": null,
+    "imagePath": null,
+    "documentPath": null,
+    "videoPath": "/home/runner/work/linkedin-agent/linkedin-agent/videos/2026-11-14/claude-code-projects-running-parallel-wo/claude-code-projects-running-parallel-wo.mp4",
+    "videoStyle": "animated",
+    "sources": [
+      {
+        "platform": "hackernews",
+        "url": "https://claude.com/resources/articles/projects-redesigned",
+        "velocity": 16.0
+      }
+    ],
+    "status": "published"
   }
 ]
