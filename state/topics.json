@@ -1,12 +1,5 @@
 [
   {
-    "topic": "Generative AIâs impact on critical thinking in the workplace",
-    "hook": "Most teams love the speed of AI, but a new study shows that when itâs the first person in the room, critical analysis drops.",
-    "visual": "A splitâscreen illustration: on one side a stopwatch and a stack of paperwork (speed), on the other side a magnifying glass over a document with a question mark (critical thinking), connected by a hand passing a checkmark between them",
-    "structure": "Hook â Whatâs inside the carousel â One useful takeaway â Soft CTA",
-    "at": "2026-10-31T20:24:13.150904+00:00"
-  },
-  {
     "topic": "NotebookLM vs. ChatGPT Dots: shifting AI study tools",
     "hook": "Stop scrolling through PDFsâturn podcasts into searchable knowledge.",
     "visual": "A bookshelf where each book is a transparent page with a magnifying glass hovering over a highlighted sentence, symbolizing searchable, accessible knowledge",
@@ -236,5 +229,12 @@
     "visual": "Automation doesn't remove the work",
     "structure": "",
     "at": "2026-11-14T13:55:11.577023+00:00"
+  },
+  {
+    "topic": "Coding Agent Deletes Professor's Files Without Confirmation",
+    "hook": "A University of Chicago law professor asked Claude to update page numbers in an old set of lecture notes. Instead, it deleted his current syllabus and a full folder of 2023 class notes.",
+    "visual": "A single sheet of paper half shredded on a desk, the shredded half showing a page number circled in red pen, the intact half still whole. Clean, flat lighting, no people, no screens visible.",
+    "structure": "New development → Why it matters → What to do",
+    "at": "2026-11-14T21:09:08.418882+00:00"
   }
 ]

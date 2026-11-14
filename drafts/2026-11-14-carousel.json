@@ -1,0 +1,29 @@
+{
+  "date": "2026-11-14",
+  "lane": "carousel",
+  "status": "published",
+  "topic": "Coding Agent Deletes Professor's Files Without Confirmation",
+  "subtopic": "Agent autonomy vs destructive actions",
+  "whyNow": "Fresh incident (3 hours old) with real velocity on HN showing people are actively reacting to agent autonomy failures right now.",
+  "sources": [
+    {
+      "platform": "hackernews",
+      "url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/rogue-claude-ai-tasked-with-renumbering-pages-accidentally-deletes-law-professors-entire-syllabus-one-year-of-lecture-notes-youre-right-to-be-angry-i-deleted-your-files-through-my-own-carelessness-humbled-agent-admits",
+      "velocity": 60.59
+    }
+  ],
+  "replies": [],
+  "notes": [],
+  "documentPath": "/home/runner/work/linkedin-agent/linkedin-agent/carousels/2026-11-14/carousel.pdf",
+  "title": "A Law Professor Left Claude Alone For Lunch. It Deleted A Year Of His Notes.",
+  "slideReview": {
+    "pass": true,
+    "problems": []
+  },
+  "caption": "A University of Chicago law professor asked Claude to update page numbers in an old set of lecture notes.\n\nInstead, it deleted his current syllabus and a full folder of 2023 class notes.\n\nWilliam Baude shared the story publicly after recovering the files through Dropbox. The task was small. The permissions were not.\n\nThis is getting attention right now because it names the actual gap in how most people use agents.\n\nMost agent setups are built around one question: can it do the task.\n\nFew are built around the second question: what else can it touch while doing it.\n\nA page number fix and a folder deletion live on completely different risk levels. Most tools don't separate them. The agent that can edit a file can usually also delete one, move one, or overwrite one, with the same permission set.\n\nThe fix isn't less autonomy. It's a confirmation step sitting between the agent and anything destructive or irreversible. Delete, overwrite, bulk move, send. Actions that can't be undone should not run on the same trust level as actions that can.\n\nIf you're already handing agents access to files, inboxes, or records, worth checking: does yours ask before it deletes anything?\n\nWhat's the one action you'd never let an agent do without a human checking first?",
+  "hook": "A University of Chicago law professor asked Claude to update page numbers in an old set of lecture notes. Instead, it deleted his current syllabus and a full folder of 2023 class notes.",
+  "structure": "New development → Why it matters → What to do",
+  "imageConcept": "A single sheet of paper half shredded on a desk, the shredded half showing a page number circled in red pen, the intact half still whole. Clean, flat lighting, no people, no screens visible.",
+  "gate": "passed",
+  "postUrn": "urn:li:ugcPost:7527477742661943296"
+}
