@@ -1804,5 +1804,33 @@
       }
     ],
     "status": "published"
+  },
+  {
+    "date": "2026-11-14",
+    "publishedAt": "2026-11-14T00:33:28.678584+00:00",
+    "postUrn": "urn:li:ugcPost:7527166778163195904",
+    "lane": "slidevideo",
+    "topic": "Platforms Still Locking Out AI Agents",
+    "subtopic": "United Airlines bans agentic booking despite agent hype",
+    "hook": "United Airlines is reportedly blocking AI agents from booking flights on a customer's behalf.",
+    "caption": "United Airlines is reportedly blocking AI agents from booking flights on a customer's behalf.\n\nThat's worth sitting with for a second.\n\nEvery agent demo this year shows the same thing: an AI that browses, decides, and completes a purchase without a human clicking anything. Flights, hotels, subscriptions, checkout flows. The pitch is autonomy.\n\nBut the businesses on the other end of that transaction are the ones who carry the risk if something goes wrong. Wrong fare class. Wrong dates. A refund dispute with no clear human decision behind it. An airline isn't going to accept that liability just because the technology is capable of it.\n\nThis is the gap that doesn't show up in demos.\n\nAn agent can be technically able to complete an action and still not be trusted to complete it unsupervised. Capability and permission are two different problems, and most of the agent hype only solves the first one.\n\nIt's the same thing I run into building agent workflows for businesses. The interesting design question is rarely \"can the agent do this.\" It's where the human needs to stay in the loop, what gets approved versus automated outright, and what happens when the agent is wrong.\n\nThe agents that actually get used long-term aren't the ones that act the most independently. They're the ones with clear boundaries around what they're allowed to touch.\n\nUnited just drew one of those boundaries in public.",
+    "imagePrompt": null,
+    "imagePath": null,
+    "documentPath": null,
+    "videoPath": "/home/runner/work/linkedin-agent/linkedin-agent/videos/2026-11-14/platforms-still-locking-out-ai-agents-slidevideo.mp4",
+    "videoStyle": "slides",
+    "sources": [
+      {
+        "platform": "hackernews",
+        "url": "https://www.cbsnews.com/news/united-airlines-bans-ai-agents-booking-flights/",
+        "velocity": 54.33
+      },
+      {
+        "platform": "news",
+        "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQOEN2UHk3eE90NUJjYXQyeFFseDlyZnhvNVliRDNQODFodXRXWF9CRXlKak5TeGh5SVNPellzaGdGZXd5VGNYdHhzWXg0SC0tTWxIOFZ1TEZsV29SSVVVZUc0QWJUZHh0OVFGeHQ0OE5OamUtQmVMN0ZuQ0JzVXpIem5ONGpHMmI5NWw0MkEwajJnNDRYVHY2S0h0YkFrWFIxekNr?oc=5",
+        "velocity": 4.18
+      }
+    ],
+    "status": "published"
   }
 ]
