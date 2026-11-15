@@ -1,12 +1,5 @@
 [
   {
-    "topic": "Connected Tools Efficiency",
-    "hook": "When your tools talk, your team finally starts listening",
-    "visual": "When your tools talk, your team finally starts listening",
-    "structure": "",
-    "at": "2026-11-01T13:58:59.425159+00:00"
-  },
-  {
     "topic": "Practical AI ROI",
     "hook": "Businesses are investing heavily in AI, yet many are still asking: \"Where's the ROI?\"",
     "visual": "A blueprint or architectural drawing of a business process, with some elements highlighted or connected by glowing lines, representing AI integration bringing efficiency, rather than a standalone AI component.",
@@ -236,5 +229,12 @@
     "visual": "An overhead editorial shot of a single large architect's drafting table split into separate lit work zones, each with its own set of tools and papers mid-task, all under one shared overhead lamp, suggesting one project with multiple independent work-streams happening at once.",
     "structure": "New development → Why it matters → What to do",
     "at": "2026-11-14T23:43:01.339304+00:00"
+  },
+  {
+    "topic": "Automation monitoring and silent failures",
+    "hook": "Automation without monitoring is just a slower way to fail",
+    "visual": "Automation without monitoring is just a slower way to fail",
+    "structure": "",
+    "at": "2026-11-15T14:29:07.220332+00:00"
   }
 ]

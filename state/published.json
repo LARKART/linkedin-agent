@@ -1895,5 +1895,22 @@
       }
     ],
     "status": "published"
+  },
+  {
+    "date": "2026-11-15",
+    "publishedAt": "2026-11-15T14:29:07.217117+00:00",
+    "postUrn": "urn:li:share:7527739461540077568",
+    "lane": "post",
+    "topic": "Automation monitoring and silent failures",
+    "subtopic": null,
+    "hook": "Automation without monitoring is just a slower way to fail",
+    "caption": "Most automations don't break loudly.\n\nThey break quietly.\n\nA field stops updating.\nA webhook silently times out.\nAn API key expires on a Tuesday nobody checks.\n\nNo error message. No alert. Just a workflow that looks fine and has been failing for three weeks.\n\nI see this a lot with businesses who automate a process, feel the relief of not touching it anymore, and then stop watching it entirely.\n\nThe automation isn't the finish line.\n\nThe finish line is knowing when it stops doing its job.\n\nThat means:\n\nLogging what happened, not just that something ran\n\nAlerts when a step fails, not just when the whole workflow crashes\n\nA simple way to check if data actually landed where it should\n\nNone of this is glamorous. It's also the difference between a workflow that saves time and one that quietly costs you a client.\n\nWhat's one automation in your business that nobody has checked on in months?",
+    "imagePrompt": null,
+    "imagePath": "/home/runner/work/linkedin-agent/linkedin-agent/images/2026-11-15-quote-automation-monitoring-and-silent-failure.png",
+    "documentPath": null,
+    "videoPath": null,
+    "videoStyle": null,
+    "sources": [],
+    "status": "published"
   }
 ]
