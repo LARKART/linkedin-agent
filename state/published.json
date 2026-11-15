@@ -1912,5 +1912,38 @@
     "videoStyle": null,
     "sources": [],
     "status": "published"
+  },
+  {
+    "date": "2026-11-15",
+    "publishedAt": "2026-11-15T21:30:33.189913+00:00",
+    "postUrn": "urn:li:ugcPost:7527845519302242304",
+    "lane": "carousel",
+    "topic": "MCP Server Supply Chain Risk",
+    "subtopic": "compromised MCP servers hijacking trusted agent tool calls",
+    "hook": "A security firm found a malicious MCP server could quietly hijack a trusted one, and the model never did anything wrong.",
+    "caption": "A security firm called Invariant Labs found something worth paying attention to. A malicious MCP server sitting next to a legitimate WhatsApp MCP server could quietly instruct an agent to read someone's message history and send it to an attacker's number. No prompt from the user. No obvious warning in the tool review screen.\n\nThe model did nothing wrong. It just did what it was told, by a tool it had permission to trust.\n\nThis is the part people keep missing when they talk about AI agent risk. Everyone is focused on jailbreaking the model. But MCP servers don't have isolation boundaries between each other. A response from one server can influence what happens on a completely different server, in the same context window, with no record of where the instruction actually came from.\n\nOWASP has already catalogued this as its own risk category. JFrog found a separate critical vulnerability in mcp-remote that let attackers execute commands on the host machine just by connecting to an untrusted server. Different bug, same pattern: the danger sits in the integration layer, not the model.\n\nIf you're building with agents and tool calling, the model is probably the least risky part of your stack right now. The MCP servers you've connected are the part nobody is reviewing.\n\nMakes me wonder how many teams are auditing their tool stack the way they'd audit a new npm dependency, versus just installing whatever MCP server looked useful.\n\nWhat's the most repetitive part of your workflow right now, and is it running through a tool you'd actually trust with a security review?",
+    "imagePrompt": null,
+    "imagePath": null,
+    "documentPath": "/home/runner/work/linkedin-agent/linkedin-agent/carousels/2026-11-15/carousel.pdf",
+    "videoPath": null,
+    "videoStyle": null,
+    "sources": [
+      {
+        "platform": "news",
+        "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNNmkwanhHbjBxWlFHSTFMMTBsV05hWHM3NHRfTFYxZS1xVTVOTXh5aWRUTkxSNTJ2WEtyeU5aOUdKT1F0V0dBa3BUSUozcE9hcjYtWlFRWUtYaW4yb3BCbC0wWDhsWjNrbVJlOEM3X0FqRmU4dlNWb2FaNThQei1KbVZwVExuRTNaZFNiMEc0R05FcTNObHNLdGFhQm1PeHpWdGxGeEVONHhQeUlfaHlfcWZzZHNlYzRudmJpZVVMc3Rmdw?oc=5",
+        "velocity": 6.75
+      },
+      {
+        "platform": "news",
+        "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1mTC1pcW45ak1kSVRFNUxLQ3RBZnktaWNXZm5oWUVTSFNjRnFYR3hEaDQ5MFRHSTF1YXdIUVZKZ3BCQ3RSZVZjcktnb2NSbS1pM0hfMmpxaFBLRWljZFU1a0N4eFFCT1lwUk9TeA?oc=5",
+        "velocity": 6.76
+      },
+      {
+        "platform": "news",
+        "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPVWIzMDlrM1NMMHpRdV9ISERKN2xIUkpUYVF1RkdpLWYzekRzdGNhUGxoUnJjb2VST0laYVJkMWVFbXkzVTBxZTU0Z0FjanU3QmVOUWJsZndLZWw2cTYxcEI1NlVMNzQyNkxyX1lNN08xcXZYTTM0SThkLVVReDNjYTBfeXI1TEh4a00wQUh0NkdMUll3dks3Zi16blA5cTJ2SXpMemp0b2RSLXhiMVl5NHEwWVhGeFZIeUU2Y2NqQy0?oc=5",
+        "velocity": 3.36
+      }
+    ],
+    "status": "published"
   }
 ]

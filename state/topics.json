@@ -236,5 +236,12 @@
     "visual": "Automation without monitoring is just a slower way to fail",
     "structure": "",
     "at": "2026-11-15T14:29:07.220332+00:00"
+  },
+  {
+    "topic": "MCP Server Supply Chain Risk",
+    "hook": "A security firm found a malicious MCP server could quietly hijack a trusted one, and the model never did anything wrong.",
+    "visual": "A single mislabeled key sitting in a drawer full of identical, correctly labeled keys. Flat lighting, close crop, nothing else in frame. The wrong key looks indistinguishable from the rest until you check closely.",
+    "structure": "New development → Why it matters → What to do",
+    "at": "2026-11-15T21:30:33.194582+00:00"
   }
 ]
