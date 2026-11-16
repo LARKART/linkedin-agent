@@ -1945,5 +1945,22 @@
       }
     ],
     "status": "published"
+  },
+  {
+    "date": "2026-11-16",
+    "publishedAt": "2026-11-16T16:42:18.290268+00:00",
+    "postUrn": "urn:li:share:7528135367699419136",
+    "lane": "post",
+    "topic": "Automation edge case reliability",
+    "subtopic": null,
+    "hook": "Most automations fail at the edges, not the middle",
+    "caption": "Nobody talks about this part.\n\nEvery automation demo looks perfect.\n\nClean data in.\nClean result out.\n\nBut real businesses are messy.\n\nA lead fills out a form wrong.\nAn API times out for no reason.\nSomeone uploads a PDF instead of an image.\n\nThese are the edges.\n\nAnd most workflows I see break exactly there, not in the core logic.\n\nThe core logic is the easy 80%.\n\nThe edges are the hard 20% that actually decide if a system survives contact with real customers.\n\nSo when I build something now, I spend less time on the happy path and more time asking:\n\nWhat happens when this field is empty.\nWhat happens when this tool is down.\nWhat happens when someone does the unexpected thing.\n\nThat's the actual engineering work.\n\nThe AI part is almost the easy bit.\n\nWhat's the weirdest edge case that broke something you built or used?",
+    "imagePrompt": null,
+    "imagePath": "/home/runner/work/linkedin-agent/linkedin-agent/images/2026-11-16-quote-automation-edge-case-reliability.png",
+    "documentPath": null,
+    "videoPath": null,
+    "videoStyle": null,
+    "sources": [],
+    "status": "published"
   }
 ]
