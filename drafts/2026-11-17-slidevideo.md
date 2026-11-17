@@ -1,0 +1,28 @@
+# Draft 2026-11-17 (slidevideo)
+
+**Status:** published
+
+**Topic:** Coding Agents Without Handing Over Credentials
+**Why now:** Fresh post (under 2 hours old) directly tackling agent credential exposure, a live concern as more teams run autonomous coding agents against real accounts and codebases.
+
+## Caption
+
+Most teams building with coding agents are stuck on the wrong question.
+
+They ask what the agent can do. They should be asking what it can reach.
+
+Right now a lot of agent setups work like this: give it a login, point it at the codebase, let it run. That means if the agent misfires, or gets prompted into doing something it shouldn't, it's acting with your full account permissions. Not a slice of them. All of them.
+
+Several infrastructure and security teams have been writing about this lately, and they're converging on the same fix. Don't hand agents your credentials. Give them narrow, short-lived, revocable access scoped to exactly the task in front of them. A proxy or token that can do one job and expire, not a key that opens everything.
+
+It's the same logic you'd apply to a new contractor. You don't give them the master key on day one. You give them access to the room they're working in.
+
+The interesting part is that this isn't a model problem. GPT-5, Claude, whatever comes next, none of that changes the exposure. The exposure comes from how the agent is wired into your systems.
+
+That's the part nobody wants to spend time on, because it's not flashy. But it's the difference between an agent that's useful and an agent that's a liability waiting for the wrong prompt.
+
+If you're running agents against real accounts, the question worth asking isn't "what can this do." It's "what happens if this goes wrong, and what does it have access to when it does."
+
+## Sources
+
+- hackernews: https://blog.antonio.cx/running-agents-with-lend

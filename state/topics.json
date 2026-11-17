@@ -1,12 +1,5 @@
 [
   {
-    "topic": "Anthropic's Business & Market Position",
-    "hook": "When a major AI company like Anthropic reportedly uses its own AI to manage internal operations, itâs a powerful signal.",
-    "visual": "A visible, intricate clockwork mechanism, with some gears clearly labeled 'AI' meshing smoothly with others labeled 'Operations', 'Sales', 'Data', emphasizing internal function and precision rather than outward display.",
-    "structure": "Observation about Anthropic's internal AI use -> Connect to broader business relevance (internal optimization) -> Validate the approach for Paul's audience -> Reiterate core service (agentic systems, smart tools).",
-    "at": "2026-11-03T01:55:20.829710+00:00"
-  },
-  {
     "topic": "AI Data & Process Foundation",
     "hook": "Effective AI systems start with clean data and clear process steps",
     "visual": "Effective AI systems start with clean data and clear process steps",
@@ -243,5 +236,12 @@
     "visual": "A single key ring with many keys, but only one key separated out and placed on a locked door, the rest left on the table. Shot like a still-life product photo, shallow depth of field, neutral background, no screens or tech props.",
     "structure": "New development → Why it matters → What to do",
     "at": "2026-11-17T00:40:39.210169+00:00"
+  },
+  {
+    "topic": "Coding Agents Without Handing Over Credentials",
+    "hook": "Most teams building with coding agents are stuck on the wrong question.",
+    "visual": "A single brass key on a ring next to a small, separate numbered locker key sitting on a plain wooden desk, strong side lighting, shallow depth of field, nothing else in frame. The contrast between the one master key and the one scoped key is the entire visual point.",
+    "structure": "Problem → Unexpected insight → Practical takeaway",
+    "at": "2026-11-17T02:42:58.901554+00:00"
   }
 ]
