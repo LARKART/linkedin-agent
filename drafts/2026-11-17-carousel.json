@@ -1,0 +1,29 @@
+{
+  "date": "2026-11-17",
+  "lane": "carousel",
+  "status": "published",
+  "topic": "AI Automation Apps Needing Explicit Permission Boundaries",
+  "subtopic": "OS-level controls for autonomous automation tools",
+  "whyNow": "A major OS vendor shipping this in beta right now shows permission-scoped automation is becoming a platform-level requirement, not just a best practice from automation builders",
+  "sources": [
+    {
+      "platform": "news",
+      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPb0ZQSEZZck9hcTFnTkNLTFZYMVJIRXRaNWRJR3VzZmFkYnN6RkFERUl5YkxYaU9hRFI1SlJ0U3N6aE51S0lLM19aSDY1SmZQTy1HczN4T0V0aW9Xam1jbUx6Y294VXhGQU1MRHJNa0hsZ0R3ODY4SElUelJRcEN0V3VJTVZYemFrMk5BUkIxZzdkOTRBX253dTk2LTlmMmMyUWRsR0lDZFF2YWR5Z1laZFhRWQ?oc=5",
+      "velocity": 5.84
+    }
+  ],
+  "replies": [],
+  "notes": [],
+  "documentPath": "/home/runner/work/linkedin-agent/linkedin-agent/carousels/2026-11-17/carousel.pdf",
+  "title": "Why Your Automation Needs Permission Boundaries Now",
+  "slideReview": {
+    "pass": true,
+    "problems": []
+  },
+  "caption": "Apple is adding OS-level controls to limit what AI automation tools can see and touch on a Mac.\n\nThat is a quiet admission. Automation has been running wider than it should for a long time, and nobody wanted to be the one to say it out loud.\n\nMost automation gets built the same way. Connect the tool, grant access, let it run. Nobody goes back to check what it can actually reach six months later.\n\nWhen a platform vendor builds permission scoping into the operating system, it stops being a nice-to-have from careful builders. It becomes the baseline people expect.\n\nGood automation already works in layers instead of one wide grant:\n\nRead access before write access.\nApproval gates before anything irreversible.\nScoped tokens instead of full account access.\nLogging on every step that touches real data.\n\nNone of that makes the system slower in any way that matters. It makes the system something you can actually trust without babysitting it.\n\nIf you have automations running right now, the useful exercise isn't building something new. It's opening one of them and checking exactly what it's allowed to touch.\n\nWhat's the widest permission one of your automations has right now?",
+  "hook": "Apple is adding OS-level controls to limit what AI automation tools can see and touch on a Mac.",
+  "structure": "New development → Why it matters → What to do",
+  "imageConcept": "A single key ring with many keys, but only one key separated out and placed on a locked door, the rest left on the table. Shot like a still-life product photo, shallow depth of field, neutral background, no screens or tech props.",
+  "gate": "passed",
+  "postUrn": "urn:li:ugcPost:7528255749416783872"
+}
