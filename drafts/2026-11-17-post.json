@@ -1,0 +1,17 @@
+{
+  "date": "2026-11-17",
+  "lane": "post",
+  "status": "published",
+  "topic": "Automation monitoring and silent failure",
+  "caption": "Most automations don't fail loudly.\n\nThey fail quietly.\n\nA workflow breaks on a Tuesday.\nNobody notices until Friday.\nBy then the CRM has bad data, the follow-up never went out, and someone is asking why a lead went cold.\n\nHere's the part people skip when they build automations.\n\nThey build the happy path.\nForm fills out correctly, API responds fast, data lands where it should.\n\nThey don't build for the version where the API times out, the field is empty, or the token expired.\n\nA workflow that runs without errors in testing is not the same as a workflow that runs reliably for six months.\n\nThe second one needs logging.\nIt needs alerts when something breaks.\nIt needs a person who gets a message that says \"this step failed\" instead of finding out from a client.\n\nThe automation isn't the hard part anymore.\nWatching it is.\n\nWhat's one automation in your business that you'd actually know about if it silently broke tomorrow?",
+  "hook": "Automation without monitoring is just a slower way to fail",
+  "imageConcept": "Automation without monitoring is just a slower way to fail",
+  "imagePath": "/home/runner/work/linkedin-agent/linkedin-agent/images/2026-11-17-quote-automation-monitoring-and-silent-failure.png",
+  "imageStatus": "quote card",
+  "gate": "passed",
+  "firstComment": "Half the automation audits I run aren't about adding new workflows, they're about finding the ones already running blind with zero error handling. What's your gut feeling, does your team actually get notified when something breaks, or would you find out from a customer first?",
+  "sources": [],
+  "replies": [],
+  "whyNow": "quote lane",
+  "postUrn": "urn:li:share:7528496899046359040"
+}

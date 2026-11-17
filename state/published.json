@@ -2008,5 +2008,22 @@
       }
     ],
     "status": "published"
+  },
+  {
+    "date": "2026-11-17",
+    "publishedAt": "2026-11-17T16:38:54.172997+00:00",
+    "postUrn": "urn:li:share:7528496899046359040",
+    "lane": "post",
+    "topic": "Automation monitoring and silent failure",
+    "subtopic": null,
+    "hook": "Automation without monitoring is just a slower way to fail",
+    "caption": "Most automations don't fail loudly.\n\nThey fail quietly.\n\nA workflow breaks on a Tuesday.\nNobody notices until Friday.\nBy then the CRM has bad data, the follow-up never went out, and someone is asking why a lead went cold.\n\nHere's the part people skip when they build automations.\n\nThey build the happy path.\nForm fills out correctly, API responds fast, data lands where it should.\n\nThey don't build for the version where the API times out, the field is empty, or the token expired.\n\nA workflow that runs without errors in testing is not the same as a workflow that runs reliably for six months.\n\nThe second one needs logging.\nIt needs alerts when something breaks.\nIt needs a person who gets a message that says \"this step failed\" instead of finding out from a client.\n\nThe automation isn't the hard part anymore.\nWatching it is.\n\nWhat's one automation in your business that you'd actually know about if it silently broke tomorrow?",
+    "imagePrompt": null,
+    "imagePath": "/home/runner/work/linkedin-agent/linkedin-agent/images/2026-11-17-quote-automation-monitoring-and-silent-failure.png",
+    "documentPath": null,
+    "videoPath": null,
+    "videoStyle": null,
+    "sources": [],
+    "status": "published"
   }
 ]

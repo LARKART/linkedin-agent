@@ -1,12 +1,5 @@
 [
   {
-    "topic": "AI Data & Process Foundation",
-    "hook": "Effective AI systems start with clean data and clear process steps",
-    "visual": "Effective AI systems start with clean data and clear process steps",
-    "structure": "",
-    "at": "2026-11-03T14:48:57.662625+00:00"
-  },
-  {
     "topic": "AI Adoption & Vendor Influence",
     "hook": "The conversation around AI adoption is shifting. It is no longer just about choosing to use AI.",
     "visual": "A single, strong visual metaphor. Perhaps a hand struggling to hold onto a compass while being pulled by a large, almost invisible, magnetic force. Or a set of gears where one large central gear is forcing the movement and direction of all smaller, interconnected gears, with one smaller gear trying to resist. The focus is on external control versus internal direction.",
@@ -243,5 +236,12 @@
     "visual": "A single brass key on a ring next to a small, separate numbered locker key sitting on a plain wooden desk, strong side lighting, shallow depth of field, nothing else in frame. The contrast between the one master key and the one scoped key is the entire visual point.",
     "structure": "Problem → Unexpected insight → Practical takeaway",
     "at": "2026-11-17T02:42:58.901554+00:00"
+  },
+  {
+    "topic": "Automation monitoring and silent failure",
+    "hook": "Automation without monitoring is just a slower way to fail",
+    "visual": "Automation without monitoring is just a slower way to fail",
+    "structure": "",
+    "at": "2026-11-17T16:38:54.176311+00:00"
   }
 ]
