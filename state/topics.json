@@ -236,5 +236,12 @@
     "visual": "A single long queue of paper documents stacked at a narrow mail slot, light pouring through the slot, emphasizing one wide stack funneling into one thin opening.",
     "structure": "Data/Signal → Interpretation → Business implication",
     "at": "2026-11-18T02:13:35.172088+00:00"
+  },
+  {
+    "topic": "Automation monitoring and silent failures",
+    "hook": "Automation without monitoring is just a faster way to fail",
+    "visual": "Automation without monitoring is just a faster way to fail",
+    "structure": "",
+    "at": "2026-11-18T16:08:08.970764+00:00"
   }
 ]

@@ -1,0 +1,17 @@
+{
+  "date": "2026-11-18",
+  "lane": "post",
+  "status": "published",
+  "topic": "Automation monitoring and silent failures",
+  "caption": "Most automations fail quietly.\n\nNo error message.\nNo alert.\nJust wrong data sitting in your CRM for three weeks before anyone notices.\n\nHere's the part people skip when they build their first workflow.\n\nThey focus on the happy path.\n\nForm fills out correctly.\nAPI responds the way it should.\nData lands where it's supposed to.\n\nThen one API changes a field name.\nOr a rate limit kicks in.\nOr a lead fills in their email wrong.\n\nAnd the workflow doesn't crash.\n\nIt just keeps running, quietly producing garbage, because nobody built in a way to catch it.\n\nThe fix isn't more automation.\n\nIt's a simple layer most people treat as optional:\n\nLogging what happened.\nFlagging what looks off.\nAlerting a real person when something breaks the pattern.\n\nThat's the unglamorous 20 percent of the build.\n\nIt's also the only part that makes the other 80 percent trustworthy.\n\nWhat's the last automation you built that broke without telling you?",
+  "hook": "Automation without monitoring is just a faster way to fail",
+  "imageConcept": "Automation without monitoring is just a faster way to fail",
+  "imagePath": "/home/runner/work/linkedin-agent/linkedin-agent/images/2026-11-18-quote-automation-monitoring-and-silent-failure.png",
+  "imageStatus": "quote card",
+  "gate": "passed",
+  "firstComment": "The failures that hurt the most are never the loud ones, they're the ones running for weeks before anyone checks. What's your method for catching silent failures in your own systems?",
+  "sources": [],
+  "replies": [],
+  "whyNow": "quote lane",
+  "postUrn": "urn:li:share:7528851549327048704"
+}
