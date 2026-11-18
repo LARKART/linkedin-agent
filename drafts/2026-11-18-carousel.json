@@ -1,0 +1,34 @@
+{
+  "date": "2026-11-18",
+  "lane": "carousel",
+  "status": "published",
+  "topic": "Code Review Is The New Automation Bottleneck",
+  "subtopic": "AI coding agents shift workload from writing to reviewing",
+  "whyNow": "Harvard research on this just surfaced on HN with strong discussion volume, and a related post on decision models (not everything needs an LLM) reinforces the same theme of knowing where automation actually helps versus adds review overhead",
+  "sources": [
+    {
+      "platform": "hackernews",
+      "url": "https://complexdiscovery.com/harvard-researchers-find-ai-coding-agents-shifted-the-bottleneck-to-code-review/",
+      "velocity": 61.3
+    },
+    {
+      "platform": "hackernews",
+      "url": "https://newsletter.posthog.com/p/decision-models",
+      "velocity": 13.79
+    }
+  ],
+  "replies": [],
+  "notes": [],
+  "documentPath": "/home/runner/work/linkedin-agent/linkedin-agent/carousels/2026-11-18/carousel.pdf",
+  "title": "Code Review Is The New Automation Bottleneck",
+  "slideReview": {
+    "pass": true,
+    "problems": []
+  },
+  "caption": "A team can now generate a pull request in minutes. Checking that pull request still takes the same amount of time it always did.\n\nThat gap just got attention. Harvard research on code review and AI-generated code surfaced on Hacker News this week, with a lot of people arguing about where the real bottleneck sits.\n\nThe finding lines up with something worth saying plainly: writing code was never the slow part for most teams. Reading it, tracing what it touches, deciding if it is safe to ship, that was always the slow part. AI just made the first half nearly free and left the second half untouched.\n\nSo the math changes. If an agent produces a function that calls three APIs and touches a shared database table, someone still has to trace every one of those paths before it merges. That review doesn't get faster because the code got written faster.\n\nA related post going around makes a similar point from a different angle: not every workflow needs an LLM sitting in the middle of it. Some tasks are better served by a plain script or a deterministic rule, precisely because the output is predictable and doesn't need a human to double check reasoning every time.\n\nThat's the actual design question. Before automating a workflow, it's worth asking whether the output will be easy to verify, or whether you're just moving the bottleneck from production to review.\n\nA system that ships fast but can't be checked quickly isn't saving anyone time. It's shifting the cost to whoever has to sign off on it.\n\nWhere does review slow your team down right now, writing the code or trusting it?",
+  "hook": "A team can now generate a pull request in minutes. Checking that pull request still takes the same amount of time it always did.",
+  "structure": "Observation → Evidence → Practical implication",
+  "imageConcept": "A single sheet of paper covered in dense red editing marks and strikethroughs sitting next to a clean, freshly printed stack of pages, shot as a simple overhead editorial photo on a plain desk, emphasizing the contrast between fast output and slow correction",
+  "gate": "passed",
+  "postUrn": "urn:li:ugcPost:7528959651103784960"
+}

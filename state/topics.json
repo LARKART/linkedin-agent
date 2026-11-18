@@ -243,5 +243,12 @@
     "visual": "Automation without monitoring is just a faster way to fail",
     "structure": "",
     "at": "2026-11-18T16:08:08.970764+00:00"
+  },
+  {
+    "topic": "Code Review Is The New Automation Bottleneck",
+    "hook": "A team can now generate a pull request in minutes. Checking that pull request still takes the same amount of time it always did.",
+    "visual": "A single sheet of paper covered in dense red editing marks and strikethroughs sitting next to a clean, freshly printed stack of pages, shot as a simple overhead editorial photo on a plain desk, emphasizing the contrast between fast output and slow correction",
+    "structure": "Observation → Evidence → Practical implication",
+    "at": "2026-11-18T23:17:42.483804+00:00"
   }
 ]
