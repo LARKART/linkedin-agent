@@ -1,19 +1,5 @@
 [
   {
-    "topic": "AI Adoption & Vendor Influence",
-    "hook": "The conversation around AI adoption is shifting. It is no longer just about choosing to use AI.",
-    "visual": "A single, strong visual metaphor. Perhaps a hand struggling to hold onto a compass while being pulled by a large, almost invisible, magnetic force. Or a set of gears where one large central gear is forcing the movement and direction of all smaller, interconnected gears, with one smaller gear trying to resist. The focus is on external control versus internal direction.",
-    "structure": "Hook -> Observation (Google schools report) -> Business problem (vendor influence, loss of choice) -> Paul's solution/perspective (build practical, business-first AI systems) -> Soft CTA.",
-    "at": "2026-11-03T22:13:32.997853+00:00"
-  },
-  {
-    "topic": "AI Investment & Financial Risk",
-    "hook": "Tech giants are pouring billions into AI infrastructure and R&D. But a growing number of analysts are pointing to a significant 'hidden debt' accumulating from this rapid investment.",
-    "visual": "A towering, intricate structure made of building blocks, but with many of the lower blocks appearing hollow, translucent, or partially submerged, suggesting unseen costs or instability at its foundation. The visible part looks impressive, but the base has hidden weaknesses. No robots, brains, or circuit boards.",
-    "structure": "Observation of massive AI investment -> Introduction of 'hidden debt' concept -> Explanation of its nature (unquantified spending) -> Implied risk (market volatility, unsustainable growth) -> Connection to practical AI systems and Paul's brand -> Call for focus on tangible value and problem-solving AI.",
-    "at": "2026-11-04T00:25:31.946729+00:00"
-  },
-  {
     "topic": "Practical Agentic AI Start",
     "hook": "Agentic AI isn't magic",
     "visual": "Agentic AI isn't magic",
@@ -243,5 +229,12 @@
     "visual": "Automation without monitoring is just a slower way to fail",
     "structure": "",
     "at": "2026-11-17T16:38:54.176311+00:00"
+  },
+  {
+    "topic": "Code Review Becomes the New Bottleneck",
+    "hook": "New Harvard research getting traction on Hacker News this week challenges a simple assumption: that faster code generation means faster shipping.",
+    "visual": "A single long queue of paper documents stacked at a narrow mail slot, light pouring through the slot, emphasizing one wide stack funneling into one thin opening.",
+    "structure": "Data/Signal → Interpretation → Business implication",
+    "at": "2026-11-18T02:13:35.172088+00:00"
   }
 ]

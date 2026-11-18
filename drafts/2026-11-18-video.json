@@ -1,0 +1,26 @@
+{
+  "date": "2026-11-18",
+  "lane": "video",
+  "status": "published",
+  "topic": "Code Review Becomes the New Bottleneck",
+  "subtopic": "AI coding agents shift workload downstream",
+  "whyNow": "Harvard research published today is actively being discussed on HN with strong engagement velocity, directly challenging the assumption that faster code generation equals faster shipping",
+  "sources": [
+    {
+      "platform": "hackernews",
+      "url": "https://complexdiscovery.com/harvard-researchers-find-ai-coding-agents-shifted-the-bottleneck-to-code-review/",
+      "velocity": 59.8
+    }
+  ],
+  "replies": [],
+  "notes": [],
+  "caption": "New Harvard research is getting traction on Hacker News this week, and it challenges a simple assumption: that faster code generation means faster shipping.\n\nThe finding is that as AI coding agents produce more code, the bottleneck in software teams shifts downstream to code review.\n\nThink about what that means for how teams are structured right now.\n\nWriting code used to be the expensive step. Review was the quick check before merge. If agents can write a feature in minutes, the team's real constraint becomes how fast a human can read, verify, and trust that output.\n\nThis is the same pattern I see when I design agent workflows for businesses. The model doing the work is rarely the hard part. The hard part is building the checkpoints around it: what gets reviewed, by whom, under what conditions, and what gets flagged instead of auto-approved.\n\nSkip that design work and faster output just means a faster pile-up at the review stage.\n\nIf you're running coding agents on your team, where is the actual bottleneck now? Writing, reviewing, or deciding what even needs a human to look at it?",
+  "hook": "New Harvard research getting traction on Hacker News this week challenges a simple assumption: that faster code generation means faster shipping.",
+  "structure": "Data/Signal → Interpretation → Business implication",
+  "imageConcept": "A single long queue of paper documents stacked at a narrow mail slot, light pouring through the slot, emphasizing one wide stack funneling into one thin opening.",
+  "gate": "passed",
+  "videoPath": "/home/runner/work/linkedin-agent/linkedin-agent/videos/2026-11-18/code-review-becomes-the-new-bottleneck/code-review-becomes-the-new-bottleneck-narrated.mp4",
+  "videoStatus": "generated (narrated motion)",
+  "videoStyle": "narrated",
+  "postUrn": "urn:li:ugcPost:7528641524356734976"
+}
