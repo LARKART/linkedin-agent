@@ -2093,5 +2093,22 @@
       }
     ],
     "status": "published"
+  },
+  {
+    "date": "2026-11-19",
+    "publishedAt": "2026-11-19T16:14:52.447971+00:00",
+    "postUrn": "urn:li:share:7529215629451481088",
+    "lane": "post",
+    "topic": "Mapping process before automating it",
+    "subtopic": null,
+    "hook": "Automation only scales the parts you already understand",
+    "caption": "Most automation projects fail before the first workflow goes live.\n\nNot because of the tools.\n\nBecause nobody mapped the process first.\n\nI see this constantly.\n\nA business wants to automate lead follow-up.\n\nBut nobody can explain what actually happens between a form fill and a closed deal.\n\nWho checks the lead.\n\nWhat makes it qualified.\n\nWhen someone gets a reply.\n\nWhy some leads sit for three days.\n\nIf you cannot explain the process in plain English, automating it just makes the mess move faster.\n\nThe fix is boring.\n\nWrite the current process down, step by step, before touching n8n or Zapier or any agent.\n\nThen automate the steps that are actually repeatable.\n\nLeave judgment calls to people until you trust the pattern.\n\nWhat's one process in your business you've never actually written down step by step?",
+    "imagePrompt": null,
+    "imagePath": "/home/runner/work/linkedin-agent/linkedin-agent/images/2026-11-19-quote-mapping-process-before-automating-it.png",
+    "documentPath": null,
+    "videoPath": null,
+    "videoStyle": null,
+    "sources": [],
+    "status": "published"
   }
 ]

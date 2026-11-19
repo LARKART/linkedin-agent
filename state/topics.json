@@ -1,12 +1,5 @@
 [
   {
-    "topic": "Practical Agentic AI Start",
-    "hook": "Agentic AI isn't magic",
-    "visual": "Agentic AI isn't magic",
-    "structure": "",
-    "at": "2026-11-05T15:07:17.434012+00:00"
-  },
-  {
     "topic": "Multi-Agent System Architecture Patterns",
     "hook": "A 600-comment thread asking people to share their actual agent setups says more than another demo video ever could.",
     "visual": "An editorial overhead shot of a mechanical switchboard or old telephone exchange panel, cables routed from a central hub to multiple outlets, lit cleanly against a dark background, no screens or digital overlays, representing routing and control rather than AI iconography",
@@ -250,5 +243,12 @@
     "visual": "A single sheet of paper covered in dense red editing marks and strikethroughs sitting next to a clean, freshly printed stack of pages, shot as a simple overhead editorial photo on a plain desk, emphasizing the contrast between fast output and slow correction",
     "structure": "Observation → Evidence → Practical implication",
     "at": "2026-11-18T23:17:42.483804+00:00"
+  },
+  {
+    "topic": "Mapping process before automating it",
+    "hook": "Automation only scales the parts you already understand",
+    "visual": "Automation only scales the parts you already understand",
+    "structure": "",
+    "at": "2026-11-19T16:14:52.452118+00:00"
   }
 ]
