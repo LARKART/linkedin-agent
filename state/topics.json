@@ -1,12 +1,5 @@
 [
   {
-    "topic": "Handoffs breaking automation workflows",
-    "hook": "Most automation fails at the handoff, not the task",
-    "visual": "Most automation fails at the handoff, not the task",
-    "structure": "",
-    "at": "2026-11-06T14:45:25.539886+00:00"
-  },
-  {
     "topic": "Claude Connects to Financial Accounts",
     "hook": "Claude can now connect to financial accounts.",
     "visual": "A bank vault door standing slightly ajar, with a single visible keypad showing one button highlighted mid-press, shot in flat editorial lighting against a plain concrete wall. No people, no screens, no circuitry. The composition emphasizes the one point of entry and the one pending action, nothing else in frame.",
@@ -250,5 +243,12 @@
     "visual": "A single audit file on a desk, two stacks of sticky-note questions beside it, one stack handwritten and sparse, one stack typed and dense, shot in flat editorial light with no people or screens visible.",
     "structure": "Data/Signal → Interpretation → Business implication",
     "at": "2026-11-20T01:44:23.459809+00:00"
+  },
+  {
+    "topic": "closing workflow gaps",
+    "hook": "Most businesses don't need more tools, just fewer gaps",
+    "visual": "Most businesses don't need more tools, just fewer gaps",
+    "structure": "",
+    "at": "2026-11-20T15:53:29.169267+00:00"
   }
 ]

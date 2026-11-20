@@ -2161,5 +2161,22 @@
       }
     ],
     "status": "published"
+  },
+  {
+    "date": "2026-11-20",
+    "publishedAt": "2026-11-20T15:53:29.164971+00:00",
+    "postUrn": "urn:li:share:7529572633634463746",
+    "lane": "post",
+    "topic": "closing workflow gaps",
+    "subtopic": null,
+    "hook": "Most businesses don't need more tools, just fewer gaps",
+    "caption": "Nobody's workflow problem is a tools problem.\n\nI see this every week.\n\nA business has a CRM.\nA calendar app.\nAn email tool.\nA spreadsheet for tracking leads.\n\nEvery single tool works fine on its own.\n\nThe actual problem is the space between them.\n\nSomeone copies a lead from a form into the CRM.\nSomeone checks three places before a call.\nSomeone updates a sheet that nothing else reads.\n\nThat gap is where time disappears.\n\nNot in the tools.\nIn the handoff between them.\n\nWhen I build a workflow, I'm not adding another app to the stack.\n\nI'm closing the gap between the ones already there.\n\nForm fills in.\nData moves on its own.\nThe right person gets notified.\nNothing gets copied twice.\n\nThat's the whole job most of the time.\n\nNot more software.\nLess distance between the software you already pay for.\n\nWhat's the gap in your workflow that nobody's closed yet?",
+    "imagePrompt": null,
+    "imagePath": "/home/runner/work/linkedin-agent/linkedin-agent/images/2026-11-20-quote-closing-workflow-gaps.png",
+    "documentPath": null,
+    "videoPath": null,
+    "videoStyle": null,
+    "sources": [],
+    "status": "published"
   }
 ]
