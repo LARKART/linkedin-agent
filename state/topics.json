@@ -1,12 +1,5 @@
 [
   {
-    "topic": "Coding Agent Data Privacy Leak",
-    "hook": "Claude Code has been writing users' email addresses into the User-Agent header of its outbound web requests.",
-    "visual": "A close-up editorial shot of a sealed envelope slipped inside a stack of outgoing mail trays at a sorting office, slightly askew from the rest, lit with hard directional light, nothing futuristic, just the visual idea of something personal going out unnoticed in a batch of routine outbound traffic.",
-    "structure": "Problem → Unexpected insight → Practical takeaway",
-    "at": "2026-11-06T00:51:30.663393+00:00"
-  },
-  {
     "topic": "Handoffs breaking automation workflows",
     "hook": "Most automation fails at the handoff, not the task",
     "visual": "Most automation fails at the handoff, not the task",
@@ -250,5 +243,12 @@
     "visual": "A single physical door handle on a smartphone-sized panel, photographed close up and slightly ajar, light spilling through the gap onto a plain desk. The device looks ordinary except for the handle built into its screen, suggesting the OS itself now opens and acts rather than just displaying apps.",
     "structure": "New development → Why it matters → What to do",
     "at": "2026-11-19T23:25:01.116730+00:00"
+  },
+  {
+    "topic": "AI Agents Outperforming Human Experts on Judgment Tasks",
+    "hook": "A recent KPMG audit trial reportedly found AI agents asking sharper, more probing questions than trained accountants reviewing the same files.",
+    "visual": "A single audit file on a desk, two stacks of sticky-note questions beside it, one stack handwritten and sparse, one stack typed and dense, shot in flat editorial light with no people or screens visible.",
+    "structure": "Data/Signal → Interpretation → Business implication",
+    "at": "2026-11-20T01:44:23.459809+00:00"
   }
 ]

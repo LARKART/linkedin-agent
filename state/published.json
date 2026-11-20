@@ -2138,5 +2138,28 @@
       }
     ],
     "status": "published"
+  },
+  {
+    "date": "2026-11-20",
+    "publishedAt": "2026-11-20T01:44:23.456221+00:00",
+    "postUrn": "urn:li:ugcPost:7529358953340911616",
+    "lane": "video",
+    "topic": "AI Agents Outperforming Human Experts on Judgment Tasks",
+    "subtopic": "Agent reasoning quality vs. professional judgment",
+    "hook": "A recent KPMG audit trial reportedly found AI agents asking sharper, more probing questions than trained accountants reviewing the same files.",
+    "caption": "A recent KPMG audit trial reportedly found AI agents asking sharper, more probing questions than trained accountants reviewing the same files.\n\nIf that holds up, it says something uncomfortable about a lot of professional work.\n\nThe bottleneck usually isn't domain knowledge. Most trained professionals have that. The bottleneck is curiosity. Asking the question that doesn't fit the template. Noticing the number that's technically correct but still wrong.\n\nAn agent that's been given the right instructions and enough context can ask every question on the checklist, every time, without getting tired or protective of its own assumptions.\n\nThat's useful. It's also not the whole story.\n\nAgents don't know when a question matters more than the checklist says it does. They don't carry the judgment that comes from having been burned by a bad assumption before. That's still a human job, at least for now.\n\nWhich is probably the actual lesson here. Not that agents replace judgment, but that they're good at the part of judgment that's really just discipline, consistency, and not skipping steps when you're tired or rushed.\n\nMost businesses don't need an agent that thinks like a senior auditor. They need one that never forgets to ask the obvious question, with a human still reviewing what it finds.\n\nWhere do you think that line actually sits in your field?",
+    "imagePrompt": null,
+    "imagePath": null,
+    "documentPath": null,
+    "videoPath": "/home/runner/work/linkedin-agent/linkedin-agent/videos/2026-11-20/ai-agents-outperforming-human-experts-on/ai-agents-outperforming-human-experts-on.mp4",
+    "videoStyle": "animated",
+    "sources": [
+      {
+        "platform": "hackernews",
+        "url": "https://europeanbusinessmagazine.com/ai-agents-better-questions-kpmg/",
+        "velocity": 36.42
+      }
+    ],
+    "status": "published"
   }
 ]
