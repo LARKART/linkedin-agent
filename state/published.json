@@ -2178,5 +2178,33 @@
     "videoStyle": null,
     "sources": [],
     "status": "published"
+  },
+  {
+    "date": "2026-11-20",
+    "publishedAt": "2026-11-20T22:58:51.571411+00:00",
+    "postUrn": "urn:li:ugcPost:7529679683425075201",
+    "lane": "carousel",
+    "topic": "Governance Policies as a Precondition for Agent Autonomy",
+    "subtopic": "Semantic/policy-based control layers before agents act",
+    "hook": "Two platform vendors shipped agent governance tooling in the same week.",
+    "caption": "Two platform vendors shipped agent governance tooling in the same week.\n\nGoogle added semantic policy controls. Oracle shipped MCP and A2A connection governance. Different companies, same underlying move.\n\nThe question is changing. It used to be: can the agent do this. Now it's: what checks run before it's allowed to try.\n\nThat shift matters more than it sounds.\n\nMost agent setups right now rely on a human checking the output after the fact. Someone reviews the email before it sends, approves the record before it updates, checks the action before it fires. That works at low volume. It falls apart once an agent is running dozens of actions a day across multiple systems.\n\nThe pattern showing up across these new tools is different. Define what's allowed as policy, separate from the code that does the work. Evaluate the intent against that policy before execution, not after.\n\nIt's the same idea as role-based access control, just applied to agent behavior instead of user permissions. Nothing exotic. Just a layer that's been missing.\n\nThis is where agent projects usually stall. Not the model, not the tool calling. The part where someone has to decide, in advance, what the agent is actually allowed to touch and under what conditions.\n\nIf you're building agents into a real workflow, that policy layer is worth designing before you expand what the agent can do.\n\nWhat's your approval process for agent actions right now? Still manual, or is any of it written down as policy?",
+    "imagePrompt": null,
+    "imagePath": null,
+    "documentPath": "/home/runner/work/linkedin-agent/linkedin-agent/carousels/2026-11-20/carousel.pdf",
+    "videoPath": null,
+    "videoStyle": null,
+    "sources": [
+      {
+        "platform": "news",
+        "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxObXJuMFkzWWRTYldvbW55aVVZYThrNFpvVHI3b1VDemh4N1dVMk5kdDF6dW9QVmlBWGxkTlJlQzZFbUw5TnFXMTBncWhpTEFCTl9FdjJLY1hSeHJTZndzZHRlcXdfLUR0c0hiQ3gyVC0wWHFINm5VOTViSEpHTXAzbWs4SnVrWmZnSmpTMHdMYTcwQTN0YWw3Vmc1cm8tODNjcDJiZklzV0R0dC1oY1JBWmJtYkxFZw?oc=5",
+        "velocity": 20.0
+      },
+      {
+        "platform": "news",
+        "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOcmxCbkNQU0pxLWlPekp4Um9HMVh5eFQybjA4R0d1ZFYyNGQtN3N6MXhEYktrNHhDRndxWnB1TkdnUGJQaTZHVnFHTFZvVnBTdENrTERBZlNHRlFCZGJZUnRTcXlINVlDbzE5c2ZkTEJXU092UnQ1cW1OZUx3eHpOWW91QmtwRzdmUVhiQVpfcVFHWkhfUTdTc003R3dDWVRZQ29DdGxB?oc=5",
+        "velocity": 19.31
+      }
+    ],
+    "status": "published"
   }
 ]
