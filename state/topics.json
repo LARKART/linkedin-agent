@@ -1,12 +1,5 @@
 [
   {
-    "topic": "Automation handoff reliability",
-    "hook": "Most automations fail at the handoff, not the logic",
-    "visual": "Most automations fail at the handoff, not the logic",
-    "structure": "",
-    "at": "2026-11-07T13:42:54.417071+00:00"
-  },
-  {
     "topic": "Agent Memory Architecture",
     "hook": "An agent that forgets everything between sessions isn't broken. It was never given memory to begin with.",
     "visual": "A single office desk shot from above, covered in sticky notes, but half of them have been swept into a wastebasket just out of frame. The remaining notes are organized in a neat row. No people, no screens, just the physical metaphor of selective memory versus clutter.",
@@ -250,5 +243,12 @@
     "visual": "A single turnstile gate installed mid-hallway in an otherwise empty, clean office corridor, shot in flat editorial light. The turnstile is the only object in the frame, positioned between two open doorways, suggesting a checkpoint inserted into a path that used to be unobstructed.",
     "structure": "Data/Signal → Interpretation → Business implication",
     "at": "2026-11-21T01:00:38.479091+00:00"
+  },
+  {
+    "topic": "Automation ownership and maintenance",
+    "hook": "Automation without ownership just moves the chaos faster",
+    "visual": "Automation without ownership just moves the chaos faster",
+    "structure": "",
+    "at": "2026-11-21T15:03:37.339908+00:00"
   }
 ]

@@ -2234,5 +2234,22 @@
       }
     ],
     "status": "published"
+  },
+  {
+    "date": "2026-11-21",
+    "publishedAt": "2026-11-21T15:03:37.336308+00:00",
+    "postUrn": "urn:li:share:7529922473031639040",
+    "lane": "post",
+    "topic": "Automation ownership and maintenance",
+    "subtopic": null,
+    "hook": "Automation without ownership just moves the chaos faster",
+    "caption": "Most automation projects fail for a boring reason.\n\nNobody owns the workflow after it ships.\n\nHere's what I mean.\n\nA team connects their CRM to their email tool.\nThey add a Zapier step for lead routing.\nThey wire up a Slack notification.\n\nIt works for three weeks.\n\nThen a field name changes in the CRM.\nOr a plan upgrade shifts an API limit.\nOr someone on the team starts using a new tag.\n\nThe workflow breaks quietly.\n\nNo error message anyone sees.\nNo alert in a channel people check.\nJust leads sitting there, unrouted, for two weeks.\n\nThis is the part nobody talks about when they sell automation.\n\nThe build is maybe 30 percent of the work.\n\nThe other 70 percent is someone checking it, maintaining it, and treating it like a system with a pulse instead of a project that's done.\n\nSpeed without ownership just means your mess moves faster and breaks somewhere new.\n\nWhat's one automation in your business that nobody actually checks on anymore?",
+    "imagePrompt": null,
+    "imagePath": "/home/runner/work/linkedin-agent/linkedin-agent/images/2026-11-21-quote-automation-ownership-and-maintenance.png",
+    "documentPath": null,
+    "videoPath": null,
+    "videoStyle": null,
+    "sources": [],
+    "status": "published"
   }
 ]
