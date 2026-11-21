@@ -1,12 +1,5 @@
 [
   {
-    "topic": "Agent Memory Architecture",
-    "hook": "An agent that forgets everything between sessions isn't broken. It was never given memory to begin with.",
-    "visual": "A single office desk shot from above, covered in sticky notes, but half of them have been swept into a wastebasket just out of frame. The remaining notes are organized in a neat row. No people, no screens, just the physical metaphor of selective memory versus clutter.",
-    "structure": "Problem → Unexpected insight → Practical takeaway",
-    "at": "2026-11-07T20:41:51.882052+00:00"
-  },
-  {
     "topic": "Coding Agent Permission Fatigue",
     "hook": "A coding agent asked for permission once, got told \"don't ask again,\" and from then on it had a blank check.",
     "visual": "A single door with a keypad lock, propped permanently open with a wooden wedge, shot in flat editorial light. The keypad still shows its numbers glowing, unused. Clean, minimal, slightly off-center composition. No people, no screens, no tech clutter. The wedge is the entire story.",
@@ -250,5 +243,12 @@
     "visual": "Automation without ownership just moves the chaos faster",
     "structure": "",
     "at": "2026-11-21T15:03:37.339908+00:00"
+  },
+  {
+    "topic": "MCP and AI Tool Supply Chain Leaking Secrets",
+    "hook": "An AI agent is only as careful as the weakest connector it talks to.",
+    "visual": "A single key on a ring with a dozen mismatched, cheaply cut copies next to it, shot on a plain wood desk under hard directional light. The original key is sharp and well machined. The copies are rougher, slightly different metals, some bent. Overhead editorial photo, shallow depth of field, nothing else in frame.",
+    "structure": "Observation → Explanation → Implication",
+    "at": "2026-11-21T22:03:46.852240+00:00"
   }
 ]
