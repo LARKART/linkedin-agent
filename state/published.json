@@ -2206,5 +2206,33 @@
       }
     ],
     "status": "published"
+  },
+  {
+    "date": "2026-11-21",
+    "publishedAt": "2026-11-21T01:00:38.475434+00:00",
+    "postUrn": "urn:li:ugcPost:7529710329665245185",
+    "lane": "slidevideo",
+    "topic": "Semantic governance policies for AI agents",
+    "subtopic": "Pre-action agent permission checks",
+    "hook": "Google shipped semantic governance policies for AI agents this week. Same day, Citi told customers not to connect third-party AI agents to their accounts.",
+    "caption": "Google shipped semantic governance policies for AI agents this week. Same day, Citi told customers not to connect third-party AI agents to their accounts.\n\nDifferent companies, same conclusion: letting an agent act first and reviewing later doesn't scale.\n\nMost agent setups still work like this. The agent calls a tool, does the thing, and someone checks the logs afterward if something breaks. That's fine for a demo. It falls apart once an agent has real access to a calendar, a CRM, or a bank account.\n\nWhat's changing is where the check happens. Instead of reviewing what an agent did, the platform now checks what it's about to do before it does it. Permission lives in the policy layer, not in the prompt and not in someone's memory of what the agent is allowed to touch.\n\nThis matters for anyone building agents into a real workflow. A guardrail you wrote into a system prompt is a suggestion. A guardrail enforced at the platform level is a rule the agent physically cannot break.\n\nIf you're putting an agent in front of customer data, payment systems, or anything with downside risk, the question isn't whether the agent is smart enough. It's whether there's a permission check sitting between the agent's decision and the action it's about to take.\n\nThat's the boring infrastructure work nobody shows in demos. It's also the part that decides whether an agent is safe to actually deploy.",
+    "imagePrompt": null,
+    "imagePath": null,
+    "documentPath": null,
+    "videoPath": "/home/runner/work/linkedin-agent/linkedin-agent/videos/2026-11-21/semantic-governance-policies-for-ai-agen-slidevideo.mp4",
+    "videoStyle": "slides",
+    "sources": [
+      {
+        "platform": "news",
+        "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxObXJuMFkzWWRTYldvbW55aVVZYThrNFpvVHI3b1VDemh4N1dVMk5kdDF6dW9QVmlBWGxkTlJlQzZFbUw5TnFXMTBncWhpTEFCTl9FdjJLY1hSeHJTZndzZHRlcXdfLUR0c0hiQ3gyVC0wWHFINm5VOTViSEpHTXAzbWs4SnVrWmZnSmpTMHdMYTcwQTN0YWw3Vmc1cm8tODNjcDJiZklzV0R0dC1oY1JBWmJtYkxFZw?oc=5",
+        "velocity": 4.27
+      },
+      {
+        "platform": "news",
+        "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPSmNPaURFYldLb1VfcGlrcUdHTkxudWJFdlFwLXZHYi1SMlhzQ2xVaWlhYmdrT3JENHZ4b0hZSjY3YW42bHluWk9NTlJtd003a1YyMm1DblNDOGRQbFhOM0x5d1VVMnJJeEFyNXZYdFRGU2tRRUVUOE9TQ0prc3pSMkxVYVZQX2hudzZ4cXB4czEyQk9Vb0FiSUJCaVpQRERNX19GeHBpalVkRUQ1cldRWFlzdDJDR3NQ?oc=5",
+        "velocity": 4.23
+      }
+    ],
+    "status": "published"
   }
 ]
