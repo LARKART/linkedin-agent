@@ -1,12 +1,5 @@
 [
   {
-    "topic": "Coding Agent Permission Fatigue",
-    "hook": "A coding agent asked for permission once, got told \"don't ask again,\" and from then on it had a blank check.",
-    "visual": "A single door with a keypad lock, propped permanently open with a wooden wedge, shot in flat editorial light. The keypad still shows its numbers glowing, unused. Clean, minimal, slightly off-center composition. No people, no screens, no tech clutter. The wedge is the entire story.",
-    "structure": "Contrarian observation → Evidence → Lesson",
-    "at": "2026-11-07T23:31:58.569731+00:00"
-  },
-  {
     "topic": "Agent cost control and limits",
     "hook": "An agent without a budget will spend forever",
     "visual": "An agent without a budget will spend forever",
@@ -250,5 +243,12 @@
     "visual": "A single key on a ring with a dozen mismatched, cheaply cut copies next to it, shot on a plain wood desk under hard directional light. The original key is sharp and well machined. The copies are rougher, slightly different metals, some bent. Overhead editorial photo, shallow depth of field, nothing else in frame.",
     "structure": "Observation → Explanation → Implication",
     "at": "2026-11-21T22:03:46.852240+00:00"
+  },
+  {
+    "topic": "AI Research Capability Creep Into Hard Sciences",
+    "hook": "Claude just contributed to progress on a Riemann hypothesis proof and a black hole physics problem.",
+    "visual": "A chalkboard covered in a half-finished proof, with one equation circled in red pen and a question mark next to it, photographed in natural light like a real university office, nothing digital or glowing in the frame.",
+    "structure": "New development → Why it matters → What to do",
+    "at": "2026-11-22T00:11:15.282574+00:00"
   }
 ]

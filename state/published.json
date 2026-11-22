@@ -2279,5 +2279,48 @@
       }
     ],
     "status": "published"
+  },
+  {
+    "date": "2026-11-22",
+    "publishedAt": "2026-11-22T00:11:15.278793+00:00",
+    "postUrn": "urn:li:ugcPost:7530060288390430721",
+    "lane": "video",
+    "topic": "AI Research Capability Creep Into Hard Sciences",
+    "subtopic": "LLMs assisting with unsolved math and physics problems",
+    "hook": "Claude just contributed to progress on a Riemann hypothesis proof and a black hole physics problem.",
+    "caption": "Claude just contributed to progress on a Riemann hypothesis proof and a black hole physics problem.\n\nNot writing code. Not summarizing papers. Actually moving open research problems forward.\n\nThis is a different category of task than what most people associate with AI agents right now.\n\nMost business use cases are still pattern-matching work. Draft this email. Classify this lead. Pull data from this system and put it in that one. Useful, but bounded. The system knows what a good answer looks like before it starts.\n\nResearch math and physics don't work that way. Nobody knows what the right answer looks like in advance. The model has to reason through something genuinely unsolved, and a human has to check whether what came back actually holds up.\n\nThat gap between \"the model generated something\" and \"a person confirmed it's correct\" is the part worth paying attention to.\n\nIt's the same gap that matters in business automation, just with lower stakes. An agent that drafts a contract clause, qualifies a lead, or restructures customer data still needs a checkpoint where a person looks at the output before it goes anywhere important.\n\nThe interesting shift isn't that AI can now do more. It's that the harder the problem, the more deliberate the human checkpoint needs to be, not less.\n\nWhere are you still relying on a person to catch mistakes your AI tools could be making quietly?",
+    "imagePrompt": null,
+    "imagePath": null,
+    "documentPath": null,
+    "videoPath": "/home/runner/work/linkedin-agent/linkedin-agent/videos/2026-11-22/ai-research-capability-creep-into-hard-s/ai-research-capability-creep-into-hard-s-narrated.mp4",
+    "videoStyle": "narrated",
+    "sources": [
+      {
+        "platform": "hackernews",
+        "url": "https://www.anthropic.com/research/claude-black-hole-physics",
+        "velocity": 25.44
+      },
+      {
+        "platform": "news",
+        "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxONlA3YmE1SENKMHdqY2MwSEVFRFQ3eW9URjRhTW83QjNCN0U3SUhweC1vTGhfYml6SG9Sc19wVHVhY1VobG9NLVM4V29Ca2QzMnByUjh0clFFOGhFSE9XcVVfNUxlVTdnRTE3ak5oYzd0alQ4QkV3NUYydFIxYXBOWEhtblhQM25NRDY4czBDMHE5VUQxc1B6N3Q3eXNoazk0TE9PbG13?oc=5",
+        "velocity": 5.78
+      },
+      {
+        "platform": "hackernews",
+        "url": "https://www.economist.com/science-and-technology/2026/11/20/ai-may-have-solved-the-most-important-problem-in-mathematics",
+        "velocity": 2.37
+      },
+      {
+        "platform": "news",
+        "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBNYVJCOWRkZnRsenJPQmJPQTlnNVNWQ0N5NG9hdzN6NWMyalJmUHVGVzcxajZPWU9McjJ3enVIbjhFTGQ0OFpZY3VBUHlIckIyQnFLWEJzZ2hxT1VHWmotamtoZG1CVDg?oc=5",
+        "velocity": 2.33
+      },
+      {
+        "platform": "news",
+        "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPTXFLcEJlYk15RHFGY1dhY041ZlBCdU5nRGhDVzNGdXdRYXQ5amFRa3FBYVNxZ25ETi10MkRWZGFaTVNvaWJuSDluTE14SzhRUUxFZHhjSVliRDdzdTBLWkxzUkRaRkVoVG5HTGZLdVhLYkhpb2ZBUG01Z1J1TnJvc1FEN2tFYzA4WjBOeW1jbjJvT29uTFJhVUsxUTkxVl9kT3pEUDdZYXo1VHE1VFNKQnpzXzdWWEU?oc=5",
+        "velocity": 2.29
+      }
+    ],
+    "status": "published"
   }
 ]
