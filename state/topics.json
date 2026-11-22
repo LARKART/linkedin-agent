@@ -1,12 +1,5 @@
 [
   {
-    "topic": "Agent cost control and limits",
-    "hook": "An agent without a budget will spend forever",
-    "visual": "An agent without a budget will spend forever",
-    "structure": "",
-    "at": "2026-11-08T14:01:45.258547+00:00"
-  },
-  {
     "topic": "Coding Agent Permission Bypass Creates Secret Leaks",
     "hook": "A coding agent asked for permission once. The user clicked \"don't ask again.\" That one click is why security researchers are now finding credentials sitting in plain text across public repositories.",
     "visual": "A single physical door key left sitting in an open mail slot on a front door, shot straight-on in flat editorial lighting. No people, no tech props. The key is slightly too large for the slot, half-exposed to the street. Clean negative space around the door, muted color palette (navy door, brass key), nothing digital in frame. The image should read as 'something private left somewhere public' without any AI or circuit imagery.",
@@ -250,5 +243,12 @@
     "visual": "A chalkboard covered in a half-finished proof, with one equation circled in red pen and a question mark next to it, photographed in natural light like a real university office, nothing digital or glowing in the frame.",
     "structure": "New development → Why it matters → What to do",
     "at": "2026-11-22T00:11:15.282574+00:00"
+  },
+  {
+    "topic": "Data quality in automation",
+    "hook": "Most automations fail at the data, not the logic",
+    "visual": "Most automations fail at the data, not the logic",
+    "structure": "",
+    "at": "2026-11-22T15:00:51.425491+00:00"
   }
 ]

@@ -1,0 +1,17 @@
+{
+  "date": "2026-11-22",
+  "lane": "post",
+  "status": "published",
+  "topic": "Data quality in automation",
+  "caption": "Everyone debugs the wrong part of their workflow.\n\nHere's what I mean.\n\nA workflow breaks.\nFirst instinct: check the logic.\nRewrite the steps.\nAdd more conditions.\n\nBut nine times out of ten, the logic was fine.\n\nThe real problem was upstream.\n\nA field that's sometimes empty.\nA date format that changes between tools.\nA lead with no email, just a phone number.\nA webhook that fires twice.\n\nYour automation isn't reasoning wrong.\nIt's reasoning on bad input.\n\nSo before you touch the workflow steps, look at what's actually flowing into them.\n\nWhere does the data get messy.\nWhere does it get duplicated.\nWhere does it arrive incomplete.\n\nClean the input and half your 'logic problems' disappear on their own.\n\nWhat's the messiest data source feeding one of your workflows right now?",
+  "hook": "Most automations fail at the data, not the logic",
+  "imageConcept": "Most automations fail at the data, not the logic",
+  "imagePath": "/home/runner/work/linkedin-agent/linkedin-agent/images/2026-11-22-quote-data-quality-in-automation.png",
+  "imageStatus": "quote card",
+  "gate": "passed",
+  "firstComment": "Curious how many people have actually mapped where their data gets dirty versus just assuming the automation tool is the weak link. What's been your experience?",
+  "sources": [],
+  "replies": [],
+  "whyNow": "quote lane",
+  "postUrn": "urn:li:share:7530284164357586944"
+}
