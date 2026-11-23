@@ -2362,5 +2362,22 @@
       }
     ],
     "status": "published"
+  },
+  {
+    "date": "2026-11-23",
+    "publishedAt": "2026-11-23T18:56:08.429606+00:00",
+    "postUrn": "urn:li:share:7530705763254829058",
+    "lane": "post",
+    "topic": "Automation copies broken processes",
+    "subtopic": null,
+    "hook": "Automation copies your current process, good or bad",
+    "caption": "Most automation projects fail before a single workflow runs.\n\nHere's why.\n\nTeams map out their messy process.\nThen they automate the mess.\n\nNow it just runs faster.\n\nI see this constantly with lead handoffs.\nSales forgets to update the CRM.\nMarketing sends leads with no context.\nFollow-up happens whenever someone remembers.\n\nAutomate that exact flow and you get the same gaps.\nJust quicker and with less visibility into where it broke.\n\nThe fix isn't more tools.\n\nIt's fixing the process first.\n\nWrite down what should happen.\nNot what currently happens.\n\nThen build the system around that.\n\nWhat's one step in your process you'd actually redesign before automating it?",
+    "imagePrompt": null,
+    "imagePath": "/home/runner/work/linkedin-agent/linkedin-agent/images/2026-11-23-quote-automation-copies-broken-processes.png",
+    "documentPath": null,
+    "videoPath": null,
+    "videoStyle": null,
+    "sources": [],
+    "status": "published"
   }
 ]
