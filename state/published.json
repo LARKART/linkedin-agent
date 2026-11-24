@@ -2379,5 +2379,33 @@
     "videoStyle": null,
     "sources": [],
     "status": "published"
+  },
+  {
+    "date": "2026-11-24",
+    "publishedAt": "2026-11-24T03:10:45.400229+00:00",
+    "postUrn": "urn:li:ugcPost:7530830237119676416",
+    "lane": "carousel",
+    "topic": "Claude Ship Automates PR Review and Fixes",
+    "subtopic": "AI agents closing the loop on code review",
+    "hook": "Anthropic just automated the one checkpoint teams never automated.",
+    "caption": "Anthropic shipped a tool that has an agent review pull requests and apply the fixes itself.\n\nThat's a different kind of automation than what most teams have been dealing with.\n\nWriting code was never the hard part to automate. Review was the checkpoint teams kept for a reason. Someone had to look at the diff and decide if it was safe to merge.\n\nNow that decision is on the table too.\n\nThis isn't the same question as \"will the handoff between two tools break.\" It's \"am I comfortable letting something else make the call on what's good enough to ship.\"\n\nThat's not a reliability problem. It's a judgment problem.\n\nMost businesses thinking about agents jump straight to \"what task can this replace.\" The more useful question is \"what decision am I actually handing over.\"\n\nTasks are easy to automate and easy to check. Decisions are where things get expensive if you get it wrong, and expensive to walk back once a team gets used to not checking.\n\nIf you're building or adopting agents right now, the review step is a good place to ask that question before it gets asked for you.\n\nWhere does judgment, not just task execution, slow your team down right now?",
+    "imagePrompt": null,
+    "imagePath": null,
+    "documentPath": "/home/runner/work/linkedin-agent/linkedin-agent/carousels/2026-11-24/carousel.pdf",
+    "videoPath": null,
+    "videoStyle": null,
+    "sources": [
+      {
+        "platform": "news",
+        "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQZW1lVUlfZE4tanNVU2k2aENXenBEWFY2eGRQTnNLbkZGMmRRMWxraTZYMktpSExXbnBWX252OHVHc1hfT1ZtTFpoRU93WGVUTy15dHJ1U292VXZmd1IxMXV6Y29SWi1CVFIzYkYtZTlpc3dRZlBwN2Y4aUF1NFFfN0FKa0dkXzFlZ1piLVZDUVJiNVgzQl9iX2h0RUVORW5OX1NLcGE3QW1UNDZRODdhVVFfRThfWGFKR2ZrMWtRYw?oc=5",
+        "velocity": 6.0
+      },
+      {
+        "platform": "news",
+        "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNVG1KWnZ3U0RzWUpsWUplSWlGLXBqaDNmOURyZjE0NW1qblJCa2cwSDh3cDNnY1hGZ3MxNGVreFVCWjlsTldla2NFdmhzczU0bzJHdndGUXVwV3VSTzNyVFVzbk9XQWljdzhWMkZZQmpTQzc1eFphb0xOcHpvQXZzbzFPWE9kQ1otOHfSAYoBQVVfeXFMTVRtSlp2d1NEc1lKbFlKZUlpRi1wamgzZjlEcmYxNDVtam5SQmtnMEg4d3AzZ2NYRmdzMTRla3hVQlo5bE5XZWtjRXZoc3M1NG8yR3Z3RlF1cFd1Uk8zclRVc25PV0FpY3c4VjJGWUJqU0M3NXhaYW9MTnB6b0F2c28xT1hPZENaLTh3?oc=5",
+        "velocity": 3.2
+      }
+    ],
+    "status": "published"
   }
 ]

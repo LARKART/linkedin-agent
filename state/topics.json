@@ -1,19 +1,5 @@
 [
   {
-    "topic": "Coding Agent Default Permissions Leaking Secrets at Scale",
-    "hook": "A security research team recently found a coding agent's \"don't ask again\" permission setting had quietly saved credentials into project files, and those files ended up pushed to public repos by the thousand.",
-    "visual": "A single door propped open with a wedge in an otherwise locked server room corridor, shot editorial-style with strong shadow and minimal color, the wedge clearly the focal point against rows of closed doors",
-    "structure": "Observation → Explanation → Implication",
-    "at": "2026-11-10T00:34:54.639466+00:00"
-  },
-  {
-    "topic": "Coding Agent Secrets Exposure at Scale",
-    "hook": "A security firm scanned over 100,000 public GitHub repos for one specific file: Claude Code's settings.local.json.",
-    "visual": "A single open desk drawer among a long row of closed identical drawers, one drawer slightly ajar with papers spilling out just enough to see handwriting on them, shot in flat editorial lighting, no text, no tech iconography, emphasizing the ordinary thing left unlocked among many identical ones",
-    "structure": "Data/Signal → Interpretation → Business implication",
-    "at": "2026-11-10T02:40:04.981463+00:00"
-  },
-  {
     "topic": "Human checkpoints in AI agents",
     "hook": "An agent without a human checkpoint is just a risk generator",
     "visual": "An agent without a human checkpoint is just a risk generator",
@@ -250,5 +236,12 @@
     "visual": "Automation copies your current process, good or bad",
     "structure": "",
     "at": "2026-11-23T18:56:08.434673+00:00"
+  },
+  {
+    "topic": "Claude Ship Automates PR Review and Fixes",
+    "hook": "Anthropic just automated the one checkpoint teams never automated.",
+    "visual": "A close-up editorial shot of a printed document covered in red pen edits and checkmarks, but the pen is resting untouched beside it, suggesting the marks were made by something other than a person.",
+    "structure": "New development → Why it matters → What to do",
+    "at": "2026-11-24T03:10:45.405077+00:00"
   }
 ]
