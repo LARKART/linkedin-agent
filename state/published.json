@@ -2407,5 +2407,28 @@
       }
     ],
     "status": "published"
+  },
+  {
+    "date": "2026-11-24",
+    "publishedAt": "2026-11-24T04:30:30.637813+00:00",
+    "postUrn": "urn:li:ugcPost:7530850309800116225",
+    "lane": "slidevideo",
+    "topic": "Claude Ship automates the last mile of software delivery",
+    "subtopic": "AI-assisted development",
+    "hook": "Writing code was never the slow part for most teams.",
+    "caption": "Writing code was never the slow part for most teams.\n\nThe slow part is everything after: opening a PR, waiting on review, fixing comments, waiting again, merging, shipping.\n\nAnthropic's new Claude Ship is aimed at that stretch. Not generating code, but moving it through review, fixes, and deployment with less manual back and forth.\n\nThat's a different problem than what most AI coding tools have targeted. Copilot and the first wave of agentic coding assistants focused on getting code written faster. The bottleneck just moved downstream, into review queues and release cycles.\n\nIf Claude Ship actually closes that gap, the interesting shift isn't \"AI writes code now.\" It's that the last mile of software delivery, the part full of waiting and handoffs, becomes something a system can own with a human checking the output instead of producing every step of it.\n\nThat matters for small teams especially. A lot of them don't have a dedicated release engineer. The PR sits there because everyone is busy, not because the code is bad.\n\nWorth watching whether this holds up once it's running against real production pipelines instead of demos. Shipping software has more edge cases than writing it.\n\nWhat's eating more time on your team right now, writing the code or getting it through review and out the door?",
+    "imagePrompt": null,
+    "imagePath": null,
+    "documentPath": null,
+    "videoPath": "/home/runner/work/linkedin-agent/linkedin-agent/videos/2026-11-24/claude-ship-automates-the-last-mile-of-s-slidevideo.mp4",
+    "videoStyle": "slides",
+    "sources": [
+      {
+        "platform": "news",
+        "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQZW1lVUlfZE4tanNVU2k2aENXenBEWFY2eGRQTnNLbkZGMmRRMWxraTZYMktpSExXbnBWX252OHVHc1hfT1ZtTFpoRU93WGVUTy15dHJ1U292VXZmd1IxMXV6Y29SWi1CVFIzYkYtZTlpc3dRZlBwN2Y4aUF1NFFfN0FKa0dkXzFlZ1piLVZDUVJiNVgzQl9iX2h0RUVORW5OX1NLcGE3QW1UNDZRODdhVVFfRThfWGFKR2ZrMWtRYw?oc=5",
+        "velocity": 3.36
+      }
+    ],
+    "status": "published"
   }
 ]
