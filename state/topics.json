@@ -1,12 +1,5 @@
 [
   {
-    "topic": "Human checkpoints in AI agents",
-    "hook": "An agent without a human checkpoint is just a risk generator",
-    "visual": "An agent without a human checkpoint is just a risk generator",
-    "structure": "",
-    "at": "2026-11-10T15:23:07.992821+00:00"
-  },
-  {
     "topic": "AI-Generated Code Fragility",
     "hook": "A codebase can grow fast and still get harder to work in every week.",
     "visual": "A printed architectural blueprint on a desk with hand-drawn red pen corrections and crossed-out sections overlaid on top of it, shot like an editorial photo, natural light, nothing digital or glowing in the frame.",
@@ -250,5 +243,12 @@
     "visual": "A single shipping pallet sitting on a loading dock conveyor belt, mid-transit between a warehouse marked 'CODE' and a truck marked 'PRODUCTION', shot in flat editorial light, nothing futuristic, just the ordinary logistics of moving something from one stage to the next.",
     "structure": "New development → Why it matters → What to do",
     "at": "2026-11-24T04:30:30.642368+00:00"
+  },
+  {
+    "topic": "Automation edge case failures",
+    "hook": "Most automations fail at the edges, not the middle",
+    "visual": "Most automations fail at the edges, not the middle",
+    "structure": "",
+    "at": "2026-11-24T18:35:32.755647+00:00"
   }
 ]

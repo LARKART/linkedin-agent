@@ -2430,5 +2430,22 @@
       }
     ],
     "status": "published"
+  },
+  {
+    "date": "2026-11-24",
+    "publishedAt": "2026-11-24T18:35:32.750868+00:00",
+    "postUrn": "urn:li:share:7531062968449409025",
+    "lane": "post",
+    "topic": "Automation edge case failures",
+    "subtopic": null,
+    "hook": "Most automations fail at the edges, not the middle",
+    "caption": "Nobody talks about the boring part of automation.\n\nThe middle always works.\n\nYou map the steps, connect the tools, test it once, it runs clean.\n\nThen three weeks later it breaks.\n\nNot because the logic was wrong.\n\nBecause of the edge case nobody planned for.\n\nA lead with no last name.\n\nA date formatted differently than expected.\n\nAn API that returns an empty array instead of null.\n\nThese aren't dramatic failures. They're quiet ones.\n\nThe workflow just stops, or worse, it keeps going with bad data.\n\nThis is why I spend more time on error handling than on the happy path.\n\nThe happy path is easy. Anyone can build that in an afternoon.\n\nThe edges are where the real engineering is.\n\nWhat's the weirdest edge case that broke one of your systems?",
+    "imagePrompt": null,
+    "imagePath": "/home/runner/work/linkedin-agent/linkedin-agent/images/2026-11-24-quote-automation-edge-case-failures.png",
+    "documentPath": null,
+    "videoPath": null,
+    "videoStyle": null,
+    "sources": [],
+    "status": "published"
   }
 ]

@@ -1,0 +1,17 @@
+{
+  "date": "2026-11-24",
+  "lane": "post",
+  "status": "published",
+  "topic": "Automation edge case failures",
+  "caption": "Nobody talks about the boring part of automation.\n\nThe middle always works.\n\nYou map the steps, connect the tools, test it once, it runs clean.\n\nThen three weeks later it breaks.\n\nNot because the logic was wrong.\n\nBecause of the edge case nobody planned for.\n\nA lead with no last name.\n\nA date formatted differently than expected.\n\nAn API that returns an empty array instead of null.\n\nThese aren't dramatic failures. They're quiet ones.\n\nThe workflow just stops, or worse, it keeps going with bad data.\n\nThis is why I spend more time on error handling than on the happy path.\n\nThe happy path is easy. Anyone can build that in an afternoon.\n\nThe edges are where the real engineering is.\n\nWhat's the weirdest edge case that broke one of your systems?",
+  "hook": "Most automations fail at the edges, not the middle",
+  "imageConcept": "Most automations fail at the edges, not the middle",
+  "imagePath": "/home/runner/work/linkedin-agent/linkedin-agent/images/2026-11-24-quote-automation-edge-case-failures.png",
+  "imageStatus": "quote card",
+  "gate": "passed",
+  "firstComment": "The annoying part is you usually only find these edge cases after they've already caused a problem somewhere downstream. Curious if anyone's found a good way to test for them before launch instead of after.",
+  "sources": [],
+  "replies": [],
+  "whyNow": "quote lane",
+  "postUrn": "urn:li:share:7531062968449409025"
+}
