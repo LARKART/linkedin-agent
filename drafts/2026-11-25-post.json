@@ -1,0 +1,17 @@
+{
+  "date": "2026-11-25",
+  "lane": "post",
+  "status": "published",
+  "topic": "automation failure points at handoffs",
+  "caption": "Nobody plans for the gap between two systems.\n\nThey plan for the systems.\n\nI see this constantly when I audit a client's workflow.\n\nThe CRM works fine.\nThe email tool works fine.\nThe form works fine.\n\nThen someone built a manual step between them years ago and forgot about it.\n\nA person checking a spreadsheet.\nA person copying a lead into another tool.\nA person approving something in a Slack message that nobody else sees.\n\nThat step becomes invisible because it works, until the person goes on holiday or changes roles.\n\nThen the whole workflow quietly stops and nobody notices for a week.\n\nWhen I design a workflow now, I spend more time on the handoffs than the tools themselves.\n\nWhat happens when a field is empty.\nWhat happens when an API times out.\nWhat happens when two records almost match but not quite.\n\nThe tools rarely fail.\n\nThe space between them does.\n\nWhere does your workflow actually break, at the tool level or at the handoff between two people or systems?",
+  "hook": "Most automations fail at the handoff nobody designed for",
+  "imageConcept": "Most automations fail at the handoff nobody designed for",
+  "imagePath": "/home/runner/work/linkedin-agent/linkedin-agent/images/2026-11-25-quote-automation-failure-points-at-handoffs.png",
+  "imageStatus": "quote card",
+  "gate": "passed",
+  "firstComment": "Curious how many of you have a manual step in your workflow that everyone forgot was manual until it broke. What was it?",
+  "sources": [],
+  "replies": [],
+  "whyNow": "quote lane",
+  "postUrn": "urn:li:share:7531412838754750464"
+}

@@ -1,12 +1,5 @@
 [
   {
-    "topic": "Workflow handoffs over automation tasks",
-    "hook": "Automation fails at the handoff, not the task",
-    "visual": "Automation fails at the handoff, not the task",
-    "structure": "",
-    "at": "2026-11-11T14:53:00.947244+00:00"
-  },
-  {
     "topic": "Platforms Shutting Out AI Agents",
     "hook": "United Airlines just blocked third-party AI agents from booking flights on its site.",
     "visual": "A single airport boarding gate with a velvet rope stand blocking the entrance, but the rope is made of a long printed receipt or terminal ticket tape instead of fabric. Shot like clean editorial travel photography, muted terminal lighting, no people, no screens, no robots.",
@@ -257,5 +250,12 @@
     "visual": "A single pen resting on an unsigned contract next to a smartphone showing an AI assistant interface, shot editorial-style with shallow depth of field, suggesting a vendor agreement nobody read before clicking accept.",
     "structure": "Problem -> Unexpected insight -> Practical takeaway",
     "at": "2026-11-25T03:27:14.949506+00:00"
+  },
+  {
+    "topic": "automation failure points at handoffs",
+    "hook": "Most automations fail at the handoff nobody designed for",
+    "visual": "Most automations fail at the handoff nobody designed for",
+    "structure": "",
+    "at": "2026-11-25T17:45:48.040959+00:00"
   }
 ]
