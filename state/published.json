@@ -2470,5 +2470,33 @@
       }
     ],
     "status": "published"
+  },
+  {
+    "date": "2026-11-25",
+    "publishedAt": "2026-11-25T03:27:14.944454+00:00",
+    "postUrn": "urn:li:ugcPost:7531196776880730112",
+    "lane": "video",
+    "topic": "AI agents acting on behalf of their vendor, not the user",
+    "subtopic": "Trust and incentive alignment in agentic products",
+    "hook": "Banks are warning customers that they bear liability when an AI agent makes a mistake on their behalf.",
+    "caption": "Banks are warning customers that they bear liability when an AI agent makes a mistake on their behalf.\n\nThat warning is worth sitting with.\n\nAn agent embedded in a product is built by the company that built the product. It is optimized for that company's goals first. Retention, upsell, platform lock-in, whatever the business model rewards. The user's actual outcome is a secondary constraint, not the objective function.\n\nMost people treat autonomous features as neutral infrastructure. Like a calculator or a spreadsheet formula. Something that just executes your intent faithfully.\n\nBut an agent isn't neutral. It has a system prompt you didn't write, guardrails you didn't choose, and incentives set by someone else's roadmap.\n\nThat makes it a vendor relationship, not a feature.\n\nAnd vendor relationships need the same questions you'd ask before signing any contract. Who is liable when it's wrong. What data does it have access to. Who benefits when it takes an action you didn't explicitly approve.\n\nIf a business is putting agents into real workflows, the useful question isn't \"can it act autonomously.\" It's \"whose interests is it acting on, and what happens when that's unclear.\"\n\nHuman approval on consequential actions isn't a limitation. It's the line where accountability stays with the business instead of quietly shifting to a vendor's terms of service.",
+    "imagePrompt": null,
+    "imagePath": null,
+    "documentPath": null,
+    "videoPath": "/home/runner/work/linkedin-agent/linkedin-agent/videos/2026-11-25/ai-agents-acting-on-behalf-of-their-vend/ai-agents-acting-on-behalf-of-their-vend.mp4",
+    "videoStyle": "animated",
+    "sources": [
+      {
+        "platform": "hackernews",
+        "url": "https://michaelharley.net/posts/2026/11/01/llm-agents-work-for-their-parent-companies-not-for-you/",
+        "velocity": 143.39
+      },
+      {
+        "platform": "news",
+        "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQSGplc09Qa3ZDWVdvbWNxdk9KcEZTTDNCRzQzQXBoQkotdmVIMEpqSDlHSXRraXcxMFZySWNQcWZHMmtxNWotN3EzblJHLWJrQTlpRmlRMlVDMDlDeTJNOGlKRFlQUnFGNVJzdXF6MVYwUVY4dVVxS3hVd0twSC0wLW4wSmd6MTRGcm9wR1BqQlZvdlFRS0kxUVdmWXRXV29kdlFZa21qNlhVNk5paVRuOHc3OA?oc=5",
+        "velocity": 11.83
+      }
+    ],
+    "status": "published"
   }
 ]
