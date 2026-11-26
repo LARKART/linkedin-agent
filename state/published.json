@@ -2538,5 +2538,22 @@
       }
     ],
     "status": "published"
+  },
+  {
+    "date": "2026-11-26",
+    "publishedAt": "2026-11-26T17:29:58.024970+00:00",
+    "postUrn": "urn:li:share:7531771241343393792",
+    "lane": "post",
+    "topic": "CRM handoffs over more features",
+    "subtopic": null,
+    "hook": "Most CRMs don't need more fields, they need fewer handoffs",
+    "caption": "Your CRM is not the problem.\n\nThe handoffs are.\n\nI keep seeing teams add more fields, more tags, more custom properties to a CRM that's already struggling.\n\nBut the lead isn't getting lost because a field is missing.\n\nIt's getting lost between the form, the inbox, the spreadsheet, and the person who finally updates the record three days later.\n\nEvery manual handoff is a place where:\n\nfollow-up slows down\n\ncontext gets dropped\n\nsomeone forgets to update the next tool\n\nOne workflow I'd rather build than another dashboard:\n\nform submission routes straight into qualification logic, qualification pushes into the CRM automatically, and the right person gets notified the moment it matters.\n\nNo copy-paste. No \"I'll update that later.\"\n\nThe CRM isn't the system. It's just where the system ends up.\n\nWhere's the handoff in your process that still happens by hand?",
+    "imagePrompt": null,
+    "imagePath": "/home/runner/work/linkedin-agent/linkedin-agent/images/2026-11-26-quote-crm-handoffs-over-more-features.png",
+    "documentPath": null,
+    "videoPath": null,
+    "videoStyle": null,
+    "sources": [],
+    "status": "published"
   }
 ]

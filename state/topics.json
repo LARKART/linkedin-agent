@@ -1,12 +1,5 @@
 [
   {
-    "topic": "Automation reliability at handoffs",
-    "hook": "Most automations fail at the handoff, not the task",
-    "visual": "Most automations fail at the handoff, not the task",
-    "structure": "",
-    "at": "2026-11-12T15:44:28.029609+00:00"
-  },
-  {
     "topic": "Platforms Banning AI Agent Access",
     "hook": "United Airlines blocked AI agents from booking flights on behalf of customers this week.",
     "visual": "A single airport boarding gate rope stand positioned directly in front of a self-service check-in kiosk screen, shot straight-on in natural terminal lighting, nothing else in frame.",
@@ -257,5 +250,12 @@
     "visual": "A single labeled shipping crate sitting on a loading dock, open, with identical smaller boxes being carried off toward different trucks, each truck representing a different project. Clean editorial photo style, muted industrial palette, no screens or tech iconography, the metaphor is reuse and distribution, not AI.",
     "structure": "Observation → Explanation → Implication",
     "at": "2026-11-26T00:51:33.070007+00:00"
+  },
+  {
+    "topic": "CRM handoffs over more features",
+    "hook": "Most CRMs don't need more fields, they need fewer handoffs",
+    "visual": "Most CRMs don't need more fields, they need fewer handoffs",
+    "structure": "",
+    "at": "2026-11-26T17:29:58.028253+00:00"
   }
 ]
