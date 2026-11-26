@@ -1,0 +1,29 @@
+{
+  "date": "2026-11-26",
+  "lane": "carousel",
+  "status": "published",
+  "topic": "Claude Skills now exposed over MCP",
+  "subtopic": "Agent tool architecture",
+  "whyNow": "Public beta announcement just broke, directly touches the MCP + Claude Code stack practitioners are already building on",
+  "sources": [
+    {
+      "platform": "news",
+      "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE1VTFhNSWpCLW5XUVZCTkhwZ0RwRndGUVNWeXhIbUVhX2hMOWhBazFlZlQ4SXRFTkFJNElubTBvMXBtVFJUSV9zcmN0TlZWM0V4bWJhNG9DQzRpMFdSTU5vUXZIc1NvR1FtZ2NKYV9aNExveHM?oc=5",
+      "velocity": 5.89
+    }
+  ],
+  "replies": [],
+  "notes": [],
+  "documentPath": "/home/runner/work/linkedin-agent/linkedin-agent/carousels/2026-11-26/carousel.pdf",
+  "title": "Claude Skills Now Run Over MCP: What Actually Changes",
+  "slideReview": {
+    "pass": true,
+    "problems": []
+  },
+  "caption": "Every agent project I look at has the same folder somewhere. Prompt_v2_final. Tool_configs_copy. A pile of instructions one person wrote for one client, that nobody else can reuse without opening the file and rewriting half of it.\n\nAnthropic just moved Claude Skills onto MCP, in public beta.\n\nThat sounds like a protocol update. It is actually a packaging change.\n\nRight now, most teams building with Claude Code treat skills as prompt files sitting inside a project. Useful once, forgotten once the project ships. If another team wants the same capability, they rebuild it from scratch, slightly differently, with its own bugs.\n\nPutting skills on MCP means a skill can be defined once and exposed as something other agents and other projects can call, the same way MCP already lets a model reach a database or an API. Instead of copying a prompt into a new repo, you point a new agent at the skill.\n\nThat is the real shift. Not smarter prompts. Shareable ones.\n\nIt does not remove the need for oversight. A portable skill still needs someone checking what it is allowed to touch and what happens when it fails. Packaging a capability so it travels well is different from trusting it to run unsupervised.\n\nTeams that start treating skills like components, versioned, documented, reused on purpose, are going to spend a lot less time rebuilding the same logic for every new client or project.\n\nWhat's the one prompt or tool setup you've rebuilt more than twice this year?\n\nIf you're building something similar, happy to compare architectures.",
+  "hook": "Every agent project I look at has the same folder somewhere. Prompt_v2_final. Tool_configs_copy.",
+  "structure": "Observation → Explanation → Implication",
+  "imageConcept": "A single labeled shipping crate sitting on a loading dock, open, with identical smaller boxes being carried off toward different trucks, each truck representing a different project. Clean editorial photo style, muted industrial palette, no screens or tech iconography, the metaphor is reuse and distribution, not AI.",
+  "gate": "passed",
+  "postUrn": "urn:li:ugcPost:7531519980601946112"
+}

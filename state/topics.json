@@ -1,12 +1,5 @@
 [
   {
-    "topic": "Platforms Shutting Out AI Agents",
-    "hook": "United Airlines just blocked third-party AI agents from booking flights on its site.",
-    "visual": "A single airport boarding gate with a velvet rope stand blocking the entrance, but the rope is made of a long printed receipt or terminal ticket tape instead of fabric. Shot like clean editorial travel photography, muted terminal lighting, no people, no screens, no robots.",
-    "structure": "New development → Why it matters → What to do",
-    "at": "2026-11-11T23:19:17.695688+00:00"
-  },
-  {
     "topic": "Automation reliability at handoffs",
     "hook": "Most automations fail at the handoff, not the task",
     "visual": "Most automations fail at the handoff, not the task",
@@ -257,5 +250,12 @@
     "visual": "Most automations fail at the handoff nobody designed for",
     "structure": "",
     "at": "2026-11-25T17:45:48.040959+00:00"
+  },
+  {
+    "topic": "Claude Skills now exposed over MCP",
+    "hook": "Every agent project I look at has the same folder somewhere. Prompt_v2_final. Tool_configs_copy.",
+    "visual": "A single labeled shipping crate sitting on a loading dock, open, with identical smaller boxes being carried off toward different trucks, each truck representing a different project. Clean editorial photo style, muted industrial palette, no screens or tech iconography, the metaphor is reuse and distribution, not AI.",
+    "structure": "Observation → Explanation → Implication",
+    "at": "2026-11-26T00:51:33.070007+00:00"
   }
 ]
