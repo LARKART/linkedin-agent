@@ -1,0 +1,31 @@
+{
+  "date": "2026-11-27",
+  "lane": "carousel",
+  "status": "published",
+  "topic": "Google Forcing Workspace Agents Through Its Own MCP, With Missing Core Functions",
+  "subtopic": "platform-controlled agent tooling",
+  "whyNow": "New article (15h old, rising) describing a concrete, verifiable limitation in a major platform's agent tooling that directly affects automation builders relying on Gmail/Workspace integrations",
+  "sources": [
+    {
+      "platform": "hackernews",
+      "url": "https://techstackups.com/articles/google-workspace-ai-agents-mcp/",
+      "velocity": 53.86
+    }
+  ],
+  "replies": [],
+  "notes": [
+    "SKIPPED (unverified security story): Hidden Instructions Embedded in Official MCP Integrations - could not corroborate with independent sources"
+  ],
+  "documentPath": "/home/runner/work/linkedin-agent/linkedin-agent/carousels/2026-11-27/carousel.pdf",
+  "title": "Google's Gmail MCP Can't Send Email. Here's The Lesson.",
+  "slideReview": {
+    "pass": true,
+    "problems": []
+  },
+  "caption": "Google wants AI agents to go through its own MCP servers for Workspace.\n\nBut according to a report circulating this week, the Gmail MCP server doesn't expose a send function. No send action. On an email tool.\n\nI haven't verified this myself, but if true, it's worth sitting with.\n\nAn MCP server isn't an integration. It's a list of tools the model is allowed to call. Official doesn't mean complete. Connected doesn't mean usable.\n\nThis matters for anyone building agent workflows on top of a platform's own MCP implementation. You're not building on what the brand promises. You're building on whatever functions actually show up in the tool list.\n\nI've seen the same pattern with CRM and calendar integrations long before MCP existed. The API documentation says one thing. The actual scopes and endpoints available say another.\n\nSo before wiring an agent to any MCP server, Workspace or otherwise, the first step isn't architecture. It's reading the tool list line by line and checking what's actually callable.\n\nIf you're working with MCP right now, what have you found missing that you expected to be there?",
+  "hook": "Google wants AI agents routed through its own MCP servers for Workspace. According to a report this week, the Gmail one reportedly can't send email.",
+  "structure": "New development → why it matters → what to do",
+  "imageConcept": "A close-up editorial shot of a restaurant menu with most dish names blacked out by a thick marker, except a handful left visible, shot in natural light on a wooden table, suggesting a list of options that looks complete but isn't.",
+  "gate": "passed",
+  "postUrn": "urn:li:ugcPost:7531884163533119489"
+}

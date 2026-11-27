@@ -2555,5 +2555,28 @@
     "videoStyle": null,
     "sources": [],
     "status": "published"
+  },
+  {
+    "date": "2026-11-27",
+    "publishedAt": "2026-11-27T00:58:40.588580+00:00",
+    "postUrn": "urn:li:ugcPost:7531884163533119489",
+    "lane": "carousel",
+    "topic": "Google Forcing Workspace Agents Through Its Own MCP, With Missing Core Functions",
+    "subtopic": "platform-controlled agent tooling",
+    "hook": "Google wants AI agents routed through its own MCP servers for Workspace. According to a report this week, the Gmail one reportedly can't send email.",
+    "caption": "Google wants AI agents to go through its own MCP servers for Workspace.\n\nBut according to a report circulating this week, the Gmail MCP server doesn't expose a send function. No send action. On an email tool.\n\nI haven't verified this myself, but if true, it's worth sitting with.\n\nAn MCP server isn't an integration. It's a list of tools the model is allowed to call. Official doesn't mean complete. Connected doesn't mean usable.\n\nThis matters for anyone building agent workflows on top of a platform's own MCP implementation. You're not building on what the brand promises. You're building on whatever functions actually show up in the tool list.\n\nI've seen the same pattern with CRM and calendar integrations long before MCP existed. The API documentation says one thing. The actual scopes and endpoints available say another.\n\nSo before wiring an agent to any MCP server, Workspace or otherwise, the first step isn't architecture. It's reading the tool list line by line and checking what's actually callable.\n\nIf you're working with MCP right now, what have you found missing that you expected to be there?",
+    "imagePrompt": null,
+    "imagePath": null,
+    "documentPath": "/home/runner/work/linkedin-agent/linkedin-agent/carousels/2026-11-27/carousel.pdf",
+    "videoPath": null,
+    "videoStyle": null,
+    "sources": [
+      {
+        "platform": "hackernews",
+        "url": "https://techstackups.com/articles/google-workspace-ai-agents-mcp/",
+        "velocity": 53.86
+      }
+    ],
+    "status": "published"
   }
 ]
