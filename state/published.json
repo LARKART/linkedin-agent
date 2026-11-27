@@ -2601,5 +2601,22 @@
       }
     ],
     "status": "published"
+  },
+  {
+    "date": "2026-11-27",
+    "publishedAt": "2026-11-27T17:09:37.515350+00:00",
+    "postUrn": "urn:li:share:7532128511122141184",
+    "lane": "post",
+    "topic": "automation handoffs over tasks",
+    "subtopic": null,
+    "hook": "Most automations fail at the handoff, not the task",
+    "caption": "Nobody talks about the boring part of automation.\n\nEveryone wants to show the flashy workflow.\n\nThe AI step.\nThe trigger.\nThe fancy integration diagram.\n\nBut the part that actually breaks a system is the handoff.\n\nData moving from one tool to another.\nA field that doesn't map the same way twice.\nA status update that depends on a human clicking the right button at the right time.\n\nThe task itself is usually easy.\n\nSummarize this.\nQualify this lead.\nUpdate this record.\n\nThat part works in a demo every time.\n\nWhat breaks production systems is the seam between steps.\n\nWho owns the data once it leaves tool A.\nWhat happens if tool B is slow to respond.\nWhat the next step assumes was already true.\n\nI spend more time designing handoffs than I do picking models or writing prompts.\n\nThat's the unglamorous work nobody posts about.\n\nIt's also the work that decides if a system survives past week one.\n\nWhere does your workflow usually break, at the task or at the handoff?",
+    "imagePrompt": null,
+    "imagePath": "/home/runner/work/linkedin-agent/linkedin-agent/images/2026-11-27-quote-automation-handoffs-over-tasks.png",
+    "documentPath": null,
+    "videoPath": null,
+    "videoStyle": null,
+    "sources": [],
+    "status": "published"
   }
 ]
