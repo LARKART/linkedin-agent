@@ -1,0 +1,28 @@
+{
+  "date": "2026-11-27",
+  "lane": "video",
+  "status": "published",
+  "topic": "Agent Compute Allocation Inside Labs",
+  "subtopic": "Agents managing their own research infrastructure",
+  "whyNow": "Very recent (under 3 hours old) report on agents being handed internal operational control, a concrete example of agent autonomy expanding beyond typical demos",
+  "sources": [
+    {
+      "platform": "hackernews",
+      "url": "https://the-decoder.com/ai-agents-now-control-part-of-deepminds-compute-for-gemini-experiments-but-recursive-self-improvement-remains-distant/",
+      "velocity": 23.62
+    }
+  ],
+  "replies": [],
+  "notes": [
+    "SKIPPED (unverified security story): MCP Tool Trust and Hidden Instructions - could not corroborate with independent sources"
+  ],
+  "caption": "DeepMind is reportedly letting an AI agent make partial decisions about how compute gets allocated across its own experiments.\n\nThat is a different kind of autonomy than what most people picture when they hear \"AI agent.\"\n\nMost agent demos show a model answering questions or completing a task inside a chat window. This is a model making resource-level calls inside an internal process, the kind of decision that used to sit with a researcher or an ops team.\n\nThe gap between those two things is the whole story right now.\n\nIn business automation, this is the same line I think about with every workflow. An agent that drafts a follow-up email is low risk. An agent that decides which lead gets priority, which invoice gets flagged, or which task gets resourced first is a different category entirely.\n\nThe tools to build that second category already exist. The harder part is deciding where human approval still belongs before the agent gets that kind of authority.\n\nWhere do you draw that line in your own workflows, at the task level or the resource level?",
+  "hook": "DeepMind is reportedly letting an AI agent make partial decisions about how compute gets allocated across its own experiments.",
+  "structure": "New development → Why it matters → What to do",
+  "imageConcept": "A single desk lamp with two switches, one labeled with a simple task icon and one labeled with a dial/allocation icon, shot in flat editorial lighting against a plain background, only one switch lit, suggesting a decision point between doing work and controlling resources.",
+  "gate": "passed",
+  "videoPath": "/home/runner/work/linkedin-agent/linkedin-agent/videos/2026-11-27/agent-compute-allocation-inside-labs/agent-compute-allocation-inside-labs-narrated.mp4",
+  "videoStatus": "generated (narrated motion)",
+  "videoStyle": "narrated",
+  "postUrn": "urn:li:ugcPost:7531911049516716032"
+}

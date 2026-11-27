@@ -1,12 +1,5 @@
 [
   {
-    "topic": "Platforms Banning AI Agents From Taking Action On Users' Behalf",
-    "hook": "United Airlines just blocked AI agents from booking flights on behalf of customers.",
-    "visual": "A boarding pass half-printed, the ticket cutting off mid-scan at an airport gate turnstile, the barrier arm down and the light still red. Shot like editorial travel photography, muted terminal lighting, no visible people, focus on the gate mechanism itself as the subject.",
-    "structure": "New development → Why it matters → What to do",
-    "at": "2026-11-13T00:58:42.129256+00:00"
-  },
-  {
     "topic": "Automation ownership and maintenance",
     "hook": "Automation without an owner just automates confusion faster",
     "visual": "Automation without an owner just automates confusion faster",
@@ -257,5 +250,12 @@
     "visual": "A close-up editorial shot of a restaurant menu with most dish names blacked out by a thick marker, except a handful left visible, shot in natural light on a wooden table, suggesting a list of options that looks complete but isn't.",
     "structure": "New development → why it matters → what to do",
     "at": "2026-11-27T00:58:40.596284+00:00"
+  },
+  {
+    "topic": "Agent Compute Allocation Inside Labs",
+    "hook": "DeepMind is reportedly letting an AI agent make partial decisions about how compute gets allocated across its own experiments.",
+    "visual": "A single desk lamp with two switches, one labeled with a simple task icon and one labeled with a dial/allocation icon, shot in flat editorial lighting against a plain background, only one switch lit, suggesting a decision point between doing work and controlling resources.",
+    "structure": "New development → Why it matters → What to do",
+    "at": "2026-11-27T02:45:31.022742+00:00"
   }
 ]

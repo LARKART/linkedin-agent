@@ -2578,5 +2578,28 @@
       }
     ],
     "status": "published"
+  },
+  {
+    "date": "2026-11-27",
+    "publishedAt": "2026-11-27T02:45:31.017364+00:00",
+    "postUrn": "urn:li:ugcPost:7531911049516716032",
+    "lane": "video",
+    "topic": "Agent Compute Allocation Inside Labs",
+    "subtopic": "Agents managing their own research infrastructure",
+    "hook": "DeepMind is reportedly letting an AI agent make partial decisions about how compute gets allocated across its own experiments.",
+    "caption": "DeepMind is reportedly letting an AI agent make partial decisions about how compute gets allocated across its own experiments.\n\nThat is a different kind of autonomy than what most people picture when they hear \"AI agent.\"\n\nMost agent demos show a model answering questions or completing a task inside a chat window. This is a model making resource-level calls inside an internal process, the kind of decision that used to sit with a researcher or an ops team.\n\nThe gap between those two things is the whole story right now.\n\nIn business automation, this is the same line I think about with every workflow. An agent that drafts a follow-up email is low risk. An agent that decides which lead gets priority, which invoice gets flagged, or which task gets resourced first is a different category entirely.\n\nThe tools to build that second category already exist. The harder part is deciding where human approval still belongs before the agent gets that kind of authority.\n\nWhere do you draw that line in your own workflows, at the task level or the resource level?",
+    "imagePrompt": null,
+    "imagePath": null,
+    "documentPath": null,
+    "videoPath": "/home/runner/work/linkedin-agent/linkedin-agent/videos/2026-11-27/agent-compute-allocation-inside-labs/agent-compute-allocation-inside-labs-narrated.mp4",
+    "videoStyle": "narrated",
+    "sources": [
+      {
+        "platform": "hackernews",
+        "url": "https://the-decoder.com/ai-agents-now-control-part-of-deepminds-compute-for-gemini-experiments-but-recursive-self-improvement-remains-distant/",
+        "velocity": 23.62
+      }
+    ],
+    "status": "published"
   }
 ]
