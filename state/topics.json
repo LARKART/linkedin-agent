@@ -1,12 +1,5 @@
 [
   {
-    "topic": "Agentic Payments Go Mainstream",
-    "hook": "Two agents got a wallet this week.",
-    "visual": "A close-up editorial shot of a physical wallet left open on a desk next to a laptop showing a simple approval dialog box on screen, natural office light, nothing futuristic, the focus is the contrast between the physical object and the on-screen approval step",
-    "structure": "New development -> why it matters -> what to do",
-    "at": "2026-11-13T22:24:54.085247+00:00"
-  },
-  {
     "topic": "Platforms Still Locking Out AI Agents",
     "hook": "United Airlines is reportedly blocking AI agents from booking flights on a customer's behalf.",
     "visual": "A boarding pass on a counter with a red ink stamp over it reading 'AGENT' crossed out, shot close-up and editorial, warm airport lighting, no screens or digital overlays, just paper and a stamp to represent a permission being physically denied",
@@ -257,5 +250,12 @@
     "visual": "Most automations fail at the handoff, not the task",
     "structure": "",
     "at": "2026-11-27T17:09:37.518717+00:00"
+  },
+  {
+    "topic": "Duplicate Tool Calls After Timeouts in AI Agents",
+    "hook": "A timeout does not mean the tool call failed. It means the agent stopped waiting.",
+    "visual": "A single physical turnstile gate with two identical tickets jammed in the slot at once, shot in clean editorial lighting, nothing futuristic, just the mechanical reality of two entries trying to register as one.",
+    "structure": "Problem → Unexpected insight → Practical takeaway",
+    "at": "2026-11-28T00:23:13.319636+00:00"
   }
 ]
