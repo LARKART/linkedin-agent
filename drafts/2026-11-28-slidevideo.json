@@ -1,0 +1,31 @@
+{
+  "date": "2026-11-28",
+  "lane": "slidevideo",
+  "status": "published",
+  "topic": "Who Is Accountable When AI Agents Make Costly Mistakes",
+  "subtopic": "budget and permission accountability for autonomous agents",
+  "whyNow": "Forbes piece on who enforces agent spend plus a landlord's AI assistant giving a tenant bad info that led to eviction are both fresh signals (under 2 hours and under 1 hour old) pointing at the same structural gap: agents acting with real-world consequences and no clear accountability owner.",
+  "sources": [
+    {
+      "platform": "news",
+      "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOYzEwdms0d25tLWRMTlVQSGhnaEdDLVJBeS10czE2TFQ5eEpjczh2aV9VWXBxblpmbjhZMk84OEc1emNRMTZneXJabjVnZ2FBak9JQ0lMcUVWM0s1ZGF4SmpZVFNzMndKWDJJaUdGSzFibk5ZcXEwSHQ2eFVvUl8tQW91ajZiYkxyQkxVSWtGMkNXREp5UGd0SWFn?oc=5",
+      "velocity": 5.38
+    },
+    {
+      "platform": "hackernews",
+      "url": "https://drmahfouz.substack.com/p/woman-evicted-after-landlords-ai",
+      "velocity": 62.21
+    }
+  ],
+  "replies": [],
+  "notes": [],
+  "caption": "An agent can book travel, send a refund, or sign off on a lease. The question nobody answers upfront is who owns it when that action goes wrong.\n\nMost agent rollouts focus on what the agent can do. Fewer teams define who is accountable for what it does, and what ceiling it operates under before it acts.\n\nThat gap shows up fast once agents touch money or legal commitments. A support agent that overpromises a refund is annoying. An agent that signs a contract or gives a tenant wrong information about their lease is a different category of problem, and \"the AI did it\" is not an answer anyone accepts after the fact.\n\nThe fix isn't more capability. It's structure around the capability.\n\nA named owner for each agent. A spend or action ceiling set in advance. Clear rules for what requires human sign-off versus what the agent can clear on its own. Logging that shows why it made the call it made.\n\nThis is the same discipline businesses already apply to employees with purchasing authority or signing authority. Nobody gives a new hire an unlimited expense account on day one. Agents need the same boundaries, and right now most companies skip straight to deployment without setting them.\n\nThe interesting part of agentic AI was never really the model. It's the governance wrapped around it, and that part gets built by people, not prompts.\n\nIf you're putting an agent into production this quarter, the accountability question is worth answering before the capability question.",
+  "hook": "An agent can book travel, send a refund, or sign off on a lease. The question nobody answers upfront is who owns it when that action goes wrong.",
+  "structure": "Problem → Unexpected insight → Practical takeaway",
+  "imageConcept": "A single blank authorization form on a clean desk, pen resting on top, the signature line left empty. Shot like editorial product photography, natural light, shallow depth of field, nothing else in frame. The empty signature line is the entire point.",
+  "gate": "passed",
+  "videoPath": "/home/runner/work/linkedin-agent/linkedin-agent/videos/2026-11-28/who-is-accountable-when-ai-agents-make-c-slidevideo.mp4",
+  "videoStatus": "generated (slide video, narrated)",
+  "videoStyle": "slides",
+  "postUrn": "urn:li:ugcPost:7532266827486265344"
+}

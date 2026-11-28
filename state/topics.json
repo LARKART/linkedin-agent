@@ -1,12 +1,5 @@
 [
   {
-    "topic": "Platforms Still Locking Out AI Agents",
-    "hook": "United Airlines is reportedly blocking AI agents from booking flights on a customer's behalf.",
-    "visual": "A boarding pass on a counter with a red ink stamp over it reading 'AGENT' crossed out, shot close-up and editorial, warm airport lighting, no screens or digital overlays, just paper and a stamp to represent a permission being physically denied",
-    "structure": "New development → Why it matters → What to do",
-    "at": "2026-11-14T00:33:28.682355+00:00"
-  },
-  {
     "topic": "Automation removes waiting, not work",
     "hook": "Automation doesn't remove the work",
     "visual": "Automation doesn't remove the work",
@@ -257,5 +250,12 @@
     "visual": "A single physical turnstile gate with two identical tickets jammed in the slot at once, shot in clean editorial lighting, nothing futuristic, just the mechanical reality of two entries trying to register as one.",
     "structure": "Problem → Unexpected insight → Practical takeaway",
     "at": "2026-11-28T00:23:13.319636+00:00"
+  },
+  {
+    "topic": "Who Is Accountable When AI Agents Make Costly Mistakes",
+    "hook": "An agent can book travel, send a refund, or sign off on a lease. The question nobody answers upfront is who owns it when that action goes wrong.",
+    "visual": "A single blank authorization form on a clean desk, pen resting on top, the signature line left empty. Shot like editorial product photography, natural light, shallow depth of field, nothing else in frame. The empty signature line is the entire point.",
+    "structure": "Problem → Unexpected insight → Practical takeaway",
+    "at": "2026-11-28T02:19:15.184763+00:00"
   }
 ]
