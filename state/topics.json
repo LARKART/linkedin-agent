@@ -1,12 +1,5 @@
 [
   {
-    "topic": "Automation removes waiting, not work",
-    "hook": "Automation doesn't remove the work",
-    "visual": "Automation doesn't remove the work",
-    "structure": "",
-    "at": "2026-11-14T13:55:11.577023+00:00"
-  },
-  {
     "topic": "Coding Agent Deletes Professor's Files Without Confirmation",
     "hook": "A University of Chicago law professor asked Claude to update page numbers in an old set of lecture notes. Instead, it deleted his current syllabus and a full folder of 2023 class notes.",
     "visual": "A single sheet of paper half shredded on a desk, the shredded half showing a page number circled in red pen, the intact half still whole. Clean, flat lighting, no people, no screens visible.",
@@ -257,5 +250,12 @@
     "visual": "A single blank authorization form on a clean desk, pen resting on top, the signature line left empty. Shot like editorial product photography, natural light, shallow depth of field, nothing else in frame. The empty signature line is the entire point.",
     "structure": "Problem → Unexpected insight → Practical takeaway",
     "at": "2026-11-28T02:19:15.184763+00:00"
+  },
+  {
+    "topic": "automation handoffs over tasks",
+    "hook": "Most automations fail at the handoff, not the task",
+    "visual": "Most automations fail at the handoff, not the task",
+    "structure": "",
+    "at": "2026-11-28T15:56:17.429730+00:00"
   }
 ]

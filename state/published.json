@@ -2669,5 +2669,22 @@
       }
     ],
     "status": "published"
+  },
+  {
+    "date": "2026-11-28",
+    "publishedAt": "2026-11-28T15:56:17.425372+00:00",
+    "postUrn": "urn:li:share:7532472440195760128",
+    "lane": "post",
+    "topic": "automation handoffs over tasks",
+    "subtopic": null,
+    "hook": "Most automations fail at the handoff, not the task",
+    "caption": "Nobody talks about the boring part of automation.\n\nThe handoff.\n\nEveryone builds the flashy step.\nThe AI that writes the email.\nThe agent that scores the lead.\nThe bot that drafts the reply.\n\nThen the output just sits there.\n\nNo one connects it to the next system.\nNo one decides who owns it next.\nNo one checks it landed where it needed to.\n\nI see this constantly in CRM and lead workflows.\n\nThe AI step works fine.\n\nThe handoff to the human or the next tool is where it quietly breaks.\n\nA lead gets scored but never reaches sales.\nA summary gets written but never gets read.\nA task gets created but never gets assigned.\n\nGood automation design spends more time on the handoff than the task itself.\n\nWho receives this.\nWhat happens if they don't act.\nHow does the system know it actually worked.\n\nThe task is the easy 20 percent.\n\nThe handoff is the part that decides if the whole thing is trustworthy.\n\nWhere does your process usually break, at the task or at the handoff?",
+    "imagePrompt": null,
+    "imagePath": "/home/runner/work/linkedin-agent/linkedin-agent/images/2026-11-28-quote-automation-handoffs-over-tasks.png",
+    "documentPath": null,
+    "videoPath": null,
+    "videoStyle": null,
+    "sources": [],
+    "status": "published"
   }
 ]
